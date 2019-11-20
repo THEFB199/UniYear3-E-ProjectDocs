@@ -35,12 +35,12 @@ extern void utFree(void*);
 
 /* Variable Definitions */
 static real_T _sfTime_;
-static void *c3_fcnDataPtrs[13];
-static char_T *c3_dataNames[13];
-static uint32_T c3_ssIds[13];
-static uint32_T c3_statuses[13];
-static void *c3_outMexFcns[13];
-static void *c3_inMexFcns[13];
+static void *c3_fcnDataPtrs[17];
+static char_T *c3_dataNames[17];
+static uint32_T c3_ssIds[17];
+static uint32_T c3_statuses[17];
+static void *c3_outMexFcns[17];
+static void *c3_inMexFcns[17];
 static emlrtRTEInfo c3_emlrtRTEI = { 111,/* lineNo */
   5,                                   /* colNo */
   "detectSURFFeatures",                /* fName */
@@ -101,26 +101,26 @@ static emlrtRTEInfo c3_j_emlrtRTEI = { 124,/* lineNo */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\detectSURFFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_k_emlrtRTEI = { 7,/* lineNo */
-  65,                                  /* colNo */
+static emlrtRTEInfo c3_k_emlrtRTEI = { 11,/* lineNo */
+  51,                                  /* colNo */
   "Function-Call Subsystem/MATLAB Function",/* fName */
   "#MotionObjectDetector:238"          /* pName */
 };
 
-static emlrtRTEInfo c3_l_emlrtRTEI = { 7,/* lineNo */
+static emlrtRTEInfo c3_l_emlrtRTEI = { 11,/* lineNo */
   2,                                   /* colNo */
   "Function-Call Subsystem/MATLAB Function",/* fName */
   "#MotionObjectDetector:238"          /* pName */
 };
 
-static emlrtRTEInfo c3_m_emlrtRTEI = { 7,/* lineNo */
-  19,                                  /* colNo */
+static emlrtRTEInfo c3_m_emlrtRTEI = { 11,/* lineNo */
+  15,                                  /* colNo */
   "Function-Call Subsystem/MATLAB Function",/* fName */
   "#MotionObjectDetector:238"          /* pName */
 };
 
-static emlrtRTEInfo c3_n_emlrtRTEI = { 10,/* lineNo */
-  55,                                  /* colNo */
+static emlrtRTEInfo c3_n_emlrtRTEI = { 12,/* lineNo */
+  56,                                  /* colNo */
   "Function-Call Subsystem/MATLAB Function",/* fName */
   "#MotionObjectDetector:238"          /* pName */
 };
@@ -305,26 +305,26 @@ static emlrtRTEInfo c3_sb_emlrtRTEI = { 803,/* lineNo */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\extractFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_tb_emlrtRTEI = { 10,/* lineNo */
+static emlrtRTEInfo c3_tb_emlrtRTEI = { 12,/* lineNo */
   2,                                   /* colNo */
   "Function-Call Subsystem/MATLAB Function",/* fName */
   "#MotionObjectDetector:238"          /* pName */
 };
 
-static emlrtRTEInfo c3_ub_emlrtRTEI = { 10,/* lineNo */
-  15,                                  /* colNo */
+static emlrtRTEInfo c3_ub_emlrtRTEI = { 12,/* lineNo */
+  17,                                  /* colNo */
   "Function-Call Subsystem/MATLAB Function",/* fName */
   "#MotionObjectDetector:238"          /* pName */
 };
 
-static emlrtRTEInfo c3_vb_emlrtRTEI = { 13,/* lineNo */
-  30,                                  /* colNo */
+static emlrtRTEInfo c3_vb_emlrtRTEI = { 14,/* lineNo */
+  26,                                  /* colNo */
   "Function-Call Subsystem/MATLAB Function",/* fName */
   "#MotionObjectDetector:238"          /* pName */
 };
 
-static emlrtRTEInfo c3_wb_emlrtRTEI = { 13,/* lineNo */
-  47,                                  /* colNo */
+static emlrtRTEInfo c3_wb_emlrtRTEI = { 14,/* lineNo */
+  39,                                  /* colNo */
   "Function-Call Subsystem/MATLAB Function",/* fName */
   "#MotionObjectDetector:238"          /* pName */
 };
@@ -377,865 +377,883 @@ static emlrtRTEInfo c3_fc_emlrtRTEI = { 188,/* lineNo */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\matchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_gc_emlrtRTEI = { 13,/* lineNo */
+static emlrtRTEInfo c3_gc_emlrtRTEI = { 14,/* lineNo */
   1,                                   /* colNo */
   "Function-Call Subsystem/MATLAB Function",/* fName */
   "#MotionObjectDetector:238"          /* pName */
 };
 
-static emlrtRTEInfo c3_hc_emlrtRTEI = { 5,/* lineNo */
+static emlrtRTEInfo c3_hc_emlrtRTEI = { 15,/* lineNo */
   1,                                   /* colNo */
   "Function-Call Subsystem/MATLAB Function",/* fName */
   "#MotionObjectDetector:238"          /* pName */
 };
 
-static emlrtRTEInfo c3_ic_emlrtRTEI = { 9,/* lineNo */
+static emlrtRTEInfo c3_ic_emlrtRTEI = { 16,/* lineNo */
   1,                                   /* colNo */
   "Function-Call Subsystem/MATLAB Function",/* fName */
   "#MotionObjectDetector:238"          /* pName */
 };
 
-static emlrtRTEInfo c3_jc_emlrtRTEI = { 87,/* lineNo */
+static emlrtRTEInfo c3_jc_emlrtRTEI = { 9,/* lineNo */
+  1,                                   /* colNo */
+  "Function-Call Subsystem/MATLAB Function",/* fName */
+  "#MotionObjectDetector:238"          /* pName */
+};
+
+static emlrtRTEInfo c3_kc_emlrtRTEI = { 10,/* lineNo */
+  1,                                   /* colNo */
+  "Function-Call Subsystem/MATLAB Function",/* fName */
+  "#MotionObjectDetector:238"          /* pName */
+};
+
+static emlrtRTEInfo c3_lc_emlrtRTEI = { 87,/* lineNo */
   5,                                   /* colNo */
   "detectSURFFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\detectSURFFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_kc_emlrtRTEI = { 768,/* lineNo */
+static emlrtRTEInfo c3_mc_emlrtRTEI = { 768,/* lineNo */
   6,                                   /* colNo */
   "extractFeatures",                   /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\extractFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_lc_emlrtRTEI = { 473,/* lineNo */
+static emlrtRTEInfo c3_nc_emlrtRTEI = { 473,/* lineNo */
   5,                                   /* colNo */
   "extractFeatures",                   /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\extractFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_mc_emlrtRTEI = { 474,/* lineNo */
+static emlrtRTEInfo c3_oc_emlrtRTEI = { 474,/* lineNo */
   5,                                   /* colNo */
   "extractFeatures",                   /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\extractFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_nc_emlrtRTEI = { 475,/* lineNo */
+static emlrtRTEInfo c3_pc_emlrtRTEI = { 475,/* lineNo */
   5,                                   /* colNo */
   "extractFeatures",                   /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\extractFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_oc_emlrtRTEI = { 476,/* lineNo */
+static emlrtRTEInfo c3_qc_emlrtRTEI = { 476,/* lineNo */
   5,                                   /* colNo */
   "extractFeatures",                   /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\extractFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_pc_emlrtRTEI = { 158,/* lineNo */
+static emlrtRTEInfo c3_rc_emlrtRTEI = { 1,/* lineNo */
+  14,                                  /* colNo */
+  "detectSURFFeatures",                /* fName */
+  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\detectSURFFeatures.m"/* pName */
+};
+
+static emlrtRTEInfo c3_sc_emlrtRTEI = { 158,/* lineNo */
   17,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_qc_emlrtRTEI = { 24,/* lineNo */
+static emlrtRTEInfo c3_tc_emlrtRTEI = { 24,/* lineNo */
   17,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_rc_emlrtRTEI = { 240,/* lineNo */
+static emlrtRTEInfo c3_uc_emlrtRTEI = { 240,/* lineNo */
   32,                                  /* colNo */
   "FeaturePointsImpl",                 /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\FeaturePointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_sc_emlrtRTEI = { 241,/* lineNo */
+static emlrtRTEInfo c3_vc_emlrtRTEI = { 241,/* lineNo */
   30,                                  /* colNo */
   "FeaturePointsImpl",                 /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\FeaturePointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_tc_emlrtRTEI = { 204,/* lineNo */
+static emlrtRTEInfo c3_wc_emlrtRTEI = { 204,/* lineNo */
   29,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_uc_emlrtRTEI = { 206,/* lineNo */
+static emlrtRTEInfo c3_xc_emlrtRTEI = { 206,/* lineNo */
   39,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_vc_emlrtRTEI = { 224,/* lineNo */
+static emlrtRTEInfo c3_yc_emlrtRTEI = { 224,/* lineNo */
   43,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_wc_emlrtRTEI = { 224,/* lineNo */
+static emlrtRTEInfo c3_ad_emlrtRTEI = { 224,/* lineNo */
   61,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_xc_emlrtRTEI = { 12,/* lineNo */
+static emlrtRTEInfo c3_bd_emlrtRTEI = { 12,/* lineNo */
   49,                                  /* colNo */
   "validatesize",                      /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\+valattr\\validatesize.m"/* pName */
 };
 
-static emlrtRTEInfo c3_yc_emlrtRTEI = { 11,/* lineNo */
+static emlrtRTEInfo c3_cd_emlrtRTEI = { 11,/* lineNo */
   43,                                  /* colNo */
   "validatefinite",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\+valattr\\validatefinite.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ad_emlrtRTEI = { 179,/* lineNo */
+static emlrtRTEInfo c3_dd_emlrtRTEI = { 179,/* lineNo */
   25,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_bd_emlrtRTEI = { 1,/* lineNo */
+static emlrtRTEInfo c3_ed_emlrtRTEI = { 1,/* lineNo */
   37,                                  /* colNo */
   "extractFeatures",                   /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\extractFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_cd_emlrtRTEI = { 40,/* lineNo */
+static emlrtRTEInfo c3_fd_emlrtRTEI = { 40,/* lineNo */
   20,                                  /* colNo */
   "checkPoints",                       /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\+inputValidation\\checkPoints.m"/* pName */
 };
 
-static emlrtRTEInfo c3_dd_emlrtRTEI = { 63,/* lineNo */
+static emlrtRTEInfo c3_gd_emlrtRTEI = { 63,/* lineNo */
   15,                                  /* colNo */
   "extractSurfBuildable",              /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\+buildable\\extractSurfBuildable.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ed_emlrtRTEI = { 63,/* lineNo */
+static emlrtRTEInfo c3_hd_emlrtRTEI = { 63,/* lineNo */
   27,                                  /* colNo */
   "extractSurfBuildable",              /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\+buildable\\extractSurfBuildable.m"/* pName */
 };
 
-static emlrtRTEInfo c3_fd_emlrtRTEI = { 63,/* lineNo */
+static emlrtRTEInfo c3_id_emlrtRTEI = { 63,/* lineNo */
   36,                                  /* colNo */
   "extractSurfBuildable",              /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\+buildable\\extractSurfBuildable.m"/* pName */
 };
 
-static emlrtRTEInfo c3_gd_emlrtRTEI = { 63,/* lineNo */
+static emlrtRTEInfo c3_jd_emlrtRTEI = { 63,/* lineNo */
   46,                                  /* colNo */
   "extractSurfBuildable",              /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\+buildable\\extractSurfBuildable.m"/* pName */
 };
 
-static emlrtRTEInfo c3_hd_emlrtRTEI = { 43,/* lineNo */
+static emlrtRTEInfo c3_kd_emlrtRTEI = { 43,/* lineNo */
   18,                                  /* colNo */
   "extractSurfBuildable",              /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\+buildable\\extractSurfBuildable.m"/* pName */
 };
 
-static emlrtRTEInfo c3_id_emlrtRTEI = { 205,/* lineNo */
+static emlrtRTEInfo c3_ld_emlrtRTEI = { 205,/* lineNo */
   35,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_jd_emlrtRTEI = { 608,/* lineNo */
+static emlrtRTEInfo c3_md_emlrtRTEI = { 608,/* lineNo */
   14,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_kd_emlrtRTEI = { 199,/* lineNo */
+static emlrtRTEInfo c3_nd_emlrtRTEI = { 199,/* lineNo */
   28,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ld_emlrtRTEI = { 199,/* lineNo */
+static emlrtRTEInfo c3_od_emlrtRTEI = { 199,/* lineNo */
   39,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_md_emlrtRTEI = { 526,/* lineNo */
+static emlrtRTEInfo c3_pd_emlrtRTEI = { 526,/* lineNo */
   21,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_nd_emlrtRTEI = { 526,/* lineNo */
+static emlrtRTEInfo c3_qd_emlrtRTEI = { 526,/* lineNo */
   9,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_od_emlrtRTEI = { 527,/* lineNo */
+static emlrtRTEInfo c3_rd_emlrtRTEI = { 527,/* lineNo */
   21,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_pd_emlrtRTEI = { 527,/* lineNo */
+static emlrtRTEInfo c3_sd_emlrtRTEI = { 527,/* lineNo */
   9,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_qd_emlrtRTEI = { 528,/* lineNo */
+static emlrtRTEInfo c3_td_emlrtRTEI = { 528,/* lineNo */
   86,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_rd_emlrtRTEI = { 528,/* lineNo */
+static emlrtRTEInfo c3_ud_emlrtRTEI = { 528,/* lineNo */
   96,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_sd_emlrtRTEI = { 150,/* lineNo */
+static emlrtRTEInfo c3_vd_emlrtRTEI = { 150,/* lineNo */
   1,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_td_emlrtRTEI = { 42,/* lineNo */
+static emlrtRTEInfo c3_wd_emlrtRTEI = { 42,/* lineNo */
   21,                                  /* colNo */
   "ComputeMetricBuildable",            /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\+buildable\\ComputeMetricBuildable.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ud_emlrtRTEI = { 43,/* lineNo */
+static emlrtRTEInfo c3_xd_emlrtRTEI = { 43,/* lineNo */
   21,                                  /* colNo */
   "ComputeMetricBuildable",            /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\+buildable\\ComputeMetricBuildable.m"/* pName */
 };
 
-static emlrtRTEInfo c3_vd_emlrtRTEI = { 179,/* lineNo */
+static emlrtRTEInfo c3_yd_emlrtRTEI = { 179,/* lineNo */
   66,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_wd_emlrtRTEI = { 28,/* lineNo */
+static emlrtRTEInfo c3_ae_emlrtRTEI = { 28,/* lineNo */
   9,                                   /* colNo */
   "colon",                             /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\lib\\matlab\\ops\\colon.m"/* pName */
 };
 
-static emlrtRTEInfo c3_xd_emlrtRTEI = { 182,/* lineNo */
+static emlrtRTEInfo c3_be_emlrtRTEI = { 182,/* lineNo */
   22,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_yd_emlrtRTEI = { 182,/* lineNo */
+static emlrtRTEInfo c3_ce_emlrtRTEI = { 182,/* lineNo */
   48,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ae_emlrtRTEI = { 110,/* lineNo */
+static emlrtRTEInfo c3_de_emlrtRTEI = { 110,/* lineNo */
   9,                                   /* colNo */
   "cat",                               /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\cat.m"/* pName */
 };
 
-static emlrtRTEInfo c3_be_emlrtRTEI = { 117,/* lineNo */
+static emlrtRTEInfo c3_ee_emlrtRTEI = { 117,/* lineNo */
   30,                                  /* colNo */
   "cat",                               /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\cat.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ce_emlrtRTEI = { 182,/* lineNo */
+static emlrtRTEInfo c3_fe_emlrtRTEI = { 182,/* lineNo */
   1,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_de_emlrtRTEI = { 599,/* lineNo */
+static emlrtRTEInfo c3_ge_emlrtRTEI = { 599,/* lineNo */
   5,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ee_emlrtRTEI = { 154,/* lineNo */
+static emlrtRTEInfo c3_he_emlrtRTEI = { 154,/* lineNo */
   1,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_fe_emlrtRTEI = { 602,/* lineNo */
+static emlrtRTEInfo c3_ie_emlrtRTEI = { 602,/* lineNo */
   11,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ge_emlrtRTEI = { 602,/* lineNo */
+static emlrtRTEInfo c3_je_emlrtRTEI = { 602,/* lineNo */
   1,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_he_emlrtRTEI = { 603,/* lineNo */
+static emlrtRTEInfo c3_ke_emlrtRTEI = { 603,/* lineNo */
   15,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ie_emlrtRTEI = { 603,/* lineNo */
+static emlrtRTEInfo c3_le_emlrtRTEI = { 603,/* lineNo */
   1,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_je_emlrtRTEI = { 272,/* lineNo */
+static emlrtRTEInfo c3_me_emlrtRTEI = { 272,/* lineNo */
   5,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ke_emlrtRTEI = { 266,/* lineNo */
+static emlrtRTEInfo c3_ne_emlrtRTEI = { 266,/* lineNo */
   5,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_le_emlrtRTEI = { 421,/* lineNo */
+static emlrtRTEInfo c3_oe_emlrtRTEI = { 421,/* lineNo */
   1,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_me_emlrtRTEI = { 157,/* lineNo */
+static emlrtRTEInfo c3_pe_emlrtRTEI = { 157,/* lineNo */
   1,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ne_emlrtRTEI = { 422,/* lineNo */
+static emlrtRTEInfo c3_qe_emlrtRTEI = { 422,/* lineNo */
   14,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_oe_emlrtRTEI = { 275,/* lineNo */
+static emlrtRTEInfo c3_re_emlrtRTEI = { 275,/* lineNo */
   15,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_pe_emlrtRTEI = { 270,/* lineNo */
+static emlrtRTEInfo c3_se_emlrtRTEI = { 270,/* lineNo */
   26,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_qe_emlrtRTEI = { 275,/* lineNo */
+static emlrtRTEInfo c3_te_emlrtRTEI = { 275,/* lineNo */
   1,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_re_emlrtRTEI = { 423,/* lineNo */
+static emlrtRTEInfo c3_ue_emlrtRTEI = { 423,/* lineNo */
   10,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_se_emlrtRTEI = { 276,/* lineNo */
+static emlrtRTEInfo c3_ve_emlrtRTEI = { 276,/* lineNo */
   1,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_te_emlrtRTEI = { 423,/* lineNo */
+static emlrtRTEInfo c3_we_emlrtRTEI = { 423,/* lineNo */
   32,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ue_emlrtRTEI = { 164,/* lineNo */
+static emlrtRTEInfo c3_xe_emlrtRTEI = { 164,/* lineNo */
   5,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ve_emlrtRTEI = { 141,/* lineNo */
+static emlrtRTEInfo c3_ye_emlrtRTEI = { 141,/* lineNo */
   38,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_we_emlrtRTEI = { 166,/* lineNo */
+static emlrtRTEInfo c3_af_emlrtRTEI = { 166,/* lineNo */
   1,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_xe_emlrtRTEI = { 423,/* lineNo */
+static emlrtRTEInfo c3_bf_emlrtRTEI = { 423,/* lineNo */
   1,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ye_emlrtRTEI = { 270,/* lineNo */
+static emlrtRTEInfo c3_cf_emlrtRTEI = { 270,/* lineNo */
   5,                                   /* colNo */
-  "cvalgMatchFeatures",                /* fName */
-  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
-};
-
-static emlrtRTEInfo c3_af_emlrtRTEI = { 167,/* lineNo */
-  1,                                   /* colNo */
-  "cvalgMatchFeatures",                /* fName */
-  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
-};
-
-static emlrtRTEInfo c3_bf_emlrtRTEI = { 152,/* lineNo */
-  2,                                   /* colNo */
-  "cvalgMatchFeatures",                /* fName */
-  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
-};
-
-static emlrtRTEInfo c3_cf_emlrtRTEI = { 166,/* lineNo */
-  29,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
 static emlrtRTEInfo c3_df_emlrtRTEI = { 167,/* lineNo */
-  30,                                  /* colNo */
+  1,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
 static emlrtRTEInfo c3_ef_emlrtRTEI = { 152,/* lineNo */
-  14,                                  /* colNo */
+  2,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ff_emlrtRTEI = { 597,/* lineNo */
-  5,                                   /* colNo */
+static emlrtRTEInfo c3_ff_emlrtRTEI = { 166,/* lineNo */
+  29,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_gf_emlrtRTEI = { 602,/* lineNo */
-  22,                                  /* colNo */
-  "cvalgMatchFeatures",                /* fName */
-  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
-};
-
-static emlrtRTEInfo c3_hf_emlrtRTEI = { 603,/* lineNo */
+static emlrtRTEInfo c3_gf_emlrtRTEI = { 167,/* lineNo */
   30,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_if_emlrtRTEI = { 275,/* lineNo */
+static emlrtRTEInfo c3_hf_emlrtRTEI = { 152,/* lineNo */
+  14,                                  /* colNo */
+  "cvalgMatchFeatures",                /* fName */
+  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
+};
+
+static emlrtRTEInfo c3_if_emlrtRTEI = { 597,/* lineNo */
+  5,                                   /* colNo */
+  "cvalgMatchFeatures",                /* fName */
+  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
+};
+
+static emlrtRTEInfo c3_jf_emlrtRTEI = { 602,/* lineNo */
+  22,                                  /* colNo */
+  "cvalgMatchFeatures",                /* fName */
+  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
+};
+
+static emlrtRTEInfo c3_kf_emlrtRTEI = { 603,/* lineNo */
+  30,                                  /* colNo */
+  "cvalgMatchFeatures",                /* fName */
+  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
+};
+
+static emlrtRTEInfo c3_lf_emlrtRTEI = { 275,/* lineNo */
   29,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_jf_emlrtRTEI = { 276,/* lineNo */
+static emlrtRTEInfo c3_mf_emlrtRTEI = { 276,/* lineNo */
   29,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_kf_emlrtRTEI = { 182,/* lineNo */
+static emlrtRTEInfo c3_nf_emlrtRTEI = { 182,/* lineNo */
   29,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_lf_emlrtRTEI = { 422,/* lineNo */
+static emlrtRTEInfo c3_of_emlrtRTEI = { 422,/* lineNo */
   17,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_mf_emlrtRTEI = { 105,/* lineNo */
+static emlrtRTEInfo c3_pf_emlrtRTEI = { 105,/* lineNo */
   1,                                   /* colNo */
   "cat",                               /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\cat.m"/* pName */
 };
 
-static emlrtRTEInfo c3_nf_emlrtRTEI = { 15,/* lineNo */
+static emlrtRTEInfo c3_qf_emlrtRTEI = { 15,/* lineNo */
   1,                                   /* colNo */
   "partialSort",                       /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
 };
 
-static emlrtRTEInfo c3_of_emlrtRTEI = { 16,/* lineNo */
+static emlrtRTEInfo c3_rf_emlrtRTEI = { 16,/* lineNo */
   1,                                   /* colNo */
   "partialSort",                       /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
 };
 
-static emlrtRTEInfo c3_pf_emlrtRTEI = { 19,/* lineNo */
+static emlrtRTEInfo c3_sf_emlrtRTEI = { 19,/* lineNo */
   5,                                   /* colNo */
   "partialSort",                       /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
 };
 
-static emlrtRTEInfo c3_qf_emlrtRTEI = { 1,/* lineNo */
+static emlrtRTEInfo c3_tf_emlrtRTEI = { 1,/* lineNo */
   25,                                  /* colNo */
   "sort",                              /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\lib\\matlab\\datafun\\sort.m"/* pName */
 };
 
-static emlrtRTEInfo c3_rf_emlrtRTEI = { 44,/* lineNo */
+static emlrtRTEInfo c3_uf_emlrtRTEI = { 44,/* lineNo */
   1,                                   /* colNo */
   "partialSort",                       /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
 };
 
-static emlrtRTEInfo c3_sf_emlrtRTEI = { 28,/* lineNo */
+static emlrtRTEInfo c3_vf_emlrtRTEI = { 28,/* lineNo */
   5,                                   /* colNo */
   "sort",                              /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\lib\\matlab\\datafun\\sort.m"/* pName */
 };
 
-static emlrtRTEInfo c3_tf_emlrtRTEI = { 398,/* lineNo */
+static emlrtRTEInfo c3_wf_emlrtRTEI = { 398,/* lineNo */
   9,                                   /* colNo */
   "unaryMinOrMax",                     /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\unaryMinOrMax.m"/* pName */
 };
 
-static emlrtRTEInfo c3_uf_emlrtRTEI = { 495,/* lineNo */
+static emlrtRTEInfo c3_xf_emlrtRTEI = { 495,/* lineNo */
   5,                                   /* colNo */
   "unaryMinOrMax",                     /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\unaryMinOrMax.m"/* pName */
 };
 
-static emlrtRTEInfo c3_vf_emlrtRTEI = { 18,/* lineNo */
+static emlrtRTEInfo c3_yf_emlrtRTEI = { 18,/* lineNo */
   5,                                   /* colNo */
   "minOrMax",                          /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\minOrMax.m"/* pName */
 };
 
-static emlrtRTEInfo c3_wf_emlrtRTEI = { 40,/* lineNo */
+static emlrtRTEInfo c3_ag_emlrtRTEI = { 40,/* lineNo */
   5,                                   /* colNo */
   "partialSort",                       /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
 };
 
-static emlrtRTEInfo c3_xf_emlrtRTEI = { 27,/* lineNo */
+static emlrtRTEInfo c3_bg_emlrtRTEI = { 27,/* lineNo */
   24,                                  /* colNo */
-  "partialSort",                       /* fName */
-  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
-};
-
-static emlrtRTEInfo c3_yf_emlrtRTEI = { 41,/* lineNo */
-  5,                                   /* colNo */
-  "partialSort",                       /* fName */
-  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
-};
-
-static emlrtRTEInfo c3_ag_emlrtRTEI = { 27,/* lineNo */
-  39,                                  /* colNo */
-  "partialSort",                       /* fName */
-  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
-};
-
-static emlrtRTEInfo c3_bg_emlrtRTEI = { 28,/* lineNo */
-  51,                                  /* colNo */
   "partialSort",                       /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
 };
 
 static emlrtRTEInfo c3_cg_emlrtRTEI = { 41,/* lineNo */
+  5,                                   /* colNo */
+  "partialSort",                       /* fName */
+  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
+};
+
+static emlrtRTEInfo c3_dg_emlrtRTEI = { 27,/* lineNo */
+  39,                                  /* colNo */
+  "partialSort",                       /* fName */
+  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
+};
+
+static emlrtRTEInfo c3_eg_emlrtRTEI = { 28,/* lineNo */
+  51,                                  /* colNo */
+  "partialSort",                       /* fName */
+  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
+};
+
+static emlrtRTEInfo c3_fg_emlrtRTEI = { 41,/* lineNo */
   30,                                  /* colNo */
   "sub2ind",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\lib\\matlab\\elmat\\sub2ind.m"/* pName */
 };
 
-static emlrtRTEInfo c3_dg_emlrtRTEI = { 46,/* lineNo */
+static emlrtRTEInfo c3_gg_emlrtRTEI = { 46,/* lineNo */
   1,                                   /* colNo */
   "sub2ind",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\lib\\matlab\\elmat\\sub2ind.m"/* pName */
 };
 
-static emlrtRTEInfo c3_eg_emlrtRTEI = { 48,/* lineNo */
+static emlrtRTEInfo c3_hg_emlrtRTEI = { 48,/* lineNo */
   23,                                  /* colNo */
   "sub2ind",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\lib\\matlab\\elmat\\sub2ind.m"/* pName */
 };
 
-static emlrtRTEInfo c3_fg_emlrtRTEI = { 48,/* lineNo */
+static emlrtRTEInfo c3_ig_emlrtRTEI = { 48,/* lineNo */
   17,                                  /* colNo */
   "sub2ind",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\lib\\matlab\\elmat\\sub2ind.m"/* pName */
 };
 
-static emlrtRTEInfo c3_gg_emlrtRTEI = { 48,/* lineNo */
+static emlrtRTEInfo c3_jg_emlrtRTEI = { 48,/* lineNo */
   5,                                   /* colNo */
   "sub2ind",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\lib\\matlab\\elmat\\sub2ind.m"/* pName */
 };
 
-static emlrtRTEInfo c3_hg_emlrtRTEI = { 28,/* lineNo */
+static emlrtRTEInfo c3_kg_emlrtRTEI = { 28,/* lineNo */
   13,                                  /* colNo */
   "partialSort",                       /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ig_emlrtRTEI = { 29,/* lineNo */
+static emlrtRTEInfo c3_lg_emlrtRTEI = { 29,/* lineNo */
   15,                                  /* colNo */
   "partialSort",                       /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
 };
 
-static emlrtRTEInfo c3_jg_emlrtRTEI = { 5,/* lineNo */
+static emlrtRTEInfo c3_mg_emlrtRTEI = { 5,/* lineNo */
   30,                                  /* colNo */
   "partialSort",                       /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
 };
 
-static emlrtRTEInfo c3_kg_emlrtRTEI = { 5,/* lineNo */
+static emlrtRTEInfo c3_ng_emlrtRTEI = { 5,/* lineNo */
   19,                                  /* colNo */
   "partialSort",                       /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\partialSort.m"/* pName */
 };
 
-static emlrtRTEInfo c3_lg_emlrtRTEI = { 16,/* lineNo */
+static emlrtRTEInfo c3_og_emlrtRTEI = { 16,/* lineNo */
   14,                                  /* colNo */
   "sub2ind",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\lib\\matlab\\elmat\\sub2ind.m"/* pName */
 };
 
-static emlrtRTEInfo c3_mg_emlrtRTEI = { 1,/* lineNo */
+static emlrtRTEInfo c3_pg_emlrtRTEI = { 1,/* lineNo */
   20,                                  /* colNo */
   "sort",                              /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\sort.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ng_emlrtRTEI = { 1,/* lineNo */
+static emlrtRTEInfo c3_qg_emlrtRTEI = { 1,/* lineNo */
   20,                                  /* colNo */
   "sortIdx",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\sortIdx.m"/* pName */
 };
 
-static emlrtRTEInfo c3_og_emlrtRTEI = { 482,/* lineNo */
+static emlrtRTEInfo c3_rg_emlrtRTEI = { 482,/* lineNo */
   32,                                  /* colNo */
   "sortIdx",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\sortIdx.m"/* pName */
 };
 
-static emlrtRTEInfo c3_pg_emlrtRTEI = { 520,/* lineNo */
+static emlrtRTEInfo c3_sg_emlrtRTEI = { 520,/* lineNo */
   32,                                  /* colNo */
   "sortIdx",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\sortIdx.m"/* pName */
 };
 
-static emlrtRTEInfo c3_qg_emlrtRTEI = { 278,/* lineNo */
+static emlrtRTEInfo c3_tg_emlrtRTEI = { 278,/* lineNo */
   13,                                  /* colNo */
-  "FeaturePointsImpl",                 /* fName */
-  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\FeaturePointsImpl.m"/* pName */
-};
-
-static emlrtRTEInfo c3_rg_emlrtRTEI = { 181,/* lineNo */
-  20,                                  /* colNo */
-  "SURFPointsImpl",                    /* fName */
-  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
-};
-
-static emlrtRTEInfo c3_sg_emlrtRTEI = { 283,/* lineNo */
-  70,                                  /* colNo */
-  "FeaturePointsImpl",                 /* fName */
-  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\FeaturePointsImpl.m"/* pName */
-};
-
-static emlrtRTEInfo c3_tg_emlrtRTEI = { 343,/* lineNo */
-  28,                                  /* colNo */
   "FeaturePointsImpl",                 /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\FeaturePointsImpl.m"/* pName */
 };
 
 static emlrtRTEInfo c3_ug_emlrtRTEI = { 181,/* lineNo */
+  20,                                  /* colNo */
+  "SURFPointsImpl",                    /* fName */
+  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
+};
+
+static emlrtRTEInfo c3_vg_emlrtRTEI = { 283,/* lineNo */
+  70,                                  /* colNo */
+  "FeaturePointsImpl",                 /* fName */
+  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\FeaturePointsImpl.m"/* pName */
+};
+
+static emlrtRTEInfo c3_wg_emlrtRTEI = { 343,/* lineNo */
+  28,                                  /* colNo */
+  "FeaturePointsImpl",                 /* fName */
+  "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\FeaturePointsImpl.m"/* pName */
+};
+
+static emlrtRTEInfo c3_xg_emlrtRTEI = { 181,/* lineNo */
   13,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_vg_emlrtRTEI = { 31,/* lineNo */
+static emlrtRTEInfo c3_yg_emlrtRTEI = { 31,/* lineNo */
   1,                                   /* colNo */
   "repmat",                            /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\lib\\matlab\\elmat\\repmat.m"/* pName */
 };
 
-static emlrtRTEInfo c3_wg_emlrtRTEI = { 183,/* lineNo */
+static emlrtRTEInfo c3_ah_emlrtRTEI = { 183,/* lineNo */
   22,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_xg_emlrtRTEI = { 343,/* lineNo */
+static emlrtRTEInfo c3_bh_emlrtRTEI = { 343,/* lineNo */
   21,                                  /* colNo */
   "FeaturePointsImpl",                 /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\FeaturePointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_yg_emlrtRTEI = { 190,/* lineNo */
+static emlrtRTEInfo c3_ch_emlrtRTEI = { 190,/* lineNo */
   70,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ah_emlrtRTEI = { 189,/* lineNo */
+static emlrtRTEInfo c3_dh_emlrtRTEI = { 189,/* lineNo */
   13,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_bh_emlrtRTEI = { 193,/* lineNo */
+static emlrtRTEInfo c3_eh_emlrtRTEI = { 193,/* lineNo */
   17,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ch_emlrtRTEI = { 192,/* lineNo */
+static emlrtRTEInfo c3_fh_emlrtRTEI = { 192,/* lineNo */
   13,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_dh_emlrtRTEI = { 196,/* lineNo */
+static emlrtRTEInfo c3_gh_emlrtRTEI = { 196,/* lineNo */
   63,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_eh_emlrtRTEI = { 195,/* lineNo */
+static emlrtRTEInfo c3_hh_emlrtRTEI = { 195,/* lineNo */
   13,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_fh_emlrtRTEI = { 193,/* lineNo */
+static emlrtRTEInfo c3_ih_emlrtRTEI = { 193,/* lineNo */
   70,                                  /* colNo */
   "SURFPointsImpl",                    /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\+vision\\+internal\\SURFPointsImpl.m"/* pName */
 };
 
-static emlrtRTEInfo c3_gh_emlrtRTEI = { 20,/* lineNo */
+static emlrtRTEInfo c3_jh_emlrtRTEI = { 20,/* lineNo */
   24,                                  /* colNo */
   "scalexpAllocNoCheck",               /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\scalexpAllocNoCheck.m"/* pName */
 };
 
-static emlrtRTEInfo c3_hh_emlrtRTEI = { 17,/* lineNo */
+static emlrtRTEInfo c3_kh_emlrtRTEI = { 17,/* lineNo */
   9,                                   /* colNo */
   "scalexpAlloc",                      /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\scalexpAlloc.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ih_emlrtRTEI = { 46,/* lineNo */
+static emlrtRTEInfo c3_lh_emlrtRTEI = { 46,/* lineNo */
   6,                                   /* colNo */
   "applyBinaryScalarFunction",         /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\applyBinaryScalarFunction.m"/* pName */
 };
 
-static emlrtRTEInfo c3_jh_emlrtRTEI = { 55,/* lineNo */
+static emlrtRTEInfo c3_mh_emlrtRTEI = { 55,/* lineNo */
   5,                                   /* colNo */
   "power",                             /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\lib\\matlab\\ops\\power.m"/* pName */
 };
 
-static emlrtRTEInfo c3_kh_emlrtRTEI = { 20,/* lineNo */
+static emlrtRTEInfo c3_nh_emlrtRTEI = { 20,/* lineNo */
   1,                                   /* colNo */
   "sum",                               /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\lib\\matlab\\datafun\\sum.m"/* pName */
 };
 
-static emlrtRTEInfo c3_lh_emlrtRTEI = { 81,/* lineNo */
+static emlrtRTEInfo c3_oh_emlrtRTEI = { 81,/* lineNo */
   13,                                  /* colNo */
   "blockedSummation",                  /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\lib\\matlab\\datafun\\private\\blockedSummation.m"/* pName */
 };
 
-static emlrtRTEInfo c3_mh_emlrtRTEI = { 610,/* lineNo */
+static emlrtRTEInfo c3_ph_emlrtRTEI = { 610,/* lineNo */
   22,                                  /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_nh_emlrtRTEI = { 610,/* lineNo */
+static emlrtRTEInfo c3_qh_emlrtRTEI = { 610,/* lineNo */
   5,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_oh_emlrtRTEI = { 613,/* lineNo */
+static emlrtRTEInfo c3_rh_emlrtRTEI = { 613,/* lineNo */
   3,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_ph_emlrtRTEI = { 613,/* lineNo */
+static emlrtRTEInfo c3_sh_emlrtRTEI = { 613,/* lineNo */
   7,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_qh_emlrtRTEI = { 609,/* lineNo */
+static emlrtRTEInfo c3_th_emlrtRTEI = { 609,/* lineNo */
   1,                                   /* colNo */
   "cvalgMatchFeatures",                /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\vision\\vision\\cvalgMatchFeatures.m"/* pName */
 };
 
-static emlrtRTEInfo c3_rh_emlrtRTEI = { 36,/* lineNo */
+static emlrtRTEInfo c3_uh_emlrtRTEI = { 36,/* lineNo */
   9,                                   /* colNo */
   "scalexpAllocNoCheck",               /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\scalexpAllocNoCheck.m"/* pName */
 };
 
-static emlrtRTEInfo c3_sh_emlrtRTEI = { 56,/* lineNo */
+static emlrtRTEInfo c3_vh_emlrtRTEI = { 56,/* lineNo */
   1,                                   /* colNo */
   "sort",                              /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\sort.m"/* pName */
 };
 
-static emlrtRTEInfo c3_th_emlrtRTEI = { 61,/* lineNo */
+static emlrtRTEInfo c3_wh_emlrtRTEI = { 61,/* lineNo */
   5,                                   /* colNo */
   "sortIdx",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\sortIdx.m"/* pName */
 };
 
-static emlrtRTEInfo c3_uh_emlrtRTEI = { 385,/* lineNo */
+static emlrtRTEInfo c3_xh_emlrtRTEI = { 385,/* lineNo */
   9,                                   /* colNo */
   "sortIdx",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\sortIdx.m"/* pName */
 };
 
-static emlrtRTEInfo c3_vh_emlrtRTEI = { 308,/* lineNo */
+static emlrtRTEInfo c3_yh_emlrtRTEI = { 308,/* lineNo */
   1,                                   /* colNo */
   "sortIdx",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\sortIdx.m"/* pName */
 };
 
-static emlrtRTEInfo c3_wh_emlrtRTEI = { 386,/* lineNo */
+static emlrtRTEInfo c3_ai_emlrtRTEI = { 386,/* lineNo */
   1,                                   /* colNo */
   "sortIdx",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\sortIdx.m"/* pName */
 };
 
-static emlrtRTEInfo c3_xh_emlrtRTEI = { 387,/* lineNo */
+static emlrtRTEInfo c3_bi_emlrtRTEI = { 387,/* lineNo */
   9,                                   /* colNo */
   "sortIdx",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\sortIdx.m"/* pName */
 };
 
-static emlrtRTEInfo c3_yh_emlrtRTEI = { 388,/* lineNo */
+static emlrtRTEInfo c3_ci_emlrtRTEI = { 388,/* lineNo */
   1,                                   /* colNo */
   "sortIdx",                           /* fName */
   "C:\\Program Files\\MATLAB\\R2019b\\toolbox\\eml\\eml\\+coder\\+internal\\sortIdx.m"/* pName */
@@ -1313,6 +1331,8 @@ static void c3_chartstep_c3_MotionObjectDetector
   (SFc3_MotionObjectDetectorInstanceStruct *chartInstance);
 static void initSimStructsc3_MotionObjectDetector
   (SFc3_MotionObjectDetectorInstanceStruct *chartInstance);
+static void c3_detectSURFFeatures(SFc3_MotionObjectDetectorInstanceStruct
+  *chartInstance, uint8_T c3_I[50463], c3_vision_internal_SURFPoints_cg *c3_Pts);
 static void c3_SURFPoints_cg_SURFPoints_cg
   (SFc3_MotionObjectDetectorInstanceStruct *chartInstance, c3_emxArray_real32_T *
    c3_varargin_1, c3_sJTMl20J2MtSHoTgqrNGwiD c3_varargin_2,
@@ -1479,6 +1499,14 @@ static void c3_m_emlrt_marshallIn(SFc3_MotionObjectDetectorInstanceStruct
 static void c3_sf_marshallIn_dynamicmatrix_1(void *chartInstanceVoid, const
   mxArray *c3_mxArrayInData, const char_T *c3_varName, c3_emxArray_uint32_T
   *c3_outData);
+static const mxArray *c3_sf_marshallOut_dynamicmatrix_2(void *chartInstanceVoid,
+  c3_emxArray_uint32_T *c3_inData);
+static void c3_n_emlrt_marshallIn(SFc3_MotionObjectDetectorInstanceStruct
+  *chartInstance, const mxArray *c3_c_u, const emlrtMsgIdentifier *c3_parentId,
+  c3_emxArray_uint32_T *c3_d_y);
+static void c3_sf_marshallIn_dynamicmatrix_2(void *chartInstanceVoid, const
+  mxArray *c3_mxArrayInData, const char_T *c3_varName, c3_emxArray_uint32_T
+  *c3_outData);
 static const mxArray *c3_chart_data_browse_helper
   (SFc3_MotionObjectDetectorInstanceStruct *chartInstance, int32_T c3_ssIdNumber);
 static void c3_c_SURFPointsImpl_configure
@@ -1539,6 +1567,9 @@ static void c3_emxCopyStruct_s2rdWZ6jAA0S8hk59
 static void c3_emxEnsureCapacity_uint32_T
   (SFc3_MotionObjectDetectorInstanceStruct *chartInstance, c3_emxArray_uint32_T *
    c3_emxArray, int32_T c3_oldNumel, const emlrtRTEInfo *c3_srcLocation);
+static void c3_emxEnsureCapacity_uint32_T1
+  (SFc3_MotionObjectDetectorInstanceStruct *chartInstance, c3_emxArray_uint32_T *
+   c3_emxArray, int32_T c3_oldNumel, const emlrtRTEInfo *c3_srcLocation);
 static void c3_emxInitStruct_vision_internal_S
   (SFc3_MotionObjectDetectorInstanceStruct *chartInstance,
    c3_vision_internal_SURFPoints_cg *c3_pStruct, const emlrtRTEInfo
@@ -1553,6 +1584,9 @@ static void c3_emxInit_int8_T(SFc3_MotionObjectDetectorInstanceStruct
   *chartInstance, c3_emxArray_int8_T **c3_pEmxArray, int32_T c3_numDimensions,
   const emlrtRTEInfo *c3_srcLocation);
 static void c3_emxInit_uint32_T(SFc3_MotionObjectDetectorInstanceStruct
+  *chartInstance, c3_emxArray_uint32_T **c3_pEmxArray, int32_T c3_numDimensions,
+  const emlrtRTEInfo *c3_srcLocation);
+static void c3_emxInit_uint32_T1(SFc3_MotionObjectDetectorInstanceStruct
   *chartInstance, c3_emxArray_uint32_T **c3_pEmxArray, int32_T c3_numDimensions,
   const emlrtRTEInfo *c3_srcLocation);
 static void c3_emxInitStruct_sJTMl20J2MtSHoTgq
@@ -1784,7 +1818,7 @@ static void mdl_start_c3_MotionObjectDetector
     c3_outMexFcns, c3_inMexFcns, c3_statuses);
   sim_mode_is_external(chartInstance->S);
   covrtCreateStateflowInstanceData(chartInstance->c3_covrtInstance, 1U, 0U, 1U,
-    9U);
+    11U);
   covrtChartInitFcn(chartInstance->c3_covrtInstance, 0U, false, false, false);
   covrtStateInitFcn(chartInstance->c3_covrtInstance, 0U, 0U, false, false, false,
                     0U, &c3_decisionTxtStartIdx, &c3_decisionTxtEndIdx);
@@ -1792,23 +1826,24 @@ static void mdl_start_c3_MotionObjectDetector
   covrtEmlInitFcn(chartInstance->c3_covrtInstance, "", 4U, 0U, 1U, 0U, 0U, 0U,
                   0U, 0U, 0U, 0U, 0U, 0U);
   covrtEmlFcnInitFcn(chartInstance->c3_covrtInstance, 4U, 0U, 0U,
-                     "eML_blk_kernel", 0, -1, 617);
+                     "eML_blk_kernel", 0, -1, 1614);
 }
 
 static void c3_chartstep_c3_MotionObjectDetector
   (SFc3_MotionObjectDetectorInstanceStruct *chartInstance)
 {
-  c3_vision_internal_SURFPoints_cg c3_RedCrabPoints;
-  c3_emxArray_real32_T *c3_RedCrabFeatures;
-  c3_vision_internal_SURFPoints_cg c3_ROIPoints;
-  c3_emxArray_real32_T *c3_ROIFeatures;
-  c3_emxArray_uint32_T *c3_RedCrabPairs;
-  c3_vision_internal_SURFPoints_cg c3_b_RedCrabPoints;
-  c3_vision_internal_SURFPoints_cg c3_b_ROIPoints;
+  c3_vision_internal_SURFPoints_cg c3_boxPoints;
+  c3_vision_internal_SURFPoints_cg c3_scenePoints;
+  c3_emxArray_real32_T *c3_boxFeatures;
+  c3_emxArray_real32_T *c3_sceneFeatures;
+  c3_emxArray_uint32_T *c3_boxPairs;
+  c3_emxArray_uint32_T *c3_A;
+  c3_emxArray_uint32_T *c3_B;
+  c3_vision_internal_SURFPoints_cg c3_b_boxPoints;
+  c3_vision_internal_SURFPoints_cg c3_b_scenePoints;
   c3_s2rdWZ6jAA0S8hk59zYLzBC c3_vPts;
+  c3_vision_internal_SURFPoints_cg c3_c_boxPoints;
   c3_sJTMl20J2MtSHoTgqrNGwiD c3_PtsStruct;
-  c3_vision_internal_SURFPoints_cg c3_c_RedCrabPoints;
-  c3_sJTMl20J2MtSHoTgqrNGwiD c3_b_PtsStruct;
   int32_T c3_i;
   int32_T c3_i1;
   real_T c3_nargin = 2.0;
@@ -1822,297 +1857,271 @@ static void c3_chartstep_c3_MotionObjectDetector
   int32_T c3_i8;
   int32_T c3_i9;
   int32_T c3_i10;
-  c3_emxArray_real32_T *c3_PtsStruct_Location;
+  uint8_T c3_b_CrabG[50463];
   int32_T c3_i11;
-  c3_emxArray_real32_T *c3_valLocation;
   int32_T c3_i12;
+  int32_T c3_i13;
+  int32_T c3_i14;
+  c3_emxArray_real32_T *c3_PtsStruct_Location;
+  int32_T c3_i15;
+  c3_emxArray_real32_T *c3_valLocation;
+  int32_T c3_i16;
   c3_emxArray_real32_T *c3_valScale;
   c3_emxArray_real32_T *c3_valMetric;
-  uint8_T c3_c_Iu8[50463];
   c3_emxArray_int8_T *c3_valSignOfLaplacian;
   void * c3_ptrKeypoint;
   int32_T c3_outNumRows;
-  int32_T c3_i13;
-  int32_T c3_i14;
-  int32_T c3_i15;
-  int32_T c3_i16;
   int32_T c3_i17;
-  int32_T c3_loop_ub;
   int32_T c3_i18;
-  c3_sJTMl20J2MtSHoTgqrNGwiD c3_c_PtsStruct;
   int32_T c3_i19;
-  int32_T c3_b_loop_ub;
   int32_T c3_i20;
   int32_T c3_i21;
-  int32_T c3_c_loop_ub;
+  int32_T c3_loop_ub;
   int32_T c3_i22;
+  c3_sJTMl20J2MtSHoTgqrNGwiD c3_b_PtsStruct;
   int32_T c3_i23;
-  int32_T c3_d_loop_ub;
+  int32_T c3_b_loop_ub;
   int32_T c3_i24;
   int32_T c3_i25;
-  int32_T c3_e_loop_ub;
+  int32_T c3_c_loop_ub;
   int32_T c3_i26;
   int32_T c3_i27;
-  int32_T c3_f_loop_ub;
+  int32_T c3_d_loop_ub;
   int32_T c3_i28;
   int32_T c3_i29;
-  int32_T c3_g_loop_ub;
+  int32_T c3_e_loop_ub;
   int32_T c3_i30;
-  c3_emxArray_real32_T *c3_d_PtsStruct;
   int32_T c3_i31;
-  int32_T c3_h_loop_ub;
+  int32_T c3_f_loop_ub;
   int32_T c3_i32;
   int32_T c3_i33;
-  c3_emxArray_real32_T *c3_b_RedCrabFeatures;
-  uint8_T c3_b_redcrabGray[50463];
-  c3_vision_internal_SURFPoints_cg c3_d_RedCrabPoints;
+  int32_T c3_g_loop_ub;
   int32_T c3_i34;
-  int32_T c3_i_loop_ub;
+  c3_emxArray_real32_T *c3_c_PtsStruct;
   int32_T c3_i35;
+  int32_T c3_h_loop_ub;
   int32_T c3_i36;
   int32_T c3_i37;
+  c3_emxArray_real32_T *c3_b_boxFeatures;
+  uint8_T c3_c_CrabG[50463];
+  c3_vision_internal_SURFPoints_cg c3_d_boxPoints;
   int32_T c3_i38;
+  int32_T c3_i_loop_ub;
   int32_T c3_i39;
-  void * c3_b_ptrKeypoint;
   int32_T c3_i40;
-  int32_T c3_b_outNumRows;
   int32_T c3_i41;
+  int32_T c3_j_loop_ub;
   int32_T c3_i42;
+  const mxArray *c3_d_y = NULL;
   int32_T c3_i43;
+  const mxArray *c3_e_y = NULL;
+  const mxArray *c3_f_y = NULL;
+  int32_T c3_k_loop_ub;
+  static char_T c3_b_cv[6] = { 'P', 'O', 'I', 'N', 'T', 'S' };
+
   int32_T c3_i44;
+  real_T c3_out_numel;
   int32_T c3_i45;
   int32_T c3_i46;
-  int32_T c3_j_loop_ub;
   int32_T c3_i47;
-  c3_sJTMl20J2MtSHoTgqrNGwiD c3_e_PtsStruct;
   int32_T c3_i48;
-  int32_T c3_k_loop_ub;
+  boolean_T c3_b;
   int32_T c3_i49;
+  c3_emxArray_int32_T *c3_r;
   int32_T c3_i50;
   int32_T c3_l_loop_ub;
   int32_T c3_i51;
   int32_T c3_i52;
-  int32_T c3_m_loop_ub;
   int32_T c3_i53;
+  int32_T c3_tmp_data[2];
+  int32_T c3_m_loop_ub;
   int32_T c3_i54;
-  int32_T c3_n_loop_ub;
+  int32_T c3_iv[2];
   int32_T c3_i55;
+  boolean_T c3_b1;
+  int32_T c3_n_loop_ub;
   int32_T c3_i56;
-  int32_T c3_o_loop_ub;
   int32_T c3_i57;
   int32_T c3_i58;
-  int32_T c3_p_loop_ub;
+  int32_T c3_o_loop_ub;
   int32_T c3_i59;
-  c3_emxArray_real32_T *c3_f_PtsStruct;
+  c3_emxArray_real32_T *c3_outOrientation;
   int32_T c3_i60;
-  int32_T c3_q_loop_ub;
+  int32_T c3_p_loop_ub;
   int32_T c3_i61;
+  int32_T c3_iv1[1];
+  int32_T c3_q_loop_ub;
   int32_T c3_i62;
+  boolean_T c3_b2;
   int32_T c3_i63;
-  int32_T c3_r_loop_ub;
   int32_T c3_i64;
-  const mxArray *c3_d_y = NULL;
+  int32_T c3_r_loop_ub;
   int32_T c3_i65;
-  const mxArray *c3_e_y = NULL;
-  const mxArray *c3_f_y = NULL;
-  int32_T c3_s_loop_ub;
-  static char_T c3_b_cv[6] = { 'P', 'O', 'I', 'N', 'T', 'S' };
-
   int32_T c3_i66;
-  real_T c3_out_numel;
+  int32_T c3_s_loop_ub;
   int32_T c3_i67;
+  int32_T c3_iv2[1];
+  int32_T c3_t_loop_ub;
   int32_T c3_i68;
+  boolean_T c3_b3;
   int32_T c3_i69;
   int32_T c3_i70;
-  boolean_T c3_b;
-  int32_T c3_i71;
-  c3_emxArray_int32_T *c3_r;
-  int32_T c3_i72;
-  int32_T c3_t_loop_ub;
-  int32_T c3_i73;
-  int32_T c3_i74;
-  int32_T c3_i75;
-  int32_T c3_tmp_data[2];
   int32_T c3_u_loop_ub;
-  int32_T c3_i76;
-  int32_T c3_iv[2];
-  int32_T c3_i77;
-  boolean_T c3_b1;
+  int32_T c3_i71;
+  c3_emxArray_int8_T *c3_r1;
+  int32_T c3_i72;
   int32_T c3_v_loop_ub;
+  int32_T c3_i73;
+  int32_T c3_iv3[1];
+  int32_T c3_w_loop_ub;
+  int32_T c3_i74;
+  c3_sJTMl20J2MtSHoTgqrNGwiD c3_ptsStruct;
+  int32_T c3_i75;
+  int32_T c3_x_loop_ub;
+  int32_T c3_i76;
+  int32_T c3_i77;
+  int32_T c3_y_loop_ub;
   int32_T c3_i78;
   int32_T c3_i79;
+  int32_T c3_ab_loop_ub;
   int32_T c3_i80;
-  int32_T c3_w_loop_ub;
   int32_T c3_i81;
-  c3_emxArray_real32_T *c3_outOrientation;
+  int32_T c3_bb_loop_ub;
   int32_T c3_i82;
-  int32_T c3_x_loop_ub;
   int32_T c3_i83;
-  int32_T c3_iv1[1];
-  int32_T c3_y_loop_ub;
   int32_T c3_i84;
-  boolean_T c3_b2;
+  c3_emxArray_real32_T *c3_b_ptsStruct;
   int32_T c3_i85;
   int32_T c3_i86;
-  int32_T c3_ab_loop_ub;
   int32_T c3_i87;
-  int32_T c3_i88;
-  int32_T c3_bb_loop_ub;
-  int32_T c3_i89;
-  int32_T c3_iv2[1];
   int32_T c3_cb_loop_ub;
-  int32_T c3_i90;
-  boolean_T c3_b3;
-  int32_T c3_i91;
-  int32_T c3_i92;
+  int32_T c3_i88;
+  c3_emxArray_real32_T *c3_c_ptsStruct;
+  int32_T c3_i89;
   int32_T c3_db_loop_ub;
-  int32_T c3_i93;
-  c3_emxArray_int8_T *c3_r1;
-  int32_T c3_i94;
+  int32_T c3_i90;
+  c3_emxArray_real32_T *c3_d_ptsStruct;
+  int32_T c3_i91;
   int32_T c3_eb_loop_ub;
-  int32_T c3_i95;
-  int32_T c3_iv3[1];
+  int32_T c3_i92;
+  c3_emxArray_int8_T *c3_e_ptsStruct;
+  int32_T c3_i93;
   int32_T c3_fb_loop_ub;
-  int32_T c3_i96;
-  c3_sJTMl20J2MtSHoTgqrNGwiD c3_ptsStruct;
-  int32_T c3_i97;
+  int32_T c3_i94;
+  c3_emxArray_real32_T *c3_features;
+  int32_T c3_i95;
   int32_T c3_gb_loop_ub;
-  int32_T c3_i98;
-  int32_T c3_i99;
+  int32_T c3_i96;
+  int32_T c3_i97;
   int32_T c3_hb_loop_ub;
+  int32_T c3_i98;
+  c3_s2rdWZ6jAA0S8hk59zYLzBC c3_b_vPts;
+  int32_T c3_i99;
+  int32_T c3_ib_loop_ub;
   int32_T c3_i100;
   int32_T c3_i101;
-  int32_T c3_ib_loop_ub;
+  int32_T c3_jb_loop_ub;
   int32_T c3_i102;
   int32_T c3_i103;
-  int32_T c3_jb_loop_ub;
+  int32_T c3_kb_loop_ub;
   int32_T c3_i104;
   int32_T c3_i105;
+  int32_T c3_lb_loop_ub;
   int32_T c3_i106;
-  c3_emxArray_real32_T *c3_b_ptsStruct;
   int32_T c3_i107;
+  int32_T c3_mb_loop_ub;
   int32_T c3_i108;
   int32_T c3_i109;
-  int32_T c3_kb_loop_ub;
-  int32_T c3_i110;
-  c3_emxArray_real32_T *c3_c_ptsStruct;
-  int32_T c3_i111;
-  int32_T c3_lb_loop_ub;
-  int32_T c3_i112;
-  c3_emxArray_real32_T *c3_d_ptsStruct;
-  int32_T c3_i113;
-  int32_T c3_mb_loop_ub;
-  int32_T c3_i114;
-  c3_emxArray_int8_T *c3_e_ptsStruct;
-  int32_T c3_i115;
   int32_T c3_nb_loop_ub;
-  int32_T c3_i116;
-  c3_emxArray_real32_T *c3_features;
-  int32_T c3_i117;
+  int32_T c3_i110;
+  c3_emxArray_real32_T *c3_c_vPts;
+  int32_T c3_i111;
   int32_T c3_ob_loop_ub;
-  int32_T c3_i118;
-  int32_T c3_i119;
+  int32_T c3_i112;
+  int32_T c3_i113;
   int32_T c3_pb_loop_ub;
-  int32_T c3_i120;
-  c3_s2rdWZ6jAA0S8hk59zYLzBC c3_b_vPts;
-  int32_T c3_i121;
+  int32_T c3_i114;
+  int32_T c3_i115;
   int32_T c3_qb_loop_ub;
-  int32_T c3_i122;
-  int32_T c3_i123;
+  int32_T c3_i116;
+  c3_emxArray_real32_T *c3_varargin_2;
+  int32_T c3_i117;
   int32_T c3_rb_loop_ub;
+  int32_T c3_i118;
+  c3_emxArray_real32_T *c3_features1;
+  int32_T c3_i119;
+  int32_T c3_sb_loop_ub;
+  int32_T c3_i120;
+  c3_emxArray_real32_T *c3_features2;
+  int32_T c3_i121;
+  int32_T c3_tb_loop_ub;
+  int32_T c3_i122;
+  c3_emxArray_real32_T *c3_b_features1;
+  int32_T c3_i123;
   int32_T c3_i124;
   int32_T c3_i125;
-  int32_T c3_sb_loop_ub;
-  int32_T c3_i126;
-  int32_T c3_i127;
-  int32_T c3_tb_loop_ub;
-  int32_T c3_i128;
-  int32_T c3_i129;
   int32_T c3_ub_loop_ub;
+  int32_T c3_i126;
+  int32_T c3_iv4[2];
+  int32_T c3_vb_loop_ub;
+  int32_T c3_i127;
+  int32_T c3_i128;
+  int32_T c3_wb_loop_ub;
+  int32_T c3_i129;
+  c3_emxArray_real32_T *c3_b_features2;
   int32_T c3_i130;
   int32_T c3_i131;
-  int32_T c3_vb_loop_ub;
   int32_T c3_i132;
-  c3_emxArray_real32_T *c3_c_vPts;
+  int32_T c3_xb_loop_ub;
   int32_T c3_i133;
-  int32_T c3_wb_loop_ub;
+  int32_T c3_iv5[2];
+  int32_T c3_yb_loop_ub;
   int32_T c3_i134;
   int32_T c3_i135;
-  int32_T c3_xb_loop_ub;
-  int32_T c3_i136;
-  int32_T c3_i137;
-  int32_T c3_yb_loop_ub;
-  int32_T c3_i138;
-  c3_emxArray_real32_T *c3_varargin_2;
-  int32_T c3_i139;
   int32_T c3_ac_loop_ub;
-  int32_T c3_i140;
-  c3_emxArray_real32_T *c3_features1;
-  int32_T c3_i141;
-  int32_T c3_bc_loop_ub;
-  int32_T c3_i142;
-  c3_emxArray_real32_T *c3_features2;
-  int32_T c3_i143;
-  int32_T c3_cc_loop_ub;
-  int32_T c3_i144;
-  c3_emxArray_real32_T *c3_b_features1;
-  int32_T c3_i145;
-  int32_T c3_i146;
-  int32_T c3_i147;
-  int32_T c3_dc_loop_ub;
-  int32_T c3_i148;
-  int32_T c3_iv4[2];
-  int32_T c3_ec_loop_ub;
-  int32_T c3_i149;
-  int32_T c3_i150;
-  int32_T c3_fc_loop_ub;
-  int32_T c3_i151;
-  c3_emxArray_real32_T *c3_b_features2;
-  int32_T c3_i152;
-  int32_T c3_i153;
-  int32_T c3_i154;
-  int32_T c3_gc_loop_ub;
-  int32_T c3_i155;
-  int32_T c3_iv5[2];
-  int32_T c3_hc_loop_ub;
-  int32_T c3_i156;
-  int32_T c3_i157;
-  int32_T c3_ic_loop_ub;
-  int32_T c3_i158;
+  int32_T c3_i136;
   c3_emxArray_real32_T *c3_features1in;
-  int32_T c3_i159;
-  int32_T c3_jc_loop_ub;
-  int32_T c3_i160;
+  int32_T c3_i137;
+  int32_T c3_bc_loop_ub;
+  int32_T c3_i138;
   c3_emxArray_real32_T *c3_features2in;
-  int32_T c3_i161;
-  int32_T c3_kc_loop_ub;
-  int32_T c3_i162;
+  int32_T c3_i139;
+  int32_T c3_cc_loop_ub;
+  int32_T c3_i140;
   boolean_T c3_b4;
   c3_emxArray_uint32_T *c3_indexPairs;
   c3_emxArray_real32_T *c3_matchMetric;
   boolean_T c3_guard1 = false;
   boolean_T c3_b5;
-  int32_T c3_i163;
-  int32_T c3_i164;
-  int32_T c3_lc_loop_ub;
-  int32_T c3_i165;
-  c3_emxInitStruct_vision_internal_S(chartInstance, &c3_RedCrabPoints,
-    &c3_hc_emlrtRTEI);
-  c3_emxInit_real32_T(chartInstance, &c3_RedCrabFeatures, 2, &c3_l_emlrtRTEI);
-  c3_emxInitStruct_vision_internal_S(chartInstance, &c3_ROIPoints,
-    &c3_ic_emlrtRTEI);
-  c3_emxInit_real32_T(chartInstance, &c3_ROIFeatures, 2, &c3_tb_emlrtRTEI);
-  c3_emxInit_uint32_T(chartInstance, &c3_RedCrabPairs, 2, &c3_gc_emlrtRTEI);
-  c3_emxInitStruct_vision_internal_S(chartInstance, &c3_b_RedCrabPoints,
-    &c3_hc_emlrtRTEI);
-  c3_emxInitStruct_vision_internal_S(chartInstance, &c3_b_ROIPoints,
-    &c3_ic_emlrtRTEI);
+  int32_T c3_i141;
+  int32_T c3_i142;
+  int32_T c3_dc_loop_ub;
+  int32_T c3_i143;
+  int32_T c3_i144;
+  int32_T c3_i145;
+  int32_T c3_ec_loop_ub;
+  int32_T c3_i146;
+  int32_T c3_i147;
+  int32_T c3_i148;
+  int32_T c3_fc_loop_ub;
+  int32_T c3_i149;
+  c3_emxInitStruct_vision_internal_S(chartInstance, &c3_boxPoints,
+    &c3_jc_emlrtRTEI);
+  c3_emxInitStruct_vision_internal_S(chartInstance, &c3_scenePoints,
+    &c3_kc_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_boxFeatures, 2, &c3_l_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_sceneFeatures, 2, &c3_tb_emlrtRTEI);
+  c3_emxInit_uint32_T(chartInstance, &c3_boxPairs, 2, &c3_gc_emlrtRTEI);
+  c3_emxInit_uint32_T1(chartInstance, &c3_A, 1, &c3_hc_emlrtRTEI);
+  c3_emxInit_uint32_T1(chartInstance, &c3_B, 1, &c3_ic_emlrtRTEI);
+  c3_emxInitStruct_vision_internal_S(chartInstance, &c3_b_boxPoints,
+    &c3_jc_emlrtRTEI);
+  c3_emxInitStruct_vision_internal_S(chartInstance, &c3_b_scenePoints,
+    &c3_kc_emlrtRTEI);
   c3_emxInitStruct_s2rdWZ6jAA0S8hk59(chartInstance, &c3_vPts, &c3_sb_emlrtRTEI);
-  c3_emxInitStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_PtsStruct,
-    &c3_j_emlrtRTEI);
-  c3_emxInitStruct_vision_internal_S(chartInstance, &c3_c_RedCrabPoints,
+  c3_emxInitStruct_vision_internal_S(chartInstance, &c3_c_boxPoints,
     &c3_k_emlrtRTEI);
-  c3_emxInitStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_b_PtsStruct,
+  c3_emxInitStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_PtsStruct,
     &c3_j_emlrtRTEI);
   if ((chartInstance->c3_IsDebuggerActive == 1) ||
       (chartInstance->c3_IsSequenceViewerPresent == 1)) {
@@ -2127,43 +2136,55 @@ static void c3_chartstep_c3_MotionObjectDetector
     chartInstance->c3_redcrab[c3_i1] = (*chartInstance->c3_b_redcrab)[c3_i1];
   }
 
-  chartInstance->c3_numFcnVars = 6U;
+  chartInstance->c3_numFcnVars = 8U;
   c3_fcnDataPtrs[0] = (void *)&chartInstance->c3_Image;
   c3_fcnDataPtrs[1] = (void *)&chartInstance->c3_redcrab;
-  c3_fcnDataPtrs[2] = (void *)&chartInstance->c3_redcrabGray;
-  c3_fcnDataPtrs[3] = (void *)&chartInstance->c3_ImageGray;
-  c3_fcnDataPtrs[4] = (void *)&c3_nargin;
-  c3_fcnDataPtrs[5] = (void *)&c3_nargout;
+  c3_fcnDataPtrs[2] = (void *)&chartInstance->c3_Crab;
+  c3_fcnDataPtrs[3] = (void *)&chartInstance->c3_Scene;
+  c3_fcnDataPtrs[4] = (void *)&chartInstance->c3_CrabG;
+  c3_fcnDataPtrs[5] = (void *)&chartInstance->c3_SceneG;
+  c3_fcnDataPtrs[6] = (void *)&c3_nargin;
+  c3_fcnDataPtrs[7] = (void *)&c3_nargout;
   c3_statuses[0] = 0U;
   c3_statuses[1] = 0U;
   c3_statuses[2] = 0U;
   c3_statuses[3] = 0U;
   c3_statuses[4] = 0U;
   c3_statuses[5] = 0U;
+  c3_statuses[6] = 0U;
+  c3_statuses[7] = 0U;
   c3_inMexFcns[0] = (void *)c3_sf_marshallIn_matrix500x500x3_uint8_T;
   c3_inMexFcns[1] = (void *)c3_sf_marshallIn_matrix189x267x3_uint8_T;
-  c3_inMexFcns[2] = (void *)c3_sf_marshallIn_matrix189x267_uint8_T;
-  c3_inMexFcns[3] = (void *)c3_sf_marshallIn_matrix500x500_uint8_T;
-  c3_inMexFcns[4] = (void *)c3_sf_marshallIn_real_T;
-  c3_inMexFcns[5] = (void *)c3_sf_marshallIn_real_T;
+  c3_inMexFcns[2] = (void *)c3_sf_marshallIn_matrix189x267x3_uint8_T;
+  c3_inMexFcns[3] = (void *)c3_sf_marshallIn_matrix500x500x3_uint8_T;
+  c3_inMexFcns[4] = (void *)c3_sf_marshallIn_matrix189x267_uint8_T;
+  c3_inMexFcns[5] = (void *)c3_sf_marshallIn_matrix500x500_uint8_T;
+  c3_inMexFcns[6] = (void *)c3_sf_marshallIn_real_T;
+  c3_inMexFcns[7] = (void *)c3_sf_marshallIn_real_T;
   c3_outMexFcns[0] = (void *)c3_sf_marshallOut_matrix500x500x3_uint8_T;
   c3_outMexFcns[1] = (void *)c3_sf_marshallOut_matrix189x267x3_uint8_T;
-  c3_outMexFcns[2] = (void *)c3_sf_marshallOut_matrix189x267_uint8_T;
-  c3_outMexFcns[3] = (void *)c3_sf_marshallOut_matrix500x500_uint8_T;
-  c3_outMexFcns[4] = (void *)c3_sf_marshallOut_real_T;
-  c3_outMexFcns[5] = (void *)c3_sf_marshallOut_real_T;
+  c3_outMexFcns[2] = (void *)c3_sf_marshallOut_matrix189x267x3_uint8_T;
+  c3_outMexFcns[3] = (void *)c3_sf_marshallOut_matrix500x500x3_uint8_T;
+  c3_outMexFcns[4] = (void *)c3_sf_marshallOut_matrix189x267_uint8_T;
+  c3_outMexFcns[5] = (void *)c3_sf_marshallOut_matrix500x500_uint8_T;
+  c3_outMexFcns[6] = (void *)c3_sf_marshallOut_real_T;
+  c3_outMexFcns[7] = (void *)c3_sf_marshallOut_real_T;
   c3_ssIds[0] = 0U;
   c3_ssIds[1] = 0U;
   c3_ssIds[2] = 0U;
   c3_ssIds[3] = 0U;
   c3_ssIds[4] = 0U;
   c3_ssIds[5] = 0U;
+  c3_ssIds[6] = 0U;
+  c3_ssIds[7] = 0U;
   c3_dataNames[0] = (char_T *)"Image";
   c3_dataNames[1] = (char_T *)"redcrab";
-  c3_dataNames[2] = (char_T *)"redcrabGray";
-  c3_dataNames[3] = (char_T *)"ImageGray";
-  c3_dataNames[4] = (char_T *)"nargin";
-  c3_dataNames[5] = (char_T *)"nargout";
+  c3_dataNames[2] = (char_T *)"Crab";
+  c3_dataNames[3] = (char_T *)"Scene";
+  c3_dataNames[4] = (char_T *)"CrabG";
+  c3_dataNames[5] = (char_T *)"SceneG";
+  c3_dataNames[6] = (char_T *)"nargin";
+  c3_dataNames[7] = (char_T *)"nargout";
   if ((chartInstance->c3_IsDebuggerActive == 1) ||
       (chartInstance->c3_IsSequenceViewerPresent == 1)) {
     sfListenerReportStartingSection(chartInstance->c3_RuntimeVar, 0, 4);
@@ -2176,366 +2197,68 @@ static void c3_chartstep_c3_MotionObjectDetector
   }
 
   for (c3_i2 = 0; c3_i2 < 151389; c3_i2++) {
-    chartInstance->c3_b_X[c3_i2] = chartInstance->c3_redcrab[c3_i2];
+    chartInstance->c3_Crab[c3_i2] = chartInstance->c3_redcrab[c3_i2];
   }
 
-  for (c3_i3 = 0; c3_i3 < 50463; c3_i3++) {
-    chartInstance->c3_b_Iu8[c3_i3] = chartInstance->c3_redcrabGray[c3_i3];
-  }
-
-  for (c3_i4 = 0; c3_i4 < 50463; c3_i4++) {
-    chartInstance->c3_redcrabGray[c3_i4] = chartInstance->c3_b_Iu8[c3_i4];
-  }
-
-  rgb2gray_tbb_uint8(chartInstance->c3_b_X, 50463.0,
-                     chartInstance->c3_redcrabGray, true);
   if ((chartInstance->c3_IsDebuggerActive == 1) ||
       (chartInstance->c3_IsSequenceViewerPresent == 1)) {
     sfListenerReportLineNumber(chartInstance->c3_RuntimeVar, 0, 4);
   }
 
-  for (c3_i5 = 0; c3_i5 < 750000; c3_i5++) {
-    chartInstance->c3_X[c3_i5] = chartInstance->c3_Image[c3_i5];
+  for (c3_i3 = 0; c3_i3 < 750000; c3_i3++) {
+    chartInstance->c3_Scene[c3_i3] = chartInstance->c3_Image[c3_i3];
   }
 
-  for (c3_i6 = 0; c3_i6 < 250000; c3_i6++) {
-    chartInstance->c3_Iu8[c3_i6] = chartInstance->c3_ImageGray[c3_i6];
-  }
-
-  for (c3_i7 = 0; c3_i7 < 250000; c3_i7++) {
-    chartInstance->c3_ImageGray[c3_i7] = chartInstance->c3_Iu8[c3_i7];
-  }
-
-  rgb2gray_tbb_uint8(chartInstance->c3_X, 250000.0, chartInstance->c3_ImageGray,
-                     true);
   if ((chartInstance->c3_IsDebuggerActive == 1) ||
       (chartInstance->c3_IsSequenceViewerPresent == 1)) {
-    sfListenerReportLineNumber(chartInstance->c3_RuntimeVar, 0, 5);
+    sfListenerReportLineNumber(chartInstance->c3_RuntimeVar, 0, 6);
   }
 
-  for (c3_i8 = 0; c3_i8 < 50463; c3_i8++) {
-    chartInstance->c3_b_Iu8[c3_i8] = chartInstance->c3_redcrabGray[c3_i8];
+  for (c3_i4 = 0; c3_i4 < 151389; c3_i4++) {
+    chartInstance->c3_b_X[c3_i4] = chartInstance->c3_Crab[c3_i4];
   }
 
-  c3_i9 = 0;
-  for (c3_i10 = 0; c3_i10 < 189; c3_i10++) {
-    c3_i11 = 0;
-    for (c3_i12 = 0; c3_i12 < 267; c3_i12++) {
-      c3_c_Iu8[c3_i12 + c3_i9] = chartInstance->c3_b_Iu8[c3_i11 + c3_i10];
-      c3_i11 += 189;
-    }
-
-    c3_i9 += 267;
+  for (c3_i5 = 0; c3_i5 < 50463; c3_i5++) {
+    chartInstance->c3_outputImage[c3_i5] = chartInstance->c3_CrabG[c3_i5];
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_PtsStruct_Location, 2, &c3_g_emlrtRTEI);
-  c3_emxInit_real32_T(chartInstance, &c3_valLocation, 2, &c3_lc_emlrtRTEI);
-  c3_emxInit_real32_T1(chartInstance, &c3_valScale, 1, &c3_mc_emlrtRTEI);
-  c3_emxInit_real32_T1(chartInstance, &c3_valMetric, 1, &c3_nc_emlrtRTEI);
-  c3_emxInit_int8_T(chartInstance, &c3_valSignOfLaplacian, 1, &c3_oc_emlrtRTEI);
-  c3_ptrKeypoint = NULL;
-  c3_outNumRows = fastHessianDetector_uint8(c3_c_Iu8, 189, 267, 2, 2, 3, 1000,
-    &c3_ptrKeypoint);
-  c3_i13 = c3_valLocation->size[0] * c3_valLocation->size[1];
-  c3_valLocation->size[0] = (int32_T)sf_mex_lw_non_negative_check((real_T)
-    c3_outNumRows);
-  c3_valLocation->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_valLocation, c3_i13,
-    &c3_emlrtRTEI);
-  c3_i14 = c3_valScale->size[0];
-  c3_valScale->size[0] = (int32_T)sf_mex_lw_non_negative_check((real_T)
-    c3_outNumRows);
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_valScale, c3_i14,
-    &c3_emlrtRTEI);
-  c3_i15 = c3_valMetric->size[0];
-  c3_valMetric->size[0] = (int32_T)sf_mex_lw_non_negative_check((real_T)
-    c3_outNumRows);
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_valMetric, c3_i15,
-    &c3_emlrtRTEI);
-  c3_i16 = c3_valSignOfLaplacian->size[0];
-  c3_valSignOfLaplacian->size[0] = (int32_T)sf_mex_lw_non_negative_check((real_T)
-    c3_outNumRows);
-  c3_emxEnsureCapacity_int8_T(chartInstance, c3_valSignOfLaplacian, c3_i16,
-    &c3_emlrtRTEI);
-  fastHessianDetector_keyPoints2field(c3_ptrKeypoint, &c3_valLocation->data[0],
-    &c3_valScale->data[0], &c3_valMetric->data[0], &c3_valSignOfLaplacian->data
-    [0]);
-  fastHessianDetector_deleteKeypoint(c3_ptrKeypoint);
-  c3_i17 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
-  c3_PtsStruct_Location->size[0] = c3_valLocation->size[0];
-  c3_PtsStruct_Location->size[1] = c3_valLocation->size[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i17,
-    &c3_b_emlrtRTEI);
-  c3_loop_ub = c3_valLocation->size[0] * c3_valLocation->size[1] - 1;
-  for (c3_i18 = 0; c3_i18 <= c3_loop_ub; c3_i18++) {
-    c3_PtsStruct_Location->data[c3_i18] = c3_valLocation->data[c3_i18];
+  for (c3_i6 = 0; c3_i6 < 50463; c3_i6++) {
+    chartInstance->c3_CrabG[c3_i6] = chartInstance->c3_outputImage[c3_i6];
   }
 
-  c3_emxInitStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_c_PtsStruct,
-    &c3_jc_emlrtRTEI);
-  c3_i19 = c3_c_PtsStruct.Location->size[0] * c3_c_PtsStruct.Location->size[1];
-  c3_c_PtsStruct.Location->size[0] = c3_PtsStruct_Location->size[0];
-  c3_c_PtsStruct.Location->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_c_PtsStruct.Location, c3_i19,
-    &c3_c_emlrtRTEI);
-  c3_b_loop_ub = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1]
-    - 1;
-  for (c3_i20 = 0; c3_i20 <= c3_b_loop_ub; c3_i20++) {
-    c3_c_PtsStruct.Location->data[c3_i20] = c3_PtsStruct_Location->data[c3_i20];
-  }
-
-  c3_i21 = c3_c_PtsStruct.Scale->size[0];
-  c3_c_PtsStruct.Scale->size[0] = c3_valScale->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_c_PtsStruct.Scale, c3_i21,
-    &c3_d_emlrtRTEI);
-  c3_c_loop_ub = c3_valScale->size[0] - 1;
-  for (c3_i22 = 0; c3_i22 <= c3_c_loop_ub; c3_i22++) {
-    c3_c_PtsStruct.Scale->data[c3_i22] = c3_valScale->data[c3_i22];
-  }
-
-  c3_i23 = c3_c_PtsStruct.Metric->size[0];
-  c3_c_PtsStruct.Metric->size[0] = c3_valMetric->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_c_PtsStruct.Metric, c3_i23,
-    &c3_e_emlrtRTEI);
-  c3_d_loop_ub = c3_valMetric->size[0] - 1;
-  for (c3_i24 = 0; c3_i24 <= c3_d_loop_ub; c3_i24++) {
-    c3_c_PtsStruct.Metric->data[c3_i24] = c3_valMetric->data[c3_i24];
-  }
-
-  c3_i25 = c3_c_PtsStruct.SignOfLaplacian->size[0];
-  c3_c_PtsStruct.SignOfLaplacian->size[0] = c3_valSignOfLaplacian->size[0];
-  c3_emxEnsureCapacity_int8_T(chartInstance, c3_c_PtsStruct.SignOfLaplacian,
-    c3_i25, &c3_f_emlrtRTEI);
-  c3_e_loop_ub = c3_valSignOfLaplacian->size[0] - 1;
-  for (c3_i26 = 0; c3_i26 <= c3_e_loop_ub; c3_i26++) {
-    c3_c_PtsStruct.SignOfLaplacian->data[c3_i26] = c3_valSignOfLaplacian->
-      data[c3_i26];
-  }
-
-  c3_i27 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
-  c3_PtsStruct_Location->size[0] = c3_c_PtsStruct.Location->size[0];
-  c3_PtsStruct_Location->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i27,
-    &c3_g_emlrtRTEI);
-  c3_f_loop_ub = c3_c_PtsStruct.Location->size[0] *
-    c3_c_PtsStruct.Location->size[1] - 1;
-  for (c3_i28 = 0; c3_i28 <= c3_f_loop_ub; c3_i28++) {
-    c3_PtsStruct_Location->data[c3_i28] = c3_c_PtsStruct.Location->data[c3_i28];
-  }
-
-  c3_i29 = c3_c_PtsStruct.Location->size[0] * c3_c_PtsStruct.Location->size[1];
-  c3_c_PtsStruct.Location->size[0] = c3_PtsStruct_Location->size[0];
-  c3_c_PtsStruct.Location->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_c_PtsStruct.Location, c3_i29,
-    &c3_h_emlrtRTEI);
-  c3_g_loop_ub = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1]
-    - 1;
-  for (c3_i30 = 0; c3_i30 <= c3_g_loop_ub; c3_i30++) {
-    c3_c_PtsStruct.Location->data[c3_i30] = c3_PtsStruct_Location->data[c3_i30];
-  }
-
-  c3_emxInit_real32_T(chartInstance, &c3_d_PtsStruct, 2, &c3_i_emlrtRTEI);
-  c3_i31 = c3_d_PtsStruct->size[0] * c3_d_PtsStruct->size[1];
-  c3_d_PtsStruct->size[0] = c3_c_PtsStruct.Location->size[0];
-  c3_d_PtsStruct->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_d_PtsStruct, c3_i31,
-    &c3_i_emlrtRTEI);
-  c3_h_loop_ub = c3_c_PtsStruct.Location->size[0] *
-    c3_c_PtsStruct.Location->size[1] - 1;
-  for (c3_i32 = 0; c3_i32 <= c3_h_loop_ub; c3_i32++) {
-    c3_d_PtsStruct->data[c3_i32] = c3_c_PtsStruct.Location->data[c3_i32];
-  }
-
-  c3_emxCopyStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_b_PtsStruct,
-    &c3_c_PtsStruct, &c3_j_emlrtRTEI);
-  c3_SURFPoints_cg_SURFPoints_cg(chartInstance, c3_d_PtsStruct, c3_b_PtsStruct,
-    &c3_RedCrabPoints);
-  sfListenerPushScopeForDynamicMatricesJitOff(chartInstance->c3_RuntimeVar, 1U,
-    "RedCrabPoints", &c3_RedCrabPoints, (void *)
-    c3_sf_marshallOut_vision_internal_SURFPoints_cg, (void *)
-    c3_sf_marshallIn_vision_internal_SURFPoints_cg, 0U);
+  rgb2gray_tbb_uint8(chartInstance->c3_b_X, 50463.0, chartInstance->c3_CrabG,
+                     true);
   if ((chartInstance->c3_IsDebuggerActive == 1) ||
       (chartInstance->c3_IsSequenceViewerPresent == 1)) {
     sfListenerReportLineNumber(chartInstance->c3_RuntimeVar, 0, 7);
   }
 
-  c3_emxFree_real32_T(chartInstance, &c3_d_PtsStruct);
-  c3_emxFreeStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_c_PtsStruct);
-  for (c3_i33 = 0; c3_i33 < 50463; c3_i33++) {
-    c3_b_redcrabGray[c3_i33] = chartInstance->c3_redcrabGray[c3_i33];
+  for (c3_i7 = 0; c3_i7 < 750000; c3_i7++) {
+    chartInstance->c3_X[c3_i7] = chartInstance->c3_Scene[c3_i7];
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_b_RedCrabFeatures, 2, &c3_vb_emlrtRTEI);
-  c3_emxInitStruct_vision_internal_S(chartInstance, &c3_d_RedCrabPoints,
-    &c3_n_emlrtRTEI);
-  c3_emxCopyStruct_vision_internal_S(chartInstance, &c3_c_RedCrabPoints,
-    &c3_RedCrabPoints, &c3_k_emlrtRTEI);
-  c3_extractFeatures(chartInstance, c3_b_redcrabGray, c3_c_RedCrabPoints,
-                     c3_b_RedCrabFeatures, &c3_d_RedCrabPoints);
-  c3_i34 = c3_RedCrabFeatures->size[0] * c3_RedCrabFeatures->size[1];
-  c3_RedCrabFeatures->size[0] = c3_b_RedCrabFeatures->size[0];
-  c3_RedCrabFeatures->size[1] = 64;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_RedCrabFeatures, c3_i34,
-    &c3_l_emlrtRTEI);
-  c3_i_loop_ub = c3_b_RedCrabFeatures->size[0] * c3_b_RedCrabFeatures->size[1] -
-    1;
-  for (c3_i35 = 0; c3_i35 <= c3_i_loop_ub; c3_i35++) {
-    c3_RedCrabFeatures->data[c3_i35] = c3_b_RedCrabFeatures->data[c3_i35];
+  for (c3_i8 = 0; c3_i8 < 250000; c3_i8++) {
+    chartInstance->c3_Iu8[c3_i8] = chartInstance->c3_SceneG[c3_i8];
   }
 
-  sfListenerPushScopeForDynamicMatricesJitOff(chartInstance->c3_RuntimeVar, 1U,
-    "RedCrabFeatures", c3_RedCrabFeatures, (void *)
-    c3_sf_marshallOut_dynamicmatrix, (void *)c3_sf_marshallIn_dynamicmatrix, 0U);
-  c3_emxCopyStruct_vision_internal_S(chartInstance, &c3_b_RedCrabPoints,
-    &c3_d_RedCrabPoints, &c3_m_emlrtRTEI);
-  sfListenerPushScopeForDynamicMatricesJitOff(chartInstance->c3_RuntimeVar, 1U,
-    "RedCrabPoints", &c3_b_RedCrabPoints, (void *)
-    c3_sf_marshallOut_vision_internal_SURFPoints_cg, (void *)
-    c3_sf_marshallIn_vision_internal_SURFPoints_cg, 0U);
+  for (c3_i9 = 0; c3_i9 < 250000; c3_i9++) {
+    chartInstance->c3_SceneG[c3_i9] = chartInstance->c3_Iu8[c3_i9];
+  }
+
+  rgb2gray_tbb_uint8(chartInstance->c3_X, 250000.0, chartInstance->c3_SceneG,
+                     true);
   if ((chartInstance->c3_IsDebuggerActive == 1) ||
       (chartInstance->c3_IsSequenceViewerPresent == 1)) {
     sfListenerReportLineNumber(chartInstance->c3_RuntimeVar, 0, 9);
   }
 
-  for (c3_i36 = 0; c3_i36 < 250000; c3_i36++) {
-    chartInstance->c3_Iu8[c3_i36] = chartInstance->c3_ImageGray[c3_i36];
+  for (c3_i10 = 0; c3_i10 < 50463; c3_i10++) {
+    c3_b_CrabG[c3_i10] = chartInstance->c3_CrabG[c3_i10];
   }
 
-  for (c3_i37 = 0; c3_i37 < 250000; c3_i37++) {
-    chartInstance->c3_Iu8T[c3_i37] = chartInstance->c3_Iu8[c3_i37];
-  }
-
-  c3_i38 = 0;
-  for (c3_i39 = 0; c3_i39 < 500; c3_i39++) {
-    c3_i40 = 0;
-    for (c3_i41 = 0; c3_i41 < 500; c3_i41++) {
-      chartInstance->c3_Iu8[c3_i41 + c3_i38] = chartInstance->c3_Iu8T[c3_i40 +
-        c3_i39];
-      c3_i40 += 500;
-    }
-
-    c3_i38 += 500;
-  }
-
-  c3_b_ptrKeypoint = NULL;
-  c3_b_outNumRows = fastHessianDetector_uint8(chartInstance->c3_Iu8, 500, 500, 2,
-    2, 3, 1000, &c3_b_ptrKeypoint);
-  c3_i42 = c3_valLocation->size[0] * c3_valLocation->size[1];
-  c3_valLocation->size[0] = (int32_T)sf_mex_lw_non_negative_check((real_T)
-    c3_b_outNumRows);
-  c3_valLocation->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_valLocation, c3_i42,
-    &c3_emlrtRTEI);
-  c3_i43 = c3_valScale->size[0];
-  c3_valScale->size[0] = (int32_T)sf_mex_lw_non_negative_check((real_T)
-    c3_b_outNumRows);
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_valScale, c3_i43,
-    &c3_emlrtRTEI);
-  c3_i44 = c3_valMetric->size[0];
-  c3_valMetric->size[0] = (int32_T)sf_mex_lw_non_negative_check((real_T)
-    c3_b_outNumRows);
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_valMetric, c3_i44,
-    &c3_emlrtRTEI);
-  c3_i45 = c3_valSignOfLaplacian->size[0];
-  c3_valSignOfLaplacian->size[0] = (int32_T)sf_mex_lw_non_negative_check((real_T)
-    c3_b_outNumRows);
-  c3_emxEnsureCapacity_int8_T(chartInstance, c3_valSignOfLaplacian, c3_i45,
-    &c3_emlrtRTEI);
-  fastHessianDetector_keyPoints2field(c3_b_ptrKeypoint, &c3_valLocation->data[0],
-    &c3_valScale->data[0], &c3_valMetric->data[0], &c3_valSignOfLaplacian->data
-    [0]);
-  fastHessianDetector_deleteKeypoint(c3_b_ptrKeypoint);
-  c3_i46 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
-  c3_PtsStruct_Location->size[0] = c3_valLocation->size[0];
-  c3_PtsStruct_Location->size[1] = c3_valLocation->size[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i46,
-    &c3_b_emlrtRTEI);
-  c3_j_loop_ub = c3_valLocation->size[0] * c3_valLocation->size[1] - 1;
-  for (c3_i47 = 0; c3_i47 <= c3_j_loop_ub; c3_i47++) {
-    c3_PtsStruct_Location->data[c3_i47] = c3_valLocation->data[c3_i47];
-  }
-
-  c3_emxInitStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_e_PtsStruct,
-    &c3_jc_emlrtRTEI);
-  c3_i48 = c3_e_PtsStruct.Location->size[0] * c3_e_PtsStruct.Location->size[1];
-  c3_e_PtsStruct.Location->size[0] = c3_PtsStruct_Location->size[0];
-  c3_e_PtsStruct.Location->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_e_PtsStruct.Location, c3_i48,
-    &c3_c_emlrtRTEI);
-  c3_k_loop_ub = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1]
-    - 1;
-  for (c3_i49 = 0; c3_i49 <= c3_k_loop_ub; c3_i49++) {
-    c3_e_PtsStruct.Location->data[c3_i49] = c3_PtsStruct_Location->data[c3_i49];
-  }
-
-  c3_i50 = c3_e_PtsStruct.Scale->size[0];
-  c3_e_PtsStruct.Scale->size[0] = c3_valScale->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_e_PtsStruct.Scale, c3_i50,
-    &c3_d_emlrtRTEI);
-  c3_l_loop_ub = c3_valScale->size[0] - 1;
-  for (c3_i51 = 0; c3_i51 <= c3_l_loop_ub; c3_i51++) {
-    c3_e_PtsStruct.Scale->data[c3_i51] = c3_valScale->data[c3_i51];
-  }
-
-  c3_i52 = c3_e_PtsStruct.Metric->size[0];
-  c3_e_PtsStruct.Metric->size[0] = c3_valMetric->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_e_PtsStruct.Metric, c3_i52,
-    &c3_e_emlrtRTEI);
-  c3_m_loop_ub = c3_valMetric->size[0] - 1;
-  for (c3_i53 = 0; c3_i53 <= c3_m_loop_ub; c3_i53++) {
-    c3_e_PtsStruct.Metric->data[c3_i53] = c3_valMetric->data[c3_i53];
-  }
-
-  c3_i54 = c3_e_PtsStruct.SignOfLaplacian->size[0];
-  c3_e_PtsStruct.SignOfLaplacian->size[0] = c3_valSignOfLaplacian->size[0];
-  c3_emxEnsureCapacity_int8_T(chartInstance, c3_e_PtsStruct.SignOfLaplacian,
-    c3_i54, &c3_f_emlrtRTEI);
-  c3_n_loop_ub = c3_valSignOfLaplacian->size[0] - 1;
-  for (c3_i55 = 0; c3_i55 <= c3_n_loop_ub; c3_i55++) {
-    c3_e_PtsStruct.SignOfLaplacian->data[c3_i55] = c3_valSignOfLaplacian->
-      data[c3_i55];
-  }
-
-  c3_i56 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
-  c3_PtsStruct_Location->size[0] = c3_e_PtsStruct.Location->size[0];
-  c3_PtsStruct_Location->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i56,
-    &c3_g_emlrtRTEI);
-  c3_o_loop_ub = c3_e_PtsStruct.Location->size[0] *
-    c3_e_PtsStruct.Location->size[1] - 1;
-  for (c3_i57 = 0; c3_i57 <= c3_o_loop_ub; c3_i57++) {
-    c3_PtsStruct_Location->data[c3_i57] = c3_e_PtsStruct.Location->data[c3_i57];
-  }
-
-  c3_i58 = c3_e_PtsStruct.Location->size[0] * c3_e_PtsStruct.Location->size[1];
-  c3_e_PtsStruct.Location->size[0] = c3_PtsStruct_Location->size[0];
-  c3_e_PtsStruct.Location->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_e_PtsStruct.Location, c3_i58,
-    &c3_h_emlrtRTEI);
-  c3_p_loop_ub = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1]
-    - 1;
-  for (c3_i59 = 0; c3_i59 <= c3_p_loop_ub; c3_i59++) {
-    c3_e_PtsStruct.Location->data[c3_i59] = c3_PtsStruct_Location->data[c3_i59];
-  }
-
-  c3_emxInit_real32_T(chartInstance, &c3_f_PtsStruct, 2, &c3_i_emlrtRTEI);
-  c3_i60 = c3_f_PtsStruct->size[0] * c3_f_PtsStruct->size[1];
-  c3_f_PtsStruct->size[0] = c3_e_PtsStruct.Location->size[0];
-  c3_f_PtsStruct->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_f_PtsStruct, c3_i60,
-    &c3_i_emlrtRTEI);
-  c3_q_loop_ub = c3_e_PtsStruct.Location->size[0] *
-    c3_e_PtsStruct.Location->size[1] - 1;
-  for (c3_i61 = 0; c3_i61 <= c3_q_loop_ub; c3_i61++) {
-    c3_f_PtsStruct->data[c3_i61] = c3_e_PtsStruct.Location->data[c3_i61];
-  }
-
-  c3_emxCopyStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_PtsStruct,
-    &c3_e_PtsStruct, &c3_j_emlrtRTEI);
-  c3_SURFPoints_cg_SURFPoints_cg(chartInstance, c3_f_PtsStruct, c3_PtsStruct,
-    &c3_ROIPoints);
+  c3_detectSURFFeatures(chartInstance, c3_b_CrabG, &c3_boxPoints);
   sfListenerPushScopeForDynamicMatricesJitOff(chartInstance->c3_RuntimeVar, 1U,
-    "ROIPoints", &c3_ROIPoints, (void *)
+    "boxPoints", &c3_boxPoints, (void *)
     c3_sf_marshallOut_vision_internal_SURFPoints_cg, (void *)
     c3_sf_marshallIn_vision_internal_SURFPoints_cg, 0U);
   if ((chartInstance->c3_IsDebuggerActive == 1) ||
@@ -2543,24 +2266,209 @@ static void c3_chartstep_c3_MotionObjectDetector
     sfListenerReportLineNumber(chartInstance->c3_RuntimeVar, 0, 10);
   }
 
-  c3_emxFree_real32_T(chartInstance, &c3_f_PtsStruct);
-  c3_emxFreeStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_e_PtsStruct);
-  for (c3_i62 = 0; c3_i62 < 250000; c3_i62++) {
-    chartInstance->c3_Iu8[c3_i62] = chartInstance->c3_ImageGray[c3_i62];
+  for (c3_i11 = 0; c3_i11 < 250000; c3_i11++) {
+    chartInstance->c3_Iu8[c3_i11] = chartInstance->c3_SceneG[c3_i11];
   }
 
-  c3_emxCopyStruct_vision_internal_S(chartInstance, &c3_d_RedCrabPoints,
-    &c3_ROIPoints, &c3_n_emlrtRTEI);
-  c3_i63 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
-  c3_PtsStruct_Location->size[0] = c3_d_RedCrabPoints.pLocation->size[0];
+  for (c3_i12 = 0; c3_i12 < 250000; c3_i12++) {
+    chartInstance->c3_Iu8T[c3_i12] = chartInstance->c3_Iu8[c3_i12];
+  }
+
+  c3_i13 = 0;
+  for (c3_i14 = 0; c3_i14 < 500; c3_i14++) {
+    c3_i15 = 0;
+    for (c3_i16 = 0; c3_i16 < 500; c3_i16++) {
+      chartInstance->c3_Iu8[c3_i16 + c3_i13] = chartInstance->c3_Iu8T[c3_i15 +
+        c3_i14];
+      c3_i15 += 500;
+    }
+
+    c3_i13 += 500;
+  }
+
+  c3_emxInit_real32_T(chartInstance, &c3_PtsStruct_Location, 2, &c3_g_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_valLocation, 2, &c3_nc_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_valScale, 1, &c3_oc_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_valMetric, 1, &c3_pc_emlrtRTEI);
+  c3_emxInit_int8_T(chartInstance, &c3_valSignOfLaplacian, 1, &c3_qc_emlrtRTEI);
+  c3_ptrKeypoint = NULL;
+  c3_outNumRows = fastHessianDetector_uint8(chartInstance->c3_Iu8, 500, 500, 2,
+    2, 3, 1000, &c3_ptrKeypoint);
+  c3_i17 = c3_valLocation->size[0] * c3_valLocation->size[1];
+  c3_valLocation->size[0] = (int32_T)sf_mex_lw_non_negative_check((real_T)
+    c3_outNumRows);
+  c3_valLocation->size[1] = 2;
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_valLocation, c3_i17,
+    &c3_emlrtRTEI);
+  c3_i18 = c3_valScale->size[0];
+  c3_valScale->size[0] = (int32_T)sf_mex_lw_non_negative_check((real_T)
+    c3_outNumRows);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_valScale, c3_i18,
+    &c3_emlrtRTEI);
+  c3_i19 = c3_valMetric->size[0];
+  c3_valMetric->size[0] = (int32_T)sf_mex_lw_non_negative_check((real_T)
+    c3_outNumRows);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_valMetric, c3_i19,
+    &c3_emlrtRTEI);
+  c3_i20 = c3_valSignOfLaplacian->size[0];
+  c3_valSignOfLaplacian->size[0] = (int32_T)sf_mex_lw_non_negative_check((real_T)
+    c3_outNumRows);
+  c3_emxEnsureCapacity_int8_T(chartInstance, c3_valSignOfLaplacian, c3_i20,
+    &c3_emlrtRTEI);
+  fastHessianDetector_keyPoints2field(c3_ptrKeypoint, &c3_valLocation->data[0],
+    &c3_valScale->data[0], &c3_valMetric->data[0], &c3_valSignOfLaplacian->data
+    [0]);
+  fastHessianDetector_deleteKeypoint(c3_ptrKeypoint);
+  c3_i21 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
+  c3_PtsStruct_Location->size[0] = c3_valLocation->size[0];
+  c3_PtsStruct_Location->size[1] = c3_valLocation->size[1];
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i21,
+    &c3_b_emlrtRTEI);
+  c3_loop_ub = c3_valLocation->size[0] * c3_valLocation->size[1] - 1;
+  for (c3_i22 = 0; c3_i22 <= c3_loop_ub; c3_i22++) {
+    c3_PtsStruct_Location->data[c3_i22] = c3_valLocation->data[c3_i22];
+  }
+
+  c3_emxInitStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_b_PtsStruct,
+    &c3_lc_emlrtRTEI);
+  c3_i23 = c3_b_PtsStruct.Location->size[0] * c3_b_PtsStruct.Location->size[1];
+  c3_b_PtsStruct.Location->size[0] = c3_PtsStruct_Location->size[0];
+  c3_b_PtsStruct.Location->size[1] = 2;
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_PtsStruct.Location, c3_i23,
+    &c3_c_emlrtRTEI);
+  c3_b_loop_ub = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1]
+    - 1;
+  for (c3_i24 = 0; c3_i24 <= c3_b_loop_ub; c3_i24++) {
+    c3_b_PtsStruct.Location->data[c3_i24] = c3_PtsStruct_Location->data[c3_i24];
+  }
+
+  c3_i25 = c3_b_PtsStruct.Scale->size[0];
+  c3_b_PtsStruct.Scale->size[0] = c3_valScale->size[0];
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_PtsStruct.Scale, c3_i25,
+    &c3_d_emlrtRTEI);
+  c3_c_loop_ub = c3_valScale->size[0] - 1;
+  for (c3_i26 = 0; c3_i26 <= c3_c_loop_ub; c3_i26++) {
+    c3_b_PtsStruct.Scale->data[c3_i26] = c3_valScale->data[c3_i26];
+  }
+
+  c3_i27 = c3_b_PtsStruct.Metric->size[0];
+  c3_b_PtsStruct.Metric->size[0] = c3_valMetric->size[0];
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_PtsStruct.Metric, c3_i27,
+    &c3_e_emlrtRTEI);
+  c3_d_loop_ub = c3_valMetric->size[0] - 1;
+  for (c3_i28 = 0; c3_i28 <= c3_d_loop_ub; c3_i28++) {
+    c3_b_PtsStruct.Metric->data[c3_i28] = c3_valMetric->data[c3_i28];
+  }
+
+  c3_i29 = c3_b_PtsStruct.SignOfLaplacian->size[0];
+  c3_b_PtsStruct.SignOfLaplacian->size[0] = c3_valSignOfLaplacian->size[0];
+  c3_emxEnsureCapacity_int8_T(chartInstance, c3_b_PtsStruct.SignOfLaplacian,
+    c3_i29, &c3_f_emlrtRTEI);
+  c3_e_loop_ub = c3_valSignOfLaplacian->size[0] - 1;
+  for (c3_i30 = 0; c3_i30 <= c3_e_loop_ub; c3_i30++) {
+    c3_b_PtsStruct.SignOfLaplacian->data[c3_i30] = c3_valSignOfLaplacian->
+      data[c3_i30];
+  }
+
+  c3_i31 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
+  c3_PtsStruct_Location->size[0] = c3_b_PtsStruct.Location->size[0];
   c3_PtsStruct_Location->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i63,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i31,
+    &c3_g_emlrtRTEI);
+  c3_f_loop_ub = c3_b_PtsStruct.Location->size[0] *
+    c3_b_PtsStruct.Location->size[1] - 1;
+  for (c3_i32 = 0; c3_i32 <= c3_f_loop_ub; c3_i32++) {
+    c3_PtsStruct_Location->data[c3_i32] = c3_b_PtsStruct.Location->data[c3_i32];
+  }
+
+  c3_i33 = c3_b_PtsStruct.Location->size[0] * c3_b_PtsStruct.Location->size[1];
+  c3_b_PtsStruct.Location->size[0] = c3_PtsStruct_Location->size[0];
+  c3_b_PtsStruct.Location->size[1] = 2;
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_PtsStruct.Location, c3_i33,
+    &c3_h_emlrtRTEI);
+  c3_g_loop_ub = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1]
+    - 1;
+  for (c3_i34 = 0; c3_i34 <= c3_g_loop_ub; c3_i34++) {
+    c3_b_PtsStruct.Location->data[c3_i34] = c3_PtsStruct_Location->data[c3_i34];
+  }
+
+  c3_emxInit_real32_T(chartInstance, &c3_c_PtsStruct, 2, &c3_i_emlrtRTEI);
+  c3_i35 = c3_c_PtsStruct->size[0] * c3_c_PtsStruct->size[1];
+  c3_c_PtsStruct->size[0] = c3_b_PtsStruct.Location->size[0];
+  c3_c_PtsStruct->size[1] = 2;
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_c_PtsStruct, c3_i35,
+    &c3_i_emlrtRTEI);
+  c3_h_loop_ub = c3_b_PtsStruct.Location->size[0] *
+    c3_b_PtsStruct.Location->size[1] - 1;
+  for (c3_i36 = 0; c3_i36 <= c3_h_loop_ub; c3_i36++) {
+    c3_c_PtsStruct->data[c3_i36] = c3_b_PtsStruct.Location->data[c3_i36];
+  }
+
+  c3_emxCopyStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_PtsStruct,
+    &c3_b_PtsStruct, &c3_j_emlrtRTEI);
+  c3_SURFPoints_cg_SURFPoints_cg(chartInstance, c3_c_PtsStruct, c3_PtsStruct,
+    &c3_scenePoints);
+  sfListenerPushScopeForDynamicMatricesJitOff(chartInstance->c3_RuntimeVar, 1U,
+    "scenePoints", &c3_scenePoints, (void *)
+    c3_sf_marshallOut_vision_internal_SURFPoints_cg, (void *)
+    c3_sf_marshallIn_vision_internal_SURFPoints_cg, 0U);
+  if ((chartInstance->c3_IsDebuggerActive == 1) ||
+      (chartInstance->c3_IsSequenceViewerPresent == 1)) {
+    sfListenerReportLineNumber(chartInstance->c3_RuntimeVar, 0, 11);
+  }
+
+  c3_emxFree_real32_T(chartInstance, &c3_c_PtsStruct);
+  c3_emxFreeStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_b_PtsStruct);
+  for (c3_i37 = 0; c3_i37 < 50463; c3_i37++) {
+    c3_c_CrabG[c3_i37] = chartInstance->c3_CrabG[c3_i37];
+  }
+
+  c3_emxInit_real32_T(chartInstance, &c3_b_boxFeatures, 2, &c3_vb_emlrtRTEI);
+  c3_emxInitStruct_vision_internal_S(chartInstance, &c3_d_boxPoints,
+    &c3_n_emlrtRTEI);
+  c3_emxCopyStruct_vision_internal_S(chartInstance, &c3_c_boxPoints,
+    &c3_boxPoints, &c3_k_emlrtRTEI);
+  c3_extractFeatures(chartInstance, c3_c_CrabG, c3_c_boxPoints, c3_b_boxFeatures,
+                     &c3_d_boxPoints);
+  c3_i38 = c3_boxFeatures->size[0] * c3_boxFeatures->size[1];
+  c3_boxFeatures->size[0] = c3_b_boxFeatures->size[0];
+  c3_boxFeatures->size[1] = 64;
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_boxFeatures, c3_i38,
+    &c3_l_emlrtRTEI);
+  c3_i_loop_ub = c3_b_boxFeatures->size[0] * c3_b_boxFeatures->size[1] - 1;
+  for (c3_i39 = 0; c3_i39 <= c3_i_loop_ub; c3_i39++) {
+    c3_boxFeatures->data[c3_i39] = c3_b_boxFeatures->data[c3_i39];
+  }
+
+  sfListenerPushScopeForDynamicMatricesJitOff(chartInstance->c3_RuntimeVar, 1U,
+    "boxFeatures", c3_boxFeatures, (void *)c3_sf_marshallOut_dynamicmatrix,
+    (void *)c3_sf_marshallIn_dynamicmatrix, 0U);
+  c3_emxCopyStruct_vision_internal_S(chartInstance, &c3_b_boxPoints,
+    &c3_d_boxPoints, &c3_m_emlrtRTEI);
+  sfListenerPushScopeForDynamicMatricesJitOff(chartInstance->c3_RuntimeVar, 1U,
+    "boxPoints", &c3_b_boxPoints, (void *)
+    c3_sf_marshallOut_vision_internal_SURFPoints_cg, (void *)
+    c3_sf_marshallIn_vision_internal_SURFPoints_cg, 0U);
+  if ((chartInstance->c3_IsDebuggerActive == 1) ||
+      (chartInstance->c3_IsSequenceViewerPresent == 1)) {
+    sfListenerReportLineNumber(chartInstance->c3_RuntimeVar, 0, 12);
+  }
+
+  for (c3_i40 = 0; c3_i40 < 250000; c3_i40++) {
+    chartInstance->c3_Iu8[c3_i40] = chartInstance->c3_SceneG[c3_i40];
+  }
+
+  c3_emxCopyStruct_vision_internal_S(chartInstance, &c3_d_boxPoints,
+    &c3_scenePoints, &c3_n_emlrtRTEI);
+  c3_i41 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
+  c3_PtsStruct_Location->size[0] = c3_d_boxPoints.pLocation->size[0];
+  c3_PtsStruct_Location->size[1] = 2;
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i41,
     &c3_o_emlrtRTEI);
-  c3_r_loop_ub = c3_d_RedCrabPoints.pLocation->size[0] *
-    c3_d_RedCrabPoints.pLocation->size[1] - 1;
-  for (c3_i64 = 0; c3_i64 <= c3_r_loop_ub; c3_i64++) {
-    c3_PtsStruct_Location->data[c3_i64] = c3_d_RedCrabPoints.pLocation->
-      data[c3_i64];
+  c3_j_loop_ub = c3_d_boxPoints.pLocation->size[0] *
+    c3_d_boxPoints.pLocation->size[1] - 1;
+  for (c3_i42 = 0; c3_i42 <= c3_j_loop_ub; c3_i42++) {
+    c3_PtsStruct_Location->data[c3_i42] = c3_d_boxPoints.pLocation->data[c3_i42];
   }
 
   if (!c3_inputMeetsSizeRequirement(chartInstance, c3_PtsStruct_Location)) {
@@ -2579,285 +2487,283 @@ static void c3_chartstep_c3_MotionObjectDetector
                   c3_f_y)));
   }
 
-  c3_i65 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
-  c3_PtsStruct_Location->size[0] = c3_d_RedCrabPoints.pLocation->size[0];
+  c3_i43 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
+  c3_PtsStruct_Location->size[0] = c3_d_boxPoints.pLocation->size[0];
   c3_PtsStruct_Location->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i65,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i43,
     &c3_p_emlrtRTEI);
-  c3_s_loop_ub = c3_d_RedCrabPoints.pLocation->size[0] *
-    c3_d_RedCrabPoints.pLocation->size[1] - 1;
-  for (c3_i66 = 0; c3_i66 <= c3_s_loop_ub; c3_i66++) {
-    c3_PtsStruct_Location->data[c3_i66] = c3_d_RedCrabPoints.pLocation->
-      data[c3_i66];
+  c3_k_loop_ub = c3_d_boxPoints.pLocation->size[0] *
+    c3_d_boxPoints.pLocation->size[1] - 1;
+  for (c3_i44 = 0; c3_i44 <= c3_k_loop_ub; c3_i44++) {
+    c3_PtsStruct_Location->data[c3_i44] = c3_d_boxPoints.pLocation->data[c3_i44];
   }
 
   c3_out_numel = (real_T)c3_PtsStruct_Location->size[0];
-  c3_i67 = c3_valLocation->size[0] * c3_valLocation->size[1];
+  c3_i45 = c3_valLocation->size[0] * c3_valLocation->size[1];
   c3_valLocation->size[0] = (int32_T)c3_out_numel;
   c3_valLocation->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_valLocation, c3_i67,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_valLocation, c3_i45,
     &c3_q_emlrtRTEI);
-  c3_i68 = c3_valScale->size[0];
+  c3_i46 = c3_valScale->size[0];
   c3_valScale->size[0] = (int32_T)c3_out_numel;
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_valScale, c3_i68,
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_valScale, c3_i46,
     &c3_q_emlrtRTEI);
-  c3_i69 = c3_valMetric->size[0];
+  c3_i47 = c3_valMetric->size[0];
   c3_valMetric->size[0] = (int32_T)c3_out_numel;
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_valMetric, c3_i69,
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_valMetric, c3_i47,
     &c3_q_emlrtRTEI);
-  c3_i70 = c3_valSignOfLaplacian->size[0];
+  c3_i48 = c3_valSignOfLaplacian->size[0];
   c3_valSignOfLaplacian->size[0] = (int32_T)c3_out_numel;
-  c3_emxEnsureCapacity_int8_T(chartInstance, c3_valSignOfLaplacian, c3_i70,
+  c3_emxEnsureCapacity_int8_T(chartInstance, c3_valSignOfLaplacian, c3_i48,
     &c3_q_emlrtRTEI);
   c3_b = (1.0 > c3_out_numel);
   if (c3_b) {
-    c3_i71 = -1;
+    c3_i49 = -1;
   } else {
-    sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 266, 64, MAX_uint32_T,
+    sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 256, 67, MAX_uint32_T,
       1, 1, c3_valLocation->size[0]);
-    c3_i71 = sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 266, 64,
+    c3_i49 = sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 256, 67,
       MAX_uint32_T, (int32_T)c3_out_numel, 1, c3_valLocation->size[0]) - 1;
   }
 
   c3_emxInit_int32_T(chartInstance, &c3_r, 1, (emlrtRTEInfo *)NULL);
-  c3_i72 = c3_r->size[0];
-  c3_r->size[0] = c3_i71 + 1;
-  c3_emxEnsureCapacity_int32_T(chartInstance, c3_r, c3_i72, &c3_r_emlrtRTEI);
-  c3_t_loop_ub = c3_i71;
-  for (c3_i73 = 0; c3_i73 <= c3_t_loop_ub; c3_i73++) {
-    c3_r->data[c3_i73] = c3_i73;
+  c3_i50 = c3_r->size[0];
+  c3_r->size[0] = c3_i49 + 1;
+  c3_emxEnsureCapacity_int32_T(chartInstance, c3_r, c3_i50, &c3_r_emlrtRTEI);
+  c3_l_loop_ub = c3_i49;
+  for (c3_i51 = 0; c3_i51 <= c3_l_loop_ub; c3_i51++) {
+    c3_r->data[c3_i51] = c3_i51;
   }
 
-  for (c3_i74 = 0; c3_i74 < 2; c3_i74++) {
-    c3_tmp_data[c3_i74] = c3_i74;
+  for (c3_i52 = 0; c3_i52 < 2; c3_i52++) {
+    c3_tmp_data[c3_i52] = c3_i52;
   }
 
-  c3_i75 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
-  c3_PtsStruct_Location->size[0] = c3_d_RedCrabPoints.pLocation->size[0];
+  c3_i53 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
+  c3_PtsStruct_Location->size[0] = c3_d_boxPoints.pLocation->size[0];
   c3_PtsStruct_Location->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i75,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i53,
     &c3_t_emlrtRTEI);
-  c3_u_loop_ub = c3_d_RedCrabPoints.pLocation->size[0] *
-    c3_d_RedCrabPoints.pLocation->size[1] - 1;
-  for (c3_i76 = 0; c3_i76 <= c3_u_loop_ub; c3_i76++) {
-    c3_PtsStruct_Location->data[c3_i76] = c3_d_RedCrabPoints.pLocation->
-      data[c3_i76];
+  c3_m_loop_ub = c3_d_boxPoints.pLocation->size[0] *
+    c3_d_boxPoints.pLocation->size[1] - 1;
+  for (c3_i54 = 0; c3_i54 <= c3_m_loop_ub; c3_i54++) {
+    c3_PtsStruct_Location->data[c3_i54] = c3_d_boxPoints.pLocation->data[c3_i54];
   }
 
   c3_iv[0] = c3_r->size[0];
   c3_iv[1] = 2;
   sf_mex_lw_sub_assign_size_check_nd(c3_iv, 2, *(int32_T (*)[2])
     c3_PtsStruct_Location->size, 2);
-  for (c3_i77 = 0; c3_i77 < 2; c3_i77++) {
-    c3_v_loop_ub = c3_PtsStruct_Location->size[0] - 1;
-    for (c3_i78 = 0; c3_i78 <= c3_v_loop_ub; c3_i78++) {
-      c3_valLocation->data[c3_r->data[c3_i78] + c3_valLocation->size[0] *
-        c3_tmp_data[c3_i77]] = c3_PtsStruct_Location->data[c3_i78 +
-        c3_PtsStruct_Location->size[0] * c3_i77];
+  for (c3_i55 = 0; c3_i55 < 2; c3_i55++) {
+    c3_n_loop_ub = c3_PtsStruct_Location->size[0] - 1;
+    for (c3_i56 = 0; c3_i56 <= c3_n_loop_ub; c3_i56++) {
+      c3_valLocation->data[c3_r->data[c3_i56] + c3_valLocation->size[0] *
+        c3_tmp_data[c3_i55]] = c3_PtsStruct_Location->data[c3_i56 +
+        c3_PtsStruct_Location->size[0] * c3_i55];
     }
   }
 
   c3_b1 = (1.0 > c3_out_numel);
   if (c3_b1) {
-    c3_i79 = -1;
+    c3_i57 = -1;
   } else {
-    sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 266, 64, MAX_uint32_T,
+    sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 256, 67, MAX_uint32_T,
       1, 1, c3_valScale->size[0]);
-    c3_i79 = sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 266, 64,
+    c3_i57 = sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 256, 67,
       MAX_uint32_T, (int32_T)c3_out_numel, 1, c3_valScale->size[0]) - 1;
   }
 
-  c3_i80 = c3_r->size[0];
-  c3_r->size[0] = c3_i79 + 1;
-  c3_emxEnsureCapacity_int32_T(chartInstance, c3_r, c3_i80, &c3_u_emlrtRTEI);
-  c3_w_loop_ub = c3_i79;
-  for (c3_i81 = 0; c3_i81 <= c3_w_loop_ub; c3_i81++) {
-    c3_r->data[c3_i81] = c3_i81;
+  c3_i58 = c3_r->size[0];
+  c3_r->size[0] = c3_i57 + 1;
+  c3_emxEnsureCapacity_int32_T(chartInstance, c3_r, c3_i58, &c3_u_emlrtRTEI);
+  c3_o_loop_ub = c3_i57;
+  for (c3_i59 = 0; c3_i59 <= c3_o_loop_ub; c3_i59++) {
+    c3_r->data[c3_i59] = c3_i59;
   }
 
   c3_emxInit_real32_T1(chartInstance, &c3_outOrientation, 1, (emlrtRTEInfo *)
                        NULL);
-  c3_i82 = c3_outOrientation->size[0];
-  c3_outOrientation->size[0] = c3_d_RedCrabPoints.pScale->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_outOrientation, c3_i82,
+  c3_i60 = c3_outOrientation->size[0];
+  c3_outOrientation->size[0] = c3_d_boxPoints.pScale->size[0];
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_outOrientation, c3_i60,
     &c3_v_emlrtRTEI);
-  c3_x_loop_ub = c3_d_RedCrabPoints.pScale->size[0] - 1;
-  for (c3_i83 = 0; c3_i83 <= c3_x_loop_ub; c3_i83++) {
-    c3_outOrientation->data[c3_i83] = c3_d_RedCrabPoints.pScale->data[c3_i83];
+  c3_p_loop_ub = c3_d_boxPoints.pScale->size[0] - 1;
+  for (c3_i61 = 0; c3_i61 <= c3_p_loop_ub; c3_i61++) {
+    c3_outOrientation->data[c3_i61] = c3_d_boxPoints.pScale->data[c3_i61];
   }
 
   c3_iv1[0] = c3_r->size[0];
   sf_mex_lw_sub_assign_size_check_nd(c3_iv1, 1, *(int32_T (*)[1])
     c3_outOrientation->size, 1);
-  c3_y_loop_ub = c3_outOrientation->size[0] - 1;
-  for (c3_i84 = 0; c3_i84 <= c3_y_loop_ub; c3_i84++) {
-    c3_valScale->data[c3_r->data[c3_i84]] = c3_outOrientation->data[c3_i84];
+  c3_q_loop_ub = c3_outOrientation->size[0] - 1;
+  for (c3_i62 = 0; c3_i62 <= c3_q_loop_ub; c3_i62++) {
+    c3_valScale->data[c3_r->data[c3_i62]] = c3_outOrientation->data[c3_i62];
   }
 
   c3_b2 = (1.0 > c3_out_numel);
   if (c3_b2) {
-    c3_i85 = -1;
+    c3_i63 = -1;
   } else {
-    sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 266, 64, MAX_uint32_T,
+    sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 256, 67, MAX_uint32_T,
       1, 1, c3_valMetric->size[0]);
-    c3_i85 = sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 266, 64,
+    c3_i63 = sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 256, 67,
       MAX_uint32_T, (int32_T)c3_out_numel, 1, c3_valMetric->size[0]) - 1;
   }
 
-  c3_i86 = c3_r->size[0];
-  c3_r->size[0] = c3_i85 + 1;
-  c3_emxEnsureCapacity_int32_T(chartInstance, c3_r, c3_i86, &c3_w_emlrtRTEI);
-  c3_ab_loop_ub = c3_i85;
-  for (c3_i87 = 0; c3_i87 <= c3_ab_loop_ub; c3_i87++) {
-    c3_r->data[c3_i87] = c3_i87;
+  c3_i64 = c3_r->size[0];
+  c3_r->size[0] = c3_i63 + 1;
+  c3_emxEnsureCapacity_int32_T(chartInstance, c3_r, c3_i64, &c3_w_emlrtRTEI);
+  c3_r_loop_ub = c3_i63;
+  for (c3_i65 = 0; c3_i65 <= c3_r_loop_ub; c3_i65++) {
+    c3_r->data[c3_i65] = c3_i65;
   }
 
-  c3_i88 = c3_outOrientation->size[0];
-  c3_outOrientation->size[0] = c3_d_RedCrabPoints.pMetric->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_outOrientation, c3_i88,
+  c3_i66 = c3_outOrientation->size[0];
+  c3_outOrientation->size[0] = c3_d_boxPoints.pMetric->size[0];
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_outOrientation, c3_i66,
     &c3_x_emlrtRTEI);
-  c3_bb_loop_ub = c3_d_RedCrabPoints.pMetric->size[0] - 1;
-  for (c3_i89 = 0; c3_i89 <= c3_bb_loop_ub; c3_i89++) {
-    c3_outOrientation->data[c3_i89] = c3_d_RedCrabPoints.pMetric->data[c3_i89];
+  c3_s_loop_ub = c3_d_boxPoints.pMetric->size[0] - 1;
+  for (c3_i67 = 0; c3_i67 <= c3_s_loop_ub; c3_i67++) {
+    c3_outOrientation->data[c3_i67] = c3_d_boxPoints.pMetric->data[c3_i67];
   }
 
   c3_iv2[0] = c3_r->size[0];
   sf_mex_lw_sub_assign_size_check_nd(c3_iv2, 1, *(int32_T (*)[1])
     c3_outOrientation->size, 1);
-  c3_cb_loop_ub = c3_outOrientation->size[0] - 1;
-  for (c3_i90 = 0; c3_i90 <= c3_cb_loop_ub; c3_i90++) {
-    c3_valMetric->data[c3_r->data[c3_i90]] = c3_outOrientation->data[c3_i90];
+  c3_t_loop_ub = c3_outOrientation->size[0] - 1;
+  for (c3_i68 = 0; c3_i68 <= c3_t_loop_ub; c3_i68++) {
+    c3_valMetric->data[c3_r->data[c3_i68]] = c3_outOrientation->data[c3_i68];
   }
 
   c3_b3 = (1.0 > c3_out_numel);
   if (c3_b3) {
-    c3_i91 = -1;
+    c3_i69 = -1;
   } else {
-    sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 266, 64, MAX_uint32_T,
+    sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 256, 67, MAX_uint32_T,
       1, 1, c3_valSignOfLaplacian->size[0]);
-    c3_i91 = sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 266, 64,
+    c3_i69 = sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 256, 67,
       MAX_uint32_T, (int32_T)c3_out_numel, 1, c3_valSignOfLaplacian->size[0]) -
       1;
   }
 
-  c3_i92 = c3_r->size[0];
-  c3_r->size[0] = c3_i91 + 1;
-  c3_emxEnsureCapacity_int32_T(chartInstance, c3_r, c3_i92, &c3_y_emlrtRTEI);
-  c3_db_loop_ub = c3_i91;
-  for (c3_i93 = 0; c3_i93 <= c3_db_loop_ub; c3_i93++) {
-    c3_r->data[c3_i93] = c3_i93;
+  c3_i70 = c3_r->size[0];
+  c3_r->size[0] = c3_i69 + 1;
+  c3_emxEnsureCapacity_int32_T(chartInstance, c3_r, c3_i70, &c3_y_emlrtRTEI);
+  c3_u_loop_ub = c3_i69;
+  for (c3_i71 = 0; c3_i71 <= c3_u_loop_ub; c3_i71++) {
+    c3_r->data[c3_i71] = c3_i71;
   }
 
   c3_emxInit_int8_T(chartInstance, &c3_r1, 1, (emlrtRTEInfo *)NULL);
-  c3_i94 = c3_r1->size[0];
-  c3_r1->size[0] = c3_d_RedCrabPoints.pSignOfLaplacian->size[0];
-  c3_emxEnsureCapacity_int8_T(chartInstance, c3_r1, c3_i94, &c3_ab_emlrtRTEI);
-  c3_eb_loop_ub = c3_d_RedCrabPoints.pSignOfLaplacian->size[0] - 1;
-  for (c3_i95 = 0; c3_i95 <= c3_eb_loop_ub; c3_i95++) {
-    c3_r1->data[c3_i95] = c3_d_RedCrabPoints.pSignOfLaplacian->data[c3_i95];
+  c3_i72 = c3_r1->size[0];
+  c3_r1->size[0] = c3_d_boxPoints.pSignOfLaplacian->size[0];
+  c3_emxEnsureCapacity_int8_T(chartInstance, c3_r1, c3_i72, &c3_ab_emlrtRTEI);
+  c3_v_loop_ub = c3_d_boxPoints.pSignOfLaplacian->size[0] - 1;
+  for (c3_i73 = 0; c3_i73 <= c3_v_loop_ub; c3_i73++) {
+    c3_r1->data[c3_i73] = c3_d_boxPoints.pSignOfLaplacian->data[c3_i73];
   }
 
   c3_iv3[0] = c3_r->size[0];
   sf_mex_lw_sub_assign_size_check_nd(c3_iv3, 1, *(int32_T (*)[1])c3_r1->size, 1);
-  c3_fb_loop_ub = c3_r1->size[0] - 1;
-  for (c3_i96 = 0; c3_i96 <= c3_fb_loop_ub; c3_i96++) {
-    c3_valSignOfLaplacian->data[c3_r->data[c3_i96]] = c3_r1->data[c3_i96];
+  c3_w_loop_ub = c3_r1->size[0] - 1;
+  for (c3_i74 = 0; c3_i74 <= c3_w_loop_ub; c3_i74++) {
+    c3_valSignOfLaplacian->data[c3_r->data[c3_i74]] = c3_r1->data[c3_i74];
   }
 
   c3_emxFree_int8_T(chartInstance, &c3_r1);
   c3_emxFree_int32_T(chartInstance, &c3_r);
   c3_emxInitStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_ptsStruct, (emlrtRTEInfo
     *)NULL);
-  c3_i97 = c3_ptsStruct.Location->size[0] * c3_ptsStruct.Location->size[1];
+  c3_i75 = c3_ptsStruct.Location->size[0] * c3_ptsStruct.Location->size[1];
   c3_ptsStruct.Location->size[0] = c3_valLocation->size[0];
   c3_ptsStruct.Location->size[1] = c3_valLocation->size[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_ptsStruct.Location, c3_i97,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_ptsStruct.Location, c3_i75,
     &c3_bb_emlrtRTEI);
-  c3_gb_loop_ub = c3_valLocation->size[0] * c3_valLocation->size[1] - 1;
-  for (c3_i98 = 0; c3_i98 <= c3_gb_loop_ub; c3_i98++) {
-    c3_ptsStruct.Location->data[c3_i98] = c3_valLocation->data[c3_i98];
+  c3_x_loop_ub = c3_valLocation->size[0] * c3_valLocation->size[1] - 1;
+  for (c3_i76 = 0; c3_i76 <= c3_x_loop_ub; c3_i76++) {
+    c3_ptsStruct.Location->data[c3_i76] = c3_valLocation->data[c3_i76];
   }
 
-  c3_i99 = c3_ptsStruct.Scale->size[0];
+  c3_i77 = c3_ptsStruct.Scale->size[0];
   c3_ptsStruct.Scale->size[0] = c3_valScale->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_ptsStruct.Scale, c3_i99,
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_ptsStruct.Scale, c3_i77,
     &c3_cb_emlrtRTEI);
-  c3_hb_loop_ub = c3_valScale->size[0] - 1;
-  for (c3_i100 = 0; c3_i100 <= c3_hb_loop_ub; c3_i100++) {
-    c3_ptsStruct.Scale->data[c3_i100] = c3_valScale->data[c3_i100];
+  c3_y_loop_ub = c3_valScale->size[0] - 1;
+  for (c3_i78 = 0; c3_i78 <= c3_y_loop_ub; c3_i78++) {
+    c3_ptsStruct.Scale->data[c3_i78] = c3_valScale->data[c3_i78];
   }
 
-  c3_i101 = c3_ptsStruct.Metric->size[0];
+  c3_i79 = c3_ptsStruct.Metric->size[0];
   c3_ptsStruct.Metric->size[0] = c3_valMetric->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_ptsStruct.Metric, c3_i101,
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_ptsStruct.Metric, c3_i79,
     &c3_db_emlrtRTEI);
-  c3_ib_loop_ub = c3_valMetric->size[0] - 1;
-  for (c3_i102 = 0; c3_i102 <= c3_ib_loop_ub; c3_i102++) {
-    c3_ptsStruct.Metric->data[c3_i102] = c3_valMetric->data[c3_i102];
+  c3_ab_loop_ub = c3_valMetric->size[0] - 1;
+  for (c3_i80 = 0; c3_i80 <= c3_ab_loop_ub; c3_i80++) {
+    c3_ptsStruct.Metric->data[c3_i80] = c3_valMetric->data[c3_i80];
   }
 
-  c3_i103 = c3_ptsStruct.SignOfLaplacian->size[0];
+  c3_i81 = c3_ptsStruct.SignOfLaplacian->size[0];
   c3_ptsStruct.SignOfLaplacian->size[0] = c3_valSignOfLaplacian->size[0];
   c3_emxEnsureCapacity_int8_T(chartInstance, c3_ptsStruct.SignOfLaplacian,
-    c3_i103, &c3_eb_emlrtRTEI);
-  c3_jb_loop_ub = c3_valSignOfLaplacian->size[0] - 1;
-  for (c3_i104 = 0; c3_i104 <= c3_jb_loop_ub; c3_i104++) {
-    c3_ptsStruct.SignOfLaplacian->data[c3_i104] = c3_valSignOfLaplacian->
-      data[c3_i104];
+    c3_i81, &c3_eb_emlrtRTEI);
+  c3_bb_loop_ub = c3_valSignOfLaplacian->size[0] - 1;
+  for (c3_i82 = 0; c3_i82 <= c3_bb_loop_ub; c3_i82++) {
+    c3_ptsStruct.SignOfLaplacian->data[c3_i82] = c3_valSignOfLaplacian->
+      data[c3_i82];
   }
 
-  c3_i105 = 0;
-  for (c3_i106 = 0; c3_i106 < 500; c3_i106++) {
-    c3_i107 = 0;
-    for (c3_i109 = 0; c3_i109 < 500; c3_i109++) {
-      chartInstance->c3_Iu8T[c3_i109 + c3_i105] = chartInstance->c3_Iu8[c3_i107
-        + c3_i106];
-      c3_i107 += 500;
+  c3_i83 = 0;
+  for (c3_i84 = 0; c3_i84 < 500; c3_i84++) {
+    c3_i85 = 0;
+    for (c3_i87 = 0; c3_i87 < 500; c3_i87++) {
+      chartInstance->c3_Iu8T[c3_i87 + c3_i83] = chartInstance->c3_Iu8[c3_i85 +
+        c3_i84];
+      c3_i85 += 500;
     }
 
-    c3_i105 += 500;
+    c3_i83 += 500;
   }
 
   c3_emxInit_real32_T(chartInstance, &c3_b_ptsStruct, 2, &c3_fb_emlrtRTEI);
-  c3_i108 = c3_b_ptsStruct->size[0] * c3_b_ptsStruct->size[1];
+  c3_i86 = c3_b_ptsStruct->size[0] * c3_b_ptsStruct->size[1];
   c3_b_ptsStruct->size[0] = c3_ptsStruct.Location->size[0];
   c3_b_ptsStruct->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_ptsStruct, c3_i108,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_ptsStruct, c3_i86,
     &c3_fb_emlrtRTEI);
-  c3_kb_loop_ub = c3_ptsStruct.Location->size[0] * c3_ptsStruct.Location->size[1]
+  c3_cb_loop_ub = c3_ptsStruct.Location->size[0] * c3_ptsStruct.Location->size[1]
     - 1;
-  for (c3_i110 = 0; c3_i110 <= c3_kb_loop_ub; c3_i110++) {
-    c3_b_ptsStruct->data[c3_i110] = c3_ptsStruct.Location->data[c3_i110];
+  for (c3_i88 = 0; c3_i88 <= c3_cb_loop_ub; c3_i88++) {
+    c3_b_ptsStruct->data[c3_i88] = c3_ptsStruct.Location->data[c3_i88];
   }
 
   c3_emxInit_real32_T1(chartInstance, &c3_c_ptsStruct, 1, &c3_gb_emlrtRTEI);
-  c3_i111 = c3_c_ptsStruct->size[0];
+  c3_i89 = c3_c_ptsStruct->size[0];
   c3_c_ptsStruct->size[0] = c3_ptsStruct.Scale->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_c_ptsStruct, c3_i111,
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_c_ptsStruct, c3_i89,
     &c3_gb_emlrtRTEI);
-  c3_lb_loop_ub = c3_ptsStruct.Scale->size[0] - 1;
-  for (c3_i112 = 0; c3_i112 <= c3_lb_loop_ub; c3_i112++) {
-    c3_c_ptsStruct->data[c3_i112] = c3_ptsStruct.Scale->data[c3_i112];
+  c3_db_loop_ub = c3_ptsStruct.Scale->size[0] - 1;
+  for (c3_i90 = 0; c3_i90 <= c3_db_loop_ub; c3_i90++) {
+    c3_c_ptsStruct->data[c3_i90] = c3_ptsStruct.Scale->data[c3_i90];
   }
 
   c3_emxInit_real32_T1(chartInstance, &c3_d_ptsStruct, 1, &c3_hb_emlrtRTEI);
-  c3_i113 = c3_d_ptsStruct->size[0];
+  c3_i91 = c3_d_ptsStruct->size[0];
   c3_d_ptsStruct->size[0] = c3_ptsStruct.Metric->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_d_ptsStruct, c3_i113,
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_d_ptsStruct, c3_i91,
     &c3_hb_emlrtRTEI);
-  c3_mb_loop_ub = c3_ptsStruct.Metric->size[0] - 1;
-  for (c3_i114 = 0; c3_i114 <= c3_mb_loop_ub; c3_i114++) {
-    c3_d_ptsStruct->data[c3_i114] = c3_ptsStruct.Metric->data[c3_i114];
+  c3_eb_loop_ub = c3_ptsStruct.Metric->size[0] - 1;
+  for (c3_i92 = 0; c3_i92 <= c3_eb_loop_ub; c3_i92++) {
+    c3_d_ptsStruct->data[c3_i92] = c3_ptsStruct.Metric->data[c3_i92];
   }
 
   c3_emxInit_int8_T(chartInstance, &c3_e_ptsStruct, 1, &c3_ib_emlrtRTEI);
-  c3_i115 = c3_e_ptsStruct->size[0];
+  c3_i93 = c3_e_ptsStruct->size[0];
   c3_e_ptsStruct->size[0] = c3_ptsStruct.SignOfLaplacian->size[0];
-  c3_emxEnsureCapacity_int8_T(chartInstance, c3_e_ptsStruct, c3_i115,
+  c3_emxEnsureCapacity_int8_T(chartInstance, c3_e_ptsStruct, c3_i93,
     &c3_ib_emlrtRTEI);
-  c3_nb_loop_ub = c3_ptsStruct.SignOfLaplacian->size[0] - 1;
-  for (c3_i116 = 0; c3_i116 <= c3_nb_loop_ub; c3_i116++) {
-    c3_e_ptsStruct->data[c3_i116] = c3_ptsStruct.SignOfLaplacian->data[c3_i116];
+  c3_fb_loop_ub = c3_ptsStruct.SignOfLaplacian->size[0] - 1;
+  for (c3_i94 = 0; c3_i94 <= c3_fb_loop_ub; c3_i94++) {
+    c3_e_ptsStruct->data[c3_i94] = c3_ptsStruct.SignOfLaplacian->data[c3_i94];
   }
 
   c3_emxFreeStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_ptsStruct);
@@ -2866,265 +2772,263 @@ static void c3_chartstep_c3_MotionObjectDetector
     chartInstance->c3_Iu8T, c3_b_ptsStruct, c3_c_ptsStruct, c3_d_ptsStruct,
     c3_e_ptsStruct, false, false, c3_valLocation, c3_valScale, c3_valMetric,
     c3_valSignOfLaplacian, c3_outOrientation, c3_features);
-  c3_i117 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
+  c3_i95 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
   c3_PtsStruct_Location->size[0] = c3_valLocation->size[0];
   c3_PtsStruct_Location->size[1] = c3_valLocation->size[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i117,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i95,
     &c3_jb_emlrtRTEI);
-  c3_ob_loop_ub = c3_valLocation->size[0] * c3_valLocation->size[1] - 1;
+  c3_gb_loop_ub = c3_valLocation->size[0] * c3_valLocation->size[1] - 1;
   c3_emxFree_int8_T(chartInstance, &c3_e_ptsStruct);
   c3_emxFree_real32_T(chartInstance, &c3_d_ptsStruct);
   c3_emxFree_real32_T(chartInstance, &c3_c_ptsStruct);
   c3_emxFree_real32_T(chartInstance, &c3_b_ptsStruct);
-  for (c3_i118 = 0; c3_i118 <= c3_ob_loop_ub; c3_i118++) {
-    c3_PtsStruct_Location->data[c3_i118] = c3_valLocation->data[c3_i118];
+  for (c3_i96 = 0; c3_i96 <= c3_gb_loop_ub; c3_i96++) {
+    c3_PtsStruct_Location->data[c3_i96] = c3_valLocation->data[c3_i96];
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_valLocation);
-  c3_i119 = c3_b_RedCrabFeatures->size[0] * c3_b_RedCrabFeatures->size[1];
-  c3_b_RedCrabFeatures->size[0] = c3_features->size[0];
-  c3_b_RedCrabFeatures->size[1] = c3_features->size[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_RedCrabFeatures, c3_i119,
+  c3_i97 = c3_b_boxFeatures->size[0] * c3_b_boxFeatures->size[1];
+  c3_b_boxFeatures->size[0] = c3_features->size[0];
+  c3_b_boxFeatures->size[1] = c3_features->size[1];
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_boxFeatures, c3_i97,
     &c3_kb_emlrtRTEI);
-  c3_pb_loop_ub = c3_features->size[0] * c3_features->size[1] - 1;
-  for (c3_i120 = 0; c3_i120 <= c3_pb_loop_ub; c3_i120++) {
-    c3_b_RedCrabFeatures->data[c3_i120] = c3_features->data[c3_i120];
+  c3_hb_loop_ub = c3_features->size[0] * c3_features->size[1] - 1;
+  for (c3_i98 = 0; c3_i98 <= c3_hb_loop_ub; c3_i98++) {
+    c3_b_boxFeatures->data[c3_i98] = c3_features->data[c3_i98];
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_features);
-  c3_emxInitStruct_s2rdWZ6jAA0S8hk59(chartInstance, &c3_b_vPts, &c3_kc_emlrtRTEI);
-  c3_i121 = c3_b_vPts.Location->size[0] * c3_b_vPts.Location->size[1];
+  c3_emxInitStruct_s2rdWZ6jAA0S8hk59(chartInstance, &c3_b_vPts, &c3_mc_emlrtRTEI);
+  c3_i99 = c3_b_vPts.Location->size[0] * c3_b_vPts.Location->size[1];
   c3_b_vPts.Location->size[0] = c3_PtsStruct_Location->size[0];
   c3_b_vPts.Location->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_vPts.Location, c3_i121,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_vPts.Location, c3_i99,
     &c3_lb_emlrtRTEI);
-  c3_qb_loop_ub = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1]
+  c3_ib_loop_ub = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1]
     - 1;
-  for (c3_i122 = 0; c3_i122 <= c3_qb_loop_ub; c3_i122++) {
-    c3_b_vPts.Location->data[c3_i122] = c3_PtsStruct_Location->data[c3_i122];
+  for (c3_i100 = 0; c3_i100 <= c3_ib_loop_ub; c3_i100++) {
+    c3_b_vPts.Location->data[c3_i100] = c3_PtsStruct_Location->data[c3_i100];
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_PtsStruct_Location);
-  c3_i123 = c3_b_vPts.Scale->size[0];
+  c3_i101 = c3_b_vPts.Scale->size[0];
   c3_b_vPts.Scale->size[0] = c3_valScale->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_vPts.Scale, c3_i123,
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_vPts.Scale, c3_i101,
     &c3_mb_emlrtRTEI);
-  c3_rb_loop_ub = c3_valScale->size[0] - 1;
-  for (c3_i124 = 0; c3_i124 <= c3_rb_loop_ub; c3_i124++) {
-    c3_b_vPts.Scale->data[c3_i124] = c3_valScale->data[c3_i124];
+  c3_jb_loop_ub = c3_valScale->size[0] - 1;
+  for (c3_i102 = 0; c3_i102 <= c3_jb_loop_ub; c3_i102++) {
+    c3_b_vPts.Scale->data[c3_i102] = c3_valScale->data[c3_i102];
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_valScale);
-  c3_i125 = c3_b_vPts.Metric->size[0];
+  c3_i103 = c3_b_vPts.Metric->size[0];
   c3_b_vPts.Metric->size[0] = c3_valMetric->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_vPts.Metric, c3_i125,
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_vPts.Metric, c3_i103,
     &c3_nb_emlrtRTEI);
-  c3_sb_loop_ub = c3_valMetric->size[0] - 1;
-  for (c3_i126 = 0; c3_i126 <= c3_sb_loop_ub; c3_i126++) {
-    c3_b_vPts.Metric->data[c3_i126] = c3_valMetric->data[c3_i126];
+  c3_kb_loop_ub = c3_valMetric->size[0] - 1;
+  for (c3_i104 = 0; c3_i104 <= c3_kb_loop_ub; c3_i104++) {
+    c3_b_vPts.Metric->data[c3_i104] = c3_valMetric->data[c3_i104];
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_valMetric);
-  c3_i127 = c3_b_vPts.SignOfLaplacian->size[0];
+  c3_i105 = c3_b_vPts.SignOfLaplacian->size[0];
   c3_b_vPts.SignOfLaplacian->size[0] = c3_valSignOfLaplacian->size[0];
-  c3_emxEnsureCapacity_int8_T(chartInstance, c3_b_vPts.SignOfLaplacian, c3_i127,
+  c3_emxEnsureCapacity_int8_T(chartInstance, c3_b_vPts.SignOfLaplacian, c3_i105,
     &c3_ob_emlrtRTEI);
-  c3_tb_loop_ub = c3_valSignOfLaplacian->size[0] - 1;
-  for (c3_i128 = 0; c3_i128 <= c3_tb_loop_ub; c3_i128++) {
-    c3_b_vPts.SignOfLaplacian->data[c3_i128] = c3_valSignOfLaplacian->
-      data[c3_i128];
+  c3_lb_loop_ub = c3_valSignOfLaplacian->size[0] - 1;
+  for (c3_i106 = 0; c3_i106 <= c3_lb_loop_ub; c3_i106++) {
+    c3_b_vPts.SignOfLaplacian->data[c3_i106] = c3_valSignOfLaplacian->
+      data[c3_i106];
   }
 
   c3_emxFree_int8_T(chartInstance, &c3_valSignOfLaplacian);
-  c3_i129 = c3_b_vPts.Orientation->size[0];
+  c3_i107 = c3_b_vPts.Orientation->size[0];
   c3_b_vPts.Orientation->size[0] = c3_outOrientation->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_vPts.Orientation, c3_i129,
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_vPts.Orientation, c3_i107,
     &c3_pb_emlrtRTEI);
-  c3_ub_loop_ub = c3_outOrientation->size[0] - 1;
-  for (c3_i130 = 0; c3_i130 <= c3_ub_loop_ub; c3_i130++) {
-    c3_b_vPts.Orientation->data[c3_i130] = c3_outOrientation->data[c3_i130];
+  c3_mb_loop_ub = c3_outOrientation->size[0] - 1;
+  for (c3_i108 = 0; c3_i108 <= c3_mb_loop_ub; c3_i108++) {
+    c3_b_vPts.Orientation->data[c3_i108] = c3_outOrientation->data[c3_i108];
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_outOrientation);
-  c3_i131 = c3_b_vPts.Orientation->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_vPts.Orientation, c3_i131,
+  c3_i109 = c3_b_vPts.Orientation->size[0];
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_vPts.Orientation, c3_i109,
     &c3_qb_emlrtRTEI);
-  c3_vb_loop_ub = c3_b_vPts.Orientation->size[0] - 1;
-  for (c3_i132 = 0; c3_i132 <= c3_vb_loop_ub; c3_i132++) {
-    c3_b_vPts.Orientation->data[c3_i132] = 6.28318548F -
-      c3_b_vPts.Orientation->data[c3_i132];
+  c3_nb_loop_ub = c3_b_vPts.Orientation->size[0] - 1;
+  for (c3_i110 = 0; c3_i110 <= c3_nb_loop_ub; c3_i110++) {
+    c3_b_vPts.Orientation->data[c3_i110] = 6.28318548F -
+      c3_b_vPts.Orientation->data[c3_i110];
   }
 
   c3_emxInit_real32_T(chartInstance, &c3_c_vPts, 2, &c3_rb_emlrtRTEI);
-  c3_i133 = c3_c_vPts->size[0] * c3_c_vPts->size[1];
+  c3_i111 = c3_c_vPts->size[0] * c3_c_vPts->size[1];
   c3_c_vPts->size[0] = c3_b_vPts.Location->size[0];
   c3_c_vPts->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_c_vPts, c3_i133,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_c_vPts, c3_i111,
     &c3_rb_emlrtRTEI);
-  c3_wb_loop_ub = c3_b_vPts.Location->size[0] * c3_b_vPts.Location->size[1] - 1;
-  for (c3_i134 = 0; c3_i134 <= c3_wb_loop_ub; c3_i134++) {
-    c3_c_vPts->data[c3_i134] = c3_b_vPts.Location->data[c3_i134];
+  c3_ob_loop_ub = c3_b_vPts.Location->size[0] * c3_b_vPts.Location->size[1] - 1;
+  for (c3_i112 = 0; c3_i112 <= c3_ob_loop_ub; c3_i112++) {
+    c3_c_vPts->data[c3_i112] = c3_b_vPts.Location->data[c3_i112];
   }
 
   c3_emxCopyStruct_s2rdWZ6jAA0S8hk59(chartInstance, &c3_vPts, &c3_b_vPts,
     &c3_sb_emlrtRTEI);
   c3_b_SURFPoints_cg_SURFPoints_cg(chartInstance, c3_c_vPts, c3_vPts,
-    &c3_d_RedCrabPoints);
-  c3_i135 = c3_ROIFeatures->size[0] * c3_ROIFeatures->size[1];
-  c3_ROIFeatures->size[0] = c3_b_RedCrabFeatures->size[0];
-  c3_ROIFeatures->size[1] = 64;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_ROIFeatures, c3_i135,
+    &c3_d_boxPoints);
+  c3_i113 = c3_sceneFeatures->size[0] * c3_sceneFeatures->size[1];
+  c3_sceneFeatures->size[0] = c3_b_boxFeatures->size[0];
+  c3_sceneFeatures->size[1] = 64;
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_sceneFeatures, c3_i113,
     &c3_tb_emlrtRTEI);
-  c3_xb_loop_ub = c3_b_RedCrabFeatures->size[0] * c3_b_RedCrabFeatures->size[1]
-    - 1;
+  c3_pb_loop_ub = c3_b_boxFeatures->size[0] * c3_b_boxFeatures->size[1] - 1;
   c3_emxFree_real32_T(chartInstance, &c3_c_vPts);
   c3_emxFreeStruct_s2rdWZ6jAA0S8hk59(chartInstance, &c3_b_vPts);
-  for (c3_i136 = 0; c3_i136 <= c3_xb_loop_ub; c3_i136++) {
-    c3_ROIFeatures->data[c3_i136] = c3_b_RedCrabFeatures->data[c3_i136];
+  for (c3_i114 = 0; c3_i114 <= c3_pb_loop_ub; c3_i114++) {
+    c3_sceneFeatures->data[c3_i114] = c3_b_boxFeatures->data[c3_i114];
   }
 
   sfListenerPushScopeForDynamicMatricesJitOff(chartInstance->c3_RuntimeVar, 1U,
-    "ROIFeatures", c3_ROIFeatures, (void *)c3_sf_marshallOut_dynamicmatrix,
+    "sceneFeatures", c3_sceneFeatures, (void *)c3_sf_marshallOut_dynamicmatrix,
     (void *)c3_sf_marshallIn_dynamicmatrix, 0U);
-  c3_emxCopyStruct_vision_internal_S(chartInstance, &c3_b_ROIPoints,
-    &c3_d_RedCrabPoints, &c3_ub_emlrtRTEI);
+  c3_emxCopyStruct_vision_internal_S(chartInstance, &c3_b_scenePoints,
+    &c3_d_boxPoints, &c3_ub_emlrtRTEI);
   sfListenerPushScopeForDynamicMatricesJitOff(chartInstance->c3_RuntimeVar, 1U,
-    "ROIPoints", &c3_b_ROIPoints, (void *)
+    "scenePoints", &c3_b_scenePoints, (void *)
     c3_sf_marshallOut_vision_internal_SURFPoints_cg, (void *)
     c3_sf_marshallIn_vision_internal_SURFPoints_cg, 0U);
   if ((chartInstance->c3_IsDebuggerActive == 1) ||
       (chartInstance->c3_IsSequenceViewerPresent == 1)) {
-    sfListenerReportLineNumber(chartInstance->c3_RuntimeVar, 0, 13);
+    sfListenerReportLineNumber(chartInstance->c3_RuntimeVar, 0, 14);
   }
 
-  c3_i137 = c3_b_RedCrabFeatures->size[0] * c3_b_RedCrabFeatures->size[1];
-  c3_b_RedCrabFeatures->size[0] = c3_RedCrabFeatures->size[0];
-  c3_b_RedCrabFeatures->size[1] = 64;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_RedCrabFeatures, c3_i137,
+  c3_i115 = c3_b_boxFeatures->size[0] * c3_b_boxFeatures->size[1];
+  c3_b_boxFeatures->size[0] = c3_boxFeatures->size[0];
+  c3_b_boxFeatures->size[1] = 64;
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_boxFeatures, c3_i115,
     &c3_vb_emlrtRTEI);
-  c3_yb_loop_ub = c3_RedCrabFeatures->size[0] * c3_RedCrabFeatures->size[1] - 1;
-  c3_emxFreeStruct_vision_internal_S(chartInstance, &c3_d_RedCrabPoints);
-  for (c3_i138 = 0; c3_i138 <= c3_yb_loop_ub; c3_i138++) {
-    c3_b_RedCrabFeatures->data[c3_i138] = c3_RedCrabFeatures->data[c3_i138];
+  c3_qb_loop_ub = c3_boxFeatures->size[0] * c3_boxFeatures->size[1] - 1;
+  c3_emxFreeStruct_vision_internal_S(chartInstance, &c3_d_boxPoints);
+  for (c3_i116 = 0; c3_i116 <= c3_qb_loop_ub; c3_i116++) {
+    c3_b_boxFeatures->data[c3_i116] = c3_boxFeatures->data[c3_i116];
   }
 
   c3_emxInit_real32_T(chartInstance, &c3_varargin_2, 2, &c3_wb_emlrtRTEI);
-  c3_i139 = c3_varargin_2->size[0] * c3_varargin_2->size[1];
-  c3_varargin_2->size[0] = c3_ROIFeatures->size[0];
+  c3_i117 = c3_varargin_2->size[0] * c3_varargin_2->size[1];
+  c3_varargin_2->size[0] = c3_sceneFeatures->size[0];
   c3_varargin_2->size[1] = 64;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_varargin_2, c3_i139,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_varargin_2, c3_i117,
     &c3_wb_emlrtRTEI);
-  c3_ac_loop_ub = c3_ROIFeatures->size[0] * c3_ROIFeatures->size[1] - 1;
-  for (c3_i140 = 0; c3_i140 <= c3_ac_loop_ub; c3_i140++) {
-    c3_varargin_2->data[c3_i140] = c3_ROIFeatures->data[c3_i140];
+  c3_rb_loop_ub = c3_sceneFeatures->size[0] * c3_sceneFeatures->size[1] - 1;
+  for (c3_i118 = 0; c3_i118 <= c3_rb_loop_ub; c3_i118++) {
+    c3_varargin_2->data[c3_i118] = c3_sceneFeatures->data[c3_i118];
   }
 
   c3_emxInit_real32_T(chartInstance, &c3_features1, 2, &c3_xb_emlrtRTEI);
-  c3_i141 = c3_features1->size[0] * c3_features1->size[1];
-  c3_features1->size[0] = c3_b_RedCrabFeatures->size[0];
+  c3_i119 = c3_features1->size[0] * c3_features1->size[1];
+  c3_features1->size[0] = c3_b_boxFeatures->size[0];
   c3_features1->size[1] = 64;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_features1, c3_i141,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_features1, c3_i119,
     &c3_xb_emlrtRTEI);
-  c3_bc_loop_ub = c3_b_RedCrabFeatures->size[0] * c3_b_RedCrabFeatures->size[1]
-    - 1;
-  for (c3_i142 = 0; c3_i142 <= c3_bc_loop_ub; c3_i142++) {
-    c3_features1->data[c3_i142] = c3_b_RedCrabFeatures->data[c3_i142];
+  c3_sb_loop_ub = c3_b_boxFeatures->size[0] * c3_b_boxFeatures->size[1] - 1;
+  for (c3_i120 = 0; c3_i120 <= c3_sb_loop_ub; c3_i120++) {
+    c3_features1->data[c3_i120] = c3_b_boxFeatures->data[c3_i120];
   }
 
-  c3_emxFree_real32_T(chartInstance, &c3_b_RedCrabFeatures);
+  c3_emxFree_real32_T(chartInstance, &c3_b_boxFeatures);
   c3_emxInit_real32_T(chartInstance, &c3_features2, 2, &c3_yb_emlrtRTEI);
-  c3_i143 = c3_features2->size[0] * c3_features2->size[1];
+  c3_i121 = c3_features2->size[0] * c3_features2->size[1];
   c3_features2->size[0] = c3_varargin_2->size[0];
   c3_features2->size[1] = 64;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_features2, c3_i143,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_features2, c3_i121,
     &c3_yb_emlrtRTEI);
-  c3_cc_loop_ub = c3_varargin_2->size[0] * c3_varargin_2->size[1] - 1;
-  for (c3_i144 = 0; c3_i144 <= c3_cc_loop_ub; c3_i144++) {
-    c3_features2->data[c3_i144] = c3_varargin_2->data[c3_i144];
+  c3_tb_loop_ub = c3_varargin_2->size[0] * c3_varargin_2->size[1] - 1;
+  for (c3_i122 = 0; c3_i122 <= c3_tb_loop_ub; c3_i122++) {
+    c3_features2->data[c3_i122] = c3_varargin_2->data[c3_i122];
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_varargin_2);
   c3_emxInit_real32_T(chartInstance, &c3_b_features1, 2, &c3_ac_emlrtRTEI);
-  c3_i145 = c3_features1->size[1];
-  c3_i146 = c3_features1->size[0];
-  c3_i147 = c3_b_features1->size[0] * c3_b_features1->size[1];
+  c3_i123 = c3_features1->size[1];
+  c3_i124 = c3_features1->size[0];
+  c3_i125 = c3_b_features1->size[0] * c3_b_features1->size[1];
   c3_b_features1->size[0] = c3_features1->size[1];
   c3_b_features1->size[1] = c3_features1->size[0];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_features1, c3_i147,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_features1, c3_i125,
     &c3_ac_emlrtRTEI);
-  c3_dc_loop_ub = c3_features1->size[0] - 1;
-  for (c3_i148 = 0; c3_i148 <= c3_dc_loop_ub; c3_i148++) {
-    c3_ec_loop_ub = c3_features1->size[1] - 1;
-    for (c3_i149 = 0; c3_i149 <= c3_ec_loop_ub; c3_i149++) {
-      c3_b_features1->data[c3_i149 + c3_b_features1->size[0] * c3_i148] =
-        c3_features1->data[c3_i148 + c3_features1->size[0] * c3_i149];
+  c3_ub_loop_ub = c3_features1->size[0] - 1;
+  for (c3_i126 = 0; c3_i126 <= c3_ub_loop_ub; c3_i126++) {
+    c3_vb_loop_ub = c3_features1->size[1] - 1;
+    for (c3_i127 = 0; c3_i127 <= c3_vb_loop_ub; c3_i127++) {
+      c3_b_features1->data[c3_i127 + c3_b_features1->size[0] * c3_i126] =
+        c3_features1->data[c3_i126 + c3_features1->size[0] * c3_i127];
     }
   }
 
-  c3_iv4[0] = c3_i145;
-  c3_iv4[1] = c3_i146;
-  c3_i150 = c3_features1->size[0] * c3_features1->size[1];
+  c3_iv4[0] = c3_i123;
+  c3_iv4[1] = c3_i124;
+  c3_i128 = c3_features1->size[0] * c3_features1->size[1];
   c3_features1->size[0] = c3_iv4[0];
   c3_features1->size[1] = c3_iv4[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_features1, c3_i150,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_features1, c3_i128,
     &c3_bc_emlrtRTEI);
-  c3_fc_loop_ub = c3_iv4[0] * c3_iv4[1] - 1;
-  for (c3_i151 = 0; c3_i151 <= c3_fc_loop_ub; c3_i151++) {
-    c3_features1->data[c3_i151] = c3_b_features1->data[c3_i151];
+  c3_wb_loop_ub = c3_iv4[0] * c3_iv4[1] - 1;
+  for (c3_i129 = 0; c3_i129 <= c3_wb_loop_ub; c3_i129++) {
+    c3_features1->data[c3_i129] = c3_b_features1->data[c3_i129];
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_b_features1);
   c3_emxInit_real32_T(chartInstance, &c3_b_features2, 2, &c3_cc_emlrtRTEI);
-  c3_i152 = c3_features2->size[1];
-  c3_i153 = c3_features2->size[0];
-  c3_i154 = c3_b_features2->size[0] * c3_b_features2->size[1];
+  c3_i130 = c3_features2->size[1];
+  c3_i131 = c3_features2->size[0];
+  c3_i132 = c3_b_features2->size[0] * c3_b_features2->size[1];
   c3_b_features2->size[0] = c3_features2->size[1];
   c3_b_features2->size[1] = c3_features2->size[0];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_features2, c3_i154,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_features2, c3_i132,
     &c3_cc_emlrtRTEI);
-  c3_gc_loop_ub = c3_features2->size[0] - 1;
-  for (c3_i155 = 0; c3_i155 <= c3_gc_loop_ub; c3_i155++) {
-    c3_hc_loop_ub = c3_features2->size[1] - 1;
-    for (c3_i156 = 0; c3_i156 <= c3_hc_loop_ub; c3_i156++) {
-      c3_b_features2->data[c3_i156 + c3_b_features2->size[0] * c3_i155] =
-        c3_features2->data[c3_i155 + c3_features2->size[0] * c3_i156];
+  c3_xb_loop_ub = c3_features2->size[0] - 1;
+  for (c3_i133 = 0; c3_i133 <= c3_xb_loop_ub; c3_i133++) {
+    c3_yb_loop_ub = c3_features2->size[1] - 1;
+    for (c3_i134 = 0; c3_i134 <= c3_yb_loop_ub; c3_i134++) {
+      c3_b_features2->data[c3_i134 + c3_b_features2->size[0] * c3_i133] =
+        c3_features2->data[c3_i133 + c3_features2->size[0] * c3_i134];
     }
   }
 
-  c3_iv5[0] = c3_i152;
-  c3_iv5[1] = c3_i153;
-  c3_i157 = c3_features2->size[0] * c3_features2->size[1];
+  c3_iv5[0] = c3_i130;
+  c3_iv5[1] = c3_i131;
+  c3_i135 = c3_features2->size[0] * c3_features2->size[1];
   c3_features2->size[0] = c3_iv5[0];
   c3_features2->size[1] = c3_iv5[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_features2, c3_i157,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_features2, c3_i135,
     &c3_dc_emlrtRTEI);
-  c3_ic_loop_ub = c3_iv5[0] * c3_iv5[1] - 1;
-  for (c3_i158 = 0; c3_i158 <= c3_ic_loop_ub; c3_i158++) {
-    c3_features2->data[c3_i158] = c3_b_features2->data[c3_i158];
+  c3_ac_loop_ub = c3_iv5[0] * c3_iv5[1] - 1;
+  for (c3_i136 = 0; c3_i136 <= c3_ac_loop_ub; c3_i136++) {
+    c3_features2->data[c3_i136] = c3_b_features2->data[c3_i136];
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_b_features2);
   c3_emxInit_real32_T(chartInstance, &c3_features1in, 2, &c3_ec_emlrtRTEI);
-  c3_i159 = c3_features1in->size[0] * c3_features1in->size[1];
+  c3_i137 = c3_features1in->size[0] * c3_features1in->size[1];
   c3_features1in->size[0] = c3_features1->size[0];
   c3_features1in->size[1] = c3_features1->size[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_features1in, c3_i159,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_features1in, c3_i137,
     &c3_ec_emlrtRTEI);
-  c3_jc_loop_ub = c3_features1->size[0] * c3_features1->size[1] - 1;
-  for (c3_i160 = 0; c3_i160 <= c3_jc_loop_ub; c3_i160++) {
-    c3_features1in->data[c3_i160] = c3_features1->data[c3_i160];
+  c3_bc_loop_ub = c3_features1->size[0] * c3_features1->size[1] - 1;
+  for (c3_i138 = 0; c3_i138 <= c3_bc_loop_ub; c3_i138++) {
+    c3_features1in->data[c3_i138] = c3_features1->data[c3_i138];
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_features1);
   c3_emxInit_real32_T(chartInstance, &c3_features2in, 2, &c3_fc_emlrtRTEI);
-  c3_i161 = c3_features2in->size[0] * c3_features2in->size[1];
+  c3_i139 = c3_features2in->size[0] * c3_features2in->size[1];
   c3_features2in->size[0] = c3_features2->size[0];
   c3_features2in->size[1] = c3_features2->size[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_features2in, c3_i161,
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_features2in, c3_i139,
     &c3_fc_emlrtRTEI);
-  c3_kc_loop_ub = c3_features2->size[0] * c3_features2->size[1] - 1;
-  for (c3_i162 = 0; c3_i162 <= c3_kc_loop_ub; c3_i162++) {
-    c3_features2in->data[c3_i162] = c3_features2->data[c3_i162];
+  c3_cc_loop_ub = c3_features2->size[0] * c3_features2->size[1] - 1;
+  for (c3_i140 = 0; c3_i140 <= c3_cc_loop_ub; c3_i140++) {
+    c3_features2in->data[c3_i140] = c3_features2->data[c3_i140];
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_features2);
@@ -3154,26 +3058,60 @@ static void c3_chartstep_c3_MotionObjectDetector
   c3_emxFree_real32_T(chartInstance, &c3_matchMetric);
   c3_emxFree_real32_T(chartInstance, &c3_features2in);
   c3_emxFree_real32_T(chartInstance, &c3_features1in);
-  c3_i163 = c3_RedCrabPairs->size[0] * c3_RedCrabPairs->size[1];
-  c3_RedCrabPairs->size[0] = c3_indexPairs->size[1];
-  c3_RedCrabPairs->size[1] = 2;
-  c3_emxEnsureCapacity_uint32_T(chartInstance, c3_RedCrabPairs, c3_i163,
+  c3_i141 = c3_boxPairs->size[0] * c3_boxPairs->size[1];
+  c3_boxPairs->size[0] = c3_indexPairs->size[1];
+  c3_boxPairs->size[1] = 2;
+  c3_emxEnsureCapacity_uint32_T(chartInstance, c3_boxPairs, c3_i141,
     &c3_gc_emlrtRTEI);
-  for (c3_i164 = 0; c3_i164 < 2; c3_i164++) {
-    c3_lc_loop_ub = c3_indexPairs->size[1] - 1;
-    for (c3_i165 = 0; c3_i165 <= c3_lc_loop_ub; c3_i165++) {
-      c3_RedCrabPairs->data[c3_i165 + c3_RedCrabPairs->size[0] * c3_i164] =
-        c3_indexPairs->data[c3_i164 + (c3_i165 << 1)];
+  for (c3_i142 = 0; c3_i142 < 2; c3_i142++) {
+    c3_dc_loop_ub = c3_indexPairs->size[1] - 1;
+    for (c3_i143 = 0; c3_i143 <= c3_dc_loop_ub; c3_i143++) {
+      c3_boxPairs->data[c3_i143 + c3_boxPairs->size[0] * c3_i142] =
+        c3_indexPairs->data[c3_i142 + (c3_i143 << 1)];
     }
   }
 
   c3_emxFree_uint32_T(chartInstance, &c3_indexPairs);
   sfListenerPushScopeForDynamicMatricesJitOff(chartInstance->c3_RuntimeVar, 1U,
-    "RedCrabPairs", c3_RedCrabPairs, (void *)c3_sf_marshallOut_dynamicmatrix_1,
-    (void *)c3_sf_marshallIn_dynamicmatrix_1, 0U);
+    "boxPairs", c3_boxPairs, (void *)c3_sf_marshallOut_dynamicmatrix_1, (void *)
+    c3_sf_marshallIn_dynamicmatrix_1, 0U);
   if ((chartInstance->c3_IsDebuggerActive == 1) ||
       (chartInstance->c3_IsSequenceViewerPresent == 1)) {
-    sfListenerReportLineNumber(chartInstance->c3_RuntimeVar, 0, -13);
+    sfListenerReportLineNumber(chartInstance->c3_RuntimeVar, 0, 15);
+  }
+
+  c3_i144 = c3_boxPairs->size[0];
+  c3_i145 = c3_A->size[0];
+  c3_A->size[0] = c3_i144;
+  c3_emxEnsureCapacity_uint32_T1(chartInstance, c3_A, c3_i145, &c3_hc_emlrtRTEI);
+  c3_ec_loop_ub = c3_i144 - 1;
+  for (c3_i146 = 0; c3_i146 <= c3_ec_loop_ub; c3_i146++) {
+    c3_A->data[c3_i146] = c3_boxPairs->data[c3_i146];
+  }
+
+  sfListenerPushScopeForDynamicMatricesJitOff(chartInstance->c3_RuntimeVar, 1U,
+    "A", c3_A, (void *)c3_sf_marshallOut_dynamicmatrix_2, (void *)
+    c3_sf_marshallIn_dynamicmatrix_2, 0U);
+  if ((chartInstance->c3_IsDebuggerActive == 1) ||
+      (chartInstance->c3_IsSequenceViewerPresent == 1)) {
+    sfListenerReportLineNumber(chartInstance->c3_RuntimeVar, 0, 16);
+  }
+
+  c3_i147 = c3_boxPairs->size[0];
+  c3_i148 = c3_B->size[0];
+  c3_B->size[0] = c3_i147;
+  c3_emxEnsureCapacity_uint32_T1(chartInstance, c3_B, c3_i148, &c3_ic_emlrtRTEI);
+  c3_fc_loop_ub = c3_i147 - 1;
+  for (c3_i149 = 0; c3_i149 <= c3_fc_loop_ub; c3_i149++) {
+    c3_B->data[c3_i149] = c3_boxPairs->data[c3_i149 + c3_boxPairs->size[0]];
+  }
+
+  sfListenerPushScopeForDynamicMatricesJitOff(chartInstance->c3_RuntimeVar, 1U,
+    "B", c3_B, (void *)c3_sf_marshallOut_dynamicmatrix_2, (void *)
+    c3_sf_marshallIn_dynamicmatrix_2, 0U);
+  if ((chartInstance->c3_IsDebuggerActive == 1) ||
+      (chartInstance->c3_IsSequenceViewerPresent == 1)) {
+    sfListenerReportLineNumber(chartInstance->c3_RuntimeVar, 0, -16);
   }
 
   if ((chartInstance->c3_IsDebuggerActive == 1) ||
@@ -3186,17 +3124,18 @@ static void c3_chartstep_c3_MotionObjectDetector
     sfListenerReportEndingSection(chartInstance->c3_RuntimeVar, 0, 1);
   }
 
-  c3_emxFreeStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_b_PtsStruct);
-  c3_emxFreeStruct_vision_internal_S(chartInstance, &c3_c_RedCrabPoints);
   c3_emxFreeStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_PtsStruct);
+  c3_emxFreeStruct_vision_internal_S(chartInstance, &c3_c_boxPoints);
   c3_emxFreeStruct_s2rdWZ6jAA0S8hk59(chartInstance, &c3_vPts);
-  c3_emxFreeStruct_vision_internal_S(chartInstance, &c3_b_ROIPoints);
-  c3_emxFreeStruct_vision_internal_S(chartInstance, &c3_b_RedCrabPoints);
-  c3_emxFree_uint32_T(chartInstance, &c3_RedCrabPairs);
-  c3_emxFree_real32_T(chartInstance, &c3_ROIFeatures);
-  c3_emxFreeStruct_vision_internal_S(chartInstance, &c3_ROIPoints);
-  c3_emxFree_real32_T(chartInstance, &c3_RedCrabFeatures);
-  c3_emxFreeStruct_vision_internal_S(chartInstance, &c3_RedCrabPoints);
+  c3_emxFreeStruct_vision_internal_S(chartInstance, &c3_b_scenePoints);
+  c3_emxFreeStruct_vision_internal_S(chartInstance, &c3_b_boxPoints);
+  c3_emxFree_uint32_T(chartInstance, &c3_B);
+  c3_emxFree_uint32_T(chartInstance, &c3_A);
+  c3_emxFree_uint32_T(chartInstance, &c3_boxPairs);
+  c3_emxFree_real32_T(chartInstance, &c3_sceneFeatures);
+  c3_emxFree_real32_T(chartInstance, &c3_boxFeatures);
+  c3_emxFreeStruct_vision_internal_S(chartInstance, &c3_scenePoints);
+  c3_emxFreeStruct_vision_internal_S(chartInstance, &c3_boxPoints);
 }
 
 static void initSimStructsc3_MotionObjectDetector
@@ -3212,6 +3151,200 @@ const mxArray *sf_c3_MotionObjectDetector_get_eml_resolved_functions_info(void)
   sf_mex_assign(&c3_nameCaptureInfo, sf_mex_create("nameCaptureInfo", NULL, 0,
     0U, 1U, 0U, 2, 0, 1), false);
   return c3_nameCaptureInfo;
+}
+
+static void c3_detectSURFFeatures(SFc3_MotionObjectDetectorInstanceStruct
+  *chartInstance, uint8_T c3_I[50463], c3_vision_internal_SURFPoints_cg *c3_Pts)
+{
+  c3_sJTMl20J2MtSHoTgqrNGwiD c3_PtsStruct;
+  int32_T c3_i;
+  int32_T c3_i1;
+  c3_emxArray_real32_T *c3_PtsStruct_Location;
+  int32_T c3_i2;
+  c3_emxArray_real32_T *c3_PtsStruct_Scale;
+  int32_T c3_i3;
+  c3_emxArray_real32_T *c3_PtsStruct_Metric;
+  c3_emxArray_int8_T *c3_PtsStruct_SignOfLaplacian;
+  uint8_T c3_b_Iu8[50463];
+  c3_emxArray_real32_T *c3_b_PtsStruct_Location;
+  void * c3_ptrKeypoint;
+  int32_T c3_outNumRows;
+  int32_T c3_i4;
+  int32_T c3_i5;
+  int32_T c3_i6;
+  int32_T c3_i7;
+  int32_T c3_i8;
+  int32_T c3_loop_ub;
+  int32_T c3_i9;
+  c3_sJTMl20J2MtSHoTgqrNGwiD c3_b_PtsStruct;
+  int32_T c3_i10;
+  int32_T c3_b_loop_ub;
+  int32_T c3_i11;
+  int32_T c3_i12;
+  int32_T c3_c_loop_ub;
+  int32_T c3_i13;
+  int32_T c3_i14;
+  int32_T c3_d_loop_ub;
+  int32_T c3_i15;
+  int32_T c3_i16;
+  int32_T c3_e_loop_ub;
+  int32_T c3_i17;
+  int32_T c3_i18;
+  int32_T c3_f_loop_ub;
+  int32_T c3_i19;
+  int32_T c3_i20;
+  int32_T c3_g_loop_ub;
+  int32_T c3_i21;
+  c3_emxArray_real32_T *c3_c_PtsStruct;
+  int32_T c3_i22;
+  int32_T c3_h_loop_ub;
+  int32_T c3_i23;
+  c3_emxInitStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_PtsStruct,
+    &c3_j_emlrtRTEI);
+  c3_i = 0;
+  for (c3_i1 = 0; c3_i1 < 189; c3_i1++) {
+    c3_i2 = 0;
+    for (c3_i3 = 0; c3_i3 < 267; c3_i3++) {
+      c3_b_Iu8[c3_i3 + c3_i] = c3_I[c3_i2 + c3_i1];
+      c3_i2 += 189;
+    }
+
+    c3_i += 267;
+  }
+
+  c3_emxInit_real32_T(chartInstance, &c3_PtsStruct_Location, 2, &c3_g_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_PtsStruct_Scale, 1, &c3_rc_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_PtsStruct_Metric, 1, &c3_rc_emlrtRTEI);
+  c3_emxInit_int8_T(chartInstance, &c3_PtsStruct_SignOfLaplacian, 1,
+                    &c3_rc_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_b_PtsStruct_Location, 2,
+                      &c3_rc_emlrtRTEI);
+  c3_ptrKeypoint = NULL;
+  c3_outNumRows = fastHessianDetector_uint8(c3_b_Iu8, 189, 267, 2, 2, 3, 1000,
+    &c3_ptrKeypoint);
+  c3_i4 = c3_b_PtsStruct_Location->size[0] * c3_b_PtsStruct_Location->size[1];
+  c3_b_PtsStruct_Location->size[0] = (int32_T)sf_mex_lw_non_negative_check
+    ((real_T)c3_outNumRows);
+  c3_b_PtsStruct_Location->size[1] = 2;
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_PtsStruct_Location, c3_i4,
+    &c3_emlrtRTEI);
+  c3_i5 = c3_PtsStruct_Scale->size[0];
+  c3_PtsStruct_Scale->size[0] = (int32_T)sf_mex_lw_non_negative_check((real_T)
+    c3_outNumRows);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_PtsStruct_Scale, c3_i5,
+    &c3_emlrtRTEI);
+  c3_i6 = c3_PtsStruct_Metric->size[0];
+  c3_PtsStruct_Metric->size[0] = (int32_T)sf_mex_lw_non_negative_check((real_T)
+    c3_outNumRows);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_PtsStruct_Metric, c3_i6,
+    &c3_emlrtRTEI);
+  c3_i7 = c3_PtsStruct_SignOfLaplacian->size[0];
+  c3_PtsStruct_SignOfLaplacian->size[0] = (int32_T)sf_mex_lw_non_negative_check
+    ((real_T)c3_outNumRows);
+  c3_emxEnsureCapacity_int8_T(chartInstance, c3_PtsStruct_SignOfLaplacian, c3_i7,
+    &c3_emlrtRTEI);
+  fastHessianDetector_keyPoints2field(c3_ptrKeypoint,
+    &c3_b_PtsStruct_Location->data[0], &c3_PtsStruct_Scale->data[0],
+    &c3_PtsStruct_Metric->data[0], &c3_PtsStruct_SignOfLaplacian->data[0]);
+  fastHessianDetector_deleteKeypoint(c3_ptrKeypoint);
+  c3_i8 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
+  c3_PtsStruct_Location->size[0] = c3_b_PtsStruct_Location->size[0];
+  c3_PtsStruct_Location->size[1] = c3_b_PtsStruct_Location->size[1];
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i8,
+    &c3_b_emlrtRTEI);
+  c3_loop_ub = c3_b_PtsStruct_Location->size[0] * c3_b_PtsStruct_Location->size
+    [1] - 1;
+  for (c3_i9 = 0; c3_i9 <= c3_loop_ub; c3_i9++) {
+    c3_PtsStruct_Location->data[c3_i9] = c3_b_PtsStruct_Location->data[c3_i9];
+  }
+
+  c3_emxFree_real32_T(chartInstance, &c3_b_PtsStruct_Location);
+  c3_emxInitStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_b_PtsStruct,
+    &c3_lc_emlrtRTEI);
+  c3_i10 = c3_b_PtsStruct.Location->size[0] * c3_b_PtsStruct.Location->size[1];
+  c3_b_PtsStruct.Location->size[0] = c3_PtsStruct_Location->size[0];
+  c3_b_PtsStruct.Location->size[1] = 2;
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_PtsStruct.Location, c3_i10,
+    &c3_c_emlrtRTEI);
+  c3_b_loop_ub = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1]
+    - 1;
+  for (c3_i11 = 0; c3_i11 <= c3_b_loop_ub; c3_i11++) {
+    c3_b_PtsStruct.Location->data[c3_i11] = c3_PtsStruct_Location->data[c3_i11];
+  }
+
+  c3_i12 = c3_b_PtsStruct.Scale->size[0];
+  c3_b_PtsStruct.Scale->size[0] = c3_PtsStruct_Scale->size[0];
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_PtsStruct.Scale, c3_i12,
+    &c3_d_emlrtRTEI);
+  c3_c_loop_ub = c3_PtsStruct_Scale->size[0] - 1;
+  for (c3_i13 = 0; c3_i13 <= c3_c_loop_ub; c3_i13++) {
+    c3_b_PtsStruct.Scale->data[c3_i13] = c3_PtsStruct_Scale->data[c3_i13];
+  }
+
+  c3_emxFree_real32_T(chartInstance, &c3_PtsStruct_Scale);
+  c3_i14 = c3_b_PtsStruct.Metric->size[0];
+  c3_b_PtsStruct.Metric->size[0] = c3_PtsStruct_Metric->size[0];
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_PtsStruct.Metric, c3_i14,
+    &c3_e_emlrtRTEI);
+  c3_d_loop_ub = c3_PtsStruct_Metric->size[0] - 1;
+  for (c3_i15 = 0; c3_i15 <= c3_d_loop_ub; c3_i15++) {
+    c3_b_PtsStruct.Metric->data[c3_i15] = c3_PtsStruct_Metric->data[c3_i15];
+  }
+
+  c3_emxFree_real32_T(chartInstance, &c3_PtsStruct_Metric);
+  c3_i16 = c3_b_PtsStruct.SignOfLaplacian->size[0];
+  c3_b_PtsStruct.SignOfLaplacian->size[0] = c3_PtsStruct_SignOfLaplacian->size[0];
+  c3_emxEnsureCapacity_int8_T(chartInstance, c3_b_PtsStruct.SignOfLaplacian,
+    c3_i16, &c3_f_emlrtRTEI);
+  c3_e_loop_ub = c3_PtsStruct_SignOfLaplacian->size[0] - 1;
+  for (c3_i17 = 0; c3_i17 <= c3_e_loop_ub; c3_i17++) {
+    c3_b_PtsStruct.SignOfLaplacian->data[c3_i17] =
+      c3_PtsStruct_SignOfLaplacian->data[c3_i17];
+  }
+
+  c3_emxFree_int8_T(chartInstance, &c3_PtsStruct_SignOfLaplacian);
+  c3_i18 = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1];
+  c3_PtsStruct_Location->size[0] = c3_b_PtsStruct.Location->size[0];
+  c3_PtsStruct_Location->size[1] = 2;
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_PtsStruct_Location, c3_i18,
+    &c3_g_emlrtRTEI);
+  c3_f_loop_ub = c3_b_PtsStruct.Location->size[0] *
+    c3_b_PtsStruct.Location->size[1] - 1;
+  for (c3_i19 = 0; c3_i19 <= c3_f_loop_ub; c3_i19++) {
+    c3_PtsStruct_Location->data[c3_i19] = c3_b_PtsStruct.Location->data[c3_i19];
+  }
+
+  c3_i20 = c3_b_PtsStruct.Location->size[0] * c3_b_PtsStruct.Location->size[1];
+  c3_b_PtsStruct.Location->size[0] = c3_PtsStruct_Location->size[0];
+  c3_b_PtsStruct.Location->size[1] = 2;
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_PtsStruct.Location, c3_i20,
+    &c3_h_emlrtRTEI);
+  c3_g_loop_ub = c3_PtsStruct_Location->size[0] * c3_PtsStruct_Location->size[1]
+    - 1;
+  for (c3_i21 = 0; c3_i21 <= c3_g_loop_ub; c3_i21++) {
+    c3_b_PtsStruct.Location->data[c3_i21] = c3_PtsStruct_Location->data[c3_i21];
+  }
+
+  c3_emxFree_real32_T(chartInstance, &c3_PtsStruct_Location);
+  c3_emxInit_real32_T(chartInstance, &c3_c_PtsStruct, 2, &c3_i_emlrtRTEI);
+  c3_i22 = c3_c_PtsStruct->size[0] * c3_c_PtsStruct->size[1];
+  c3_c_PtsStruct->size[0] = c3_b_PtsStruct.Location->size[0];
+  c3_c_PtsStruct->size[1] = 2;
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_c_PtsStruct, c3_i22,
+    &c3_i_emlrtRTEI);
+  c3_h_loop_ub = c3_b_PtsStruct.Location->size[0] *
+    c3_b_PtsStruct.Location->size[1] - 1;
+  for (c3_i23 = 0; c3_i23 <= c3_h_loop_ub; c3_i23++) {
+    c3_c_PtsStruct->data[c3_i23] = c3_b_PtsStruct.Location->data[c3_i23];
+  }
+
+  c3_emxCopyStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_PtsStruct,
+    &c3_b_PtsStruct, &c3_j_emlrtRTEI);
+  c3_SURFPoints_cg_SURFPoints_cg(chartInstance, c3_c_PtsStruct, c3_PtsStruct,
+    c3_Pts);
+  c3_emxFree_real32_T(chartInstance, &c3_c_PtsStruct);
+  c3_emxFreeStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_b_PtsStruct);
+  c3_emxFreeStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_PtsStruct);
 }
 
 static void c3_SURFPoints_cg_SURFPoints_cg
@@ -3283,7 +3416,7 @@ static void c3_SURFPoints_cg_SURFPoints_cg
   const mxArray *c3_l_y = NULL;
   const mxArray *c3_m_y = NULL;
   const mxArray *c3_n_y = NULL;
-  c3_emxInitStruct_sTGP517nzdmMmY48R(chartInstance, &c3_inputs, &c3_qc_emlrtRTEI);
+  c3_emxInitStruct_sTGP517nzdmMmY48R(chartInstance, &c3_inputs, &c3_tc_emlrtRTEI);
   c3_this->pLocation->size[0] = 0;
   c3_this->pLocation->size[1] = 2;
   c3_this->pMetric->size[0] = 0;
@@ -3294,7 +3427,7 @@ static void c3_SURFPoints_cg_SURFPoints_cg
   c3_inputs.Location->size[0] = c3_varargin_1->size[0];
   c3_inputs.Location->size[1] = 2;
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_inputs.Location, c3_i,
-    &c3_pc_emlrtRTEI);
+    &c3_sc_emlrtRTEI);
   c3_loop_ub = c3_varargin_1->size[0] * c3_varargin_1->size[1] - 1;
   for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
     c3_inputs.Location->data[c3_i1] = c3_varargin_1->data[c3_i1];
@@ -3303,7 +3436,7 @@ static void c3_SURFPoints_cg_SURFPoints_cg
   c3_i2 = c3_inputs.Metric->size[0];
   c3_inputs.Metric->size[0] = c3_varargin_2.Metric->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_inputs.Metric, c3_i2,
-    &c3_qc_emlrtRTEI);
+    &c3_tc_emlrtRTEI);
   c3_b_loop_ub = c3_varargin_2.Metric->size[0] - 1;
   for (c3_i3 = 0; c3_i3 <= c3_b_loop_ub; c3_i3++) {
     c3_inputs.Metric->data[c3_i3] = c3_varargin_2.Metric->data[c3_i3];
@@ -3312,7 +3445,7 @@ static void c3_SURFPoints_cg_SURFPoints_cg
   c3_i4 = c3_inputs.Scale->size[0];
   c3_inputs.Scale->size[0] = c3_varargin_2.Scale->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_inputs.Scale, c3_i4,
-    &c3_qc_emlrtRTEI);
+    &c3_tc_emlrtRTEI);
   c3_c_loop_ub = c3_varargin_2.Scale->size[0] - 1;
   for (c3_i5 = 0; c3_i5 <= c3_c_loop_ub; c3_i5++) {
     c3_inputs.Scale->data[c3_i5] = c3_varargin_2.Scale->data[c3_i5];
@@ -3321,31 +3454,31 @@ static void c3_SURFPoints_cg_SURFPoints_cg
   c3_i6 = c3_inputs.SignOfLaplacian->size[0];
   c3_inputs.SignOfLaplacian->size[0] = c3_varargin_2.SignOfLaplacian->size[0];
   c3_emxEnsureCapacity_int8_T(chartInstance, c3_inputs.SignOfLaplacian, c3_i6,
-    &c3_qc_emlrtRTEI);
+    &c3_tc_emlrtRTEI);
   c3_d_loop_ub = c3_varargin_2.SignOfLaplacian->size[0] - 1;
   for (c3_i7 = 0; c3_i7 <= c3_d_loop_ub; c3_i7++) {
     c3_inputs.SignOfLaplacian->data[c3_i7] = c3_varargin_2.SignOfLaplacian->
       data[c3_i7];
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_b_inputs, 2, &c3_rc_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_b_inputs, 2, &c3_uc_emlrtRTEI);
   c3_inputs.Orientation = 0.0F;
   c3_i8 = c3_b_inputs->size[0] * c3_b_inputs->size[1];
   c3_b_inputs->size[0] = c3_inputs.Location->size[0];
   c3_b_inputs->size[1] = 2;
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_inputs, c3_i8,
-    &c3_rc_emlrtRTEI);
+    &c3_uc_emlrtRTEI);
   c3_e_loop_ub = c3_inputs.Location->size[0] * c3_inputs.Location->size[1] - 1;
   for (c3_i9 = 0; c3_i9 <= c3_e_loop_ub; c3_i9++) {
     c3_b_inputs->data[c3_i9] = c3_inputs.Location->data[c3_i9];
   }
 
-  c3_emxInit_real32_T1(chartInstance, &c3_c_inputs, 1, &c3_sc_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_c_inputs, 1, &c3_vc_emlrtRTEI);
   c3_FeaturePointsImpl_checkLocation(chartInstance, c3_b_inputs);
   c3_i10 = c3_c_inputs->size[0];
   c3_c_inputs->size[0] = c3_inputs.Metric->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_c_inputs, c3_i10,
-    &c3_sc_emlrtRTEI);
+    &c3_vc_emlrtRTEI);
   c3_f_loop_ub = c3_inputs.Metric->size[0] - 1;
   c3_emxFree_real32_T(chartInstance, &c3_b_inputs);
   for (c3_i11 = 0; c3_i11 <= c3_f_loop_ub; c3_i11++) {
@@ -3379,43 +3512,43 @@ static void c3_SURFPoints_cg_SURFPoints_cg
                   c3_f_y)));
   }
 
-  c3_emxInit_real32_T1(chartInstance, &c3_d_inputs, 1, &c3_tc_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_d_inputs, 1, &c3_wc_emlrtRTEI);
   c3_i12 = c3_d_inputs->size[0];
   c3_d_inputs->size[0] = c3_inputs.Scale->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_d_inputs, c3_i12,
-    &c3_tc_emlrtRTEI);
+    &c3_wc_emlrtRTEI);
   c3_g_loop_ub = c3_inputs.Scale->size[0] - 1;
   for (c3_i13 = 0; c3_i13 <= c3_g_loop_ub; c3_i13++) {
     c3_d_inputs->data[c3_i13] = c3_inputs.Scale->data[c3_i13];
   }
 
-  c3_emxInit_int8_T(chartInstance, &c3_in, 1, &c3_uc_emlrtRTEI);
+  c3_emxInit_int8_T(chartInstance, &c3_in, 1, &c3_xc_emlrtRTEI);
   c3_SURFPointsImpl_checkScale(chartInstance, c3_d_inputs);
   c3_i14 = c3_in->size[0];
   c3_in->size[0] = c3_inputs.SignOfLaplacian->size[0];
-  c3_emxEnsureCapacity_int8_T(chartInstance, c3_in, c3_i14, &c3_uc_emlrtRTEI);
+  c3_emxEnsureCapacity_int8_T(chartInstance, c3_in, c3_i14, &c3_xc_emlrtRTEI);
   c3_h_loop_ub = c3_inputs.SignOfLaplacian->size[0] - 1;
   c3_emxFree_real32_T(chartInstance, &c3_d_inputs);
   for (c3_i15 = 0; c3_i15 <= c3_h_loop_ub; c3_i15++) {
     c3_in->data[c3_i15] = c3_inputs.SignOfLaplacian->data[c3_i15];
   }
 
-  c3_emxInit_boolean_T(chartInstance, &c3_b_in, 1, &c3_vc_emlrtRTEI);
+  c3_emxInit_boolean_T(chartInstance, &c3_b_in, 1, &c3_yc_emlrtRTEI);
   c3_i16 = c3_b_in->size[0];
   c3_b_in->size[0] = c3_in->size[0];
   c3_emxEnsureCapacity_boolean_T(chartInstance, c3_b_in, c3_i16,
-    &c3_vc_emlrtRTEI);
+    &c3_yc_emlrtRTEI);
   c3_i_loop_ub = c3_in->size[0] - 1;
   for (c3_i17 = 0; c3_i17 <= c3_i_loop_ub; c3_i17++) {
     c3_b_in->data[c3_i17] = ((real_T)c3_in->data[c3_i17] >= -1.0);
   }
 
-  c3_emxInit_boolean_T(chartInstance, &c3_c_in, 1, &c3_wc_emlrtRTEI);
+  c3_emxInit_boolean_T(chartInstance, &c3_c_in, 1, &c3_ad_emlrtRTEI);
   if (c3_b_all(chartInstance, c3_b_in)) {
     c3_i18 = c3_c_in->size[0];
     c3_c_in->size[0] = c3_in->size[0];
     c3_emxEnsureCapacity_boolean_T(chartInstance, c3_c_in, c3_i18,
-      &c3_wc_emlrtRTEI);
+      &c3_ad_emlrtRTEI);
     c3_j_loop_ub = c3_in->size[0] - 1;
     for (c3_i19 = 0; c3_i19 <= c3_j_loop_ub; c3_i19++) {
       c3_c_in->data[c3_i19] = ((real_T)c3_in->data[c3_i19] <= 1.0);
@@ -3699,12 +3832,12 @@ static void c3_FeaturePointsImpl_checkLocation
                   c3_l_y)));
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_b_location, 2, &c3_xc_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_b_location, 2, &c3_bd_emlrtRTEI);
   c3_i3 = c3_b_location->size[0] * c3_b_location->size[1];
   c3_b_location->size[0] = c3_location->size[0];
   c3_b_location->size[1] = 2;
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_location, c3_i3,
-    &c3_xc_emlrtRTEI);
+    &c3_bd_emlrtRTEI);
   c3_loop_ub = c3_location->size[0] * c3_location->size[1] - 1;
   for (c3_i4 = 0; c3_i4 <= c3_loop_ub; c3_i4++) {
     c3_b_location->data[c3_i4] = c3_location->data[c3_i4];
@@ -3837,11 +3970,11 @@ static void c3_FeaturePointsImpl_checkMetric
                   c3_f_y)));
   }
 
-  c3_emxInit_real32_T1(chartInstance, &c3_b_metric, 1, &c3_yc_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_b_metric, 1, &c3_cd_emlrtRTEI);
   c3_i1 = c3_b_metric->size[0];
   c3_b_metric->size[0] = c3_metric->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_metric, c3_i1,
-    &c3_yc_emlrtRTEI);
+    &c3_cd_emlrtRTEI);
   c3_loop_ub = c3_metric->size[0] - 1;
   for (c3_i2 = 0; c3_i2 <= c3_loop_ub; c3_i2++) {
     c3_b_metric->data[c3_i2] = c3_metric->data[c3_i2];
@@ -4010,11 +4143,11 @@ static void c3_SURFPointsImpl_checkScale(SFc3_MotionObjectDetectorInstanceStruct
                   c3_f_y)));
   }
 
-  c3_emxInit_real32_T1(chartInstance, &c3_b_scale, 1, &c3_yc_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_b_scale, 1, &c3_cd_emlrtRTEI);
   c3_i1 = c3_b_scale->size[0];
   c3_b_scale->size[0] = c3_scale->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_scale, c3_i1,
-    &c3_yc_emlrtRTEI);
+    &c3_cd_emlrtRTEI);
   c3_loop_ub = c3_scale->size[0] - 1;
   for (c3_i2 = 0; c3_i2 <= c3_loop_ub; c3_i2++) {
     c3_b_scale->data[c3_i2] = c3_scale->data[c3_i2];
@@ -4195,11 +4328,11 @@ static void c3_SURFPointsImpl_configure(SFc3_MotionObjectDetectorInstanceStruct 
 {
   c3_sTGP517nzdmMmY48RaBsM6E c3_b_inputs;
   c3_emxInitStruct_sTGP517nzdmMmY48R(chartInstance, &c3_b_inputs,
-    &c3_ad_emlrtRTEI);
+    &c3_dd_emlrtRTEI);
   c3_emxCopyStruct_vision_internal_S(chartInstance, c3_b_this, &c3_this,
-    &c3_ad_emlrtRTEI);
+    &c3_dd_emlrtRTEI);
   c3_emxCopyStruct_sTGP517nzdmMmY48R(chartInstance, &c3_b_inputs, &c3_inputs,
-    &c3_ad_emlrtRTEI);
+    &c3_dd_emlrtRTEI);
   c3_c_SURFPointsImpl_configure(chartInstance, c3_b_this, c3_b_inputs);
   c3_emxFreeStruct_sTGP517nzdmMmY48R(chartInstance, &c3_b_inputs);
 }
@@ -4394,7 +4527,7 @@ static void c3_extractFeatures(SFc3_MotionObjectDetectorInstanceStruct
   int32_T c3_i70;
   int32_T c3_fb_loop_ub;
   int32_T c3_i71;
-  c3_emxInit_real32_T(chartInstance, &c3_out, 2, &c3_cd_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_out, 2, &c3_fd_emlrtRTEI);
   c3_emxInitStruct_s2rdWZ6jAA0S8hk59(chartInstance, &c3_vPts, &c3_sb_emlrtRTEI);
   c3_i = c3_out->size[0] * c3_out->size[1];
   c3_out->size[0] = c3_points.pLocation->size[0];
@@ -4430,10 +4563,10 @@ static void c3_extractFeatures(SFc3_MotionObjectDetectorInstanceStruct
     c3_out->data[c3_i3] = c3_points.pLocation->data[c3_i3];
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_valLocation, 2, &c3_lc_emlrtRTEI);
-  c3_emxInit_real32_T1(chartInstance, &c3_valScale, 1, &c3_mc_emlrtRTEI);
-  c3_emxInit_real32_T1(chartInstance, &c3_valMetric, 1, &c3_nc_emlrtRTEI);
-  c3_emxInit_int8_T(chartInstance, &c3_valSignOfLaplacian, 1, &c3_oc_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_valLocation, 2, &c3_nc_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_valScale, 1, &c3_oc_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_valMetric, 1, &c3_pc_emlrtRTEI);
+  c3_emxInit_int8_T(chartInstance, &c3_valSignOfLaplacian, 1, &c3_qc_emlrtRTEI);
   c3_out_numel = (real_T)c3_out->size[0];
   c3_i4 = c3_valLocation->size[0] * c3_valLocation->size[1];
   c3_valLocation->size[0] = (int32_T)c3_out_numel;
@@ -4462,7 +4595,7 @@ static void c3_extractFeatures(SFc3_MotionObjectDetectorInstanceStruct
       MAX_uint32_T, (int32_T)c3_out_numel, 1, c3_valLocation->size[0]) - 1;
   }
 
-  c3_emxInit_int32_T(chartInstance, &c3_r, 1, &c3_bd_emlrtRTEI);
+  c3_emxInit_int32_T(chartInstance, &c3_r, 1, &c3_ed_emlrtRTEI);
   c3_i9 = c3_r->size[0];
   c3_r->size[0] = c3_i8 + 1;
   c3_emxEnsureCapacity_int32_T(chartInstance, c3_r, c3_i9, &c3_r_emlrtRTEI);
@@ -4513,7 +4646,7 @@ static void c3_extractFeatures(SFc3_MotionObjectDetectorInstanceStruct
     c3_r->data[c3_i18] = c3_i18;
   }
 
-  c3_emxInit_real32_T1(chartInstance, &c3_outOrientation, 1, &c3_bd_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_outOrientation, 1, &c3_ed_emlrtRTEI);
   c3_i19 = c3_outOrientation->size[0];
   c3_outOrientation->size[0] = c3_points.pScale->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_outOrientation, c3_i19,
@@ -4585,7 +4718,7 @@ static void c3_extractFeatures(SFc3_MotionObjectDetectorInstanceStruct
     c3_r->data[c3_i30] = c3_i30;
   }
 
-  c3_emxInit_int8_T(chartInstance, &c3_r1, 1, &c3_bd_emlrtRTEI);
+  c3_emxInit_int8_T(chartInstance, &c3_r1, 1, &c3_ed_emlrtRTEI);
   c3_i31 = c3_r1->size[0];
   c3_r1->size[0] = c3_points.pSignOfLaplacian->size[0];
   c3_emxEnsureCapacity_int8_T(chartInstance, c3_r1, c3_i31, &c3_ab_emlrtRTEI);
@@ -4604,7 +4737,7 @@ static void c3_extractFeatures(SFc3_MotionObjectDetectorInstanceStruct
   c3_emxFree_int8_T(chartInstance, &c3_r1);
   c3_emxFree_int32_T(chartInstance, &c3_r);
   c3_emxInitStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_ptsStruct,
-    &c3_bd_emlrtRTEI);
+    &c3_ed_emlrtRTEI);
   c3_i34 = c3_ptsStruct.Location->size[0] * c3_ptsStruct.Location->size[1];
   c3_ptsStruct.Location->size[0] = c3_valLocation->size[0];
   c3_ptsStruct.Location->size[1] = c3_valLocation->size[1];
@@ -4697,7 +4830,7 @@ static void c3_extractFeatures(SFc3_MotionObjectDetectorInstanceStruct
   }
 
   c3_emxFreeStruct_sJTMl20J2MtSHoTgq(chartInstance, &c3_ptsStruct);
-  c3_emxInit_real32_T(chartInstance, &c3_b_features, 2, &c3_bd_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_b_features, 2, &c3_ed_emlrtRTEI);
   c3_extractSurfBuildable_extractSurf_uint8(chartInstance, c3_b_Iu8T,
     c3_b_ptsStruct, c3_c_ptsStruct, c3_d_ptsStruct, c3_e_ptsStruct, false, false,
     c3_valLocation, c3_valScale, c3_valMetric, c3_valSignOfLaplacian,
@@ -4727,7 +4860,7 @@ static void c3_extractFeatures(SFc3_MotionObjectDetectorInstanceStruct
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_b_features);
-  c3_emxInitStruct_s2rdWZ6jAA0S8hk59(chartInstance, &c3_b_vPts, &c3_kc_emlrtRTEI);
+  c3_emxInitStruct_s2rdWZ6jAA0S8hk59(chartInstance, &c3_b_vPts, &c3_mc_emlrtRTEI);
   c3_i58 = c3_b_vPts.Location->size[0] * c3_b_vPts.Location->size[1];
   c3_b_vPts.Location->size[0] = c3_out->size[0];
   c3_b_vPts.Location->size[1] = 2;
@@ -4845,7 +4978,7 @@ static void c3_extractSurfBuildable_extractSurf_uint8
   int32_T c3_i13;
   (void)c3_isExtended;
   (void)c3_isUpright;
-  c3_emxInit_real32_T(chartInstance, &c3_b_inLocation, 2, &c3_hd_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_b_inLocation, 2, &c3_kd_emlrtRTEI);
   c3_ptrKeypoints = NULL;
   c3_ptrDescriptors = NULL;
   c3_numel = c3_inLocation->size[0];
@@ -4853,37 +4986,37 @@ static void c3_extractSurfBuildable_extractSurf_uint8
   c3_b_inLocation->size[0] = c3_inLocation->size[0];
   c3_b_inLocation->size[1] = 2;
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_inLocation, c3_i,
-    &c3_dd_emlrtRTEI);
+    &c3_gd_emlrtRTEI);
   c3_loop_ub = c3_inLocation->size[0] * c3_inLocation->size[1] - 1;
   for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
     c3_b_inLocation->data[c3_i1] = c3_inLocation->data[c3_i1];
   }
 
-  c3_emxInit_real32_T1(chartInstance, &c3_b_inScale, 1, &c3_hd_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_b_inScale, 1, &c3_kd_emlrtRTEI);
   c3_i2 = c3_b_inScale->size[0];
   c3_b_inScale->size[0] = c3_inScale->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_inScale, c3_i2,
-    &c3_ed_emlrtRTEI);
+    &c3_hd_emlrtRTEI);
   c3_b_loop_ub = c3_inScale->size[0] - 1;
   for (c3_i3 = 0; c3_i3 <= c3_b_loop_ub; c3_i3++) {
     c3_b_inScale->data[c3_i3] = c3_inScale->data[c3_i3];
   }
 
-  c3_emxInit_real32_T1(chartInstance, &c3_b_inMetric, 1, &c3_hd_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_b_inMetric, 1, &c3_kd_emlrtRTEI);
   c3_i4 = c3_b_inMetric->size[0];
   c3_b_inMetric->size[0] = c3_inMetric->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_inMetric, c3_i4,
-    &c3_fd_emlrtRTEI);
+    &c3_id_emlrtRTEI);
   c3_c_loop_ub = c3_inMetric->size[0] - 1;
   for (c3_i5 = 0; c3_i5 <= c3_c_loop_ub; c3_i5++) {
     c3_b_inMetric->data[c3_i5] = c3_inMetric->data[c3_i5];
   }
 
-  c3_emxInit_int8_T(chartInstance, &c3_b_inSignOfLaplacian, 1, &c3_hd_emlrtRTEI);
+  c3_emxInit_int8_T(chartInstance, &c3_b_inSignOfLaplacian, 1, &c3_kd_emlrtRTEI);
   c3_i6 = c3_b_inSignOfLaplacian->size[0];
   c3_b_inSignOfLaplacian->size[0] = c3_inSignOfLaplacian->size[0];
   c3_emxEnsureCapacity_int8_T(chartInstance, c3_b_inSignOfLaplacian, c3_i6,
-    &c3_gd_emlrtRTEI);
+    &c3_jd_emlrtRTEI);
   c3_d_loop_ub = c3_inSignOfLaplacian->size[0] - 1;
   for (c3_i7 = 0; c3_i7 <= c3_d_loop_ub; c3_i7++) {
     c3_b_inSignOfLaplacian->data[c3_i7] = c3_inSignOfLaplacian->data[c3_i7];
@@ -4898,28 +5031,28 @@ static void c3_extractSurfBuildable_extractSurf_uint8
     c3_out_numel);
   c3_outLocation->size[1] = 2;
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_outLocation, c3_i8,
-    &c3_hd_emlrtRTEI);
+    &c3_kd_emlrtRTEI);
   c3_i9 = c3_outScale->size[0];
   c3_outScale->size[0] = c3_out_numel;
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_outScale, c3_i9,
-    &c3_hd_emlrtRTEI);
+    &c3_kd_emlrtRTEI);
   c3_i10 = c3_outMetric->size[0];
   c3_outMetric->size[0] = c3_out_numel;
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_outMetric, c3_i10,
-    &c3_hd_emlrtRTEI);
+    &c3_kd_emlrtRTEI);
   c3_i11 = c3_outSignOfLaplacian->size[0];
   c3_outSignOfLaplacian->size[0] = c3_out_numel;
   c3_emxEnsureCapacity_int8_T(chartInstance, c3_outSignOfLaplacian, c3_i11,
-    &c3_hd_emlrtRTEI);
+    &c3_kd_emlrtRTEI);
   c3_i12 = c3_outOrientation->size[0];
   c3_outOrientation->size[0] = c3_out_numel;
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_outOrientation, c3_i12,
-    &c3_hd_emlrtRTEI);
+    &c3_kd_emlrtRTEI);
   c3_i13 = c3_outFeatures->size[0] * c3_outFeatures->size[1];
   c3_outFeatures->size[0] = c3_out_numel;
   c3_outFeatures->size[1] = 64;
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_outFeatures, c3_i13,
-    &c3_hd_emlrtRTEI);
+    &c3_kd_emlrtRTEI);
   extractSurf_assignOutput(c3_ptrKeypoints, c3_ptrDescriptors,
     &c3_outLocation->data[0], &c3_outScale->data[0], &c3_outMetric->data[0],
     &c3_outSignOfLaplacian->data[0], &c3_outOrientation->data[0],
@@ -5039,7 +5172,7 @@ static void c3_b_SURFPoints_cg_SURFPoints_cg
   static char_T c3_b_cv4[11] = { 'O', 'r', 'i', 'e', 'n', 't', 'a', 't', 'i',
     'o', 'n' };
 
-  c3_emxInitStruct_sGhH0Msgf1shDAvf5(chartInstance, &c3_inputs, &c3_qc_emlrtRTEI);
+  c3_emxInitStruct_sGhH0Msgf1shDAvf5(chartInstance, &c3_inputs, &c3_tc_emlrtRTEI);
   c3_this->pLocation->size[0] = 0;
   c3_this->pLocation->size[1] = 2;
   c3_this->pMetric->size[0] = 0;
@@ -5050,7 +5183,7 @@ static void c3_b_SURFPoints_cg_SURFPoints_cg
   c3_inputs.Location->size[0] = c3_varargin_1->size[0];
   c3_inputs.Location->size[1] = 2;
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_inputs.Location, c3_i,
-    &c3_pc_emlrtRTEI);
+    &c3_sc_emlrtRTEI);
   c3_loop_ub = c3_varargin_1->size[0] * c3_varargin_1->size[1] - 1;
   for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
     c3_inputs.Location->data[c3_i1] = c3_varargin_1->data[c3_i1];
@@ -5059,7 +5192,7 @@ static void c3_b_SURFPoints_cg_SURFPoints_cg
   c3_i2 = c3_inputs.Metric->size[0];
   c3_inputs.Metric->size[0] = c3_varargin_2.Metric->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_inputs.Metric, c3_i2,
-    &c3_qc_emlrtRTEI);
+    &c3_tc_emlrtRTEI);
   c3_b_loop_ub = c3_varargin_2.Metric->size[0] - 1;
   for (c3_i3 = 0; c3_i3 <= c3_b_loop_ub; c3_i3++) {
     c3_inputs.Metric->data[c3_i3] = c3_varargin_2.Metric->data[c3_i3];
@@ -5068,7 +5201,7 @@ static void c3_b_SURFPoints_cg_SURFPoints_cg
   c3_i4 = c3_inputs.Scale->size[0];
   c3_inputs.Scale->size[0] = c3_varargin_2.Scale->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_inputs.Scale, c3_i4,
-    &c3_qc_emlrtRTEI);
+    &c3_tc_emlrtRTEI);
   c3_c_loop_ub = c3_varargin_2.Scale->size[0] - 1;
   for (c3_i5 = 0; c3_i5 <= c3_c_loop_ub; c3_i5++) {
     c3_inputs.Scale->data[c3_i5] = c3_varargin_2.Scale->data[c3_i5];
@@ -5077,7 +5210,7 @@ static void c3_b_SURFPoints_cg_SURFPoints_cg
   c3_i6 = c3_inputs.SignOfLaplacian->size[0];
   c3_inputs.SignOfLaplacian->size[0] = c3_varargin_2.SignOfLaplacian->size[0];
   c3_emxEnsureCapacity_int8_T(chartInstance, c3_inputs.SignOfLaplacian, c3_i6,
-    &c3_qc_emlrtRTEI);
+    &c3_tc_emlrtRTEI);
   c3_d_loop_ub = c3_varargin_2.SignOfLaplacian->size[0] - 1;
   for (c3_i7 = 0; c3_i7 <= c3_d_loop_ub; c3_i7++) {
     c3_inputs.SignOfLaplacian->data[c3_i7] = c3_varargin_2.SignOfLaplacian->
@@ -5087,29 +5220,29 @@ static void c3_b_SURFPoints_cg_SURFPoints_cg
   c3_i8 = c3_inputs.Orientation->size[0];
   c3_inputs.Orientation->size[0] = c3_varargin_2.Orientation->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_inputs.Orientation, c3_i8,
-    &c3_qc_emlrtRTEI);
+    &c3_tc_emlrtRTEI);
   c3_e_loop_ub = c3_varargin_2.Orientation->size[0] - 1;
   for (c3_i9 = 0; c3_i9 <= c3_e_loop_ub; c3_i9++) {
     c3_inputs.Orientation->data[c3_i9] = c3_varargin_2.Orientation->data[c3_i9];
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_b_inputs, 2, &c3_rc_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_b_inputs, 2, &c3_uc_emlrtRTEI);
   c3_i10 = c3_b_inputs->size[0] * c3_b_inputs->size[1];
   c3_b_inputs->size[0] = c3_inputs.Location->size[0];
   c3_b_inputs->size[1] = 2;
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_inputs, c3_i10,
-    &c3_rc_emlrtRTEI);
+    &c3_uc_emlrtRTEI);
   c3_f_loop_ub = c3_inputs.Location->size[0] * c3_inputs.Location->size[1] - 1;
   for (c3_i11 = 0; c3_i11 <= c3_f_loop_ub; c3_i11++) {
     c3_b_inputs->data[c3_i11] = c3_inputs.Location->data[c3_i11];
   }
 
-  c3_emxInit_real32_T1(chartInstance, &c3_c_inputs, 1, &c3_sc_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_c_inputs, 1, &c3_vc_emlrtRTEI);
   c3_FeaturePointsImpl_checkLocation(chartInstance, c3_b_inputs);
   c3_i12 = c3_c_inputs->size[0];
   c3_c_inputs->size[0] = c3_inputs.Metric->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_c_inputs, c3_i12,
-    &c3_sc_emlrtRTEI);
+    &c3_vc_emlrtRTEI);
   c3_g_loop_ub = c3_inputs.Metric->size[0] - 1;
   c3_emxFree_real32_T(chartInstance, &c3_b_inputs);
   for (c3_i13 = 0; c3_i13 <= c3_g_loop_ub; c3_i13++) {
@@ -5143,22 +5276,22 @@ static void c3_b_SURFPoints_cg_SURFPoints_cg
                   c3_f_y)));
   }
 
-  c3_emxInit_real32_T1(chartInstance, &c3_d_inputs, 1, &c3_tc_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_d_inputs, 1, &c3_wc_emlrtRTEI);
   c3_i14 = c3_d_inputs->size[0];
   c3_d_inputs->size[0] = c3_inputs.Scale->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_d_inputs, c3_i14,
-    &c3_tc_emlrtRTEI);
+    &c3_wc_emlrtRTEI);
   c3_h_loop_ub = c3_inputs.Scale->size[0] - 1;
   for (c3_i15 = 0; c3_i15 <= c3_h_loop_ub; c3_i15++) {
     c3_d_inputs->data[c3_i15] = c3_inputs.Scale->data[c3_i15];
   }
 
-  c3_emxInit_real32_T1(chartInstance, &c3_orientation, 1, &c3_id_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_orientation, 1, &c3_ld_emlrtRTEI);
   c3_SURFPointsImpl_checkScale(chartInstance, c3_d_inputs);
   c3_i16 = c3_orientation->size[0];
   c3_orientation->size[0] = c3_inputs.Orientation->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_orientation, c3_i16,
-    &c3_id_emlrtRTEI);
+    &c3_ld_emlrtRTEI);
   c3_i_loop_ub = c3_inputs.Orientation->size[0] - 1;
   c3_emxFree_real32_T(chartInstance, &c3_d_inputs);
   for (c3_i17 = 0; c3_i17 <= c3_i_loop_ub; c3_i17++) {
@@ -5229,31 +5362,31 @@ static void c3_b_SURFPoints_cg_SURFPoints_cg
                   c3_l_y)));
   }
 
-  c3_emxInit_int8_T(chartInstance, &c3_in, 1, &c3_uc_emlrtRTEI);
+  c3_emxInit_int8_T(chartInstance, &c3_in, 1, &c3_xc_emlrtRTEI);
   c3_i19 = c3_in->size[0];
   c3_in->size[0] = c3_inputs.SignOfLaplacian->size[0];
-  c3_emxEnsureCapacity_int8_T(chartInstance, c3_in, c3_i19, &c3_uc_emlrtRTEI);
+  c3_emxEnsureCapacity_int8_T(chartInstance, c3_in, c3_i19, &c3_xc_emlrtRTEI);
   c3_j_loop_ub = c3_inputs.SignOfLaplacian->size[0] - 1;
   for (c3_i20 = 0; c3_i20 <= c3_j_loop_ub; c3_i20++) {
     c3_in->data[c3_i20] = c3_inputs.SignOfLaplacian->data[c3_i20];
   }
 
-  c3_emxInit_boolean_T(chartInstance, &c3_b_in, 1, &c3_vc_emlrtRTEI);
+  c3_emxInit_boolean_T(chartInstance, &c3_b_in, 1, &c3_yc_emlrtRTEI);
   c3_i21 = c3_b_in->size[0];
   c3_b_in->size[0] = c3_in->size[0];
   c3_emxEnsureCapacity_boolean_T(chartInstance, c3_b_in, c3_i21,
-    &c3_vc_emlrtRTEI);
+    &c3_yc_emlrtRTEI);
   c3_k_loop_ub = c3_in->size[0] - 1;
   for (c3_i22 = 0; c3_i22 <= c3_k_loop_ub; c3_i22++) {
     c3_b_in->data[c3_i22] = ((real_T)c3_in->data[c3_i22] >= -1.0);
   }
 
-  c3_emxInit_boolean_T(chartInstance, &c3_c_in, 1, &c3_wc_emlrtRTEI);
+  c3_emxInit_boolean_T(chartInstance, &c3_c_in, 1, &c3_ad_emlrtRTEI);
   if (c3_b_all(chartInstance, c3_b_in)) {
     c3_i23 = c3_c_in->size[0];
     c3_c_in->size[0] = c3_in->size[0];
     c3_emxEnsureCapacity_boolean_T(chartInstance, c3_c_in, c3_i23,
-      &c3_wc_emlrtRTEI);
+      &c3_ad_emlrtRTEI);
     c3_l_loop_ub = c3_in->size[0] - 1;
     for (c3_i24 = 0; c3_i24 <= c3_l_loop_ub; c3_i24++) {
       c3_c_in->data[c3_i24] = ((real_T)c3_in->data[c3_i24] <= 1.0);
@@ -5367,11 +5500,11 @@ static void c3_b_SURFPointsImpl_configure
 {
   c3_sGhH0Msgf1shDAvf5CNZg6B c3_b_inputs;
   c3_emxInitStruct_sGhH0Msgf1shDAvf5(chartInstance, &c3_b_inputs,
-    &c3_ad_emlrtRTEI);
+    &c3_dd_emlrtRTEI);
   c3_emxCopyStruct_vision_internal_S(chartInstance, c3_b_this, &c3_this,
-    &c3_ad_emlrtRTEI);
+    &c3_dd_emlrtRTEI);
   c3_emxCopyStruct_sGhH0Msgf1shDAvf5(chartInstance, &c3_b_inputs, &c3_inputs,
-    &c3_ad_emlrtRTEI);
+    &c3_dd_emlrtRTEI);
   c3_d_SURFPointsImpl_configure(chartInstance, c3_b_this, c3_b_inputs);
   c3_emxFreeStruct_sGhH0Msgf1shDAvf5(chartInstance, &c3_b_inputs);
 }
@@ -5413,7 +5546,7 @@ static void c3_b_extractSurfBuildable_extractSurf_uint8
   int32_T c3_i13;
   (void)c3_isExtended;
   (void)c3_isUpright;
-  c3_emxInit_real32_T(chartInstance, &c3_b_inLocation, 2, &c3_hd_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_b_inLocation, 2, &c3_kd_emlrtRTEI);
   c3_ptrKeypoints = NULL;
   c3_ptrDescriptors = NULL;
   c3_numel = c3_inLocation->size[0];
@@ -5421,37 +5554,37 @@ static void c3_b_extractSurfBuildable_extractSurf_uint8
   c3_b_inLocation->size[0] = c3_inLocation->size[0];
   c3_b_inLocation->size[1] = 2;
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_inLocation, c3_i,
-    &c3_dd_emlrtRTEI);
+    &c3_gd_emlrtRTEI);
   c3_loop_ub = c3_inLocation->size[0] * c3_inLocation->size[1] - 1;
   for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
     c3_b_inLocation->data[c3_i1] = c3_inLocation->data[c3_i1];
   }
 
-  c3_emxInit_real32_T1(chartInstance, &c3_b_inScale, 1, &c3_hd_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_b_inScale, 1, &c3_kd_emlrtRTEI);
   c3_i2 = c3_b_inScale->size[0];
   c3_b_inScale->size[0] = c3_inScale->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_inScale, c3_i2,
-    &c3_ed_emlrtRTEI);
+    &c3_hd_emlrtRTEI);
   c3_b_loop_ub = c3_inScale->size[0] - 1;
   for (c3_i3 = 0; c3_i3 <= c3_b_loop_ub; c3_i3++) {
     c3_b_inScale->data[c3_i3] = c3_inScale->data[c3_i3];
   }
 
-  c3_emxInit_real32_T1(chartInstance, &c3_b_inMetric, 1, &c3_hd_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_b_inMetric, 1, &c3_kd_emlrtRTEI);
   c3_i4 = c3_b_inMetric->size[0];
   c3_b_inMetric->size[0] = c3_inMetric->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_inMetric, c3_i4,
-    &c3_fd_emlrtRTEI);
+    &c3_id_emlrtRTEI);
   c3_c_loop_ub = c3_inMetric->size[0] - 1;
   for (c3_i5 = 0; c3_i5 <= c3_c_loop_ub; c3_i5++) {
     c3_b_inMetric->data[c3_i5] = c3_inMetric->data[c3_i5];
   }
 
-  c3_emxInit_int8_T(chartInstance, &c3_b_inSignOfLaplacian, 1, &c3_hd_emlrtRTEI);
+  c3_emxInit_int8_T(chartInstance, &c3_b_inSignOfLaplacian, 1, &c3_kd_emlrtRTEI);
   c3_i6 = c3_b_inSignOfLaplacian->size[0];
   c3_b_inSignOfLaplacian->size[0] = c3_inSignOfLaplacian->size[0];
   c3_emxEnsureCapacity_int8_T(chartInstance, c3_b_inSignOfLaplacian, c3_i6,
-    &c3_gd_emlrtRTEI);
+    &c3_jd_emlrtRTEI);
   c3_d_loop_ub = c3_inSignOfLaplacian->size[0] - 1;
   for (c3_i7 = 0; c3_i7 <= c3_d_loop_ub; c3_i7++) {
     c3_b_inSignOfLaplacian->data[c3_i7] = c3_inSignOfLaplacian->data[c3_i7];
@@ -5466,28 +5599,28 @@ static void c3_b_extractSurfBuildable_extractSurf_uint8
     c3_out_numel);
   c3_outLocation->size[1] = 2;
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_outLocation, c3_i8,
-    &c3_hd_emlrtRTEI);
+    &c3_kd_emlrtRTEI);
   c3_i9 = c3_outScale->size[0];
   c3_outScale->size[0] = c3_out_numel;
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_outScale, c3_i9,
-    &c3_hd_emlrtRTEI);
+    &c3_kd_emlrtRTEI);
   c3_i10 = c3_outMetric->size[0];
   c3_outMetric->size[0] = c3_out_numel;
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_outMetric, c3_i10,
-    &c3_hd_emlrtRTEI);
+    &c3_kd_emlrtRTEI);
   c3_i11 = c3_outSignOfLaplacian->size[0];
   c3_outSignOfLaplacian->size[0] = c3_out_numel;
   c3_emxEnsureCapacity_int8_T(chartInstance, c3_outSignOfLaplacian, c3_i11,
-    &c3_hd_emlrtRTEI);
+    &c3_kd_emlrtRTEI);
   c3_i12 = c3_outOrientation->size[0];
   c3_outOrientation->size[0] = c3_out_numel;
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_outOrientation, c3_i12,
-    &c3_hd_emlrtRTEI);
+    &c3_kd_emlrtRTEI);
   c3_i13 = c3_outFeatures->size[0] * c3_outFeatures->size[1];
   c3_outFeatures->size[0] = c3_out_numel;
   c3_outFeatures->size[1] = 64;
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_outFeatures, c3_i13,
-    &c3_hd_emlrtRTEI);
+    &c3_kd_emlrtRTEI);
   extractSurf_assignOutput(c3_ptrKeypoints, c3_ptrDescriptors,
     &c3_outLocation->data[0], &c3_outScale->data[0], &c3_outMetric->data[0],
     &c3_outSignOfLaplacian->data[0], &c3_outOrientation->data[0],
@@ -5507,7 +5640,7 @@ static void c3_normalizeX(SFc3_MotionObjectDetectorInstanceStruct *chartInstance
   c3_i = c3_d_X->size[0] * c3_d_X->size[1];
   c3_d_X->size[0] = 64;
   c3_d_X->size[1] = c3_c_X->size[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_d_X, c3_i, &c3_jd_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_d_X, c3_i, &c3_md_emlrtRTEI);
   c3_loop_ub = c3_c_X->size[0] * c3_c_X->size[1] - 1;
   for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
     c3_d_X->data[c3_i1] = c3_c_X->data[c3_i1];
@@ -5805,7 +5938,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   int32_T c3_i119;
   int32_T c3_tb_loop_ub;
   int32_T c3_i120;
-  c3_emxInit_real32_T(chartInstance, &c3_scores, 2, &c3_sd_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_scores, 2, &c3_vd_emlrtRTEI);
   c3_i = c3_features1->size[1];
   if (c3_i < 0) {
     c3_i = 0;
@@ -5826,24 +5959,24 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_scores->size[0] = 64;
   c3_scores->size[1] = c3_features1->size[1];
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_scores, c3_i2,
-    &c3_kd_emlrtRTEI);
+    &c3_nd_emlrtRTEI);
   c3_loop_ub = c3_features1->size[0] * c3_features1->size[1] - 1;
   for (c3_i3 = 0; c3_i3 <= c3_loop_ub; c3_i3++) {
     c3_scores->data[c3_i3] = c3_features1->data[c3_i3];
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_b_features2, 2, &c3_ld_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_b_features2, 2, &c3_od_emlrtRTEI);
   c3_i4 = c3_b_features2->size[0] * c3_b_features2->size[1];
   c3_b_features2->size[0] = 64;
   c3_b_features2->size[1] = c3_features2->size[1];
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_features2, c3_i4,
-    &c3_ld_emlrtRTEI);
+    &c3_od_emlrtRTEI);
   c3_b_loop_ub = c3_features2->size[0] * c3_features2->size[1] - 1;
   for (c3_i5 = 0; c3_i5 <= c3_b_loop_ub; c3_i5++) {
     c3_b_features2->data[c3_i5] = c3_features2->data[c3_i5];
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_b_scores, 2, &c3_md_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_b_scores, 2, &c3_pd_emlrtRTEI);
   c3_c_N1 = c3_b_N1;
   c3_c_N2 = c3_b_N2;
   c3_i6 = c3_scores->size[1];
@@ -5852,7 +5985,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_b_scores->size[0] = c3_scores->size[1];
   c3_b_scores->size[1] = c3_scores->size[0];
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_scores, c3_i8,
-    &c3_md_emlrtRTEI);
+    &c3_pd_emlrtRTEI);
   c3_c_loop_ub = c3_scores->size[0] - 1;
   for (c3_i9 = 0; c3_i9 <= c3_c_loop_ub; c3_i9++) {
     c3_d_loop_ub = c3_scores->size[1] - 1;
@@ -5868,21 +6001,21 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_scores->size[0] = c3_iv[0];
   c3_scores->size[1] = c3_iv[1];
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_scores, c3_i11,
-    &c3_nd_emlrtRTEI);
+    &c3_qd_emlrtRTEI);
   c3_e_loop_ub = c3_iv[0] * c3_iv[1] - 1;
   for (c3_i12 = 0; c3_i12 <= c3_e_loop_ub; c3_i12++) {
     c3_scores->data[c3_i12] = c3_b_scores->data[c3_i12];
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_b_scores);
-  c3_emxInit_real32_T(chartInstance, &c3_c_features2, 2, &c3_od_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_c_features2, 2, &c3_rd_emlrtRTEI);
   c3_i13 = c3_b_features2->size[1];
   c3_i14 = c3_b_features2->size[0];
   c3_i15 = c3_c_features2->size[0] * c3_c_features2->size[1];
   c3_c_features2->size[0] = c3_b_features2->size[1];
   c3_c_features2->size[1] = c3_b_features2->size[0];
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_c_features2, c3_i15,
-    &c3_od_emlrtRTEI);
+    &c3_rd_emlrtRTEI);
   c3_f_loop_ub = c3_b_features2->size[0] - 1;
   for (c3_i16 = 0; c3_i16 <= c3_f_loop_ub; c3_i16++) {
     c3_g_loop_ub = c3_b_features2->size[1] - 1;
@@ -5898,30 +6031,30 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_b_features2->size[0] = c3_iv1[0];
   c3_b_features2->size[1] = c3_iv1[1];
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_features2, c3_i18,
-    &c3_pd_emlrtRTEI);
+    &c3_sd_emlrtRTEI);
   c3_h_loop_ub = c3_iv1[0] * c3_iv1[1] - 1;
   for (c3_i19 = 0; c3_i19 <= c3_h_loop_ub; c3_i19++) {
     c3_b_features2->data[c3_i19] = c3_c_features2->data[c3_i19];
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_c_features2);
-  c3_emxInit_real32_T(chartInstance, &c3_b_features1, 2, &c3_qd_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_b_features1, 2, &c3_td_emlrtRTEI);
   c3_i20 = c3_b_features1->size[0] * c3_b_features1->size[1];
   c3_b_features1->size[0] = c3_scores->size[0];
   c3_b_features1->size[1] = c3_scores->size[1];
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_features1, c3_i20,
-    &c3_qd_emlrtRTEI);
+    &c3_td_emlrtRTEI);
   c3_i_loop_ub = c3_scores->size[0] * c3_scores->size[1] - 1;
   for (c3_i21 = 0; c3_i21 <= c3_i_loop_ub; c3_i21++) {
     c3_b_features1->data[c3_i21] = c3_scores->data[c3_i21];
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_d_features2, 2, &c3_rd_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_d_features2, 2, &c3_ud_emlrtRTEI);
   c3_i22 = c3_d_features2->size[0] * c3_d_features2->size[1];
   c3_d_features2->size[0] = c3_b_features2->size[0];
   c3_d_features2->size[1] = c3_b_features2->size[1];
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_d_features2, c3_i22,
-    &c3_rd_emlrtRTEI);
+    &c3_ud_emlrtRTEI);
   c3_j_loop_ub = c3_b_features2->size[0] * c3_b_features2->size[1] - 1;
   for (c3_i23 = 0; c3_i23 <= c3_j_loop_ub; c3_i23++) {
     c3_d_features2->data[c3_i23] = c3_b_features2->data[c3_i23];
@@ -5948,17 +6081,17 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_scores->size[0] = (int32_T)c3_d_N1;
   c3_scores->size[1] = (int32_T)c3_d_N2;
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_scores, c3_i26,
-    &c3_sd_emlrtRTEI);
+    &c3_vd_emlrtRTEI);
   c3_k_loop_ub = (int32_T)c3_d_N1 * (int32_T)c3_d_N2 - 1;
   for (c3_i27 = 0; c3_i27 <= c3_k_loop_ub; c3_i27++) {
     c3_scores->data[c3_i27] = 0.0F;
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_r, 2, &c3_ve_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_r, 2, &c3_ye_emlrtRTEI);
   c3_i28 = c3_r->size[0] * c3_r->size[1];
   c3_r->size[0] = 64;
   c3_r->size[1] = c3_b_features1->size[0];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_r, c3_i28, &c3_td_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_r, c3_i28, &c3_wd_emlrtRTEI);
   c3_l_loop_ub = c3_b_features1->size[0] - 1;
   for (c3_i29 = 0; c3_i29 <= c3_l_loop_ub; c3_i29++) {
     for (c3_i30 = 0; c3_i30 < 64; c3_i30++) {
@@ -5968,11 +6101,11 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_b_features1);
-  c3_emxInit_real32_T(chartInstance, &c3_r1, 2, &c3_ve_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_r1, 2, &c3_ye_emlrtRTEI);
   c3_i31 = c3_r1->size[0] * c3_r1->size[1];
   c3_r1->size[0] = 64;
   c3_r1->size[1] = c3_d_features2->size[0];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_r1, c3_i31, &c3_ud_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_r1, c3_i31, &c3_xd_emlrtRTEI);
   c3_m_loop_ub = c3_d_features2->size[0] - 1;
   for (c3_i32 = 0; c3_i32 <= c3_m_loop_ub; c3_i32++) {
     for (c3_i33 = 0; c3_i33 < 64; c3_i33++) {
@@ -5982,14 +6115,14 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   }
 
   c3_emxFree_real32_T(chartInstance, &c3_d_features2);
-  c3_emxInit_real32_T(chartInstance, &c3_c_scores, 2, &c3_vd_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_c_scores, 2, &c3_yd_emlrtRTEI);
   ComputeMetric_ssd_single(&c3_r->data[0], &c3_r1->data[0], &c3_scores->data[0],
     c3_numFeatures1, c3_numFeatures2, 64U);
   c3_i34 = c3_c_scores->size[0] * c3_c_scores->size[1];
   c3_c_scores->size[0] = c3_scores->size[0];
   c3_c_scores->size[1] = c3_scores->size[1];
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_c_scores, c3_i34,
-    &c3_vd_emlrtRTEI);
+    &c3_yd_emlrtRTEI);
   c3_n_loop_ub = c3_scores->size[0] * c3_scores->size[1] - 1;
   c3_emxFree_real32_T(chartInstance, &c3_r1);
   c3_emxFree_real32_T(chartInstance, &c3_r);
@@ -5997,9 +6130,9 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     c3_c_scores->data[c3_i35] = c3_scores->data[c3_i35];
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_topTwoMetrics, 2, &c3_ef_emlrtRTEI);
-  c3_emxInit_uint32_T(chartInstance, &c3_topTwoIndices, 2, &c3_ve_emlrtRTEI);
-  c3_emxInit_real_T(chartInstance, &c3_d_y, 2, &c3_kf_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_topTwoMetrics, 2, &c3_hf_emlrtRTEI);
+  c3_emxInit_uint32_T(chartInstance, &c3_topTwoIndices, 2, &c3_ye_emlrtRTEI);
+  c3_emxInit_real_T(chartInstance, &c3_d_y, 2, &c3_nf_emlrtRTEI);
   c3_partialSort(chartInstance, c3_c_scores, c3_topTwoMetrics, c3_topTwoIndices);
   sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 0, 0, MAX_uint32_T, 1, 1,
     c3_topTwoIndices->size[0]);
@@ -6014,19 +6147,19 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     c3_i36 = c3_d_y->size[0] * c3_d_y->size[1];
     c3_d_y->size[0] = 1;
     c3_d_y->size[1] = (int32_T)muDoubleScalarFloor(c3_b - 1.0) + 1;
-    c3_emxEnsureCapacity_real_T(chartInstance, c3_d_y, c3_i36, &c3_wd_emlrtRTEI);
+    c3_emxEnsureCapacity_real_T(chartInstance, c3_d_y, c3_i36, &c3_ae_emlrtRTEI);
     c3_o_loop_ub = (int32_T)muDoubleScalarFloor(c3_b - 1.0);
     for (c3_i38 = 0; c3_i38 <= c3_o_loop_ub; c3_i38++) {
       c3_d_y->data[c3_i38] = 1.0 + (real_T)c3_i38;
     }
   }
 
-  c3_emxInit_uint32_T(chartInstance, &c3_varargin_1, 2, &c3_xd_emlrtRTEI);
+  c3_emxInit_uint32_T(chartInstance, &c3_varargin_1, 2, &c3_be_emlrtRTEI);
   c3_i37 = c3_varargin_1->size[0] * c3_varargin_1->size[1];
   c3_varargin_1->size[0] = 1;
   c3_varargin_1->size[1] = c3_d_y->size[1];
   c3_emxEnsureCapacity_uint32_T(chartInstance, c3_varargin_1, c3_i37,
-    &c3_xd_emlrtRTEI);
+    &c3_be_emlrtRTEI);
   c3_p_loop_ub = c3_d_y->size[0] * c3_d_y->size[1] - 1;
   for (c3_i39 = 0; c3_i39 <= c3_p_loop_ub; c3_i39++) {
     c3_b_d = muDoubleScalarRound(c3_d_y->data[c3_i39]);
@@ -6048,13 +6181,13 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   }
 
   c3_emxFree_real_T(chartInstance, &c3_d_y);
-  c3_emxInit_uint32_T(chartInstance, &c3_varargin_2, 2, &c3_yd_emlrtRTEI);
+  c3_emxInit_uint32_T(chartInstance, &c3_varargin_2, 2, &c3_ce_emlrtRTEI);
   c3_i40 = c3_topTwoIndices->size[1] - 1;
   c3_i41 = c3_varargin_2->size[0] * c3_varargin_2->size[1];
   c3_varargin_2->size[0] = 1;
   c3_varargin_2->size[1] = c3_i40 + 1;
   c3_emxEnsureCapacity_uint32_T(chartInstance, c3_varargin_2, c3_i41,
-    &c3_yd_emlrtRTEI);
+    &c3_ce_emlrtRTEI);
   c3_q_loop_ub = c3_i40;
   for (c3_i42 = 0; c3_i42 <= c3_q_loop_ub; c3_i42++) {
     c3_varargin_2->data[c3_i42] = c3_topTwoIndices->data[c3_topTwoIndices->size
@@ -6101,12 +6234,12 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
       sf_mex_call(chartInstance->c3_fEmlrtCtx, "message", 1U, 1U, 14, c3_h_y)));
   }
 
-  c3_emxInitMatrix_cell_wrap_21(chartInstance, c3_reshapes, &c3_mf_emlrtRTEI);
+  c3_emxInitMatrix_cell_wrap_21(chartInstance, c3_reshapes, &c3_pf_emlrtRTEI);
   c3_i43 = c3_reshapes[0].f1->size[0] * c3_reshapes[0].f1->size[1];
   c3_reshapes[0].f1->size[0] = 1;
   c3_reshapes[0].f1->size[1] = c3_varargin_1->size[1];
   c3_emxEnsureCapacity_uint32_T(chartInstance, c3_reshapes[0].f1, c3_i43,
-    &c3_ae_emlrtRTEI);
+    &c3_de_emlrtRTEI);
   c3_r_loop_ub = c3_varargin_1->size[0] * c3_varargin_1->size[1] - 1;
   for (c3_i44 = 0; c3_i44 <= c3_r_loop_ub; c3_i44++) {
     c3_reshapes[0].f1->data[c3_i44] = c3_varargin_1->data[c3_i44];
@@ -6116,7 +6249,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_reshapes[1].f1->size[0] = 1;
   c3_reshapes[1].f1->size[1] = c3_varargin_2->size[1];
   c3_emxEnsureCapacity_uint32_T(chartInstance, c3_reshapes[1].f1, c3_i45,
-    &c3_ae_emlrtRTEI);
+    &c3_de_emlrtRTEI);
   c3_s_loop_ub = c3_varargin_2->size[0] * c3_varargin_2->size[1] - 1;
   for (c3_i46 = 0; c3_i46 <= c3_s_loop_ub; c3_i46++) {
     c3_reshapes[1].f1->data[c3_i46] = c3_varargin_2->data[c3_i46];
@@ -6126,7 +6259,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_varargin_1->size[0] = 1;
   c3_varargin_1->size[1] = c3_reshapes[0].f1->size[1];
   c3_emxEnsureCapacity_uint32_T(chartInstance, c3_varargin_1, c3_i47,
-    &c3_be_emlrtRTEI);
+    &c3_ee_emlrtRTEI);
   c3_t_loop_ub = c3_reshapes[0].f1->size[0] * c3_reshapes[0].f1->size[1] - 1;
   for (c3_i48 = 0; c3_i48 <= c3_t_loop_ub; c3_i48++) {
     c3_varargin_1->data[c3_i48] = c3_reshapes[0].f1->data[c3_i48];
@@ -6136,19 +6269,19 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_varargin_2->size[0] = 1;
   c3_varargin_2->size[1] = c3_reshapes[1].f1->size[1];
   c3_emxEnsureCapacity_uint32_T(chartInstance, c3_varargin_2, c3_i49,
-    &c3_be_emlrtRTEI);
+    &c3_ee_emlrtRTEI);
   c3_u_loop_ub = c3_reshapes[1].f1->size[0] * c3_reshapes[1].f1->size[1] - 1;
   for (c3_i50 = 0; c3_i50 <= c3_u_loop_ub; c3_i50++) {
     c3_varargin_2->data[c3_i50] = c3_reshapes[1].f1->data[c3_i50];
   }
 
   c3_emxFreeMatrix_cell_wrap_21(chartInstance, c3_reshapes);
-  c3_emxInit_uint32_T(chartInstance, &c3_b_indexPairs, 2, &c3_bf_emlrtRTEI);
+  c3_emxInit_uint32_T(chartInstance, &c3_b_indexPairs, 2, &c3_ef_emlrtRTEI);
   c3_i51 = c3_b_indexPairs->size[0] * c3_b_indexPairs->size[1];
   c3_b_indexPairs->size[0] = 2;
   c3_b_indexPairs->size[1] = c3_varargin_1->size[1];
   c3_emxEnsureCapacity_uint32_T(chartInstance, c3_b_indexPairs, c3_i51,
-    &c3_ce_emlrtRTEI);
+    &c3_fe_emlrtRTEI);
   c3_v_loop_ub = c3_varargin_1->size[1] - 1;
   c3_i52 = 0;
   for (c3_i53 = 0; c3_i53 <= c3_v_loop_ub; c3_i53++) {
@@ -6165,7 +6298,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   }
 
   c3_emxFree_uint32_T(chartInstance, &c3_varargin_2);
-  c3_emxInit_boolean_T1(chartInstance, &c3_inds, 2, &c3_ff_emlrtRTEI);
+  c3_emxInit_boolean_T1(chartInstance, &c3_inds, 2, &c3_if_emlrtRTEI);
   c3_b_matchThreshold = c3_matchThreshold;
   sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 0, 0, MAX_uint32_T, 1, 1,
     c3_topTwoMetrics->size[0]);
@@ -6174,7 +6307,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_inds->size[0] = 1;
   c3_inds->size[1] = c3_i56 + 1;
   c3_emxEnsureCapacity_boolean_T1(chartInstance, c3_inds, c3_i57,
-    &c3_de_emlrtRTEI);
+    &c3_ge_emlrtRTEI);
   c3_x_loop_ub = c3_i56;
   for (c3_i58 = 0; c3_i58 <= c3_x_loop_ub; c3_i58++) {
     c3_inds->data[c3_i58] = (c3_topTwoMetrics->data[c3_topTwoMetrics->size[0] *
@@ -6189,11 +6322,11 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     }
   }
 
-  c3_emxInit_int32_T1(chartInstance, &c3_r2, 2, &c3_gf_emlrtRTEI);
+  c3_emxInit_int32_T1(chartInstance, &c3_r2, 2, &c3_jf_emlrtRTEI);
   c3_i59 = c3_r2->size[0] * c3_r2->size[1];
   c3_r2->size[0] = 1;
   c3_r2->size[1] = c3_trueCount;
-  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r2, c3_i59, &c3_ee_emlrtRTEI);
+  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r2, c3_i59, &c3_he_emlrtRTEI);
   c3_partialTrueCount = 0;
   for (c3_c_i = 0; c3_c_i <= c3_end; c3_c_i++) {
     if (c3_inds->data[c3_c_i]) {
@@ -6202,13 +6335,13 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     }
   }
 
-  c3_emxInit_uint32_T(chartInstance, &c3_c_indexPairs, 2, &c3_fe_emlrtRTEI);
+  c3_emxInit_uint32_T(chartInstance, &c3_c_indexPairs, 2, &c3_ie_emlrtRTEI);
   c3_i60 = c3_b_indexPairs->size[1];
   c3_i61 = c3_c_indexPairs->size[0] * c3_c_indexPairs->size[1];
   c3_c_indexPairs->size[0] = 2;
   c3_c_indexPairs->size[1] = c3_r2->size[1];
   c3_emxEnsureCapacity_uint32_T(chartInstance, c3_c_indexPairs, c3_i61,
-    &c3_fe_emlrtRTEI);
+    &c3_ie_emlrtRTEI);
   c3_y_loop_ub = c3_r2->size[1] - 1;
   for (c3_i62 = 0; c3_i62 <= c3_y_loop_ub; c3_i62++) {
     for (c3_i63 = 0; c3_i63 < 2; c3_i63++) {
@@ -6223,7 +6356,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_b_indexPairs->size[0] = 2;
   c3_b_indexPairs->size[1] = c3_c_indexPairs->size[1];
   c3_emxEnsureCapacity_uint32_T(chartInstance, c3_b_indexPairs, c3_i64,
-    &c3_ge_emlrtRTEI);
+    &c3_je_emlrtRTEI);
   c3_ab_loop_ub = c3_c_indexPairs->size[0] * c3_c_indexPairs->size[1] - 1;
   for (c3_i65 = 0; c3_i65 <= c3_ab_loop_ub; c3_i65++) {
     c3_b_indexPairs->data[c3_i65] = c3_c_indexPairs->data[c3_i65];
@@ -6238,11 +6371,11 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     }
   }
 
-  c3_emxInit_int32_T1(chartInstance, &c3_r3, 2, &c3_hf_emlrtRTEI);
+  c3_emxInit_int32_T1(chartInstance, &c3_r3, 2, &c3_kf_emlrtRTEI);
   c3_i66 = c3_r3->size[0] * c3_r3->size[1];
   c3_r3->size[0] = 1;
   c3_r3->size[1] = c3_b_trueCount;
-  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r3, c3_i66, &c3_ee_emlrtRTEI);
+  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r3, c3_i66, &c3_he_emlrtRTEI);
   c3_b_partialTrueCount = 0;
   for (c3_e_i = 0; c3_e_i <= c3_b_end; c3_e_i++) {
     if (c3_inds->data[c3_e_i]) {
@@ -6251,7 +6384,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     }
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_b_topTwoMetrics, 2, &c3_he_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_b_topTwoMetrics, 2, &c3_ke_emlrtRTEI);
   c3_i67 = c3_topTwoMetrics->size[0];
   c3_i68 = c3_topTwoMetrics->size[1];
   c3_i69 = c3_i67 - 1;
@@ -6259,7 +6392,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_b_topTwoMetrics->size[0] = c3_i69 + 1;
   c3_b_topTwoMetrics->size[1] = c3_r3->size[1];
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_topTwoMetrics, c3_i70,
-    &c3_he_emlrtRTEI);
+    &c3_ke_emlrtRTEI);
   c3_bb_loop_ub = c3_r3->size[1] - 1;
   for (c3_i71 = 0; c3_i71 <= c3_bb_loop_ub; c3_i71++) {
     c3_cb_loop_ub = c3_i69;
@@ -6276,7 +6409,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_topTwoMetrics->size[0] = c3_b_topTwoMetrics->size[0];
   c3_topTwoMetrics->size[1] = c3_b_topTwoMetrics->size[1];
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_topTwoMetrics, c3_i72,
-    &c3_ie_emlrtRTEI);
+    &c3_le_emlrtRTEI);
   c3_db_loop_ub = c3_b_topTwoMetrics->size[0] * c3_b_topTwoMetrics->size[1] - 1;
   for (c3_i74 = 0; c3_i74 <= c3_db_loop_ub; c3_i74++) {
     c3_topTwoMetrics->data[c3_i74] = c3_b_topTwoMetrics->data[c3_i74];
@@ -6284,14 +6417,14 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
 
   c3_emxFree_real32_T(chartInstance, &c3_b_topTwoMetrics);
   c3_e_N2 = c3_N2;
-  c3_emxInit_real32_T(chartInstance, &c3_i_y, 2, &c3_te_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_i_y, 2, &c3_we_emlrtRTEI);
   if ((real_T)c3_e_N2 > 1.0) {
-    c3_emxInit_real32_T(chartInstance, &c3_topTwoScores, 2, &c3_ke_emlrtRTEI);
+    c3_emxInit_real32_T(chartInstance, &c3_topTwoScores, 2, &c3_ne_emlrtRTEI);
     c3_i76 = c3_topTwoScores->size[0] * c3_topTwoScores->size[1];
     c3_topTwoScores->size[0] = c3_topTwoMetrics->size[0];
     c3_topTwoScores->size[1] = c3_topTwoMetrics->size[1];
     c3_emxEnsureCapacity_real32_T(chartInstance, c3_topTwoScores, c3_i76,
-      &c3_ke_emlrtRTEI);
+      &c3_ne_emlrtRTEI);
     c3_fb_loop_ub = c3_topTwoMetrics->size[0] * c3_topTwoMetrics->size[1] - 1;
     for (c3_i78 = 0; c3_i78 <= c3_fb_loop_ub; c3_i78++) {
       c3_topTwoScores->data[c3_i78] = c3_topTwoMetrics->data[c3_i78];
@@ -6304,7 +6437,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     c3_inds->size[0] = 1;
     c3_inds->size[1] = c3_i79 + 1;
     c3_emxEnsureCapacity_boolean_T1(chartInstance, c3_inds, c3_i80,
-      &c3_le_emlrtRTEI);
+      &c3_oe_emlrtRTEI);
     c3_gb_loop_ub = c3_i79;
     for (c3_i82 = 0; c3_i82 <= c3_gb_loop_ub; c3_i82++) {
       c3_inds->data[c3_i82] = (c3_topTwoScores->data[1 + c3_topTwoScores->size[0]
@@ -6326,11 +6459,11 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
       }
     }
 
-    c3_emxInit_int32_T1(chartInstance, &c3_r5, 2, &c3_lf_emlrtRTEI);
+    c3_emxInit_int32_T1(chartInstance, &c3_r5, 2, &c3_of_emlrtRTEI);
     c3_i87 = c3_r5->size[0] * c3_r5->size[1];
     c3_r5->size[0] = 1;
     c3_r5->size[1] = c3_d_trueCount;
-    c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r5, c3_i87, &c3_pe_emlrtRTEI);
+    c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r5, c3_i87, &c3_se_emlrtRTEI);
     c3_d_partialTrueCount = 0;
     for (c3_i_i = 0; c3_i_i <= c3_d_end; c3_i_i++) {
       if (c3_inds->data[c3_i_i]) {
@@ -6353,7 +6486,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     }
 
     c3_emxFree_int32_T(chartInstance, &c3_r5);
-    c3_emxInit_real32_T(chartInstance, &c3_ratios, 2, &c3_xe_emlrtRTEI);
+    c3_emxInit_real32_T(chartInstance, &c3_ratios, 2, &c3_bf_emlrtRTEI);
     sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 0, 0, MAX_uint32_T, 1,
       1, c3_topTwoScores->size[0]);
     sf_eml_array_bounds_check(NULL, chartInstance->S, 1U, 0, 0, MAX_uint32_T, 2,
@@ -6363,7 +6496,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     c3_ratios->size[0] = 1;
     c3_ratios->size[1] = c3_i95 + 1;
     c3_emxEnsureCapacity_real32_T(chartInstance, c3_ratios, c3_i97,
-      &c3_re_emlrtRTEI);
+      &c3_ue_emlrtRTEI);
     c3_mb_loop_ub = c3_i95;
     for (c3_i98 = 0; c3_i98 <= c3_mb_loop_ub; c3_i98++) {
       c3_ratios->data[c3_i98] = c3_topTwoScores->data[c3_topTwoScores->size[0] *
@@ -6375,7 +6508,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     c3_i_y->size[0] = 1;
     c3_i_y->size[1] = c3_i99 + 1;
     c3_emxEnsureCapacity_real32_T(chartInstance, c3_i_y, c3_i100,
-      &c3_te_emlrtRTEI);
+      &c3_we_emlrtRTEI);
     c3_nb_loop_ub = c3_i99;
     for (c3_i102 = 0; c3_i102 <= c3_nb_loop_ub; c3_i102++) {
       c3_i_y->data[c3_i102] = c3_topTwoScores->data[1 + c3_topTwoScores->size[0]
@@ -6436,7 +6569,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     c3_i110 = c3_ratios->size[0] * c3_ratios->size[1];
     c3_ratios->size[0] = 1;
     c3_emxEnsureCapacity_real32_T(chartInstance, c3_ratios, c3_i110,
-      &c3_xe_emlrtRTEI);
+      &c3_bf_emlrtRTEI);
     c3_i111 = c3_i109;
     c3_qb_loop_ub = c3_i111 - 1;
     for (c3_i112 = 0; c3_i112 <= c3_qb_loop_ub; c3_i112++) {
@@ -6447,7 +6580,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     c3_inds->size[0] = 1;
     c3_inds->size[1] = c3_ratios->size[1];
     c3_emxEnsureCapacity_boolean_T1(chartInstance, c3_inds, c3_i114,
-      &c3_ye_emlrtRTEI);
+      &c3_cf_emlrtRTEI);
     c3_sb_loop_ub = c3_ratios->size[0] * c3_ratios->size[1] - 1;
     for (c3_i116 = 0; c3_i116 <= c3_sb_loop_ub; c3_i116++) {
       c3_inds->data[c3_i116] = ((real_T)c3_ratios->data[c3_i116] <= 0.6);
@@ -6459,7 +6592,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     c3_inds->size[0] = 1;
     c3_inds->size[1] = c3_topTwoMetrics->size[1];
     c3_emxEnsureCapacity_boolean_T1(chartInstance, c3_inds, c3_i75,
-      &c3_je_emlrtRTEI);
+      &c3_me_emlrtRTEI);
     c3_eb_loop_ub = c3_topTwoMetrics->size[1] - 1;
     for (c3_i77 = 0; c3_i77 <= c3_eb_loop_ub; c3_i77++) {
       c3_inds->data[c3_i77] = true;
@@ -6474,11 +6607,11 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     }
   }
 
-  c3_emxInit_int32_T1(chartInstance, &c3_r4, 2, &c3_if_emlrtRTEI);
+  c3_emxInit_int32_T1(chartInstance, &c3_r4, 2, &c3_lf_emlrtRTEI);
   c3_i81 = c3_r4->size[0] * c3_r4->size[1];
   c3_r4->size[0] = 1;
   c3_r4->size[1] = c3_c_trueCount;
-  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r4, c3_i81, &c3_me_emlrtRTEI);
+  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r4, c3_i81, &c3_pe_emlrtRTEI);
   c3_c_partialTrueCount = 0;
   for (c3_g_i = 0; c3_g_i <= c3_c_end; c3_g_i++) {
     if (c3_inds->data[c3_g_i]) {
@@ -6487,13 +6620,13 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     }
   }
 
-  c3_emxInit_uint32_T(chartInstance, &c3_d_indexPairs, 2, &c3_oe_emlrtRTEI);
+  c3_emxInit_uint32_T(chartInstance, &c3_d_indexPairs, 2, &c3_re_emlrtRTEI);
   c3_i85 = c3_b_indexPairs->size[1];
   c3_i86 = c3_d_indexPairs->size[0] * c3_d_indexPairs->size[1];
   c3_d_indexPairs->size[0] = 2;
   c3_d_indexPairs->size[1] = c3_r4->size[1];
   c3_emxEnsureCapacity_uint32_T(chartInstance, c3_d_indexPairs, c3_i86,
-    &c3_oe_emlrtRTEI);
+    &c3_re_emlrtRTEI);
   c3_ib_loop_ub = c3_r4->size[1] - 1;
   for (c3_i88 = 0; c3_i88 <= c3_ib_loop_ub; c3_i88++) {
     for (c3_i89 = 0; c3_i89 < 2; c3_i89++) {
@@ -6508,7 +6641,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_b_indexPairs->size[0] = 2;
   c3_b_indexPairs->size[1] = c3_d_indexPairs->size[1];
   c3_emxEnsureCapacity_uint32_T(chartInstance, c3_b_indexPairs, c3_i90,
-    &c3_qe_emlrtRTEI);
+    &c3_te_emlrtRTEI);
   c3_jb_loop_ub = c3_d_indexPairs->size[0] * c3_d_indexPairs->size[1] - 1;
   for (c3_i91 = 0; c3_i91 <= c3_jb_loop_ub; c3_i91++) {
     c3_b_indexPairs->data[c3_i91] = c3_d_indexPairs->data[c3_i91];
@@ -6525,11 +6658,11 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     }
   }
 
-  c3_emxInit_int32_T1(chartInstance, &c3_r6, 2, &c3_jf_emlrtRTEI);
+  c3_emxInit_int32_T1(chartInstance, &c3_r6, 2, &c3_mf_emlrtRTEI);
   c3_i96 = c3_r6->size[0] * c3_r6->size[1];
   c3_r6->size[0] = 1;
   c3_r6->size[1] = c3_e_trueCount;
-  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r6, c3_i96, &c3_me_emlrtRTEI);
+  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r6, c3_i96, &c3_pe_emlrtRTEI);
   c3_e_partialTrueCount = 0;
   for (c3_k_i = 0; c3_k_i <= c3_e_end; c3_k_i++) {
     if (c3_inds->data[c3_k_i]) {
@@ -6542,7 +6675,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_i101 = c3_i_y->size[0] * c3_i_y->size[1];
   c3_i_y->size[0] = 1;
   c3_i_y->size[1] = c3_r6->size[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_i_y, c3_i101, &c3_se_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_i_y, c3_i101, &c3_ve_emlrtRTEI);
   c3_ob_loop_ub = c3_r6->size[1] - 1;
   for (c3_i103 = 0; c3_i103 <= c3_ob_loop_ub; c3_i103++) {
     c3_i_y->data[c3_i103] = c3_topTwoMetrics->data[c3_topTwoMetrics->size[0] *
@@ -6556,7 +6689,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_inds->size[0] = 1;
   c3_inds->size[1] = c3_b_indexPairs->size[1];
   c3_emxEnsureCapacity_boolean_T1(chartInstance, c3_inds, c3_i105,
-    &c3_ue_emlrtRTEI);
+    &c3_xe_emlrtRTEI);
   c3_pb_loop_ub = c3_b_indexPairs->size[1] - 1;
   for (c3_i107 = 0; c3_i107 <= c3_pb_loop_ub; c3_i107++) {
     c3_inds->data[c3_i107] = true;
@@ -6570,11 +6703,11 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     c3_f_trueCount++;
   }
 
-  c3_emxInit_int32_T1(chartInstance, &c3_r7, 2, &c3_cf_emlrtRTEI);
+  c3_emxInit_int32_T1(chartInstance, &c3_r7, 2, &c3_ff_emlrtRTEI);
   c3_i108 = c3_r7->size[0] * c3_r7->size[1];
   c3_r7->size[0] = 1;
   c3_r7->size[1] = c3_f_trueCount;
-  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r7, c3_i108, &c3_ve_emlrtRTEI);
+  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r7, c3_i108, &c3_ye_emlrtRTEI);
   c3_f_partialTrueCount = 0;
   for (c3_m_i = 1; c3_m_i - 1 <= c3_f_end; c3_m_i++) {
     c3_r7->data[c3_f_partialTrueCount] = c3_m_i;
@@ -6586,7 +6719,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_indexPairs->size[0] = 2;
   c3_indexPairs->size[1] = c3_r7->size[1];
   c3_emxEnsureCapacity_uint32_T(chartInstance, c3_indexPairs, c3_i113,
-    &c3_we_emlrtRTEI);
+    &c3_af_emlrtRTEI);
   c3_rb_loop_ub = c3_r7->size[1] - 1;
   for (c3_i115 = 0; c3_i115 <= c3_rb_loop_ub; c3_i115++) {
     for (c3_i117 = 0; c3_i117 < 2; c3_i117++) {
@@ -6606,11 +6739,11 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
     }
   }
 
-  c3_emxInit_int32_T1(chartInstance, &c3_r8, 2, &c3_df_emlrtRTEI);
+  c3_emxInit_int32_T1(chartInstance, &c3_r8, 2, &c3_gf_emlrtRTEI);
   c3_i118 = c3_r8->size[0] * c3_r8->size[1];
   c3_r8->size[0] = 1;
   c3_r8->size[1] = c3_g_trueCount;
-  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r8, c3_i118, &c3_ve_emlrtRTEI);
+  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r8, c3_i118, &c3_ye_emlrtRTEI);
   c3_g_partialTrueCount = 0;
   for (c3_o_i = 0; c3_o_i <= c3_g_end; c3_o_i++) {
     if (c3_inds->data[c3_o_i]) {
@@ -6625,7 +6758,7 @@ static void c3_findMatchesExhaustive(SFc3_MotionObjectDetectorInstanceStruct
   c3_matchMetric->size[0] = 1;
   c3_matchMetric->size[1] = c3_r8->size[1];
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_matchMetric, c3_i119,
-    &c3_af_emlrtRTEI);
+    &c3_df_emlrtRTEI);
   c3_tb_loop_ub = c3_r8->size[1] - 1;
   for (c3_i120 = 0; c3_i120 <= c3_tb_loop_ub; c3_i120++) {
     c3_matchMetric->data[c3_i120] = c3_i_y->data[sf_eml_array_bounds_check(NULL,
@@ -6847,18 +6980,18 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
   c3_i = c3_values->size[0] * c3_values->size[1];
   c3_values->size[0] = (int32_T)c3_n;
   c3_values->size[1] = c3_x->size[0];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_values, c3_i, &c3_nf_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_values, c3_i, &c3_qf_emlrtRTEI);
   c3_loop_ub = (int32_T)c3_n * c3_x->size[0] - 1;
   for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
     c3_values->data[c3_i1] = 0.0F;
   }
 
-  c3_emxInit_real_T(chartInstance, &c3_b_indices, 2, &c3_kg_emlrtRTEI);
+  c3_emxInit_real_T(chartInstance, &c3_b_indices, 2, &c3_ng_emlrtRTEI);
   c3_i2 = c3_b_indices->size[0] * c3_b_indices->size[1];
   c3_b_indices->size[0] = (int32_T)c3_n;
   c3_b_indices->size[1] = c3_x->size[0];
   c3_emxEnsureCapacity_real_T(chartInstance, c3_b_indices, c3_i2,
-    &c3_of_emlrtRTEI);
+    &c3_rf_emlrtRTEI);
   c3_b_loop_ub = (int32_T)c3_n * c3_x->size[0] - 1;
   for (c3_i3 = 0; c3_i3 <= c3_b_loop_ub; c3_i3++) {
     c3_b_indices->data[c3_i3] = 0.0;
@@ -6871,7 +7004,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
     c3_indices->size[0] = c3_b_indices->size[0];
     c3_indices->size[1] = c3_b_indices->size[1];
     c3_emxEnsureCapacity_uint32_T(chartInstance, c3_indices, c3_i4,
-      &c3_pf_emlrtRTEI);
+      &c3_sf_emlrtRTEI);
     c3_c_loop_ub = c3_b_indices->size[0] * c3_b_indices->size[1] - 1;
     for (c3_i5 = 0; c3_i5 <= c3_c_loop_ub; c3_i5++) {
       c3_d = muDoubleScalarRound(c3_b_indices->data[c3_i5]);
@@ -6915,15 +7048,15 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
     if (c3_n < c3_f) {
       c3_i6 = (int32_T)c3_n - 1;
       c3_b_i = 0;
-      c3_emxInit_real_T(chartInstance, &c3_inds, 2, &c3_hg_emlrtRTEI);
-      c3_emxInit_real_T1(chartInstance, &c3_indx, 1, &c3_jg_emlrtRTEI);
-      c3_emxInit_real_T(chartInstance, &c3_varargin_2, 2, &c3_bg_emlrtRTEI);
-      c3_emxInit_int32_T1(chartInstance, &c3_idx, 2, &c3_lg_emlrtRTEI);
-      c3_emxInit_int32_T1(chartInstance, &c3_b_b, 2, &c3_eg_emlrtRTEI);
-      c3_emxInit_real32_T1(chartInstance, &c3_ex, 1, &c3_jg_emlrtRTEI);
-      c3_emxInit_int32_T(chartInstance, &c3_b_idx, 1, &c3_jg_emlrtRTEI);
-      c3_emxInit_real_T(chartInstance, &c3_b_varargin_2, 2, &c3_cg_emlrtRTEI);
-      c3_emxInit_real_T(chartInstance, &c3_c_inds, 2, &c3_cg_emlrtRTEI);
+      c3_emxInit_real_T(chartInstance, &c3_inds, 2, &c3_kg_emlrtRTEI);
+      c3_emxInit_real_T1(chartInstance, &c3_indx, 1, &c3_mg_emlrtRTEI);
+      c3_emxInit_real_T(chartInstance, &c3_varargin_2, 2, &c3_eg_emlrtRTEI);
+      c3_emxInit_int32_T1(chartInstance, &c3_idx, 2, &c3_og_emlrtRTEI);
+      c3_emxInit_int32_T1(chartInstance, &c3_b_b, 2, &c3_hg_emlrtRTEI);
+      c3_emxInit_real32_T1(chartInstance, &c3_ex, 1, &c3_mg_emlrtRTEI);
+      c3_emxInit_int32_T(chartInstance, &c3_b_idx, 1, &c3_mg_emlrtRTEI);
+      c3_emxInit_real_T(chartInstance, &c3_b_varargin_2, 2, &c3_fg_emlrtRTEI);
+      c3_emxInit_real_T(chartInstance, &c3_c_inds, 2, &c3_fg_emlrtRTEI);
       while (c3_b_i <= c3_i6) {
         c3_c_i = (real_T)c3_b_i + 1.0;
         if (!((real_T)c3_x->size[1] >= 1.0)) {
@@ -6946,11 +7079,11 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
         c3_i11 = c3_ex->size[0];
         c3_ex->size[0] = c3_siz[0];
         c3_emxEnsureCapacity_real32_T1(chartInstance, c3_ex, c3_i11,
-          &c3_tf_emlrtRTEI);
+          &c3_wf_emlrtRTEI);
         c3_i15 = c3_b_idx->size[0];
         c3_b_idx->size[0] = c3_m;
         c3_emxEnsureCapacity_int32_T(chartInstance, c3_b_idx, c3_i15,
-          &c3_uf_emlrtRTEI);
+          &c3_xf_emlrtRTEI);
         c3_f_loop_ub = c3_m - 1;
         for (c3_i17 = 0; c3_i17 <= c3_f_loop_ub; c3_i17++) {
           c3_b_idx->data[c3_i17] = 1;
@@ -7030,7 +7163,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
         c3_i20 = c3_indx->size[0];
         c3_indx->size[0] = c3_b_idx->size[0];
         c3_emxEnsureCapacity_real_T1(chartInstance, c3_indx, c3_i20,
-          &c3_vf_emlrtRTEI);
+          &c3_yf_emlrtRTEI);
         c3_j_loop_ub = c3_b_idx->size[0] - 1;
         for (c3_i23 = 0; c3_i23 <= c3_j_loop_ub; c3_i23++) {
           c3_indx->data[c3_i23] = (real_T)c3_b_idx->data[c3_i23];
@@ -7042,7 +7175,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
         c3_i28 = c3_b_idx->size[0];
         c3_b_idx->size[0] = c3_i27 + 1;
         c3_emxEnsureCapacity_int32_T(chartInstance, c3_b_idx, c3_i28,
-          &c3_xf_emlrtRTEI);
+          &c3_bg_emlrtRTEI);
         c3_l_loop_ub = c3_i27;
         for (c3_i30 = 0; c3_i30 <= c3_l_loop_ub; c3_i30++) {
           c3_b_idx->data[c3_i30] = c3_i30;
@@ -7067,7 +7200,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
         c3_i36 = c3_b_idx->size[0];
         c3_b_idx->size[0] = c3_i35 + 1;
         c3_emxEnsureCapacity_int32_T(chartInstance, c3_b_idx, c3_i36,
-          &c3_ag_emlrtRTEI);
+          &c3_dg_emlrtRTEI);
         c3_o_loop_ub = c3_i35;
         for (c3_i37 = 0; c3_i37 <= c3_o_loop_ub; c3_i37++) {
           c3_b_idx->data[c3_i37] = c3_i37;
@@ -7096,7 +7229,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
           c3_inds->size[0] = 1;
           c3_inds->size[1] = (int32_T)muDoubleScalarFloor(c3_m_b - 1.0) + 1;
           c3_emxEnsureCapacity_real_T(chartInstance, c3_inds, c3_i40,
-            &c3_wd_emlrtRTEI);
+            &c3_ae_emlrtRTEI);
           c3_q_loop_ub = (int32_T)muDoubleScalarFloor(c3_m_b - 1.0);
           for (c3_i42 = 0; c3_i42 <= c3_q_loop_ub; c3_i42++) {
             c3_inds->data[c3_i42] = 1.0 + (real_T)c3_i42;
@@ -7114,7 +7247,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
         c3_varargin_2->size[0] = 1;
         c3_varargin_2->size[1] = c3_i43 + 1;
         c3_emxEnsureCapacity_real_T(chartInstance, c3_varargin_2, c3_i44,
-          &c3_bg_emlrtRTEI);
+          &c3_eg_emlrtRTEI);
         c3_r_loop_ub = c3_i43;
         for (c3_i45 = 0; c3_i45 <= c3_r_loop_ub; c3_i45++) {
           c3_varargin_2->data[c3_i45] = c3_b_indices->data[c3_g_i +
@@ -7130,7 +7263,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
         c3_c_inds->size[0] = 1;
         c3_c_inds->size[1] = c3_inds->size[1];
         c3_emxEnsureCapacity_real_T(chartInstance, c3_c_inds, c3_i47,
-          &c3_cg_emlrtRTEI);
+          &c3_fg_emlrtRTEI);
         c3_s_loop_ub = c3_inds->size[0] * c3_inds->size[1] - 1;
         for (c3_i48 = 0; c3_i48 <= c3_s_loop_ub; c3_i48++) {
           c3_c_inds->data[c3_i48] = c3_inds->data[c3_i48];
@@ -7196,7 +7329,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
         c3_b_varargin_2->size[0] = 1;
         c3_b_varargin_2->size[1] = c3_varargin_2->size[1];
         c3_emxEnsureCapacity_real_T(chartInstance, c3_b_varargin_2, c3_i51,
-          &c3_cg_emlrtRTEI);
+          &c3_fg_emlrtRTEI);
         c3_t_loop_ub = c3_varargin_2->size[0] * c3_varargin_2->size[1] - 1;
         for (c3_i52 = 0; c3_i52 <= c3_t_loop_ub; c3_i52++) {
           c3_b_varargin_2->data[c3_i52] = c3_varargin_2->data[c3_i52];
@@ -7220,7 +7353,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
         c3_idx->size[0] = 1;
         c3_idx->size[1] = c3_inds->size[1];
         c3_emxEnsureCapacity_int32_T1(chartInstance, c3_idx, c3_i53,
-          &c3_dg_emlrtRTEI);
+          &c3_gg_emlrtRTEI);
         c3_u_loop_ub = c3_inds->size[0] * c3_inds->size[1] - 1;
         for (c3_i54 = 0; c3_i54 <= c3_u_loop_ub; c3_i54++) {
           c3_idx->data[c3_i54] = (int32_T)c3_inds->data[c3_i54];
@@ -7231,7 +7364,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
         c3_b_b->size[0] = 1;
         c3_b_b->size[1] = c3_varargin_2->size[1];
         c3_emxEnsureCapacity_int32_T1(chartInstance, c3_b_b, c3_i55,
-          &c3_eg_emlrtRTEI);
+          &c3_hg_emlrtRTEI);
         c3_v_loop_ub = c3_varargin_2->size[0] * c3_varargin_2->size[1] - 1;
         for (c3_i56 = 0; c3_i56 <= c3_v_loop_ub; c3_i56++) {
           c3_b_b->data[c3_i56] = (int32_T)c3_varargin_2->data[c3_i56] - 1;
@@ -7241,7 +7374,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
         c3_i58 = c3_b_b->size[0] * c3_b_b->size[1];
         c3_b_b->size[0] = 1;
         c3_emxEnsureCapacity_int32_T1(chartInstance, c3_b_b, c3_i58,
-          &c3_fg_emlrtRTEI);
+          &c3_ig_emlrtRTEI);
         c3_i59 = c3_i57;
         c3_w_loop_ub = c3_i59 - 1;
         for (c3_i60 = 0; c3_i60 <= c3_w_loop_ub; c3_i60++) {
@@ -7252,7 +7385,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
         c3_i62 = c3_idx->size[0] * c3_idx->size[1];
         c3_idx->size[0] = 1;
         c3_emxEnsureCapacity_int32_T1(chartInstance, c3_idx, c3_i62,
-          &c3_gg_emlrtRTEI);
+          &c3_jg_emlrtRTEI);
         c3_i63 = c3_i61;
         c3_x_loop_ub = c3_i63 - 1;
         for (c3_i64 = 0; c3_i64 <= c3_x_loop_ub; c3_i64++) {
@@ -7263,7 +7396,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
         c3_inds->size[0] = 1;
         c3_inds->size[1] = c3_idx->size[1];
         c3_emxEnsureCapacity_real_T(chartInstance, c3_inds, c3_i65,
-          &c3_hg_emlrtRTEI);
+          &c3_kg_emlrtRTEI);
         c3_y_loop_ub = c3_idx->size[0] * c3_idx->size[1] - 1;
         for (c3_i66 = 0; c3_i66 <= c3_y_loop_ub; c3_i66++) {
           c3_inds->data[c3_i66] = (real_T)c3_idx->data[c3_i66];
@@ -7273,7 +7406,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
         c3_idx->size[0] = 1;
         c3_idx->size[1] = c3_inds->size[1];
         c3_emxEnsureCapacity_int32_T1(chartInstance, c3_idx, c3_i67,
-          &c3_ig_emlrtRTEI);
+          &c3_lg_emlrtRTEI);
         c3_i_x = c3_x->size[0] * c3_x->size[1];
         c3_ab_loop_ub = c3_inds->size[0] * c3_inds->size[1] - 1;
         for (c3_i68 = 0; c3_i68 <= c3_ab_loop_ub; c3_i68++) {
@@ -7301,25 +7434,25 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
       c3_emxFree_real_T(chartInstance, &c3_indx);
       c3_emxFree_real_T(chartInstance, &c3_inds);
     } else {
-      c3_emxInit_real32_T(chartInstance, &c3_xSorted, 2, &c3_jg_emlrtRTEI);
+      c3_emxInit_real32_T(chartInstance, &c3_xSorted, 2, &c3_mg_emlrtRTEI);
       c3_i7 = c3_xSorted->size[0] * c3_xSorted->size[1];
       c3_xSorted->size[0] = c3_x->size[0];
       c3_xSorted->size[1] = c3_x->size[1];
       c3_emxEnsureCapacity_real32_T(chartInstance, c3_xSorted, c3_i7,
-        &c3_qf_emlrtRTEI);
+        &c3_tf_emlrtRTEI);
       c3_d_loop_ub = c3_x->size[0] * c3_x->size[1] - 1;
       for (c3_i8 = 0; c3_i8 <= c3_d_loop_ub; c3_i8++) {
         c3_xSorted->data[c3_i8] = c3_x->data[c3_i8];
       }
 
-      c3_emxInit_real_T(chartInstance, &c3_b_inds, 2, &c3_jg_emlrtRTEI);
-      c3_emxInit_int32_T1(chartInstance, &c3_iidx, 2, &c3_jg_emlrtRTEI);
+      c3_emxInit_real_T(chartInstance, &c3_b_inds, 2, &c3_mg_emlrtRTEI);
+      c3_emxInit_int32_T1(chartInstance, &c3_iidx, 2, &c3_mg_emlrtRTEI);
       c3_b_sort(chartInstance, c3_xSorted, c3_iidx);
       c3_i9 = c3_b_inds->size[0] * c3_b_inds->size[1];
       c3_b_inds->size[0] = c3_iidx->size[0];
       c3_b_inds->size[1] = c3_iidx->size[1];
       c3_emxEnsureCapacity_real_T(chartInstance, c3_b_inds, c3_i9,
-        &c3_sf_emlrtRTEI);
+        &c3_vf_emlrtRTEI);
       c3_e_loop_ub = c3_iidx->size[0] * c3_iidx->size[1] - 1;
       for (c3_i10 = 0; c3_i10 <= c3_e_loop_ub; c3_i10++) {
         c3_b_inds->data[c3_i10] = (real_T)c3_iidx->data[c3_i10];
@@ -7341,7 +7474,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
       c3_values->size[0] = c3_i12 + 1;
       c3_values->size[1] = c3_i13 + 1;
       c3_emxEnsureCapacity_real32_T(chartInstance, c3_values, c3_i16,
-        &c3_wf_emlrtRTEI);
+        &c3_ag_emlrtRTEI);
       c3_h_loop_ub = c3_i13;
       for (c3_i19 = 0; c3_i19 <= c3_h_loop_ub; c3_i19++) {
         c3_i_loop_ub = c3_i12;
@@ -7367,7 +7500,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
       c3_b_indices->size[0] = c3_i22 + 1;
       c3_b_indices->size[1] = c3_i24 + 1;
       c3_emxEnsureCapacity_real_T(chartInstance, c3_b_indices, c3_i25,
-        &c3_yf_emlrtRTEI);
+        &c3_cg_emlrtRTEI);
       c3_k_loop_ub = c3_i24;
       for (c3_i29 = 0; c3_i29 <= c3_k_loop_ub; c3_i29++) {
         c3_m_loop_ub = c3_i22;
@@ -7384,7 +7517,7 @@ static void c3_partialSort(SFc3_MotionObjectDetectorInstanceStruct
     c3_indices->size[0] = c3_b_indices->size[0];
     c3_indices->size[1] = c3_b_indices->size[1];
     c3_emxEnsureCapacity_uint32_T(chartInstance, c3_indices, c3_i14,
-      &c3_rf_emlrtRTEI);
+      &c3_uf_emlrtRTEI);
     c3_g_loop_ub = c3_b_indices->size[0] * c3_b_indices->size[1] - 1;
     for (c3_i18 = 0; c3_i18 <= c3_g_loop_ub; c3_i18++) {
       c3_d1 = muDoubleScalarRound(c3_b_indices->data[c3_i18]);
@@ -7460,7 +7593,7 @@ static void c3_sort(SFc3_MotionObjectDetectorInstanceStruct *chartInstance,
   c3_i = c3_b_x->size[0] * c3_b_x->size[1];
   c3_b_x->size[0] = c3_x->size[0];
   c3_b_x->size[1] = c3_x->size[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_x, c3_i, &c3_mg_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_b_x, c3_i, &c3_pg_emlrtRTEI);
   c3_loop_ub = c3_x->size[0] * c3_x->size[1] - 1;
   for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
     c3_b_x->data[c3_i1] = c3_x->data[c3_i1];
@@ -7478,7 +7611,7 @@ static void c3_sortIdx(SFc3_MotionObjectDetectorInstanceStruct *chartInstance,
   int32_T c3_i1;
   c3_i = c3_b_x->size[0];
   c3_b_x->size[0] = c3_x->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_x, c3_i, &c3_ng_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_x, c3_i, &c3_qg_emlrtRTEI);
   c3_loop_ub = c3_x->size[0] - 1;
   for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
     c3_b_x->data[c3_i1] = c3_x->data[c3_i1];
@@ -7508,7 +7641,7 @@ static void c3_merge_block(SFc3_MotionObjectDetectorInstanceStruct
   int32_T c3_i7;
   c3_i = c3_b_idx->size[0];
   c3_b_idx->size[0] = c3_idx->size[0];
-  c3_emxEnsureCapacity_int32_T(chartInstance, c3_b_idx, c3_i, &c3_og_emlrtRTEI);
+  c3_emxEnsureCapacity_int32_T(chartInstance, c3_b_idx, c3_i, &c3_rg_emlrtRTEI);
   c3_loop_ub = c3_idx->size[0] - 1;
   for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
     c3_b_idx->data[c3_i1] = c3_idx->data[c3_i1];
@@ -7516,7 +7649,7 @@ static void c3_merge_block(SFc3_MotionObjectDetectorInstanceStruct
 
   c3_i2 = c3_b_x->size[0];
   c3_b_x->size[0] = c3_x->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_x, c3_i2, &c3_og_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_x, c3_i2, &c3_rg_emlrtRTEI);
   c3_b_loop_ub = c3_x->size[0] - 1;
   for (c3_i3 = 0; c3_i3 <= c3_b_loop_ub; c3_i3++) {
     c3_b_x->data[c3_i3] = c3_x->data[c3_i3];
@@ -7525,7 +7658,7 @@ static void c3_merge_block(SFc3_MotionObjectDetectorInstanceStruct
   c3_i4 = c3_b_iwork->size[0];
   c3_b_iwork->size[0] = c3_iwork->size[0];
   c3_emxEnsureCapacity_int32_T(chartInstance, c3_b_iwork, c3_i4,
-    &c3_og_emlrtRTEI);
+    &c3_rg_emlrtRTEI);
   c3_c_loop_ub = c3_iwork->size[0] - 1;
   for (c3_i5 = 0; c3_i5 <= c3_c_loop_ub; c3_i5++) {
     c3_b_iwork->data[c3_i5] = c3_iwork->data[c3_i5];
@@ -7534,7 +7667,7 @@ static void c3_merge_block(SFc3_MotionObjectDetectorInstanceStruct
   c3_i6 = c3_b_xwork->size[0];
   c3_b_xwork->size[0] = c3_xwork->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_xwork, c3_i6,
-    &c3_og_emlrtRTEI);
+    &c3_rg_emlrtRTEI);
   c3_d_loop_ub = c3_xwork->size[0] - 1;
   for (c3_i7 = 0; c3_i7 <= c3_d_loop_ub; c3_i7++) {
     c3_b_xwork->data[c3_i7] = c3_xwork->data[c3_i7];
@@ -7566,7 +7699,7 @@ static void c3_merge(SFc3_MotionObjectDetectorInstanceStruct *chartInstance,
   int32_T c3_i7;
   c3_i = c3_b_idx->size[0];
   c3_b_idx->size[0] = c3_idx->size[0];
-  c3_emxEnsureCapacity_int32_T(chartInstance, c3_b_idx, c3_i, &c3_pg_emlrtRTEI);
+  c3_emxEnsureCapacity_int32_T(chartInstance, c3_b_idx, c3_i, &c3_sg_emlrtRTEI);
   c3_loop_ub = c3_idx->size[0] - 1;
   for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
     c3_b_idx->data[c3_i1] = c3_idx->data[c3_i1];
@@ -7574,7 +7707,7 @@ static void c3_merge(SFc3_MotionObjectDetectorInstanceStruct *chartInstance,
 
   c3_i2 = c3_b_x->size[0];
   c3_b_x->size[0] = c3_x->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_x, c3_i2, &c3_pg_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_x, c3_i2, &c3_sg_emlrtRTEI);
   c3_b_loop_ub = c3_x->size[0] - 1;
   for (c3_i3 = 0; c3_i3 <= c3_b_loop_ub; c3_i3++) {
     c3_b_x->data[c3_i3] = c3_x->data[c3_i3];
@@ -7583,7 +7716,7 @@ static void c3_merge(SFc3_MotionObjectDetectorInstanceStruct *chartInstance,
   c3_i4 = c3_b_iwork->size[0];
   c3_b_iwork->size[0] = c3_iwork->size[0];
   c3_emxEnsureCapacity_int32_T(chartInstance, c3_b_iwork, c3_i4,
-    &c3_pg_emlrtRTEI);
+    &c3_sg_emlrtRTEI);
   c3_c_loop_ub = c3_iwork->size[0] - 1;
   for (c3_i5 = 0; c3_i5 <= c3_c_loop_ub; c3_i5++) {
     c3_b_iwork->data[c3_i5] = c3_iwork->data[c3_i5];
@@ -7592,7 +7725,7 @@ static void c3_merge(SFc3_MotionObjectDetectorInstanceStruct *chartInstance,
   c3_i6 = c3_b_xwork->size[0];
   c3_b_xwork->size[0] = c3_xwork->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_b_xwork, c3_i6,
-    &c3_pg_emlrtRTEI);
+    &c3_sg_emlrtRTEI);
   c3_d_loop_ub = c3_xwork->size[0] - 1;
   for (c3_i7 = 0; c3_i7 <= c3_d_loop_ub; c3_i7++) {
     c3_b_xwork->data[c3_i7] = c3_xwork->data[c3_i7];
@@ -7858,7 +7991,7 @@ static void c3_e_emlrt_marshallIn(SFc3_MotionObjectDetectorInstanceStruct
 static void c3_sf_marshallIn_matrix189x267_uint8_T(void *chartInstanceVoid,
   const mxArray *c3_mxArrayInData, const char_T *c3_varName, void *c3_outData)
 {
-  const mxArray *c3_b_redcrabGray;
+  const mxArray *c3_b_CrabG;
   const char_T *c3_identifier;
   emlrtMsgIdentifier c3_thisId;
   uint8_T c3_d_y[50463];
@@ -7867,14 +8000,14 @@ static void c3_sf_marshallIn_matrix189x267_uint8_T(void *chartInstanceVoid,
   int32_T c3_i2;
   SFc3_MotionObjectDetectorInstanceStruct *chartInstance;
   chartInstance = (SFc3_MotionObjectDetectorInstanceStruct *)chartInstanceVoid;
-  c3_b_redcrabGray = sf_mex_dup(c3_mxArrayInData);
+  c3_b_CrabG = sf_mex_dup(c3_mxArrayInData);
   c3_identifier = c3_varName;
   c3_thisId.fIdentifier = (const char *)c3_identifier;
   c3_thisId.fParent = NULL;
   c3_thisId.bParentIsCell = false;
-  c3_e_emlrt_marshallIn(chartInstance, sf_mex_dup(c3_b_redcrabGray), &c3_thisId,
+  c3_e_emlrt_marshallIn(chartInstance, sf_mex_dup(c3_b_CrabG), &c3_thisId,
                         c3_d_y);
-  sf_mex_destroy(&c3_b_redcrabGray);
+  sf_mex_destroy(&c3_b_CrabG);
   c3_i = 0;
   for (c3_i1 = 0; c3_i1 < 267; c3_i1++) {
     for (c3_i2 = 0; c3_i2 < 189; c3_i2++) {
@@ -7933,7 +8066,7 @@ static void c3_f_emlrt_marshallIn(SFc3_MotionObjectDetectorInstanceStruct
 static void c3_sf_marshallIn_matrix500x500_uint8_T(void *chartInstanceVoid,
   const mxArray *c3_mxArrayInData, const char_T *c3_varName, void *c3_outData)
 {
-  const mxArray *c3_b_ImageGray;
+  const mxArray *c3_b_SceneG;
   const char_T *c3_identifier;
   emlrtMsgIdentifier c3_thisId;
   int32_T c3_i;
@@ -7941,14 +8074,14 @@ static void c3_sf_marshallIn_matrix500x500_uint8_T(void *chartInstanceVoid,
   int32_T c3_i2;
   SFc3_MotionObjectDetectorInstanceStruct *chartInstance;
   chartInstance = (SFc3_MotionObjectDetectorInstanceStruct *)chartInstanceVoid;
-  c3_b_ImageGray = sf_mex_dup(c3_mxArrayInData);
+  c3_b_SceneG = sf_mex_dup(c3_mxArrayInData);
   c3_identifier = c3_varName;
   c3_thisId.fIdentifier = (const char *)c3_identifier;
   c3_thisId.fParent = NULL;
   c3_thisId.bParentIsCell = false;
-  c3_f_emlrt_marshallIn(chartInstance, sf_mex_dup(c3_b_ImageGray), &c3_thisId,
+  c3_f_emlrt_marshallIn(chartInstance, sf_mex_dup(c3_b_SceneG), &c3_thisId,
                         chartInstance->c3_b_y);
-  sf_mex_destroy(&c3_b_ImageGray);
+  sf_mex_destroy(&c3_b_SceneG);
   c3_i = 0;
   for (c3_i1 = 0; c3_i1 < 500; c3_i1++) {
     for (c3_i2 = 0; c3_i2 < 500; c3_i2++) {
@@ -8241,21 +8374,21 @@ static void c3_sf_marshallIn_vision_internal_SURFPoints_cg(void
   c3_vision_internal_SURFPoints_cg *c3_outData)
 {
   c3_vision_internal_SURFPoints_cg c3_d_y;
-  const mxArray *c3_RedCrabPoints;
+  const mxArray *c3_boxPoints;
   const char_T *c3_identifier;
   emlrtMsgIdentifier c3_thisId;
   SFc3_MotionObjectDetectorInstanceStruct *chartInstance;
   chartInstance = (SFc3_MotionObjectDetectorInstanceStruct *)chartInstanceVoid;
   c3_emxInitStruct_vision_internal_S(chartInstance, &c3_d_y, (emlrtRTEInfo *)
     NULL);
-  c3_RedCrabPoints = sf_mex_dup(c3_mxArrayInData);
+  c3_boxPoints = sf_mex_dup(c3_mxArrayInData);
   c3_identifier = c3_varName;
   c3_thisId.fIdentifier = (const char *)c3_identifier;
   c3_thisId.fParent = NULL;
   c3_thisId.bParentIsCell = false;
-  c3_h_emlrt_marshallIn(chartInstance, sf_mex_dup(c3_RedCrabPoints), &c3_thisId,
+  c3_h_emlrt_marshallIn(chartInstance, sf_mex_dup(c3_boxPoints), &c3_thisId,
                         &c3_d_y);
-  sf_mex_destroy(&c3_RedCrabPoints);
+  sf_mex_destroy(&c3_boxPoints);
   c3_emxCopyStruct_vision_internal_S(chartInstance, c3_outData, &c3_d_y,
     (emlrtRTEInfo *)NULL);
   sf_mex_destroy(&c3_mxArrayInData);
@@ -8345,7 +8478,7 @@ static void c3_sf_marshallIn_dynamicmatrix(void *chartInstanceVoid, const
   *c3_outData)
 {
   c3_emxArray_real32_T *c3_d_y;
-  const mxArray *c3_RedCrabFeatures;
+  const mxArray *c3_boxFeatures;
   const char_T *c3_identifier;
   emlrtMsgIdentifier c3_thisId;
   int32_T c3_i;
@@ -8355,14 +8488,14 @@ static void c3_sf_marshallIn_dynamicmatrix(void *chartInstanceVoid, const
   SFc3_MotionObjectDetectorInstanceStruct *chartInstance;
   chartInstance = (SFc3_MotionObjectDetectorInstanceStruct *)chartInstanceVoid;
   c3_emxInit_real32_T(chartInstance, &c3_d_y, 2, (emlrtRTEInfo *)NULL);
-  c3_RedCrabFeatures = sf_mex_dup(c3_mxArrayInData);
+  c3_boxFeatures = sf_mex_dup(c3_mxArrayInData);
   c3_identifier = c3_varName;
   c3_thisId.fIdentifier = (const char *)c3_identifier;
   c3_thisId.fParent = NULL;
   c3_thisId.bParentIsCell = false;
-  c3_l_emlrt_marshallIn(chartInstance, sf_mex_dup(c3_RedCrabFeatures),
-                        &c3_thisId, c3_d_y);
-  sf_mex_destroy(&c3_RedCrabFeatures);
+  c3_l_emlrt_marshallIn(chartInstance, sf_mex_dup(c3_boxFeatures), &c3_thisId,
+                        c3_d_y);
+  sf_mex_destroy(&c3_boxFeatures);
   c3_i = c3_outData->size[0] * c3_outData->size[1];
   c3_outData->size[0] = c3_d_y->size[0];
   c3_outData->size[1] = 64;
@@ -8463,7 +8596,7 @@ static void c3_sf_marshallIn_dynamicmatrix_1(void *chartInstanceVoid, const
   *c3_outData)
 {
   c3_emxArray_uint32_T *c3_d_y;
-  const mxArray *c3_RedCrabPairs;
+  const mxArray *c3_boxPairs;
   const char_T *c3_identifier;
   emlrtMsgIdentifier c3_thisId;
   int32_T c3_i;
@@ -8473,14 +8606,14 @@ static void c3_sf_marshallIn_dynamicmatrix_1(void *chartInstanceVoid, const
   SFc3_MotionObjectDetectorInstanceStruct *chartInstance;
   chartInstance = (SFc3_MotionObjectDetectorInstanceStruct *)chartInstanceVoid;
   c3_emxInit_uint32_T(chartInstance, &c3_d_y, 2, (emlrtRTEInfo *)NULL);
-  c3_RedCrabPairs = sf_mex_dup(c3_mxArrayInData);
+  c3_boxPairs = sf_mex_dup(c3_mxArrayInData);
   c3_identifier = c3_varName;
   c3_thisId.fIdentifier = (const char *)c3_identifier;
   c3_thisId.fParent = NULL;
   c3_thisId.bParentIsCell = false;
-  c3_m_emlrt_marshallIn(chartInstance, sf_mex_dup(c3_RedCrabPairs), &c3_thisId,
+  c3_m_emlrt_marshallIn(chartInstance, sf_mex_dup(c3_boxPairs), &c3_thisId,
                         c3_d_y);
-  sf_mex_destroy(&c3_RedCrabPairs);
+  sf_mex_destroy(&c3_boxPairs);
   c3_i = c3_outData->size[0] * c3_outData->size[1];
   c3_outData->size[0] = c3_d_y->size[0];
   c3_outData->size[1] = 2;
@@ -8492,6 +8625,103 @@ static void c3_sf_marshallIn_dynamicmatrix_1(void *chartInstanceVoid, const
       c3_outData->data[c3_i2 + c3_outData->size[0] * c3_i1] = c3_d_y->data[c3_i2
         + c3_d_y->size[0] * c3_i1];
     }
+  }
+
+  c3_emxFree_uint32_T(chartInstance, &c3_d_y);
+  sf_mex_destroy(&c3_mxArrayInData);
+}
+
+static const mxArray *c3_sf_marshallOut_dynamicmatrix_2(void *chartInstanceVoid,
+  c3_emxArray_uint32_T *c3_inData)
+{
+  const mxArray *c3_mxArrayOutData;
+  c3_emxArray_uint32_T *c3_c_u;
+  int32_T c3_i;
+  int32_T c3_loop_ub;
+  int32_T c3_i1;
+  const mxArray *c3_d_y = NULL;
+  SFc3_MotionObjectDetectorInstanceStruct *chartInstance;
+  chartInstance = (SFc3_MotionObjectDetectorInstanceStruct *)chartInstanceVoid;
+  c3_emxInit_uint32_T1(chartInstance, &c3_c_u, 1, (emlrtRTEInfo *)NULL);
+  c3_mxArrayOutData = NULL;
+  c3_mxArrayOutData = NULL;
+  c3_i = c3_c_u->size[0];
+  c3_c_u->size[0] = c3_inData->size[0];
+  c3_emxEnsureCapacity_uint32_T1(chartInstance, c3_c_u, c3_i, (emlrtRTEInfo *)
+    NULL);
+  c3_loop_ub = c3_inData->size[0] - 1;
+  for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
+    c3_c_u->data[c3_i1] = c3_inData->data[c3_i1];
+  }
+
+  c3_d_y = NULL;
+  sf_mex_assign(&c3_d_y, sf_mex_create("y", c3_c_u->data, 7, 0U, 1U, 0U, 1,
+    c3_c_u->size[0]), false);
+  sf_mex_assign(&c3_mxArrayOutData, c3_d_y, false);
+  c3_emxFree_uint32_T(chartInstance, &c3_c_u);
+  return c3_mxArrayOutData;
+}
+
+static void c3_n_emlrt_marshallIn(SFc3_MotionObjectDetectorInstanceStruct
+  *chartInstance, const mxArray *c3_c_u, const emlrtMsgIdentifier *c3_parentId,
+  c3_emxArray_uint32_T *c3_d_y)
+{
+  c3_emxArray_uint32_T *c3_r;
+  uint32_T c3_c_uv[1];
+  int32_T c3_i;
+  boolean_T c3_bv[1];
+  int32_T c3_i1;
+  int32_T c3_loop_ub;
+  int32_T c3_i2;
+  c3_emxInit_uint32_T1(chartInstance, &c3_r, 1, (emlrtRTEInfo *)NULL);
+  c3_c_uv[0] = MAX_uint32_T;
+  c3_i = c3_r->size[0];
+  c3_r->size[0] = sf_mex_get_dimension(c3_c_u, 0);
+  c3_emxEnsureCapacity_uint32_T1(chartInstance, c3_r, c3_i, (emlrtRTEInfo *)NULL);
+  c3_bv[0] = true;
+  sf_mex_import_vs(c3_parentId, sf_mex_dup(c3_c_u), c3_r->data, 1, 7, 0U, 1, 0U,
+                   1, c3_bv, c3_c_uv, c3_r->size);
+  c3_i1 = c3_d_y->size[0];
+  c3_d_y->size[0] = c3_r->size[0];
+  c3_emxEnsureCapacity_uint32_T1(chartInstance, c3_d_y, c3_i1, (emlrtRTEInfo *)
+    NULL);
+  c3_loop_ub = c3_r->size[0] - 1;
+  for (c3_i2 = 0; c3_i2 <= c3_loop_ub; c3_i2++) {
+    c3_d_y->data[c3_i2] = c3_r->data[c3_i2];
+  }
+
+  sf_mex_destroy(&c3_c_u);
+  c3_emxFree_uint32_T(chartInstance, &c3_r);
+}
+
+static void c3_sf_marshallIn_dynamicmatrix_2(void *chartInstanceVoid, const
+  mxArray *c3_mxArrayInData, const char_T *c3_varName, c3_emxArray_uint32_T
+  *c3_outData)
+{
+  c3_emxArray_uint32_T *c3_d_y;
+  const mxArray *c3_A;
+  const char_T *c3_identifier;
+  emlrtMsgIdentifier c3_thisId;
+  int32_T c3_i;
+  int32_T c3_loop_ub;
+  int32_T c3_i1;
+  SFc3_MotionObjectDetectorInstanceStruct *chartInstance;
+  chartInstance = (SFc3_MotionObjectDetectorInstanceStruct *)chartInstanceVoid;
+  c3_emxInit_uint32_T1(chartInstance, &c3_d_y, 1, (emlrtRTEInfo *)NULL);
+  c3_A = sf_mex_dup(c3_mxArrayInData);
+  c3_identifier = c3_varName;
+  c3_thisId.fIdentifier = (const char *)c3_identifier;
+  c3_thisId.fParent = NULL;
+  c3_thisId.bParentIsCell = false;
+  c3_n_emlrt_marshallIn(chartInstance, sf_mex_dup(c3_A), &c3_thisId, c3_d_y);
+  sf_mex_destroy(&c3_A);
+  c3_i = c3_outData->size[0];
+  c3_outData->size[0] = c3_d_y->size[0];
+  c3_emxEnsureCapacity_uint32_T1(chartInstance, c3_outData, c3_i, (emlrtRTEInfo *)
+    NULL);
+  c3_loop_ub = c3_d_y->size[0] - 1;
+  for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
+    c3_outData->data[c3_i1] = c3_d_y->data[c3_i1];
   }
 
   c3_emxFree_uint32_T(chartInstance, &c3_d_y);
@@ -8626,27 +8856,27 @@ static void c3_c_SURFPointsImpl_configure
   c3_this->pLocation->size[0] = c3_inputs.Location->size[0];
   c3_this->pLocation->size[1] = 2;
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_this->pLocation, c3_i,
-    &c3_qg_emlrtRTEI);
+    &c3_tg_emlrtRTEI);
   c3_loop_ub = c3_inputs.Location->size[0] * c3_inputs.Location->size[1] - 1;
   for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
     c3_this->pLocation->data[c3_i1] = c3_inputs.Location->data[c3_i1];
   }
 
-  c3_emxInit_real32_T1(chartInstance, &c3_x, 1, &c3_sg_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_x, 1, &c3_vg_emlrtRTEI);
   c3_i2 = c3_this->pMetric->size[0];
   c3_this->pMetric->size[0] = (int32_T)c3_n;
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_this->pMetric, c3_i2,
-    &c3_rg_emlrtRTEI);
+    &c3_ug_emlrtRTEI);
   c3_i3 = c3_x->size[0];
   c3_x->size[0] = c3_inputs.Metric->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i3, &c3_sg_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i3, &c3_vg_emlrtRTEI);
   c3_b_loop_ub = c3_inputs.Metric->size[0] - 1;
   for (c3_i4 = 0; c3_i4 <= c3_b_loop_ub; c3_i4++) {
     c3_x->data[c3_i4] = c3_inputs.Metric->data[c3_i4];
   }
 
   c3_N = c3_n;
-  c3_emxInit_boolean_T(chartInstance, &c3_tile, 1, &c3_vg_emlrtRTEI);
+  c3_emxInit_boolean_T(chartInstance, &c3_tile, 1, &c3_yg_emlrtRTEI);
   if (c3_x->size[0] == 1) {
     c3_a_data[0] = c3_x->data[0];
     c3_varargin_1 = c3_N;
@@ -8654,7 +8884,7 @@ static void c3_c_SURFPointsImpl_configure
     c3_i6 = c3_tile->size[0];
     c3_tile->size[0] = (int32_T)c3_varargin_1;
     c3_emxEnsureCapacity_boolean_T(chartInstance, c3_tile, c3_i6,
-      &c3_vg_emlrtRTEI);
+      &c3_yg_emlrtRTEI);
     c3_d_loop_ub = (int32_T)c3_varargin_1 - 1;
     for (c3_i8 = 0; c3_i8 <= c3_d_loop_ub; c3_i8++) {
       c3_tile->data[c3_i8] = false;
@@ -8670,7 +8900,7 @@ static void c3_c_SURFPointsImpl_configure
 
     c3_i10 = c3_x->size[0];
     c3_x->size[0] = c3_outsize[0];
-    c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i10, &c3_xg_emlrtRTEI);
+    c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i10, &c3_bh_emlrtRTEI);
     c3_ntilerows = c3_tile->size[0];
     c3_b = c3_ntilerows;
     c3_b_b = c3_b;
@@ -8695,17 +8925,17 @@ static void c3_c_SURFPointsImpl_configure
   c3_i5 = c3_this->pMetric->size[0];
   c3_this->pMetric->size[0] = c3_x->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_this->pMetric, c3_i5,
-    &c3_ug_emlrtRTEI);
+    &c3_xg_emlrtRTEI);
   c3_c_loop_ub = c3_x->size[0] - 1;
   for (c3_i7 = 0; c3_i7 <= c3_c_loop_ub; c3_i7++) {
     c3_this->pMetric->data[c3_i7] = c3_x->data[c3_i7];
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_r, 2, &c3_ad_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_r, 2, &c3_dd_emlrtRTEI);
   c3_i9 = c3_r->size[0] * c3_r->size[1];
   c3_r->size[0] = c3_this->pLocation->size[0];
   c3_r->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_r, c3_i9, &c3_wg_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_r, c3_i9, &c3_ah_emlrtRTEI);
   c3_e_loop_ub = c3_this->pLocation->size[0] * c3_this->pLocation->size[1] - 1;
   for (c3_i11 = 0; c3_i11 <= c3_e_loop_ub; c3_i11++) {
     c3_r->data[c3_i11] = c3_this->pLocation->data[c3_i11];
@@ -8715,18 +8945,18 @@ static void c3_c_SURFPointsImpl_configure
   c3_i12 = c3_this->pScale->size[0];
   c3_this->pScale->size[0] = (int32_T)c3_b_n;
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_this->pScale, c3_i12,
-    &c3_ad_emlrtRTEI);
+    &c3_dd_emlrtRTEI);
   c3_i13 = c3_this->pOrientation->size[0];
   c3_this->pOrientation->size[0] = (int32_T)c3_b_n;
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_this->pOrientation, c3_i13,
-    &c3_ad_emlrtRTEI);
+    &c3_dd_emlrtRTEI);
   c3_i14 = c3_this->pSignOfLaplacian->size[0];
   c3_this->pSignOfLaplacian->size[0] = (int32_T)c3_b_n;
   c3_emxEnsureCapacity_int8_T(chartInstance, c3_this->pSignOfLaplacian, c3_i14,
-    &c3_ad_emlrtRTEI);
+    &c3_dd_emlrtRTEI);
   c3_i15 = c3_x->size[0];
   c3_x->size[0] = c3_inputs.Scale->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i15, &c3_yg_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i15, &c3_ch_emlrtRTEI);
   c3_f_loop_ub = c3_inputs.Scale->size[0] - 1;
   c3_emxFree_real32_T(chartInstance, &c3_r);
   for (c3_i16 = 0; c3_i16 <= c3_f_loop_ub; c3_i16++) {
@@ -8741,7 +8971,7 @@ static void c3_c_SURFPointsImpl_configure
     c3_i18 = c3_tile->size[0];
     c3_tile->size[0] = (int32_T)c3_b_varargin_1;
     c3_emxEnsureCapacity_boolean_T(chartInstance, c3_tile, c3_i18,
-      &c3_vg_emlrtRTEI);
+      &c3_yg_emlrtRTEI);
     c3_h_loop_ub = (int32_T)c3_b_varargin_1 - 1;
     for (c3_i20 = 0; c3_i20 <= c3_h_loop_ub; c3_i20++) {
       c3_tile->data[c3_i20] = false;
@@ -8757,7 +8987,7 @@ static void c3_c_SURFPointsImpl_configure
 
     c3_i22 = c3_x->size[0];
     c3_x->size[0] = c3_b_outsize[0];
-    c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i22, &c3_xg_emlrtRTEI);
+    c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i22, &c3_bh_emlrtRTEI);
     c3_b_ntilerows = c3_tile->size[0];
     c3_c_b = c3_b_ntilerows;
     c3_d_b = c3_c_b;
@@ -8783,7 +9013,7 @@ static void c3_c_SURFPointsImpl_configure
   c3_i17 = c3_this->pScale->size[0];
   c3_this->pScale->size[0] = c3_x->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_this->pScale, c3_i17,
-    &c3_ah_emlrtRTEI);
+    &c3_dh_emlrtRTEI);
   c3_g_loop_ub = c3_x->size[0] - 1;
   for (c3_i19 = 0; c3_i19 <= c3_g_loop_ub; c3_i19++) {
     c3_this->pScale->data[c3_i19] = c3_x->data[c3_i19];
@@ -8795,7 +9025,7 @@ static void c3_c_SURFPointsImpl_configure
   c3_i21 = c3_tile->size[0];
   c3_tile->size[0] = (int32_T)c3_c_varargin_1;
   c3_emxEnsureCapacity_boolean_T(chartInstance, c3_tile, c3_i21,
-    &c3_vg_emlrtRTEI);
+    &c3_yg_emlrtRTEI);
   c3_i_loop_ub = (int32_T)c3_c_varargin_1 - 1;
   for (c3_i23 = 0; c3_i23 <= c3_i_loop_ub; c3_i23++) {
     c3_tile->data[c3_i23] = false;
@@ -8811,7 +9041,7 @@ static void c3_c_SURFPointsImpl_configure
 
   c3_i24 = c3_x->size[0];
   c3_x->size[0] = c3_c_outsize[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i24, &c3_bh_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i24, &c3_eh_emlrtRTEI);
   c3_j_loop_ub = c3_c_outsize[0] - 1;
   for (c3_i25 = 0; c3_i25 <= c3_j_loop_ub; c3_i25++) {
     c3_x->data[c3_i25] = 0.0F;
@@ -8822,7 +9052,7 @@ static void c3_c_SURFPointsImpl_configure
   c3_i26 = c3_this->pOrientation->size[0];
   c3_this->pOrientation->size[0] = c3_x->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_this->pOrientation, c3_i26,
-    &c3_ch_emlrtRTEI);
+    &c3_fh_emlrtRTEI);
   c3_k_loop_ub = c3_x->size[0] - 1;
   for (c3_i27 = 0; c3_i27 <= c3_k_loop_ub; c3_i27++) {
     c3_this->pOrientation->data[c3_i27] = c3_x->data[c3_i27];
@@ -8830,7 +9060,7 @@ static void c3_c_SURFPointsImpl_configure
 
   c3_i28 = c3_x->size[0];
   c3_x->size[0] = c3_inputs.SignOfLaplacian->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i28, &c3_dh_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i28, &c3_gh_emlrtRTEI);
   c3_l_loop_ub = c3_inputs.SignOfLaplacian->size[0] - 1;
   for (c3_i29 = 0; c3_i29 <= c3_l_loop_ub; c3_i29++) {
     c3_x->data[c3_i29] = (real32_T)c3_inputs.SignOfLaplacian->data[c3_i29];
@@ -8844,7 +9074,7 @@ static void c3_c_SURFPointsImpl_configure
     c3_i31 = c3_tile->size[0];
     c3_tile->size[0] = (int32_T)c3_d_varargin_1;
     c3_emxEnsureCapacity_boolean_T(chartInstance, c3_tile, c3_i31,
-      &c3_vg_emlrtRTEI);
+      &c3_yg_emlrtRTEI);
     c3_n_loop_ub = (int32_T)c3_d_varargin_1 - 1;
     for (c3_i33 = 0; c3_i33 <= c3_n_loop_ub; c3_i33++) {
       c3_tile->data[c3_i33] = false;
@@ -8860,7 +9090,7 @@ static void c3_c_SURFPointsImpl_configure
 
     c3_i36 = c3_x->size[0];
     c3_x->size[0] = c3_d_outsize[0];
-    c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i36, &c3_xg_emlrtRTEI);
+    c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i36, &c3_bh_emlrtRTEI);
     c3_c_ntilerows = c3_tile->size[0];
     c3_e_b = c3_c_ntilerows;
     c3_f_b = c3_e_b;
@@ -8883,10 +9113,10 @@ static void c3_c_SURFPointsImpl_configure
   }
 
   c3_emxFree_boolean_T(chartInstance, &c3_tile);
-  c3_emxInit_int8_T(chartInstance, &c3_r1, 1, &c3_ad_emlrtRTEI);
+  c3_emxInit_int8_T(chartInstance, &c3_r1, 1, &c3_dd_emlrtRTEI);
   c3_i30 = c3_r1->size[0];
   c3_r1->size[0] = c3_x->size[0];
-  c3_emxEnsureCapacity_int8_T(chartInstance, c3_r1, c3_i30, &c3_eh_emlrtRTEI);
+  c3_emxEnsureCapacity_int8_T(chartInstance, c3_r1, c3_i30, &c3_hh_emlrtRTEI);
   c3_m_loop_ub = c3_x->size[0] - 1;
   for (c3_i32 = 0; c3_i32 <= c3_m_loop_ub; c3_i32++) {
     c3_f = muSingleScalarRound(c3_x->data[c3_i32]);
@@ -8913,7 +9143,7 @@ static void c3_c_SURFPointsImpl_configure
   c3_i34 = c3_this->pSignOfLaplacian->size[0];
   c3_this->pSignOfLaplacian->size[0] = c3_r1->size[0];
   c3_emxEnsureCapacity_int8_T(chartInstance, c3_this->pSignOfLaplacian, c3_i34,
-    &c3_eh_emlrtRTEI);
+    &c3_hh_emlrtRTEI);
   c3_o_loop_ub = c3_r1->size[0] - 1;
   for (c3_i37 = 0; c3_i37 <= c3_o_loop_ub; c3_i37++) {
     c3_this->pSignOfLaplacian->data[c3_i37] = c3_r1->data[c3_i37];
@@ -9038,27 +9268,27 @@ static void c3_d_SURFPointsImpl_configure
   c3_this->pLocation->size[0] = c3_inputs.Location->size[0];
   c3_this->pLocation->size[1] = 2;
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_this->pLocation, c3_i,
-    &c3_qg_emlrtRTEI);
+    &c3_tg_emlrtRTEI);
   c3_loop_ub = c3_inputs.Location->size[0] * c3_inputs.Location->size[1] - 1;
   for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
     c3_this->pLocation->data[c3_i1] = c3_inputs.Location->data[c3_i1];
   }
 
-  c3_emxInit_real32_T1(chartInstance, &c3_x, 1, &c3_sg_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_x, 1, &c3_vg_emlrtRTEI);
   c3_i2 = c3_this->pMetric->size[0];
   c3_this->pMetric->size[0] = (int32_T)c3_n;
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_this->pMetric, c3_i2,
-    &c3_rg_emlrtRTEI);
+    &c3_ug_emlrtRTEI);
   c3_i3 = c3_x->size[0];
   c3_x->size[0] = c3_inputs.Metric->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i3, &c3_sg_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i3, &c3_vg_emlrtRTEI);
   c3_b_loop_ub = c3_inputs.Metric->size[0] - 1;
   for (c3_i4 = 0; c3_i4 <= c3_b_loop_ub; c3_i4++) {
     c3_x->data[c3_i4] = c3_inputs.Metric->data[c3_i4];
   }
 
   c3_N = c3_n;
-  c3_emxInit_boolean_T(chartInstance, &c3_tile, 1, &c3_vg_emlrtRTEI);
+  c3_emxInit_boolean_T(chartInstance, &c3_tile, 1, &c3_yg_emlrtRTEI);
   if (c3_x->size[0] == 1) {
     c3_a_data[0] = c3_x->data[0];
     c3_varargin_1 = c3_N;
@@ -9066,7 +9296,7 @@ static void c3_d_SURFPointsImpl_configure
     c3_i6 = c3_tile->size[0];
     c3_tile->size[0] = (int32_T)c3_varargin_1;
     c3_emxEnsureCapacity_boolean_T(chartInstance, c3_tile, c3_i6,
-      &c3_vg_emlrtRTEI);
+      &c3_yg_emlrtRTEI);
     c3_d_loop_ub = (int32_T)c3_varargin_1 - 1;
     for (c3_i8 = 0; c3_i8 <= c3_d_loop_ub; c3_i8++) {
       c3_tile->data[c3_i8] = false;
@@ -9082,7 +9312,7 @@ static void c3_d_SURFPointsImpl_configure
 
     c3_i10 = c3_x->size[0];
     c3_x->size[0] = c3_outsize[0];
-    c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i10, &c3_xg_emlrtRTEI);
+    c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i10, &c3_bh_emlrtRTEI);
     c3_ntilerows = c3_tile->size[0];
     c3_b = c3_ntilerows;
     c3_b_b = c3_b;
@@ -9107,17 +9337,17 @@ static void c3_d_SURFPointsImpl_configure
   c3_i5 = c3_this->pMetric->size[0];
   c3_this->pMetric->size[0] = c3_x->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_this->pMetric, c3_i5,
-    &c3_ug_emlrtRTEI);
+    &c3_xg_emlrtRTEI);
   c3_c_loop_ub = c3_x->size[0] - 1;
   for (c3_i7 = 0; c3_i7 <= c3_c_loop_ub; c3_i7++) {
     c3_this->pMetric->data[c3_i7] = c3_x->data[c3_i7];
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_r, 2, &c3_ad_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_r, 2, &c3_dd_emlrtRTEI);
   c3_i9 = c3_r->size[0] * c3_r->size[1];
   c3_r->size[0] = c3_this->pLocation->size[0];
   c3_r->size[1] = 2;
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_r, c3_i9, &c3_wg_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_r, c3_i9, &c3_ah_emlrtRTEI);
   c3_e_loop_ub = c3_this->pLocation->size[0] * c3_this->pLocation->size[1] - 1;
   for (c3_i11 = 0; c3_i11 <= c3_e_loop_ub; c3_i11++) {
     c3_r->data[c3_i11] = c3_this->pLocation->data[c3_i11];
@@ -9127,18 +9357,18 @@ static void c3_d_SURFPointsImpl_configure
   c3_i12 = c3_this->pScale->size[0];
   c3_this->pScale->size[0] = (int32_T)c3_b_n;
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_this->pScale, c3_i12,
-    &c3_ad_emlrtRTEI);
+    &c3_dd_emlrtRTEI);
   c3_i13 = c3_this->pOrientation->size[0];
   c3_this->pOrientation->size[0] = (int32_T)c3_b_n;
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_this->pOrientation, c3_i13,
-    &c3_ad_emlrtRTEI);
+    &c3_dd_emlrtRTEI);
   c3_i14 = c3_this->pSignOfLaplacian->size[0];
   c3_this->pSignOfLaplacian->size[0] = (int32_T)c3_b_n;
   c3_emxEnsureCapacity_int8_T(chartInstance, c3_this->pSignOfLaplacian, c3_i14,
-    &c3_ad_emlrtRTEI);
+    &c3_dd_emlrtRTEI);
   c3_i15 = c3_x->size[0];
   c3_x->size[0] = c3_inputs.Scale->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i15, &c3_yg_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i15, &c3_ch_emlrtRTEI);
   c3_f_loop_ub = c3_inputs.Scale->size[0] - 1;
   c3_emxFree_real32_T(chartInstance, &c3_r);
   for (c3_i16 = 0; c3_i16 <= c3_f_loop_ub; c3_i16++) {
@@ -9153,7 +9383,7 @@ static void c3_d_SURFPointsImpl_configure
     c3_i18 = c3_tile->size[0];
     c3_tile->size[0] = (int32_T)c3_b_varargin_1;
     c3_emxEnsureCapacity_boolean_T(chartInstance, c3_tile, c3_i18,
-      &c3_vg_emlrtRTEI);
+      &c3_yg_emlrtRTEI);
     c3_h_loop_ub = (int32_T)c3_b_varargin_1 - 1;
     for (c3_i20 = 0; c3_i20 <= c3_h_loop_ub; c3_i20++) {
       c3_tile->data[c3_i20] = false;
@@ -9169,7 +9399,7 @@ static void c3_d_SURFPointsImpl_configure
 
     c3_i23 = c3_x->size[0];
     c3_x->size[0] = c3_b_outsize[0];
-    c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i23, &c3_xg_emlrtRTEI);
+    c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i23, &c3_bh_emlrtRTEI);
     c3_b_ntilerows = c3_tile->size[0];
     c3_c_b = c3_b_ntilerows;
     c3_d_b = c3_c_b;
@@ -9195,7 +9425,7 @@ static void c3_d_SURFPointsImpl_configure
   c3_i17 = c3_this->pScale->size[0];
   c3_this->pScale->size[0] = c3_x->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_this->pScale, c3_i17,
-    &c3_ah_emlrtRTEI);
+    &c3_dh_emlrtRTEI);
   c3_g_loop_ub = c3_x->size[0] - 1;
   for (c3_i19 = 0; c3_i19 <= c3_g_loop_ub; c3_i19++) {
     c3_this->pScale->data[c3_i19] = c3_x->data[c3_i19];
@@ -9203,7 +9433,7 @@ static void c3_d_SURFPointsImpl_configure
 
   c3_i21 = c3_x->size[0];
   c3_x->size[0] = c3_inputs.Orientation->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i21, &c3_fh_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i21, &c3_ih_emlrtRTEI);
   c3_i_loop_ub = c3_inputs.Orientation->size[0] - 1;
   for (c3_i22 = 0; c3_i22 <= c3_i_loop_ub; c3_i22++) {
     c3_x->data[c3_i22] = c3_inputs.Orientation->data[c3_i22];
@@ -9217,7 +9447,7 @@ static void c3_d_SURFPointsImpl_configure
     c3_i25 = c3_tile->size[0];
     c3_tile->size[0] = (int32_T)c3_c_varargin_1;
     c3_emxEnsureCapacity_boolean_T(chartInstance, c3_tile, c3_i25,
-      &c3_vg_emlrtRTEI);
+      &c3_yg_emlrtRTEI);
     c3_k_loop_ub = (int32_T)c3_c_varargin_1 - 1;
     for (c3_i27 = 0; c3_i27 <= c3_k_loop_ub; c3_i27++) {
       c3_tile->data[c3_i27] = false;
@@ -9233,7 +9463,7 @@ static void c3_d_SURFPointsImpl_configure
 
     c3_i30 = c3_x->size[0];
     c3_x->size[0] = c3_c_outsize[0];
-    c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i30, &c3_xg_emlrtRTEI);
+    c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i30, &c3_bh_emlrtRTEI);
     c3_c_ntilerows = c3_tile->size[0];
     c3_e_b = c3_c_ntilerows;
     c3_f_b = c3_e_b;
@@ -9260,7 +9490,7 @@ static void c3_d_SURFPointsImpl_configure
   c3_i24 = c3_this->pOrientation->size[0];
   c3_this->pOrientation->size[0] = c3_x->size[0];
   c3_emxEnsureCapacity_real32_T1(chartInstance, c3_this->pOrientation, c3_i24,
-    &c3_ch_emlrtRTEI);
+    &c3_fh_emlrtRTEI);
   c3_j_loop_ub = c3_x->size[0] - 1;
   for (c3_i26 = 0; c3_i26 <= c3_j_loop_ub; c3_i26++) {
     c3_this->pOrientation->data[c3_i26] = c3_x->data[c3_i26];
@@ -9268,7 +9498,7 @@ static void c3_d_SURFPointsImpl_configure
 
   c3_i28 = c3_x->size[0];
   c3_x->size[0] = c3_inputs.SignOfLaplacian->size[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i28, &c3_dh_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i28, &c3_gh_emlrtRTEI);
   c3_l_loop_ub = c3_inputs.SignOfLaplacian->size[0] - 1;
   for (c3_i29 = 0; c3_i29 <= c3_l_loop_ub; c3_i29++) {
     c3_x->data[c3_i29] = (real32_T)c3_inputs.SignOfLaplacian->data[c3_i29];
@@ -9282,7 +9512,7 @@ static void c3_d_SURFPointsImpl_configure
     c3_i32 = c3_tile->size[0];
     c3_tile->size[0] = (int32_T)c3_d_varargin_1;
     c3_emxEnsureCapacity_boolean_T(chartInstance, c3_tile, c3_i32,
-      &c3_vg_emlrtRTEI);
+      &c3_yg_emlrtRTEI);
     c3_n_loop_ub = (int32_T)c3_d_varargin_1 - 1;
     for (c3_i34 = 0; c3_i34 <= c3_n_loop_ub; c3_i34++) {
       c3_tile->data[c3_i34] = false;
@@ -9298,7 +9528,7 @@ static void c3_d_SURFPointsImpl_configure
 
     c3_i37 = c3_x->size[0];
     c3_x->size[0] = c3_d_outsize[0];
-    c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i37, &c3_xg_emlrtRTEI);
+    c3_emxEnsureCapacity_real32_T1(chartInstance, c3_x, c3_i37, &c3_bh_emlrtRTEI);
     c3_d_ntilerows = c3_tile->size[0];
     c3_g_b = c3_d_ntilerows;
     c3_h_b = c3_g_b;
@@ -9321,10 +9551,10 @@ static void c3_d_SURFPointsImpl_configure
   }
 
   c3_emxFree_boolean_T(chartInstance, &c3_tile);
-  c3_emxInit_int8_T(chartInstance, &c3_r1, 1, &c3_ad_emlrtRTEI);
+  c3_emxInit_int8_T(chartInstance, &c3_r1, 1, &c3_dd_emlrtRTEI);
   c3_i31 = c3_r1->size[0];
   c3_r1->size[0] = c3_x->size[0];
-  c3_emxEnsureCapacity_int8_T(chartInstance, c3_r1, c3_i31, &c3_eh_emlrtRTEI);
+  c3_emxEnsureCapacity_int8_T(chartInstance, c3_r1, c3_i31, &c3_hh_emlrtRTEI);
   c3_m_loop_ub = c3_x->size[0] - 1;
   for (c3_i33 = 0; c3_i33 <= c3_m_loop_ub; c3_i33++) {
     c3_f = muSingleScalarRound(c3_x->data[c3_i33]);
@@ -9351,7 +9581,7 @@ static void c3_d_SURFPointsImpl_configure
   c3_i35 = c3_this->pSignOfLaplacian->size[0];
   c3_this->pSignOfLaplacian->size[0] = c3_r1->size[0];
   c3_emxEnsureCapacity_int8_T(chartInstance, c3_this->pSignOfLaplacian, c3_i35,
-    &c3_eh_emlrtRTEI);
+    &c3_hh_emlrtRTEI);
   c3_o_loop_ub = c3_r1->size[0] - 1;
   for (c3_i38 = 0; c3_i38 <= c3_o_loop_ub; c3_i38++) {
     c3_this->pSignOfLaplacian->data[c3_i38] = c3_r1->data[c3_i38];
@@ -9486,7 +9716,7 @@ static void c3_b_normalizeX(SFc3_MotionObjectDetectorInstanceStruct
   int32_T c3_d_loop_ub;
   int32_T c3_i23;
   int32_T c3_i24;
-  c3_emxInit_real32_T(chartInstance, &c3_ztemp, 2, &c3_rh_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_ztemp, 2, &c3_uh_emlrtRTEI);
   for (c3_i = 0; c3_i < 2; c3_i++) {
     c3_sz[c3_i] = (real_T)c3_c_X->size[c3_i];
   }
@@ -9494,7 +9724,7 @@ static void c3_b_normalizeX(SFc3_MotionObjectDetectorInstanceStruct
   c3_i1 = c3_ztemp->size[0] * c3_ztemp->size[1];
   c3_ztemp->size[0] = 64;
   c3_ztemp->size[1] = (int32_T)c3_sz[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_ztemp, c3_i1, &c3_gh_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_ztemp, c3_i1, &c3_jh_emlrtRTEI);
   for (c3_i2 = 0; c3_i2 < 2; c3_i2++) {
     c3_iv[c3_i2] = c3_ztemp->size[c3_i2];
   }
@@ -9502,7 +9732,7 @@ static void c3_b_normalizeX(SFc3_MotionObjectDetectorInstanceStruct
   c3_i3 = c3_ztemp->size[0] * c3_ztemp->size[1];
   c3_ztemp->size[0] = c3_iv[0];
   c3_ztemp->size[1] = c3_iv[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_ztemp, c3_i3, &c3_hh_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_ztemp, c3_i3, &c3_kh_emlrtRTEI);
   for (c3_i4 = 0; c3_i4 < 2; c3_i4++) {
     c3_iv[c3_i4] = c3_ztemp->size[c3_i4];
   }
@@ -9510,7 +9740,7 @@ static void c3_b_normalizeX(SFc3_MotionObjectDetectorInstanceStruct
   c3_i5 = c3_ztemp->size[0] * c3_ztemp->size[1];
   c3_ztemp->size[0] = c3_iv[0];
   c3_ztemp->size[1] = c3_iv[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_ztemp, c3_i5, &c3_ih_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_ztemp, c3_i5, &c3_lh_emlrtRTEI);
   for (c3_i6 = 0; c3_i6 < 2; c3_i6++) {
     c3_iv[c3_i6] = c3_ztemp->size[c3_i6];
   }
@@ -9518,7 +9748,7 @@ static void c3_b_normalizeX(SFc3_MotionObjectDetectorInstanceStruct
   c3_i7 = c3_ztemp->size[0] * c3_ztemp->size[1];
   c3_ztemp->size[0] = c3_iv[0];
   c3_ztemp->size[1] = c3_iv[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_ztemp, c3_i7, &c3_jh_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_ztemp, c3_i7, &c3_mh_emlrtRTEI);
   c3_nx = c3_ztemp->size[1] << 6;
   c3_b = c3_nx;
   c3_b_b = c3_b;
@@ -9539,7 +9769,7 @@ static void c3_b_normalizeX(SFc3_MotionObjectDetectorInstanceStruct
     c3_ztemp->data[c3_b_k] = c3_d_y;
   }
 
-  c3_emxInit_real32_T(chartInstance, &c3_Xnorm, 2, &c3_qh_emlrtRTEI);
+  c3_emxInit_real32_T(chartInstance, &c3_Xnorm, 2, &c3_th_emlrtRTEI);
   c3_c_b = (c3_ztemp->size[1] == 0);
   if (c3_c_b) {
     for (c3_i8 = 0; c3_i8 < 2; c3_i8++) {
@@ -9550,7 +9780,7 @@ static void c3_b_normalizeX(SFc3_MotionObjectDetectorInstanceStruct
     c3_Xnorm->size[0] = 1;
     c3_Xnorm->size[1] = (int32_T)c3_sz[1];
     c3_emxEnsureCapacity_real32_T(chartInstance, c3_Xnorm, c3_i10,
-      &c3_kh_emlrtRTEI);
+      &c3_nh_emlrtRTEI);
     c3_loop_ub = (int32_T)c3_sz[1] - 1;
     for (c3_i12 = 0; c3_i12 <= c3_loop_ub; c3_i12++) {
       c3_Xnorm->data[c3_i12] = 0.0F;
@@ -9565,7 +9795,7 @@ static void c3_b_normalizeX(SFc3_MotionObjectDetectorInstanceStruct
     c3_Xnorm->size[0] = 1;
     c3_Xnorm->size[1] = (int32_T)c3_sz[1];
     c3_emxEnsureCapacity_real32_T(chartInstance, c3_Xnorm, c3_i11,
-      &c3_lh_emlrtRTEI);
+      &c3_oh_emlrtRTEI);
     c3_d_b = c3_npages;
     c3_e_b = c3_d_b;
     if (1 > c3_e_b) {
@@ -9649,7 +9879,7 @@ static void c3_b_normalizeX(SFc3_MotionObjectDetectorInstanceStruct
   c3_ztemp->size[0] = 64;
   c3_ztemp->size[1] = c3_c_X->size[1];
   c3_emxEnsureCapacity_real32_T(chartInstance, c3_ztemp, c3_i14,
-    &c3_mh_emlrtRTEI);
+    &c3_ph_emlrtRTEI);
   c3_b_loop_ub = c3_c_X->size[0] * c3_c_X->size[1] - 1;
   for (c3_i15 = 0; c3_i15 <= c3_b_loop_ub; c3_i15++) {
     c3_ztemp->data[c3_i15] = c3_c_X->data[c3_i15];
@@ -9689,7 +9919,7 @@ static void c3_b_normalizeX(SFc3_MotionObjectDetectorInstanceStruct
   c3_i16 = c3_c_X->size[0] * c3_c_X->size[1];
   c3_c_X->size[0] = 64;
   c3_c_X->size[1] = c3_csz[1];
-  c3_emxEnsureCapacity_real32_T(chartInstance, c3_c_X, c3_i16, &c3_nh_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T(chartInstance, c3_c_X, c3_i16, &c3_qh_emlrtRTEI);
   c3_b1 = (c3_c_X->size[1] == 0);
   if (!c3_b1) {
     c3_sza = c3_ztemp->size[1];
@@ -9728,12 +9958,12 @@ static void c3_b_normalizeX(SFc3_MotionObjectDetectorInstanceStruct
     c3_tmp_data[c3_i17] = 1 + c3_i17;
   }
 
-  c3_emxInit_boolean_T1(chartInstance, &c3_r, 2, &c3_ph_emlrtRTEI);
+  c3_emxInit_boolean_T1(chartInstance, &c3_r, 2, &c3_sh_emlrtRTEI);
   frexp(1.0, &c3_exponent);
   c3_i19 = c3_r->size[0] * c3_r->size[1];
   c3_r->size[0] = 1;
   c3_r->size[1] = c3_Xnorm->size[1];
-  c3_emxEnsureCapacity_boolean_T1(chartInstance, c3_r, c3_i19, &c3_ph_emlrtRTEI);
+  c3_emxEnsureCapacity_boolean_T1(chartInstance, c3_r, c3_i19, &c3_sh_emlrtRTEI);
   c3_c_loop_ub = c3_Xnorm->size[0] * c3_Xnorm->size[1] - 1;
   for (c3_i20 = 0; c3_i20 <= c3_c_loop_ub; c3_i20++) {
     c3_r->data[c3_i20] = (c3_Xnorm->data[c3_i20] <= 1.1920929E-7F);
@@ -9748,11 +9978,11 @@ static void c3_b_normalizeX(SFc3_MotionObjectDetectorInstanceStruct
     }
   }
 
-  c3_emxInit_int32_T1(chartInstance, &c3_r1, 2, &c3_jd_emlrtRTEI);
+  c3_emxInit_int32_T1(chartInstance, &c3_r1, 2, &c3_md_emlrtRTEI);
   c3_i21 = c3_r1->size[0] * c3_r1->size[1];
   c3_r1->size[0] = 1;
   c3_r1->size[1] = c3_trueCount;
-  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r1, c3_i21, &c3_jd_emlrtRTEI);
+  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_r1, c3_i21, &c3_md_emlrtRTEI);
   c3_partialTrueCount = 0;
   for (c3_c_i = 0; c3_c_i <= c3_end; c3_c_i++) {
     if (c3_r->data[c3_c_i]) {
@@ -9803,13 +10033,13 @@ static void c3_b_sort(SFc3_MotionObjectDetectorInstanceStruct *chartInstance,
   int32_T c3_f_b;
   boolean_T c3_c_overflow;
   int32_T c3_c_k;
-  c3_emxInit_real32_T1(chartInstance, &c3_vwork, 1, &c3_sh_emlrtRTEI);
+  c3_emxInit_real32_T1(chartInstance, &c3_vwork, 1, &c3_vh_emlrtRTEI);
   c3_vlen = c3_x->size[1];
   c3_iv[0] = c3_vlen;
   c3_iv[1] = 1;
   c3_i = c3_vwork->size[0];
   c3_vwork->size[0] = c3_iv[0];
-  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_vwork, c3_i, &c3_mg_emlrtRTEI);
+  c3_emxEnsureCapacity_real32_T1(chartInstance, c3_vwork, c3_i, &c3_pg_emlrtRTEI);
   for (c3_i1 = 0; c3_i1 < 2; c3_i1++) {
     c3_dv[c3_i1] = (real_T)c3_x->size[c3_i1];
   }
@@ -9817,7 +10047,7 @@ static void c3_b_sort(SFc3_MotionObjectDetectorInstanceStruct *chartInstance,
   c3_i2 = c3_idx->size[0] * c3_idx->size[1];
   c3_idx->size[0] = (int32_T)c3_dv[0];
   c3_idx->size[1] = (int32_T)c3_dv[1];
-  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_idx, c3_i2, &c3_mg_emlrtRTEI);
+  c3_emxEnsureCapacity_int32_T1(chartInstance, c3_idx, c3_i2, &c3_pg_emlrtRTEI);
   c3_vstride = c3_x->size[0];
   c3_b = c3_vstride;
   c3_b_b = c3_b;
@@ -9832,7 +10062,7 @@ static void c3_b_sort(SFc3_MotionObjectDetectorInstanceStruct *chartInstance,
   }
 
   c3_j = 1;
-  c3_emxInit_int32_T(chartInstance, &c3_iidx, 1, &c3_mg_emlrtRTEI);
+  c3_emxInit_int32_T(chartInstance, &c3_iidx, 1, &c3_pg_emlrtRTEI);
   while (c3_j - 1 <= c3_vstride - 1) {
     c3_b_j = c3_j - 1;
     c3_c_b = c3_vlen;
@@ -9977,7 +10207,7 @@ static void c3_b_sortIdx(SFc3_MotionObjectDetectorInstanceStruct *chartInstance,
   c3_dv[1] = 1.0;
   c3_i = c3_idx->size[0];
   c3_idx->size[0] = (int32_T)c3_dv[0];
-  c3_emxEnsureCapacity_int32_T(chartInstance, c3_idx, c3_i, &c3_th_emlrtRTEI);
+  c3_emxEnsureCapacity_int32_T(chartInstance, c3_idx, c3_i, &c3_wh_emlrtRTEI);
   c3_loop_ub = (int32_T)c3_dv[0] - 1;
   for (c3_i1 = 0; c3_i1 <= c3_loop_ub; c3_i1++) {
     c3_idx->data[c3_i1] = 0;
@@ -9994,43 +10224,43 @@ static void c3_b_sortIdx(SFc3_MotionObjectDetectorInstanceStruct *chartInstance,
       c3_idx4[c3_i3] = 0;
     }
 
-    c3_emxInit_int32_T(chartInstance, &c3_iwork, 1, &c3_uh_emlrtRTEI);
+    c3_emxInit_int32_T(chartInstance, &c3_iwork, 1, &c3_xh_emlrtRTEI);
     c3_i4 = c3_iwork->size[0];
     c3_iwork->size[0] = c3_idx->size[0];
     c3_emxEnsureCapacity_int32_T(chartInstance, c3_iwork, c3_i4,
-      &c3_uh_emlrtRTEI);
+      &c3_xh_emlrtRTEI);
     c3_iv[0] = c3_iwork->size[0];
     c3_i5 = c3_iwork->size[0];
     c3_iwork->size[0] = c3_iv[0];
     c3_emxEnsureCapacity_int32_T(chartInstance, c3_iwork, c3_i5,
-      &c3_vh_emlrtRTEI);
+      &c3_yh_emlrtRTEI);
     c3_i6 = c3_iwork->size[0];
     c3_i7 = c3_iwork->size[0];
     c3_iwork->size[0] = c3_i6;
     c3_emxEnsureCapacity_int32_T(chartInstance, c3_iwork, c3_i7,
-      &c3_wh_emlrtRTEI);
+      &c3_ai_emlrtRTEI);
     c3_b_loop_ub = c3_i6 - 1;
     for (c3_i8 = 0; c3_i8 <= c3_b_loop_ub; c3_i8++) {
       c3_iwork->data[c3_i8] = 0;
     }
 
-    c3_emxInit_real32_T1(chartInstance, &c3_xwork, 1, &c3_xh_emlrtRTEI);
+    c3_emxInit_real32_T1(chartInstance, &c3_xwork, 1, &c3_bi_emlrtRTEI);
     c3_dv[0] = (real_T)c3_x->size[0];
     c3_dv[1] = 1.0;
     c3_i9 = c3_xwork->size[0];
     c3_xwork->size[0] = (int32_T)c3_dv[0];
     c3_emxEnsureCapacity_real32_T1(chartInstance, c3_xwork, c3_i9,
-      &c3_xh_emlrtRTEI);
+      &c3_bi_emlrtRTEI);
     c3_iv[0] = c3_xwork->size[0];
     c3_i10 = c3_xwork->size[0];
     c3_xwork->size[0] = c3_iv[0];
     c3_emxEnsureCapacity_real32_T1(chartInstance, c3_xwork, c3_i10,
-      &c3_vh_emlrtRTEI);
+      &c3_yh_emlrtRTEI);
     c3_i11 = c3_xwork->size[0];
     c3_i12 = c3_xwork->size[0];
     c3_xwork->size[0] = c3_i11;
     c3_emxEnsureCapacity_real32_T1(chartInstance, c3_xwork, c3_i12,
-      &c3_yh_emlrtRTEI);
+      &c3_ci_emlrtRTEI);
     c3_c_loop_ub = c3_i11 - 1;
     for (c3_i13 = 0; c3_i13 <= c3_c_loop_ub; c3_i13++) {
       c3_xwork->data[c3_i13] = 0.0F;
@@ -10878,6 +11108,57 @@ static void c3_emxEnsureCapacity_uint32_T
   }
 }
 
+static void c3_emxEnsureCapacity_uint32_T1
+  (SFc3_MotionObjectDetectorInstanceStruct *chartInstance, c3_emxArray_uint32_T *
+   c3_emxArray, int32_T c3_oldNumel, const emlrtRTEInfo *c3_srcLocation)
+{
+  int32_T c3_newNumel;
+  int32_T c3_i;
+  int32_T c3_newCapacity;
+  void *c3_newData;
+  if (c3_oldNumel < 0) {
+    c3_oldNumel = 0;
+  }
+
+  c3_newNumel = 1;
+  for (c3_i = 0; c3_i < c3_emxArray->numDimensions; c3_i++) {
+    c3_newNumel = (int32_T)emlrtSizeMulR2012b((uint32_T)c3_newNumel, (uint32_T)
+      c3_emxArray->size[c3_i], c3_srcLocation, chartInstance->c3_fEmlrtCtx);
+  }
+
+  if (c3_newNumel > c3_emxArray->allocatedSize) {
+    c3_newCapacity = c3_emxArray->allocatedSize;
+    if (c3_newCapacity < 16) {
+      c3_newCapacity = 16;
+    }
+
+    while (c3_newCapacity < c3_newNumel) {
+      if (c3_newCapacity > 1073741823) {
+        c3_newCapacity = MAX_int32_T;
+      } else {
+        c3_newCapacity <<= 1;
+      }
+    }
+
+    c3_newData = emlrtCallocMex((uint32_T)c3_newCapacity, sizeof(uint32_T));
+    if (c3_newData == NULL) {
+      emlrtHeapAllocationErrorR2012b(c3_srcLocation, chartInstance->c3_fEmlrtCtx);
+    }
+
+    if (c3_emxArray->data != NULL) {
+      memcpy(c3_newData, c3_emxArray->data, sizeof(uint32_T) * (uint32_T)
+             c3_oldNumel);
+      if (c3_emxArray->canFreeData) {
+        emlrtFreeMex(c3_emxArray->data);
+      }
+    }
+
+    c3_emxArray->data = (uint32_T *)c3_newData;
+    c3_emxArray->allocatedSize = c3_newCapacity;
+    c3_emxArray->canFreeData = true;
+  }
+}
+
 static void c3_emxInitStruct_vision_internal_S
   (SFc3_MotionObjectDetectorInstanceStruct *chartInstance,
    c3_vision_internal_SURFPoints_cg *c3_pStruct, const emlrtRTEInfo
@@ -10976,6 +11257,34 @@ static void c3_emxInit_int8_T(SFc3_MotionObjectDetectorInstanceStruct
 }
 
 static void c3_emxInit_uint32_T(SFc3_MotionObjectDetectorInstanceStruct
+  *chartInstance, c3_emxArray_uint32_T **c3_pEmxArray, int32_T c3_numDimensions,
+  const emlrtRTEInfo *c3_srcLocation)
+{
+  c3_emxArray_uint32_T *c3_emxArray;
+  int32_T c3_i;
+  *c3_pEmxArray = (c3_emxArray_uint32_T *)emlrtMallocMex(sizeof
+    (c3_emxArray_uint32_T));
+  if ((void *)*c3_pEmxArray == NULL) {
+    emlrtHeapAllocationErrorR2012b(c3_srcLocation, chartInstance->c3_fEmlrtCtx);
+  }
+
+  c3_emxArray = *c3_pEmxArray;
+  c3_emxArray->data = (uint32_T *)NULL;
+  c3_emxArray->numDimensions = c3_numDimensions;
+  c3_emxArray->size = (int32_T *)emlrtMallocMex(sizeof(int32_T) * (uint32_T)
+    c3_numDimensions);
+  if ((void *)c3_emxArray->size == NULL) {
+    emlrtHeapAllocationErrorR2012b(c3_srcLocation, chartInstance->c3_fEmlrtCtx);
+  }
+
+  c3_emxArray->allocatedSize = 0;
+  c3_emxArray->canFreeData = true;
+  for (c3_i = 0; c3_i < c3_numDimensions; c3_i++) {
+    c3_emxArray->size[c3_i] = 0;
+  }
+}
+
+static void c3_emxInit_uint32_T1(SFc3_MotionObjectDetectorInstanceStruct
   *chartInstance, c3_emxArray_uint32_T **c3_pEmxArray, int32_T c3_numDimensions,
   const emlrtRTEInfo *c3_srcLocation)
 {
@@ -11714,10 +12023,10 @@ static void init_simulink_io_address(SFc3_MotionObjectDetectorInstanceStruct
 /* SFunction Glue Code */
 void sf_c3_MotionObjectDetector_get_check_sum(mxArray *plhs[])
 {
-  ((real_T *)mxGetPr((plhs[0])))[0] = (real_T)(1198011140U);
-  ((real_T *)mxGetPr((plhs[0])))[1] = (real_T)(3758758571U);
-  ((real_T *)mxGetPr((plhs[0])))[2] = (real_T)(727071400U);
-  ((real_T *)mxGetPr((plhs[0])))[3] = (real_T)(3429581451U);
+  ((real_T *)mxGetPr((plhs[0])))[0] = (real_T)(3592959483U);
+  ((real_T *)mxGetPr((plhs[0])))[1] = (real_T)(333055904U);
+  ((real_T *)mxGetPr((plhs[0])))[2] = (real_T)(2272053878U);
+  ((real_T *)mxGetPr((plhs[0])))[3] = (real_T)(3040262424U);
 }
 
 mxArray *sf_c3_MotionObjectDetector_third_party_uses_info(void)
@@ -11778,7 +12087,7 @@ static const mxArray *sf_get_sim_state_info_c3_MotionObjectDetector(void)
 
 static const char* sf_get_instance_specialization(void)
 {
-  return "secBmhdz0nTn9UA5xaiGZrB";
+  return "sKnwBwKTD7XMsc5l22QlyqH";
 }
 
 static void sf_opaque_initialize_c3_MotionObjectDetector(void *chartInstanceVar)
@@ -11871,25 +12180,25 @@ const char* sf_c3_MotionObjectDetector_get_post_codegen_info(void)
 {
   int i;
   const char* encStrCodegen [16] = {
-    "eNrdVstu00AUtaNSUQmq7tgg0YoFLCshEOzavGikhFQkLRWbamLfxEPGM2YeaYr4FHZ8CxIs2bN",
-    "mzR/AHTsvHDtpCCDERLYz43PPfc4dO26t4eDYxusj3jbxeR2vgpOMa6O5O3Ml6xvOvdH8PYK4CY",
-    "+JJKFyFg5OQngOSjCjqeA13hWZMMq7IIF7iI2E1HlsioaGUd6vGu5ZPvUioF7QCoRhfhFlid/k7",
-    "BLZIqOPkadMJXi6CuDrQArTC6qM9CYWS31RCsDrKxMuckGBbpnImqUahmkaMagMwatxpQlarKa2",
-    "tTTRUNLDXDetp6o1BoowYpTwTG8DoloQYYA1nEQ+3ptGo1NpmBcQqYsQkAGoOu3HnIJDmpMqfNG",
-    "hnGghKWGVkJWs4LxtxwztaQgf2IKAoG1FCaQfCcp1fv5bVfS0wkmHQRk6ppfP1oLXxib/lMIFyN",
-    "y4dUtiAJL0oMlzlcYBqQzjbE2qZB6maQinRB56mD8Ffm71YuWoFsE8QRsl8mAQO1lTbUkHGN5cN",
-    "hPWbGUu2zImTJKtlsFitsoAFmVhwlb1eIkwpnJhbRHVYQAsZi0TTRbDEtZsXCRFRHpYtT4G2ZZ4",
-    "SXCfzuXCM0qLsITlVq7Xn2GnyDZuCqtxDbJLPMjat8oLwDcM0FHsTDpWl0HqU2WztQQ1yukylKO",
-    "6hpcvhOyjowu2/dQFm4NcYKh6GH2s3ROFZb4IZqO/FDfu8/vOtM/fuEKfH8uln/dneNwMHmfmmd",
-    "a7VfgZX0jpLeDPdRO5gxm5myk9Gyk5i9ux65/v3P3+6Ozdpw9f995+qR0t0+/O6Xfj/1bum7vau",
-    "bg9mt8eN6BJeQ7mqsJij2bs2sjgvzXDvzOaK/CKYeC/2edt/uTk8OGQ0KcvZTGJ14r2jtd3bSe8",
-    "jOK+pqRX80cHtp0Tkxxjlv/xjL2bS/i3RuvJ2D1YTz6J19mSeO2l4rUXnxfnBLv/AM69B+cNYTd",
-    "ws/MKvwbKoPEuZEZ9/2q9rCrn/GU59z/X97/b+Tv9u0r/L6x5bvzrcuv6t+o5uM65me53Tgq/s4",
-    "aeP41f9/thFfwP/RleYA==",
+    "eNrdVstu00AUtaNSUQmqig0bFu0KdqAiBGJVmocaNSEFt6W7aGrfxEPGM+48klZ8CVv4GT6CBeI",
+    "H4AsQd+ykCY6dNAQQ6kRjZ+xzz33OHTtuvengWMf5CS+reL+Js+Sk48Zw7U7M9PmKc3+4/oggbq",
+    "IDIkmknJmDkwhegxLMaCp4nXdELozyDkjgPmJjIXURm6KRYZT3aob7lk+9CakfeqEwLNhFWRK0O",
+    "LtAttjoA+SpUAm+rgEEOpTCdMMaI91Li6UelEPwe8pEs1xQoD0TW7NU0zBNYwbVc/DrXGmCFqux",
+    "bZ4mGsr6vNBN66nyRkARxYwSnuttSJQHMQZYw1Ec4LVlNDqVhfkhkXoXQtIH1aC9hFNwyHJShS9",
+    "OKSdaSEpYNWJlKzht2wFDe5oiADYjIGjbrgTSiwXlujj/Xg09rXJyyqACp6ZbzObBmbHJP6YwAF",
+    "kYt05Z9EGSLrR4odIkINXzJFuXVTIN0zSCYyJf+Jg/BUFh9WLlKI9gnuAQJYpgkDhZV4eS9jG8h",
+    "WwmqtvKnLdlTJQmW82DJWzVPszKwiVbzedlwpgqhB2KuAF9YAlrhWgyG5ay5uNiKWLSxaoNMMi2",
+    "xMuCB3QqF75RWkRlLLdKo/ESO0W+cWNYnWuQHeJD3r5VfgiBYYCOYmfSiboc0oAqm605qGFO56E",
+    "c1TG8MhCyh47O2PZjF2wOCoGR6mL0sXaPFJb5LJiN/lzcqM8/csZ9/tYV+vxILnt/MMHj5vA4E/",
+    "es3rXSr/hSRm8Jf66byu1MyN3O6FnJyFncBs67P96/a7c/PDz4+vzOl2/x53n63Sn9bvLfyn13F",
+    "zsX14fre6MGdFme/amqsNi9CbtWcvjvTvBvDNdqnw92B/uHlacnTeU/Ydvbr9jF2V4arwXtHT3f",
+    "tJ3wIk76mpJ+PRge2HZNTHqMWf5nE/auzuFfGz5Px+bOcvJpvE7mxGsrE6+t5LxoE+z+fWj7j9t",
+    "NYTdw6/Qtfg1UQONVyJz6/t16WVTO+cdy7jXXd93t/JP+XaX/l5Y8N/53uWX9W/QcXObczPY7J4",
+    "PfWELP38Yv+/2wCP4nnoherQ==",
     ""
   };
 
-  static char newstr [1073] = "";
+  static char newstr [1077] = "";
   newstr[0] = '\0';
   for (i = 0; i < 16; i++) {
     strcat(newstr, encStrCodegen[i]);
@@ -11902,10 +12211,10 @@ static void mdlSetWorkWidths_c3_MotionObjectDetector(SimStruct *S)
 {
   const char* newstr = sf_c3_MotionObjectDetector_get_post_codegen_info();
   sf_set_work_widths(S, newstr);
-  ssSetChecksum0(S,(589287684U));
-  ssSetChecksum1(S,(2623026943U));
-  ssSetChecksum2(S,(568772041U));
-  ssSetChecksum3(S,(1212800124U));
+  ssSetChecksum0(S,(2073689623U));
+  ssSetChecksum1(S,(799170399U));
+  ssSetChecksum2(S,(305848912U));
+  ssSetChecksum3(S,(3698388960U));
 }
 
 static void mdlRTW_c3_MotionObjectDetector(SimStruct *S)
