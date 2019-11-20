@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.34"
+    ComputedModelVersion    "1.40"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -19,7 +19,7 @@ Model {
     IsArchitectureModel	    0
     IsAUTOSARArchitectureModel 0
     NumParameterArguments   0
-    NumExternalFileReferences 21
+    NumExternalFileReferences 28
     ExternalFileReference {
       Reference		      "visionstatistics/Blob Analysis"
       Path		      "MotionObjectDetector/BlobAnalysis/Blob Analysis"
@@ -76,6 +76,12 @@ Model {
     }
     ExternalFileReference {
       Reference		      "visionsinks/To Video Display"
+      Path		      "MotionObjectDetector/Display/To Video Display5"
+      SID		      "257"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visionsinks/To Video Display"
       Path		      "MotionObjectDetector/Display/To Video Display8"
       SID		      "86"
       Type		      "LIBRARY_BLOCK"
@@ -84,6 +90,42 @@ Model {
       Reference		      "dspvision/From Multimedia File"
       Path		      "MotionObjectDetector/From Multimedia File"
       SID		      "1"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visionconversions/Color Space\n Conversion"
+      Path		      "MotionObjectDetector/Function-Call Subsystem/Color Space  Conversion"
+      SID		      "249"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visionconversions/Color Space\n Conversion"
+      Path		      "MotionObjectDetector/Function-Call Subsystem/Color Space  Conversion1"
+      SID		      "250"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visiontextngfix/Draw Markers"
+      Path		      "MotionObjectDetector/Function-Call Subsystem/Draw Markers"
+      SID		      "252"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visionconversions/Image Data Type\nConversion"
+      Path		      "MotionObjectDetector/Function-Call Subsystem/Image Data Type Conversion1"
+      SID		      "258"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visionsources/Image From File"
+      Path		      "MotionObjectDetector/Function-Call Subsystem/Image From File"
+      SID		      "240"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visionanalysis/Template Matching"
+      Path		      "MotionObjectDetector/Function-Call Subsystem/Template Matching"
+      SID		      "247"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
@@ -205,7 +247,7 @@ Model {
       }
       Array {
 	Type			"Simulink.EditorInfo"
-	Dimension		5
+	Dimension		6
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [1]
@@ -213,12 +255,23 @@ Model {
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [2606.0, 1444.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-1364.7548030382025, -370.81203945053784]
-	  SceneRectInView	  [-1364.7548030382025, -370.81203945053784, 2171.6666666666665, 1203.3333333333333]
+	  ZoomFactor		  [0.6]
+	  Offset		  [-375.50000000000051, -482.694443013933]
+	  SceneRectInView	  [-375.50000000000051, -482.694443013933, 2895.5555555555557, 1604.4444444444446]
 	}
 	Object {
 	  $ObjectID		  7
+	  IsActive		  [0]
+	  IsTabbed		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "234"
+	  Extents		  [2606.0, 1444.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-618.66666666666663, -415.33333333333331]
+	  SceneRectInView	  [-618.66666666666663, -415.33333333333331, 1737.3333333333333, 962.66666666666663]
+	}
+	Object {
+	  $ObjectID		  8
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
@@ -229,18 +282,18 @@ Model {
 	  SceneRectInView	  [-282.30828716528163, -235.36189981532789, 2171.6666666666665, 1203.3333333333333]
 	}
 	Object {
-	  $ObjectID		  8
+	  $ObjectID		  9
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "154"
-	  Extents		  [1618.0, 1205.0]
-	  ZoomFactor		  [1.25]
-	  Offset		  [189.36245952290244, -289.30025921982883]
-	  SceneRectInView	  [189.36245952290244, -289.30025921982883, 1294.4, 964.0]
+	  Extents		  [2606.0, 1444.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-32.104207143764143, -288.63359255316215]
+	  SceneRectInView	  [-32.104207143764143, -288.63359255316215, 1737.3333333333333, 962.66666666666663]
 	}
 	Object {
-	  $ObjectID		  9
+	  $ObjectID		  10
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
@@ -251,7 +304,7 @@ Model {
 	  SceneRectInView	  [-83.074646376029023, -783.029526615911, 2022.5, 1506.25]
 	}
 	Object {
-	  $ObjectID		  10
+	  $ObjectID		  11
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
@@ -267,7 +320,7 @@ Model {
 	Type			"Simulink.DockComponentInfo"
 	Dimension		2
 	Object {
-	  $ObjectID		  11
+	  $ObjectID		  12
 	  Type			  "GLUE2:SpreadSheet"
 	  ID			  "ModelData"
 	  Visible		  [0]
@@ -275,12 +328,12 @@ Model {
 	  UserData		  ""
 	  Floating		  [0]
 	  DockPosition		  "Bottom"
-	  Width			  [426]
-	  Height		  [320]
+	  Width			  [1772]
+	  Height		  [122]
 	  Minimized		  "Off"
 	}
 	Object {
-	  $ObjectID		  12
+	  $ObjectID		  13
 	  Type			  "GLUE2:PropertyInspector"
 	  ID			  "Property Inspector"
 	  Visible		  [1]
@@ -298,8 +351,8 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD8AAAAAP////8AAAAAAP////r/////AgAAAAH7AAAAUgBHA"
       "EwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAA"
       "P////8AAACTAAf//wAAAAEAAAAAAAAAAPwCAAAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvA"
-      "FAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZQBjAHQAbwByAAAAAAD/////AAAAUwD///8AAAADAAAGeAAAAJz8AQAAAAH7AAAANgBHAEwAVQBFA"
-      "DIAOgBTAHAAcgBlAGEAZABTAGgAZQBlAHQALwBNAG8AZABlAGwARABhAHQAYQAAAAAeAAAGeAAAAYsA////AAAKZgAABfAAAAABAAAAAgAAAAEAA"
+      "FAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZQBjAHQAbwByAAAAAAD/////AAAAUwD///8AAAADAAAKZgAAAOD8AQAAAAH7AAAANgBHAEwAVQBFA"
+      "DIAOgBTAHAAcgBlAGEAZABTAGgAZQBlAHQALwBNAG8AZABlAGwARABhAHQAYQAAAAAkAAAKZgAAAYsA////AAAKZgAABfAAAAABAAAAAgAAAAEAA"
       "AAC/AAAAAMAAAAAAAAAAQAAADYAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEwAZQBmAHQDAAAAAP////8AA"
       "AAAAAAAAAAAAAEAAAABAAAAOABjAG8AbABsAGEAcABzAGkAYgBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIAUgBpAGcAaAB0AwAAAAD/////A"
       "AAAAAAAAAAAAAADAAAAAQAAADoAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEIAbwB0AHQAbwBtAAAAAAD//"
@@ -320,9 +373,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "FRED-Surface"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Nov 20 10:31:14 2019"
-  RTWModifiedTimeStamp	  496146467
-  ModelVersionFormat	  "1.%<AutoIncrement:34>"
+  LastModifiedDate	  "Wed Nov 20 13:09:59 2019"
+  RTWModifiedTimeStamp	  496154370
+  ModelVersionFormat	  "1.%<AutoIncrement:40>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -382,7 +435,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    13
+    $ObjectID		    14
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "MotionObjectDetector"
     overrideMode_	    [0U]
@@ -427,7 +480,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      14
+      $ObjectID		      15
       Version		      "19.1.1"
       DisabledProps	      []
       Description	      ""
@@ -435,7 +488,7 @@ Model {
 	Type			"Handle"
 	Dimension		10
 	Simulink.SolverCC {
-	  $ObjectID		  15
+	  $ObjectID		  16
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -478,7 +531,7 @@ Model {
 	  SolverOrder		  3
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  16
+	  $ObjectID		  17
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -520,7 +573,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  17
+	  $ObjectID		  18
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -580,7 +633,7 @@ Model {
 	  EfficientTunableParamExpr on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  18
+	  $ObjectID		  19
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -697,7 +750,7 @@ Model {
 	  ArithmeticOperatorsInVariantConditions "error"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  19
+	  $ObjectID		  20
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -747,7 +800,7 @@ Model {
 	  HardwareBoardFeatureSet "EmbeddedCoderHSP"
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  20
+	  $ObjectID		  21
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -767,7 +820,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  21
+	  $ObjectID		  22
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -802,7 +855,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  22
+	  $ObjectID		  23
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  "Embedded Coder"
@@ -871,7 +924,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      23
+	      $ObjectID		      24
 	      Version		      "19.1.1"
 	      DisabledProps	      []
 	      Description	      ""
@@ -929,7 +982,7 @@ Model {
 	    }
 	    Simulink.ERTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      24
+	      $ObjectID		      25
 	      Version		      "19.1.1"
 	      DisabledProps	      []
 	      Description	      ""
@@ -1099,7 +1152,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  25
+	  $ObjectID		  26
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -1140,7 +1193,7 @@ Model {
 	  CovMcdcMode		  "Masking"
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  26
+	  $ObjectID		  27
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  "HDL Coder custom configuration component"
@@ -1157,19 +1210,19 @@ Model {
 	PropName		"Components"
       }
       Name		      "Configuration"
-      CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition    [ 1826, 368, 2816, 1038 ]
+      CurrentDlgPage	      "Data Import//Export"
+      ConfigPrmDlgPosition    [ 764, 368, 1754, 1038 ]
       ExtraOptions	      ""
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    14
+    $ObjectID		    15
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    27
+    $ObjectID		    28
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1444,9 +1497,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "80"
+    ZoomFactor		    "60"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "229"
+    SIDHighWatermark	    "259"
     SimulinkSubDomain	    "Simulink"
     Block {
       BlockType		      SubSystem
@@ -1459,7 +1512,7 @@ Model {
       ContentPreviewEnabled   on
       System {
 	Name			"BlobAnalysis"
-	Location		[1713, 0, 3447, 1447]
+	Location		[-7, -7, 1832, 1184]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -1474,7 +1527,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"125"
+	ZoomFactor		"100"
 	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  Inport
@@ -1518,7 +1571,7 @@ Model {
 	  SourceType		  "Blob Analysis"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
+	  MultiThreadCoSim	  "auto"
 	  area			  off
 	  centroid		  on
 	  bBox			  on
@@ -1529,45 +1582,45 @@ Model {
 	  equivDiameterSq	  off
 	  extent		  off
 	  perimeter		  off
-	  outDT			  double
-	  conn			  8
+	  outDT			  "double"
+	  conn			  "8"
 	  isLabel		  off
-	  maxBlobs		  50
+	  maxBlobs		  "50"
 	  warnIfNumBlobsExceeded  on
 	  isCount		  on
 	  useMinArea		  on
-	  minArea		  1000
+	  minArea		  "1000"
 	  useMaxArea		  on
-	  maxArea		  50000
+	  maxArea		  "50000"
 	  excludeBorderBlob	  off
 	  isOutVarDim		  off
 	  isFill		  on
-	  fillValues		  -1
-	  roundingMode		  Floor
+	  fillValues		  "-1"
+	  roundingMode		  "Floor"
 	  overflowMode		  off
 	  prodOutputMode	  "Binary point scaling"
-	  prodOutputWordLength	  32
-	  prodOutputFracLength	  16
+	  prodOutputWordLength	  "32"
+	  prodOutputFracLength	  "16"
 	  prodOutputSlope	  "2^-16"
 	  accumMode		  "Binary point scaling"
-	  accumWordLength	  32
-	  accumFracLength	  0
+	  accumWordLength	  "32"
+	  accumFracLength	  "0"
 	  accumSlope		  "2^0"
 	  outputMode		  "Binary point scaling"
-	  outputWordLength	  32
-	  outputFracLength	  16
+	  outputWordLength	  "32"
+	  outputFracLength	  "16"
 	  outputSlope		  "2^-16"
 	  memoryMode		  "Same as product output"
-	  memoryWordLength	  32
-	  memoryFracLength	  16
+	  memoryWordLength	  "32"
+	  memoryFracLength	  "16"
 	  memorySlope		  "2^-16"
 	  firstCoeffMode	  "Binary point scaling"
-	  firstCoeffWordLength	  16
-	  firstCoeffFracLength	  14
+	  firstCoeffWordLength	  "16"
+	  firstCoeffFracLength	  "14"
 	  firstCoeffSlope	  "2^-14"
 	  secondCoeffMode	  "Binary point scaling"
-	  secondCoeffWordLength	  32
-	  secondCoeffFracLength	  16
+	  secondCoeffWordLength	  "32"
+	  secondCoeffFracLength	  "16"
 	  secondCoeffSlope	  "2^-16"
 	  LockScale		  off
 	}
@@ -1724,32 +1777,32 @@ Model {
 	  SourceType		  "Resize"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
+	  MultiThreadCoSim	  "auto"
 	  specify		  "Number of output rows and columns"
-	  rfactor		  [500 500]
-	  outCols		  25
-	  outRows		  25
-	  outRowsCols		  [500 500]
-	  interp_method		  Bilinear
+	  rfactor		  "[500 500]"
+	  outCols		  "25"
+	  outRows		  "25"
+	  outRowsCols		  "[500 500]"
+	  interp_method		  "Bilinear"
 	  antialias		  on
 	  useROI		  off
 	  roiFlag		  off
-	  roundingMode		  Nearest
+	  roundingMode		  "Nearest"
 	  overflowMode		  on
 	  firstCoeffMode	  "Same word length as input"
-	  firstCoeffWordLength	  32
-	  firstCoeffFracLength	  31
+	  firstCoeffWordLength	  "32"
+	  firstCoeffFracLength	  "31"
 	  prodOutputMode	  "Binary point scaling"
-	  prodOutputWordLength	  32
-	  prodOutputFracLength	  10
+	  prodOutputWordLength	  "32"
+	  prodOutputFracLength	  "10"
 	  prodOutputSlope	  "2^-10"
 	  accumMode		  "Same as product output"
-	  accumWordLength	  32
-	  accumFracLength	  10
+	  accumWordLength	  "32"
+	  accumFracLength	  "10"
 	  accumSlope		  "2^-10"
 	  outputMode		  "Same as input"
-	  outputWordLength	  32
-	  outputFracLength	  10
+	  outputWordLength	  "32"
+	  outputFracLength	  "10"
 	  outputSlope		  "2^-10"
 	  LockScale		  off
 	}
@@ -1857,7 +1910,7 @@ Model {
       Name		      "DetectionRate1"
       SID		      "184"
       Ports		      [0, 1]
-      Position		      [2130, 29, 2160, 61]
+      Position		      [2120, -41, 2150, -9]
       ZOrder		      153
       PulseType		      "Time based"
       Period		      "1/30"
@@ -1887,11 +1940,22 @@ Model {
       PulseWidth	      "5"
     }
     Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "DetectionRate4"
+      SID		      "242"
+      Ports		      [0, 1]
+      Position		      [1040, 324, 1070, 356]
+      ZOrder		      191
+      PulseType		      "Time based"
+      Period		      "1/0.5"
+      PulseWidth	      "5"
+    }
+    Block {
       BlockType		      SubSystem
       Name		      "Display"
       SID		      "164"
-      Ports		      [7, 0, 0, 1]
-      Position		      [2045, 80, 2395, 330]
+      Ports		      [8, 0, 0, 1]
+      Position		      [2055, 54, 2405, 466]
       ZOrder		      146
       RequestExecContextInheritance off
       ContentPreviewEnabled   on
@@ -1977,6 +2041,15 @@ Model {
 	  IconDisplay		  "Port number"
 	}
 	Block {
+	  BlockType		  Inport
+	  Name			  "In8"
+	  SID			  "256"
+	  Position		  [435, 718, 465, 732]
+	  ZOrder		  209
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
 	  BlockType		  TriggerPort
 	  Name			  "Trigger"
 	  SID			  "177"
@@ -2001,7 +2074,7 @@ Model {
 	  SourceType		  "Closing"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
+	  MultiThreadCoSim	  "auto"
 	  nhoodsrc		  "Specify via dialog"
 	  strel			  "strel('rectangle',[60,60])"
 	}
@@ -2018,7 +2091,7 @@ Model {
 	  SourceType		  "Closing"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
+	  MultiThreadCoSim	  "auto"
 	  nhoodsrc		  "Specify via dialog"
 	  strel			  "strel('disk',4,4)"
 	}
@@ -2044,33 +2117,33 @@ Model {
 	  SourceType		  "Draw Shapes"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
-	  shape			  Rectangles
+	  MultiThreadCoSim	  "auto"
+	  shape			  "Rectangles"
 	  fill			  off
-	  lineWidth		  1
+	  lineWidth		  "1"
 	  fillClrSource		  "Specify via dialog"
 	  display		  "User-specified value"
-	  intensity		  200
-	  color			  [0 1 0]
-	  opacity		  0.6
+	  intensity		  "200"
+	  color			  "[0 1 0]"
+	  opacity		  "0.6"
 	  viewport		  "Entire image"
 	  antialiasing		  off
-	  inType		  Obsolete
+	  inType		  "Obsolete"
 	  imagePorts		  "One multidimensional signal"
-	  roundingMode		  Floor
+	  roundingMode		  "Floor"
 	  overflowMode		  off
 	  memoryMode		  "Specify word length"
-	  memoryWordLength	  16
+	  memoryWordLength	  "16"
 	  prodOutputMode	  "Binary point scaling"
-	  prodOutputWordLength	  32
-	  prodOutputFracLength	  14
+	  prodOutputWordLength	  "32"
+	  prodOutputFracLength	  "14"
 	  prodOutputSlope	  "2^-14"
 	  accumMode		  "Same as product output"
-	  accumWordLength	  32
-	  accumFracLength	  14
+	  accumWordLength	  "32"
+	  accumFracLength	  "14"
 	  accumSlope		  "2^-14"
 	  LockScale		  off
-	  memoryFracLength	  15
+	  memoryFracLength	  "15"
 	}
 	Block {
 	  BlockType		  Reference
@@ -2084,7 +2157,7 @@ Model {
 	  SourceType		  "Frame Rate Display"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  UpdateRate		  10
+	  UpdateRate		  "10"
 	}
 	Block {
 	  BlockType		  Reference
@@ -2098,25 +2171,25 @@ Model {
 	  SourceType		  "Insert Text"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
-	  inputType		  Obsolete
+	  MultiThreadCoSim	  "auto"
+	  inputType		  "Obsolete"
 	  theText		  "'Item'"
 	  getTextLocFrom	  "Input port"
-	  textLoc		  [1 1]
+	  textLoc		  "[1 1]"
 	  getTextColorFrom	  "Specify via dialog"
-	  textColor		  [0 255 0]
+	  textColor		  "[0 255 0]"
 	  getTextIntensityFrom	  "Specify via dialog"
-	  textIntensity		  0
+	  textIntensity		  "0"
 	  getTextOpacityFrom	  "Specify via dialog"
-	  textOpacity		  1.0
-	  dummyVar2		  0
-	  dummyVar3		  0
-	  dummyVar4		  0
+	  textOpacity		  "1.0"
+	  dummyVar2		  "0"
+	  dummyVar3		  "0"
+	  dummyVar4		  "0"
 	  imagePorts		  "One multidimensional signal"
 	  isInputTransposed	  off
-	  fontFace		  LucidaSansRegular
-	  dummyVar1		  0
-	  blockFontSize		  12
+	  fontFace		  "LucidaSansRegular"
+	  dummyVar1		  "0"
+	  blockFontSize		  "12"
 	  antiAliased		  on
 	}
 	Block {
@@ -2248,25 +2321,25 @@ Model {
 	  SourceType		  "Median Filter"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
-	  nghbood		  [3 3]
+	  MultiThreadCoSim	  "auto"
+	  nghbood		  "[3 3]"
 	  outSize		  "Same as input port I"
-	  padType		  Circular
+	  padType		  "Circular"
 	  padSrc		  "Specify via dialog"
-	  padVal		  0
-	  roundingMode		  Floor
+	  padVal		  "0"
+	  roundingMode		  "Floor"
 	  overflowMode		  off
 	  prodOutputMode	  "Same as input"
-	  prodOutputWordLength	  32
-	  prodOutputFracLength	  30
+	  prodOutputWordLength	  "32"
+	  prodOutputFracLength	  "30"
 	  prodOutputSlope	  "2^-30"
 	  accumMode		  "Same as input"
-	  accumWordLength	  32
-	  accumFracLength	  30
+	  accumWordLength	  "32"
+	  accumFracLength	  "30"
 	  accumSlope		  "2^-30"
 	  outputMode		  "Same as input"
-	  outputWordLength	  16
-	  outputFracLength	  15
+	  outputWordLength	  "16"
+	  outputFracLength	  "15"
 	  outputSlope		  "2^-15"
 	  LockScale		  off
 	}
@@ -2282,21 +2355,21 @@ Model {
 	  SourceType		  "To Video Display"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
-	  windowSizeMode	  Normal
+	  MultiThreadCoSim	  "auto"
+	  windowSizeMode	  "Normal"
 	  openAtMdlStart	  on
 	  fullScreen		  off
-	  videoWindowX		  131
-	  videoWindowY		  1050
+	  videoWindowX		  "131"
+	  videoWindowY		  "1050"
 	  saveWindowSize	  off
-	  videoWindowWidth	  640
-	  videoWindowHeight	  352
-	  inputColorFormat	  RGB
-	  inputType		  Obsolete
+	  videoWindowWidth	  "640"
+	  videoWindowHeight	  "352"
+	  inputColorFormat	  "RGB"
+	  inputType		  "Obsolete"
 	  imagePorts		  "One multidimensional signal"
 	  OutputDevice		  "On-screen video monitor"
 	  dataOrg		  "Column-major"
-	  isWindowOpen		  off
+	  isWindowOpen		  "off"
 	}
 	Block {
 	  BlockType		  Reference
@@ -2310,21 +2383,21 @@ Model {
 	  SourceType		  "To Video Display"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
-	  windowSizeMode	  Normal
+	  MultiThreadCoSim	  "auto"
+	  windowSizeMode	  "Normal"
 	  openAtMdlStart	  on
 	  fullScreen		  off
-	  videoWindowX		  793
-	  videoWindowY		  1165
+	  videoWindowX		  "793"
+	  videoWindowY		  "1165"
 	  saveWindowSize	  off
-	  videoWindowWidth	  431
-	  videoWindowHeight	  259
-	  inputColorFormat	  RGB
-	  inputType		  Obsolete
+	  videoWindowWidth	  "431"
+	  videoWindowHeight	  "259"
+	  inputColorFormat	  "RGB"
+	  inputType		  "Obsolete"
 	  imagePorts		  "One multidimensional signal"
 	  OutputDevice		  "On-screen video monitor"
 	  dataOrg		  "Column-major"
-	  isWindowOpen		  off
+	  isWindowOpen		  "off"
 	}
 	Block {
 	  BlockType		  Reference
@@ -2338,21 +2411,21 @@ Model {
 	  SourceType		  "To Video Display"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
-	  windowSizeMode	  Normal
+	  MultiThreadCoSim	  "auto"
+	  windowSizeMode	  "Normal"
 	  openAtMdlStart	  on
 	  fullScreen		  off
-	  videoWindowX		  302
-	  videoWindowY		  390
+	  videoWindowX		  "197"
+	  videoWindowY		  "1122"
 	  saveWindowSize	  off
-	  videoWindowWidth	  290
-	  videoWindowHeight	  237
-	  inputColorFormat	  RGB
-	  inputType		  Obsolete
+	  videoWindowWidth	  "782"
+	  videoWindowHeight	  "528"
+	  inputColorFormat	  "RGB"
+	  inputType		  "Obsolete"
 	  imagePorts		  "One multidimensional signal"
 	  OutputDevice		  "On-screen video monitor"
 	  dataOrg		  "Column-major"
-	  isWindowOpen		  off
+	  isWindowOpen		  "off"
 	}
 	Block {
 	  BlockType		  Reference
@@ -2366,21 +2439,21 @@ Model {
 	  SourceType		  "To Video Display"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
-	  windowSizeMode	  Normal
+	  MultiThreadCoSim	  "auto"
+	  windowSizeMode	  "Normal"
 	  openAtMdlStart	  on
 	  fullScreen		  off
-	  videoWindowX		  133
-	  videoWindowY		  669
+	  videoWindowX		  "149"
+	  videoWindowY		  "322"
 	  saveWindowSize	  off
-	  videoWindowWidth	  640
-	  videoWindowHeight	  352
-	  inputColorFormat	  RGB
-	  inputType		  Obsolete
+	  videoWindowWidth	  "1177"
+	  videoWindowHeight	  "737"
+	  inputColorFormat	  "RGB"
+	  inputType		  "Obsolete"
 	  imagePorts		  "One multidimensional signal"
 	  OutputDevice		  "On-screen video monitor"
 	  dataOrg		  "Column-major"
-	  isWindowOpen		  off
+	  isWindowOpen		  "off"
 	}
 	Block {
 	  BlockType		  Reference
@@ -2395,21 +2468,49 @@ Model {
 	  SourceType		  "To Video Display"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
-	  windowSizeMode	  Normal
+	  MultiThreadCoSim	  "auto"
+	  windowSizeMode	  "Normal"
 	  openAtMdlStart	  on
 	  fullScreen		  off
-	  videoWindowX		  599
-	  videoWindowY		  389
+	  videoWindowX		  "599"
+	  videoWindowY		  "389"
 	  saveWindowSize	  off
-	  videoWindowWidth	  267
-	  videoWindowHeight	  235
-	  inputColorFormat	  RGB
-	  inputType		  Obsolete
+	  videoWindowWidth	  "267"
+	  videoWindowHeight	  "235"
+	  inputColorFormat	  "RGB"
+	  inputType		  "Obsolete"
 	  imagePorts		  "One multidimensional signal"
 	  OutputDevice		  "On-screen video monitor"
 	  dataOrg		  "Column-major"
-	  isWindowOpen		  off
+	  isWindowOpen		  "off"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "To Video Display5"
+	  SID			  "257"
+	  Ports			  [1]
+	  Position		  [905, 691, 1020, 759]
+	  ZOrder		  210
+	  LibraryVersion	  "1.301"
+	  SourceBlock		  "visionsinks/To Video Display"
+	  SourceType		  "To Video Display"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  windowSizeMode	  "Normal"
+	  openAtMdlStart	  on
+	  fullScreen		  off
+	  videoWindowX		  "752"
+	  videoWindowY		  "379"
+	  saveWindowSize	  off
+	  videoWindowWidth	  "301"
+	  videoWindowHeight	  "259"
+	  inputColorFormat	  "RGB"
+	  inputType		  "Obsolete"
+	  imagePorts		  "One multidimensional signal"
+	  OutputDevice		  "On-screen video monitor"
+	  dataOrg		  "Column-major"
+	  isWindowOpen		  "off"
 	}
 	Block {
 	  BlockType		  Reference
@@ -2423,21 +2524,21 @@ Model {
 	  SourceType		  "To Video Display"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
-	  windowSizeMode	  Normal
+	  MultiThreadCoSim	  "auto"
+	  windowSizeMode	  "Normal"
 	  openAtMdlStart	  on
 	  fullScreen		  off
-	  videoWindowX		  791
-	  videoWindowY		  832
+	  videoWindowX		  "791"
+	  videoWindowY		  "832"
 	  saveWindowSize	  off
-	  videoWindowWidth	  350
-	  videoWindowHeight	  259
-	  inputColorFormat	  RGB
-	  inputType		  Obsolete
+	  videoWindowWidth	  "350"
+	  videoWindowHeight	  "259"
+	  inputColorFormat	  "RGB"
+	  inputType		  "Obsolete"
 	  imagePorts		  "One multidimensional signal"
 	  OutputDevice		  "On-screen video monitor"
 	  dataOrg		  "Column-major"
-	  isWindowOpen		  off
+	  isWindowOpen		  "off"
 	}
 	Line {
 	  ZOrder		  470
@@ -2557,6 +2658,13 @@ Model {
 	  DstBlock		  "To Video Display4"
 	  DstPort		  1
 	}
+	Line {
+	  ZOrder		  502
+	  SrcBlock		  "In8"
+	  SrcPort		  1
+	  DstBlock		  "To Video Display5"
+	  DstPort		  1
+	}
       }
     }
     Block {
@@ -2599,7 +2707,7 @@ Model {
       BlockType		      From
       Name		      "From"
       SID		      "128"
-      Position		      [1755, 226, 1860, 254]
+      Position		      [1755, 271, 1860, 299]
       ZOrder		      126
       GotoTag		      "RGBImage"
     }
@@ -2724,7 +2832,7 @@ Model {
       BlockType		      From
       Name		      "From2"
       SID		      "130"
-      Position		      [1760, 86, 1865, 114]
+      Position		      [1760, 71, 1865, 99]
       ZOrder		      128
       GotoTag		      "RGBImage"
     }
@@ -2732,7 +2840,7 @@ Model {
       BlockType		      From
       Name		      "From3"
       SID		      "151"
-      Position		      [1750, 294, 1860, 326]
+      Position		      [1750, 369, 1860, 401]
       ZOrder		      139
       GotoTag		      "ClosedBlobs"
     }
@@ -2740,7 +2848,7 @@ Model {
       BlockType		      From
       Name		      "From4"
       SID		      "152"
-      Position		      [1750, 259, 1860, 291]
+      Position		      [1750, 319, 1860, 351]
       ZOrder		      140
       GotoTag		      "IntensityImage"
     }
@@ -2748,9 +2856,453 @@ Model {
       BlockType		      From
       Name		      "From5"
       SID		      "163"
-      Position		      [1755, 189, 1865, 221]
+      Position		      [1755, 219, 1865, 251]
       ZOrder		      145
       GotoTag		      "ROIImage"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From6"
+      SID		      "243"
+      Position		      [845, 434, 955, 466]
+      ZOrder		      192
+      GotoTag		      "ROIImage"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From7"
+      SID		      "255"
+      Position		      [1750, 419, 1860, 451]
+      ZOrder		      195
+      GotoTag		      "MarkerIamge"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Function-Call\nSubsystem"
+      SID		      "234"
+      Ports		      [1, 1, 0, 1]
+      Position		      [985, 381, 1265, 519]
+      ZOrder		      190
+      TreatAsAtomicUnit	      on
+      RequestExecContextInheritance off
+      ContentPreviewEnabled   on
+      System {
+	Name			"Function-Call\nSubsystem"
+	Location		[-7, -7, 1832, 1184]
+	Open			on
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SimulinkSubDomain	"Simulink"
+	Block {
+	  BlockType		  Inport
+	  Name			  "ROI"
+	  SID			  "235"
+	  Position		  [-590, 63, -560, 77]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "function"
+	  SID			  "236"
+	  Ports			  []
+	  Position		  [-160, -80, -140, -60]
+	  ZOrder		  -2
+	  VariantControl	  "Variant"
+	  StatesWhenEnabling	  "held"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Color Space\n Conversion"
+	  SID			  "249"
+	  Ports			  [1, 1]
+	  Position		  [-195, 31, -95, 89]
+	  ZOrder		  197
+	  LibraryVersion	  "1.366"
+	  SourceBlock		  "visionconversions/Color Space\n Conversion"
+	  SourceType		  "Color Space Conversion"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  conversion		  "Obsolete"
+	  conversionActive	  "R'G'B' to intensity"
+	  wp_str		  "D65"
+	  rec			  "Rec. 601 (SDTV)"
+	  sys			  "1125/60/2:1"
+	  imagePorts		  "One multidimensional signal"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Color Space\n Conversion1"
+	  SID			  "250"
+	  Ports			  [1, 1]
+	  Position		  [-195, 106, -95, 164]
+	  ZOrder		  198
+	  LibraryVersion	  "1.366"
+	  SourceBlock		  "visionconversions/Color Space\n Conversion"
+	  SourceType		  "Color Space Conversion"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  conversion		  "Obsolete"
+	  conversionActive	  "R'G'B' to intensity"
+	  wp_str		  "D65"
+	  rec			  "Rec. 601 (SDTV)"
+	  sys			  "1125/60/2:1"
+	  imagePorts		  "One multidimensional signal"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Display"
+	  SID			  "248"
+	  Ports			  [1]
+	  Position		  [235, -80, 385, -60]
+	  ZOrder		  196
+	  Decimation		  "1"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Draw Markers"
+	  SID			  "252"
+	  Ports			  [2, 1]
+	  Position		  [280, -190, 385, -115]
+	  ZOrder		  200
+	  LibraryVersion	  "1.282"
+	  SourceBlock		  "visiontextngfix/Draw Markers"
+	  SourceType		  "Draw Markers"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  shape			  "Circle"
+	  size			  "100"
+	  fill			  off
+	  fillClrSource		  "Specify via dialog"
+	  display		  "User-specified value"
+	  intensity		  "200"
+	  color			  "[0 255 0]"
+	  opacity		  "0.6"
+	  viewport		  "Entire image"
+	  antialiasing		  off
+	  inType		  "Obsolete"
+	  imagePorts		  "One multidimensional signal"
+	  roundingMode		  "Floor"
+	  overflowMode		  off
+	  memoryMode		  "Specify word length"
+	  memoryWordLength	  "16"
+	  memoryFracLength	  "15"
+	  memorySlope		  "2^-14"
+	  prodOutputMode	  "Binary point scaling"
+	  prodOutputWordLength	  "32"
+	  prodOutputFracLength	  "14"
+	  prodOutputSlope	  "2^-14"
+	  accumMode		  "Same as product output"
+	  accumWordLength	  "32"
+	  accumFracLength	  "14"
+	  accumSlope		  "2^-14"
+	  LockScale		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Image Data Type\nConversion1"
+	  SID			  "258"
+	  Ports			  [1, 1]
+	  Position		  [-385, 41, -285, 99]
+	  ZOrder		  202
+	  LibraryVersion	  "1.366"
+	  SourceBlock		  "visionconversions/Image Data Type\nConversion"
+	  SourceType		  "Image Data Type Conversion"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  outDT			  "uint8"
+	  isSigned		  on
+	  wordLen		  "16"
+	  numFracBits		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Image From File"
+	  SID			  "240"
+	  Tag			  "vipblks_nd"
+	  Ports			  [0, 1]
+	  Position		  [-640, 104, -475, 166]
+	  ZOrder		  191
+	  LibraryVersion	  "1.349"
+	  SourceBlock		  "visionsources/Image From File"
+	  SourceType		  "Image From File"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  ContentPreviewEnabled	  on
+	  FileName		  "C:\\Users\\FRED-Surface\\Documents\\GitHub\\E-ProjectDocs\\CrabDetection\\redcrab.jpeg"
+	  Ts			  "inf"
+	  imagePorts		  "One multidimensional signal"
+	  OutPortLabels		  "R|G|B"
+	  ImageDataType		  "Inherit from input image"
+	  sdImageDataType	  "uint(8)"
+	  Signed		  on
+	  WordLength		  "16"
+	  FractionLengthMode	  "User-defined"
+	  FractionLength	  "15"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "MATLAB Function"
+	  SID			  "238"
+	  Ports			  [2]
+	  Position		  [215, 13, 410, 177]
+	  ZOrder		  1
+	  Commented		  "on"
+	  ErrorFcn		  "Stateflow.Translate.translate"
+	  PermitHierarchicalResolution "ExplicitOnly"
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  SFBlockType		  "MATLAB Function"
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "MATLAB Function"
+	    Location		    [223, 338, 826, 833]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "22"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Image"
+	      SID		      "238::1"
+	      Position		      [20, 101, 40, 119]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "redcrab"
+	      SID		      "238::22"
+	      Position		      [20, 136, 40, 154]
+	      ZOrder		      13
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      SID		      "238::20"
+	      Ports		      [1, 1]
+	      Position		      [270, 100, 320, 140]
+	      ZOrder		      11
+	      Outputs		      "1"
+	    }
+	    Block {
+	      BlockType		      S-Function
+	      Name		      " SFunction "
+	      SID		      "238::19"
+	      Tag		      "Stateflow S-Function 3"
+	      Ports		      [2, 1]
+	      Position		      [180, 100, 230, 160]
+	      ZOrder		      10
+	      FunctionName	      "sf_sfun"
+	      PortCounts	      "[2 1]"
+	      SFunctionDeploymentMode off
+	      EnableBusSupport	      on
+	      SFcnIsStateOwnerBlock   off
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      " Terminator "
+	      SID		      "238::21"
+	      Position		      [460, 111, 480, 129]
+	      ZOrder		      12
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "Image"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      19
+	      SrcBlock		      "redcrab"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      " Terminator "
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      21
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Template Matching"
+	  SID			  "247"
+	  Ports			  [2, 1]
+	  Position		  [40, -100, 165, -40]
+	  ZOrder		  195
+	  LibraryVersion	  "1.575"
+	  SourceBlock		  "visionanalysis/Template Matching"
+	  SourceType		  "Template Matching"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  metric		  "Sum of absolute differences"
+	  output		  "Best match location"
+	  method		  "Three-step"
+	  nMetric		  off
+	  nSize			  "3"
+	  roi			  off
+	  roiValid		  on
+	  roundingMode		  "Floor"
+	  overflowMode		  off
+	  prodOutputMode	  "Binary point scaling"
+	  prodOutputWordLength	  "32"
+	  prodOutputFracLength	  "0"
+	  prodOutputSlope	  "2^0"
+	  accumMode		  "Binary point scaling"
+	  accumWordLength	  "32"
+	  accumFracLength	  "0"
+	  accumSlope		  "2^0"
+	  outputMode		  "Same as first input"
+	  outputWordLength	  "32"
+	  outputFracLength	  "0"
+	  outputSlope		  "2^0"
+	  LockScale		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "MarkerImage"
+	  SID			  "253"
+	  Position		  [445, -157, 475, -143]
+	  ZOrder		  201
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  20
+	  SrcBlock		  "Template Matching"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    ZOrder		    22
+	    DstBlock		    "Display"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    21
+	    Points		    [0, -65]
+	    DstBlock		    "Draw Markers"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  ZOrder		  17
+	  SrcBlock		  "Color Space\n Conversion"
+	  SrcPort		  1
+	  Points		  [42, 0; 0, -145]
+	  DstBlock		  "Template Matching"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  18
+	  SrcBlock		  "Color Space\n Conversion1"
+	  SrcPort		  1
+	  Points		  [83, 0; 0, -190]
+	  DstBlock		  "Template Matching"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  31
+	  SrcBlock		  "Image From File"
+	  SrcPort		  1
+	  Points		  [251, 0]
+	  Branch {
+	    ZOrder		    29
+	    Points		    [0, 53; 322, 0; 0, -53]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    28
+	    DstBlock		    "Color Space\n Conversion1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  25
+	  SrcBlock		  "Draw Markers"
+	  SrcPort		  1
+	  DstBlock		  "MarkerImage"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  30
+	  SrcBlock		  "Image Data Type\nConversion1"
+	  SrcPort		  1
+	  Points		  [32, 0; 0, -10]
+	  Branch {
+	    ZOrder		    24
+	    Points		    [0, -230]
+	    DstBlock		    "Draw Markers"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    23
+	    Points		    [25, 0]
+	    Branch {
+	      ZOrder		      27
+	      Points		      [0, 38; 151, 0; 0, -43]
+	      DstBlock		      "MATLAB Function"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      26
+	      DstBlock		      "Color Space\n Conversion"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  ZOrder		  33
+	  SrcBlock		  "ROI"
+	  SrcPort		  1
+	  DstBlock		  "Image Data Type\nConversion1"
+	  DstPort		  1
+	}
+      }
     }
     Block {
       BlockType		      CircularGaugeBlock
@@ -2791,6 +3343,14 @@ Model {
       Position		      [1370, 199, 1480, 231]
       ZOrder		      144
       GotoTag		      "ROIImage"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto4"
+      SID		      "254"
+      Position		      [1350, 434, 1460, 466]
+      ZOrder		      194
+      GotoTag		      "MarkerIamge"
     }
     Block {
       BlockType		      SubSystem
@@ -2854,34 +3414,34 @@ Model {
 	  SourceType		  "2-D Mean"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
+	  MultiThreadCoSim	  "auto"
 	  run			  off
-	  reset_popup		  None
+	  reset_popup		  "None"
 	  InputProcessing	  "Elements as channels (sample based)"
 	  directionMode		  "Entire input"
-	  dimension		  1
+	  dimension		  "1"
 	  treatSBRowAsCol	  on
 	  additionalParams	  off
 	  allowOverrides	  on
 	  outputMode		  "Same as accumulator"
-	  outputWordLength	  32
-	  outputFracLength	  30
+	  outputWordLength	  "32"
+	  outputFracLength	  "30"
 	  outputLastDataTypeStr	  "Inherit: Same as accumulator"
 	  accumMode		  "Binary point scaling"
-	  accumWordLength	  32
-	  accumFracLength	  0
+	  accumWordLength	  "32"
+	  accumFracLength	  "0"
 	  accumLastDataTypeStr	  "fixdt([],32,0)"
 	  roiEnable		  off
-	  roiType		  Rectangles
+	  roiType		  "Rectangles"
 	  roiPortion		  "Entire ROI"
 	  roiOutput		  "Individual statistics for each ROI"
 	  roiFlag		  off
-	  roundingMode		  Floor
+	  roundingMode		  "Floor"
 	  overflowMode		  off
 	  accumDataTypeStr	  "fixdt([],32,0)"
 	  outputDataTypeStr	  "Inherit: Same as accumulator"
-	  outputMin		  []
-	  outputMax		  []
+	  outputMin		  "[]"
+	  outputMax		  "[]"
 	  LockScale		  off
 	}
 	Block {
@@ -2898,34 +3458,34 @@ Model {
 	  SourceType		  "2-D Mean"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
+	  MultiThreadCoSim	  "auto"
 	  run			  on
-	  reset_popup		  None
+	  reset_popup		  "None"
 	  InputProcessing	  "Elements as channels (sample based)"
 	  directionMode		  "Entire input"
-	  dimension		  1
+	  dimension		  "1"
 	  treatSBRowAsCol	  on
 	  additionalParams	  off
 	  allowOverrides	  on
 	  outputMode		  "Same as accumulator"
-	  outputWordLength	  32
-	  outputFracLength	  30
+	  outputWordLength	  "32"
+	  outputFracLength	  "30"
 	  outputLastDataTypeStr	  "Inherit: Same as accumulator"
 	  accumMode		  "Binary point scaling"
-	  accumWordLength	  32
-	  accumFracLength	  0
+	  accumWordLength	  "32"
+	  accumFracLength	  "0"
 	  accumLastDataTypeStr	  "fixdt([],32,0)"
 	  roiEnable		  off
-	  roiType		  Rectangles
+	  roiType		  "Rectangles"
 	  roiPortion		  "Entire ROI"
 	  roiOutput		  "Individual statistics for each ROI"
 	  roiFlag		  off
-	  roundingMode		  Floor
+	  roundingMode		  "Floor"
 	  overflowMode		  off
 	  accumDataTypeStr	  "fixdt([],32,0)"
 	  outputDataTypeStr	  "Inherit: Same as accumulator"
-	  outputMin		  []
-	  outputMax		  []
+	  outputMin		  "[]"
+	  outputMax		  "[]"
 	  LockScale		  off
 	}
 	Block {
@@ -2940,7 +3500,7 @@ Model {
 	  SourceType		  "Closing"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
+	  MultiThreadCoSim	  "auto"
 	  nhoodsrc		  "Specify via dialog"
 	  strel			  "strel('rectangle',[60,60])"
 	}
@@ -2956,7 +3516,7 @@ Model {
 	  SourceType		  "Closing"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
+	  MultiThreadCoSim	  "auto"
 	  nhoodsrc		  "Specify via dialog"
 	  strel			  "strel('disk',4,4)"
 	}
@@ -2973,7 +3533,7 @@ Model {
 	  SourceType		  "Closing"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
+	  MultiThreadCoSim	  "auto"
 	  nhoodsrc		  "Specify via dialog"
 	  strel			  "strel('disk',8,8)"
 	}
@@ -2990,7 +3550,7 @@ Model {
 	  SourceType		  "Closing"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
+	  MultiThreadCoSim	  "auto"
 	  nhoodsrc		  "Specify via dialog"
 	  strel			  "strel('rectangle',[5,5])"
 	}
@@ -3006,9 +3566,9 @@ Model {
 	  SourceType		  "Dilation"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
+	  MultiThreadCoSim	  "auto"
 	  nhoodsrc		  "Specify via dialog"
-	  strel			  [1 1; 1 1]
+	  strel			  "[1 1; 1 1]"
 	}
 	Block {
 	  BlockType		  Reference
@@ -3022,25 +3582,25 @@ Model {
 	  SourceType		  "Median Filter"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
-	  nghbood		  [3 3]
+	  MultiThreadCoSim	  "auto"
+	  nghbood		  "[3 3]"
 	  outSize		  "Same as input port I"
-	  padType		  Circular
+	  padType		  "Circular"
 	  padSrc		  "Specify via dialog"
-	  padVal		  0
-	  roundingMode		  Floor
+	  padVal		  "0"
+	  roundingMode		  "Floor"
 	  overflowMode		  off
 	  prodOutputMode	  "Same as input"
-	  prodOutputWordLength	  32
-	  prodOutputFracLength	  30
+	  prodOutputWordLength	  "32"
+	  prodOutputFracLength	  "30"
 	  prodOutputSlope	  "2^-30"
 	  accumMode		  "Same as input"
-	  accumWordLength	  32
-	  accumFracLength	  30
+	  accumWordLength	  "32"
+	  accumFracLength	  "30"
 	  accumSlope		  "2^-30"
 	  outputMode		  "Same as input"
-	  outputWordLength	  16
-	  outputFracLength	  15
+	  outputWordLength	  "16"
+	  outputFracLength	  "15"
 	  outputSlope		  "2^-15"
 	  LockScale		  off
 	}
@@ -3060,39 +3620,39 @@ Model {
 	  method		  "Lucas-Kanade"
 	  gradMethod		  "Derivative of Gaussian"
 	  which2img		  "Current frame and N-th frame back"
-	  N			  34
-	  lambda		  1
-	  numInports		  7
-	  sigmaS		  1
-	  sigmaW		  1
+	  N			  "34"
+	  lambda		  "1"
+	  numInports		  "7"
+	  sigmaS		  "1"
+	  sigmaW		  "1"
 	  discardNormalFlow	  off
 	  outputCurrentImage	  off
 	  stop_criteria		  "When maximum number of iterations is reached"
-	  maxIter		  10
-	  maxAllowAbsDiff	  eps
+	  maxIter		  "10"
+	  maxAllowAbsDiff	  "eps"
 	  outVelForm		  "Magnitude-squared"
-	  eigTh			  0.009
-	  roundingMode		  Nearest
+	  eigTh			  "0.009"
+	  roundingMode		  "Nearest"
 	  overflowMode		  on
 	  prodOutputMode	  "Binary point scaling"
-	  prodOutputWordLength	  32
-	  prodOutputFracLength	  20
+	  prodOutputWordLength	  "32"
+	  prodOutputFracLength	  "20"
 	  prodOutputSlope	  "2^-20"
 	  accumMode		  "Same as product output"
-	  accumWordLength	  32
-	  accumFracLength	  20
+	  accumWordLength	  "32"
+	  accumFracLength	  "20"
 	  accumSlope		  "2^-20"
 	  memoryMode		  "Same as accumulator"
-	  memoryWordLength	  32
-	  memoryFracLength	  20
+	  memoryWordLength	  "32"
+	  memoryFracLength	  "20"
 	  memorySlope		  "2^-20"
 	  firstCoeffMode	  "Same word length as first input"
-	  firstCoeffWordLength	  16
-	  firstCoeffFracLength	  12
+	  firstCoeffWordLength	  "16"
+	  firstCoeffFracLength	  "12"
 	  firstCoeffSlope	  "2^-20"
 	  outputMode		  "Binary point scaling"
-	  outputWordLength	  32
-	  outputFracLength	  20
+	  outputWordLength	  "32"
+	  outputFracLength	  "20"
 	  outputSlope		  "2^-20"
 	  LockScale		  off
 	}
@@ -3113,39 +3673,39 @@ Model {
 	  method		  "Horn-Schunck"
 	  gradMethod		  "Derivative of Gaussian"
 	  which2img		  "Current frame and N-th frame back"
-	  N			  15
-	  lambda		  1
-	  numInports		  7
-	  sigmaS		  1
-	  sigmaW		  1
+	  N			  "15"
+	  lambda		  "1"
+	  numInports		  "7"
+	  sigmaS		  "1"
+	  sigmaW		  "1"
 	  discardNormalFlow	  off
 	  outputCurrentImage	  on
 	  stop_criteria		  "When maximum number of iterations is reached"
-	  maxIter		  10
-	  maxAllowAbsDiff	  eps
+	  maxIter		  "10"
+	  maxAllowAbsDiff	  "eps"
 	  outVelForm		  "Magnitude-squared"
-	  eigTh			  0.009
-	  roundingMode		  Nearest
+	  eigTh			  "0.009"
+	  roundingMode		  "Nearest"
 	  overflowMode		  on
 	  prodOutputMode	  "Binary point scaling"
-	  prodOutputWordLength	  32
-	  prodOutputFracLength	  20
+	  prodOutputWordLength	  "32"
+	  prodOutputFracLength	  "20"
 	  prodOutputSlope	  "2^-20"
 	  accumMode		  "Same as product output"
-	  accumWordLength	  32
-	  accumFracLength	  20
+	  accumWordLength	  "32"
+	  accumFracLength	  "20"
 	  accumSlope		  "2^-20"
 	  memoryMode		  "Same as accumulator"
-	  memoryWordLength	  32
-	  memoryFracLength	  20
+	  memoryWordLength	  "32"
+	  memoryFracLength	  "20"
 	  memorySlope		  "2^-20"
 	  firstCoeffMode	  "Same word length as first input"
-	  firstCoeffWordLength	  16
-	  firstCoeffFracLength	  12
+	  firstCoeffWordLength	  "16"
+	  firstCoeffFracLength	  "12"
 	  firstCoeffSlope	  "2^-20"
 	  outputMode		  "Binary point scaling"
-	  outputWordLength	  32
-	  outputFracLength	  20
+	  outputWordLength	  "32"
+	  outputFracLength	  "20"
 	  outputSlope		  "2^-20"
 	  LockScale		  off
 	}
@@ -3172,21 +3732,21 @@ Model {
 	  SourceType		  "To Video Display"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
-	  windowSizeMode	  Normal
+	  MultiThreadCoSim	  "auto"
+	  windowSizeMode	  "Normal"
 	  openAtMdlStart	  on
 	  fullScreen		  off
-	  videoWindowX		  1229
-	  videoWindowY		  1171
+	  videoWindowX		  "1229"
+	  videoWindowY		  "1171"
 	  saveWindowSize	  off
-	  videoWindowWidth	  434
-	  videoWindowHeight	  249
-	  inputColorFormat	  RGB
-	  inputType		  Obsolete
+	  videoWindowWidth	  "434"
+	  videoWindowHeight	  "249"
+	  inputColorFormat	  "RGB"
+	  inputType		  "Obsolete"
 	  imagePorts		  "One multidimensional signal"
 	  OutputDevice		  "On-screen video monitor"
 	  dataOrg		  "Column-major"
-	  isWindowOpen		  off
+	  isWindowOpen		  "off"
 	}
 	Block {
 	  BlockType		  Outport
@@ -3361,10 +3921,10 @@ Model {
 	  SourceType		  "Color Space Conversion"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
-	  conversion		  Obsolete
+	  MultiThreadCoSim	  "auto"
+	  conversion		  "Obsolete"
 	  conversionActive	  "R'G'B' to intensity"
-	  wp_str		  D65
+	  wp_str		  "D65"
 	  rec			  "Rec. 601 (SDTV)"
 	  sys			  "1125/60/2:1"
 	  imagePorts		  "One multidimensional signal"
@@ -3381,23 +3941,23 @@ Model {
 	  SourceType		  "Contrast Adjustment"
 	  SourceProductName	  "Computer Vision Toolbox"
 	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  auto
+	  MultiThreadCoSim	  "auto"
 	  methodInputRange	  "Full input data range [min max]"
-	  rangeIn		  [0 255]
-	  fracSaturate		  [1 1]
+	  rangeIn		  "[0 255]"
+	  fracSaturate		  "[1 1]"
 	  isBinNum		  on
-	  binNum		  256
+	  binNum		  "256"
 	  methodOutputRange	  "Full data type range"
-	  rangeOut		  [0 255]
-	  roundingMode		  Floor
+	  rangeOut		  "[0 255]"
+	  roundingMode		  "Floor"
 	  overflowMode		  off
 	  prod1Mode		  "Binary point scaling"
-	  prod1WordLength	  32
-	  prod1FracLength	  16
+	  prod1WordLength	  "32"
+	  prod1FracLength	  "16"
 	  prod1Slope		  "2^-16"
 	  prod2Mode		  "Binary point scaling"
-	  prod2WordLength	  32
-	  prod2FracLength	  16
+	  prod2WordLength	  "32"
+	  prod2FracLength	  "16"
 	  prod2Slope		  "2^-16"
 	  LockScale		  off
 	}
@@ -3451,7 +4011,7 @@ Model {
       ZOrder		      498
       SrcBlock		      "DetectionRate1"
       SrcPort		      1
-      Points		      [55, 0]
+      Points		      [75, 0]
       DstBlock		      "Display"
       DstPort		      trigger
     }
@@ -3506,7 +4066,7 @@ Model {
       ZOrder		      599
       SrcBlock		      "BlobAnalysis"
       SrcPort		      2
-      Points		      [418, 0; 0, -5]
+      Points		      [253, 0; 0, 10]
       DstBlock		      "Display"
       DstPort		      3
     }
@@ -3593,10 +4153,39 @@ Model {
       DstBlock		      "Goto3"
       DstPort		      1
     }
+    Line {
+      ZOrder		      613
+      SrcBlock		      "DetectionRate4"
+      SrcPort		      1
+      Points		      [50, 0]
+      DstBlock		      "Function-Call\nSubsystem"
+      DstPort		      trigger
+    }
+    Line {
+      ZOrder		      614
+      SrcBlock		      "From6"
+      SrcPort		      1
+      DstBlock		      "Function-Call\nSubsystem"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      616
+      SrcBlock		      "Function-Call\nSubsystem"
+      SrcPort		      1
+      DstBlock		      "Goto4"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      617
+      SrcBlock		      "From7"
+      SrcPort		      1
+      DstBlock		      "Display"
+      DstPort		      8
+    }
     Annotation {
       SID		      "188"
       Name		      "INPUTSignal"
-      Position		      [-1049, -19, -967, -1]
+      Position		      [-1049, -9, -967, 9]
       InternalMargins	      [0, 0, 0, 0]
       ZOrder		      -1
       FontName		      "Arial"
@@ -3648,7 +4237,7 @@ Stateflow {
     id			    1
     name		    "MotionObjectDetector"
     sfVersion		    80000019
-    firstTarget		    17
+    firstTarget		    24
   }
   chart {
     id			    2
@@ -3928,17 +4517,150 @@ Stateflow {
     name		    "BlobAnalysis/MATLAB Function"
     chart		    9
   }
-  target {
+  chart {
     id			    17
+    machine		    1
+    name		    "Function-Call\nSubsystem/MATLAB Function"
+    windowPosition	    [422 539.941 189 413]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 3600 1200 1.180555555555556]
+    treeNode		    [0 18 0 0]
+    viewObj		    17
+    visible		    1
+    subviewS {
+    }
+    ssIdHighWaterMark	    6
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    chartFileNumber	    3
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn"
+    }
+    firstData		    19
+    firstTransition	    22
+    firstJunction	    21
+  }
+  state {
+    id			    18
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    17
+    treeNode		    [17 0 0 0]
+    superState		    SUBCHART
+    subviewer		    17
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function fcn(Image, redcrab)\n\nredcrabGray = rgb2gray(redcrab);\nImageGray = rgb2gray(Image);\nR"
+      "edCrabPoints = detectSURFFeatures(redcrabGray);\n\n[RedCrabFeatures, RedCrabPoints] = extractFeatures(redcrabGra"
+      "y, RedCrabPoints);\n\nROIPoints = detectSURFFeatures(ImageGray);\n[ROIFeatures, ROIPoints] = extractFeatures(Ima"
+      "geGray, ROIPoints);\n\n\nRedCrabPairs = matchFeatures(RedCrabFeatures, ROIFeatures);\n\n% matchedCrabPoints = Re"
+      "dCrabPoints(RedCrabPairs(:,1),:);\n\n% matchedImagePoints = ROIPoints(RedCrabPairs(:,2),:);\n\n% figure;\n% show"
+      "MatchedFeatures(redcrabGray, ImageGray, matchedCrabPoints, matchedImagePoints, 'montage');\n"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    19
+    ssIdNumber		    4
+    name		    "Image"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [17 0 20]
+  }
+  data {
+    id			    20
+    ssIdNumber		    6
+    name		    "redcrab"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [17 19 0]
+  }
+  junction {
+    id			    21
+    position		    [23.5747 49.5747 7]
+    chart		    17
+    subviewer		    17
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+    linkNode		    [17 0 0]
+  }
+  transition {
+    id			    22
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [28.125 13.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      21
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    17
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    17
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+    linkNode		    [17 0 0]
+  }
+  instance {
+    id			    23
+    machine		    1
+    name		    "Function-Call\nSubsystem/MATLAB Function"
+    chart		    17
+  }
+  target {
+    id			    24
     machine		    1
     name		    "sfun"
     description		    "Default Simulink S-Function Target."
-    linkNode		    [1 0 18]
+    linkNode		    [1 0 25]
   }
   target {
-    id			    18
+    id			    25
     machine		    1
     name		    "rtw"
-    linkNode		    [1 17 0]
+    linkNode		    [1 24 0]
   }
 }
