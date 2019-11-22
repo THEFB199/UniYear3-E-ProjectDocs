@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.46"
+    ComputedModelVersion    "1.48"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -19,7 +19,7 @@ Model {
     IsArchitectureModel	    0
     IsAUTOSARArchitectureModel 0
     NumParameterArguments   0
-    NumExternalFileReferences 22
+    NumExternalFileReferences 38
     ExternalFileReference {
       Reference		      "visionstatistics/Blob Analysis"
       Path		      "MotionObjectDetector/BlobAnalysis/Blob Analysis"
@@ -87,9 +87,9 @@ Model {
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "imaqlib/From Video Device"
-      Path		      "MotionObjectDetector/From Video Device"
-      SID		      "34"
+      Reference		      "dspvision/From Multimedia File"
+      Path		      "MotionObjectDetector/From Multimedia File"
+      SID		      "1"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
@@ -152,6 +152,110 @@ Model {
       SID		      "194"
       Type		      "LIBRARY_BLOCK"
     }
+    ExternalFileReference {
+      Reference		      "visionconversions/Color Space\n Conversion"
+      Path		      "MotionObjectDetector/ROIDetection/Color Space  Conversion"
+      SID		      "249"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visionsinks/Frame Rate\nDisplay"
+      Path		      "MotionObjectDetector/ROIDetection/Frame Rate Display"
+      SID		      "468"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visiontextngfix/Draw Shapes"
+      Path		      "MotionObjectDetector/ROIDetection/Highlight the target/Draw Shapes"
+      SID		      "478"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visionconversions/Image Data Type\nConversion"
+      Path		      "MotionObjectDetector/ROIDetection/Image Data Type Conversion"
+      SID		      "667"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visionconversions/Image Data Type\nConversion"
+      Path		      "MotionObjectDetector/ROIDetection/Image Data Type Conversion1"
+      SID		      "258"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visiontransforms/Gaussian\nPyramid"
+      Path		      "MotionObjectDetector/ROIDetection/Target (Double-click  to select new target)/Gaussian Pyramid"
+      SID		      "654"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visiontransforms/2-D FFT"
+      Path		      "MotionObjectDetector/ROIDetection/Target (Double-click  to select new target)/Preprocesseed target "
+      "for  frequency domain computation/2-D FFT"
+      SID		      "659"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visionutilities/Image Pad"
+      Path		      "MotionObjectDetector/ROIDetection/Target (Double-click  to select new target)/Preprocesseed target "
+      "for  frequency domain computation/2-D Pad"
+      SID		      "660"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visiongeotforms/Rotate"
+      Path		      "MotionObjectDetector/ROIDetection/Target (Double-click  to select new target)/Preprocesseed target "
+      "for  frequency domain computation/Rotate"
+      SID		      "661"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visiontransforms/2-D FFT"
+      Path		      "MotionObjectDetector/ROIDetection/Target detection and tracking/Frequency/Normalized X-corr in freq"
+      "uency domain/Cross-correlation in frequency domain/2-D FFT"
+      SID		      "523"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visiontransforms/2-D IFFT"
+      Path		      "MotionObjectDetector/ROIDetection/Target detection and tracking/Frequency/Normalized X-corr in freq"
+      "uency domain/Cross-correlation in frequency domain/2-D IFFT"
+      SID		      "524"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visionutilities/Image Pad"
+      Path		      "MotionObjectDetector/ROIDetection/Target detection and tracking/Frequency/Normalized X-corr in freq"
+      "uency domain/Cross-correlation in frequency domain/2-D Pad"
+      SID		      "525"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visionfilter/2-D FIR Filter"
+      Path		      "MotionObjectDetector/ROIDetection/Target detection and tracking/Frequency/Normalized X-corr in freq"
+      "uency domain/Normalize/<b,b> matrix/compute local sums"
+      SID		      "540"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visiontransforms/Gaussian\nPyramid"
+      Path		      "MotionObjectDetector/ROIDetection/Target detection and tracking/Gaussian Pyramid"
+      SID		      "552"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visionstatistics/Find Local Maxima"
+      Path		      "MotionObjectDetector/ROIDetection/Target detection and tracking/Locate target1/Find Local Maxima"
+      SID		      "586"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visionstatistics/2-D Correlation"
+      Path		      "MotionObjectDetector/ROIDetection/Target detection and tracking/Spatial/Normalized X-corr in spatia"
+      "l domain"
+      SID		      "600"
+      Type		      "LIBRARY_BLOCK"
+    }
     OrderedModelArguments   0
   }
   DiagnosticSuppressor	  "on"
@@ -181,6 +285,20 @@ Model {
   MinMaxOverflowArchiveMode "Overwrite"
   FPTRunName		  "Run 1"
   MaxMDLFileLineLength	  120
+  CloseFcn		  "clear all;"
+  InitFcn		  "% load and initialize the data required by vippattern demo\n\n% get path to the model\nparam_path = 'Mot"
+  "ionObjectDetector/ROIDetection/Parameters';\n\n% NOTE:  to set a new target run this command from command prompt:\n%"
+  " set_param(param_path,'target',mat2str(target_img))\n% here, target_img must be a uint8 image\n\n% get AVI file name"
+  " straight from From MM File block\n%fmmf_path = 'vippattern/From Multimedia File';\n\n% get target which is stored i"
+  "n a hidden parameter of 'Edit Parameters'\n% subsystem\n%target_img = uint8(eval(get_param(param_path,'target')));\n"
+  "\nredcrab = imread('redcrab.jpeg');\nredcrab = rgb2gray(redcrab);\ntarget_img = uint8(imresize(redcrab, [100,100]));"
+  "\n\n% Create a pyramiding factor variable and initialize it.\n% Set the pyramiding factor by grabbing it from the ma"
+  "sked block \n% called 'Edit Parameters'\npfactor = str2double(get_param(param_path,'pfactor'));\n\ntarget_dim_nopyra"
+  "mid = size(target_img);\n% dims for gaussian pyramid\ntarget_dim = ceil(target_dim_nopyramid/(2^pfactor));\n%video_i"
+  "nfo = dspvideofileinfo(get_param(fmmf_path,'inputFilename'));\niut_dim = ceil([500 500]/2^(pfactor));\n\n% figure ou"
+  "t the sizes after padding; padding is necessary in order\n% to avoid circular convolution\ntarget_pad_rows = 2^nextp"
+  "ow2(iut_dim(1)+target_dim(1)+1);\ntarget_pad_cols = 2^nextpow2(iut_dim(2)+target_dim(2)+1);\n\n% number of targets t"
+  "o detect (targets are assumed to be identical)\nnum_targets = str2double(get_param(param_path,'num_targets'));\n"
   LastSavedArchitecture	  "win64"
   Object {
     $PropName		    "BdWindowsInfo"
@@ -211,53 +329,108 @@ Model {
       }
       Array {
 	Type			"Simulink.EditorInfo"
-	Dimension		6
+	Dimension		13
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [1]
 	  IsTabbed		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "553"
 	  Extents		  [1618.0, 1176.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [140.61370940009783, -207.68518650959822]
-	  SceneRectInView	  [140.61370940009783, -207.68518650959822, 2022.5, 1470.0]
+	  ZoomFactor		  [1.75]
+	  Offset		  [-81.10100446428595, -183.85714285714295]
+	  SceneRectInView	  [-81.10100446428595, -183.85714285714295, 924.57142857142856, 672.0]
 	}
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [0]
-	  IsTabbed		  [0]
+	  IsTabbed		  [1]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "135"
-	  Extents		  [1618.0, 1205.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-83.074646376029023, -783.029526615911]
-	  SceneRectInView	  [-83.074646376029023, -783.029526615911, 2022.5, 1506.25]
+	  LoadSaveID		  "649"
+	  Extents		  [1618.0, 1176.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-196.50000000000011, -267.0]
+	  SceneRectInView	  [-196.50000000000011, -267.0, 1078.6666666666667, 784.0]
 	}
 	Object {
 	  $ObjectID		  8
 	  IsActive		  [0]
 	  IsTabbed		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "234"
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
 	  Extents		  [1618.0, 1176.0]
-	  ZoomFactor		  [0.6]
-	  Offset		  [-1951.2899384235818, -1418.7865400319947]
-	  SceneRectInView	  [-1951.2899384235818, -1418.7865400319947, 2696.666666666667, 1960.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [3.7721150276624549, -603.48007816015672]
+	  SceneRectInView	  [3.7721150276624549, -603.48007816015672, 1618.0, 1176.0]
 	}
 	Object {
 	  $ObjectID		  9
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "124"
-	  Extents		  [1618.0, 1205.0]
+	  LoadSaveID		  "483"
+	  Extents		  [1618.0, 1176.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [-189.0, -552.0]
-	  SceneRectInView	  [-189.0, -552.0, 1618.0, 1205.0]
+	  Offset		  [0.0, 0.0]
+	  SceneRectInView	  [0.0, 0.0, 0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  10
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "234"
+	  Extents		  [1618.0, 1176.0]
+	  ZoomFactor		  [1.25]
+	  Offset		  [-932.1630550685785, -606.5551574076369]
+	  SceneRectInView	  [-932.1630550685785, -606.5551574076369, 1294.4, 940.8]
+	}
+	Object {
+	  $ObjectID		  11
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "504"
+	  Extents		  [1618.0, 1176.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-19.938281250000159, -199.13333333333333]
+	  SceneRectInView	  [-19.938281250000159, -199.13333333333333, 1078.6666666666667, 784.0]
+	}
+	Object {
+	  $ObjectID		  12
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "657"
+	  Extents		  [1618.0, 1176.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-604.0, -543.0]
+	  SceneRectInView	  [-604.0, -543.0, 1618.0, 1176.0]
+	}
+	Object {
+	  $ObjectID		  13
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "486"
+	  Extents		  [1618.0, 1176.0]
+	  ZoomFactor		  [1.25]
+	  Offset		  [-271.50000000000006, -362.79999999999995]
+	  SceneRectInView	  [-271.50000000000006, -362.79999999999995, 1294.4, 940.8]
+	}
+	Object {
+	  $ObjectID		  14
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "596"
+	  Extents		  [1618.0, 1176.0]
+	  ZoomFactor		  [1.25]
+	  Offset		  [-282.00000000000017, -303.23333333333323]
+	  SceneRectInView	  [-282.00000000000017, -303.23333333333323, 1294.4, 940.8]
+	}
+	Object {
+	  $ObjectID		  15
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
@@ -268,7 +441,29 @@ Model {
 	  SceneRectInView	  [-272.06771753824148, -267.88127668118523, 1618.0, 1176.0]
 	}
 	Object {
-	  $ObjectID		  11
+	  $ObjectID		  16
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "135"
+	  Extents		  [1618.0, 1205.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-83.074646376029023, -783.029526615911]
+	  SceneRectInView	  [-83.074646376029023, -783.029526615911, 2022.5, 1506.25]
+	}
+	Object {
+	  $ObjectID		  17
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "124"
+	  Extents		  [1618.0, 1205.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-189.0, -552.0]
+	  SceneRectInView	  [-189.0, -552.0, 1618.0, 1205.0]
+	}
+	Object {
+	  $ObjectID		  18
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "SimulinkSubsys"
@@ -284,20 +479,7 @@ Model {
 	Type			"Simulink.DockComponentInfo"
 	Dimension		2
 	Object {
-	  $ObjectID		  12
-	  Type			  "GLUE2:SpreadSheet"
-	  ID			  "ModelData"
-	  Visible		  [1]
-	  CreateCallback	  "DataView.createSpreadSheetComponent"
-	  UserData		  ""
-	  Floating		  [0]
-	  DockPosition		  "Bottom"
-	  Width			  [640]
-	  Height		  [480]
-	  Minimized		  "On"
-	}
-	Object {
-	  $ObjectID		  13
+	  $ObjectID		  19
 	  Type			  "GLUE2:PropertyInspector"
 	  ID			  "Property Inspector"
 	  Visible		  [1]
@@ -309,6 +491,19 @@ Model {
 	  Height		  [480]
 	  Minimized		  "On"
 	}
+	Object {
+	  $ObjectID		  20
+	  Type			  "GLUE2:SpreadSheet"
+	  ID			  "ModelData"
+	  Visible		  [1]
+	  CreateCallback	  "DataView.createSpreadSheetComponent"
+	  UserData		  ""
+	  Floating		  [0]
+	  DockPosition		  "Bottom"
+	  Width			  [1684]
+	  Height		  [215]
+	  Minimized		  "On"
+	}
 	PropName		"DockComponentsInfo"
       }
       WindowState	      "AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
@@ -316,8 +511,8 @@ Model {
       "EwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAA"
       "P////8AAABjAAf///v/////AAAAAAD/////AAAAIAD///8AAAABAAAAAAAAAAD8AgAAAAH8AAAAAP////8AAAAAAP////r/////AgAAAAL7AAAAV"
       "ABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8Ac"
-      "gAAAAAA/////wAAADkA////+/////8AAAAAAP////8AAAAgAP///wAAAAMAAApmAAAA4PwBAAAAAfwAAAAkAAAKZgAAAAAA////+v////8BAAAAA"
-      "vsAAAA2AEcATABVAEUAMgA6AFMAcAByAGUAYQBkAFMAaABlAGUAdAAvAE0AbwBkAGUAbABEAGEAdABhAAAAAAD/////AAABGgD////7/////wAAA"
+      "gAAAAAA/////wAAADkA////+/////8AAAAAAP////8AAAAgAP///wAAAAMAAApmAAAA4PwBAAAAAfwAAAAA/////wAAAAAA////+v////8BAAAAA"
+      "vsAAAA2AEcATABVAEUAMgA6AFMAcAByAGUAYQBkAFMAaABlAGUAdAAvAE0AbwBkAGUAbABEAGEAdABhAAAAAAD/////AAABGgAH///7/////wAAA"
       "AAA/////wAAAJsA////AAAGeAAABNUAAAABAAAAAgAAAAEAAAAC/AAAAAMAAAAAAAAAAQAAADYAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuA"
       "GUAbABUAG8AbwBsAEIAYQByAEwAZQBmAHQDAAAAAP////8AAAAAAAAAAAAAAAEAAAABAAAAOABjAG8AbABsAGEAcABzAGkAYgBsAGUAUABhAG4AZ"
       "QBsAFQAbwBvAGwAQgBhAHIAUgBpAGcAaAB0AwAAAAD/////AAAAAAAAAAAAAAADAAAAAQAAADoAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuA"
@@ -338,9 +533,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "fredd"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Nov 20 21:17:59 2019"
-  RTWModifiedTimeStamp	  496185475
-  ModelVersionFormat	  "1.%<AutoIncrement:46>"
+  LastModifiedDate	  "Fri Nov 22 13:42:36 2019"
+  RTWModifiedTimeStamp	  496330694
+  ModelVersionFormat	  "1.%<AutoIncrement:48>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -400,7 +595,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    14
+    $ObjectID		    21
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "MotionObjectDetector"
     overrideMode_	    [0.0]
@@ -445,7 +640,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      15
+      $ObjectID		      22
       Version		      "19.1.1"
       DisabledProps	      []
       Description	      ""
@@ -453,7 +648,7 @@ Model {
 	Type			"Handle"
 	Dimension		10
 	Simulink.SolverCC {
-	  $ObjectID		  16
+	  $ObjectID		  23
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -496,7 +691,7 @@ Model {
 	  SolverOrder		  3
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  17
+	  $ObjectID		  24
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -538,7 +733,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  18
+	  $ObjectID		  25
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -598,7 +793,7 @@ Model {
 	  EfficientTunableParamExpr on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  19
+	  $ObjectID		  26
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -715,7 +910,7 @@ Model {
 	  ArithmeticOperatorsInVariantConditions "error"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  20
+	  $ObjectID		  27
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -765,7 +960,7 @@ Model {
 	  HardwareBoardFeatureSet "EmbeddedCoderHSP"
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  21
+	  $ObjectID		  28
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -785,7 +980,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  22
+	  $ObjectID		  29
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -820,7 +1015,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  23
+	  $ObjectID		  30
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  "Embedded Coder"
@@ -889,7 +1084,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      24
+	      $ObjectID		      31
 	      Version		      "19.1.1"
 	      DisabledProps	      []
 	      Description	      ""
@@ -947,7 +1142,7 @@ Model {
 	    }
 	    Simulink.ERTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      25
+	      $ObjectID		      32
 	      Version		      "19.1.1"
 	      DisabledProps	      []
 	      Description	      ""
@@ -1117,7 +1312,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  26
+	  $ObjectID		  33
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -1158,7 +1353,7 @@ Model {
 	  CovMcdcMode		  "Masking"
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  27
+	  $ObjectID		  34
 	  Version		  "19.1.1"
 	  DisabledProps		  []
 	  Description		  "HDL Coder custom configuration component"
@@ -1175,7 +1370,7 @@ Model {
 	PropName		"Components"
       }
       Name		      "Configuration"
-      CurrentDlgPage	      "Solver"
+      CurrentDlgPage	      "Math and Data Types"
       ConfigPrmDlgPosition    [ 1444, 439, 2434, 1109 ]
       ExtraOptions	      ""
     }
@@ -1183,11 +1378,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    15
+    $ObjectID		    22
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    28
+    $ObjectID		    35
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1197,7 +1392,7 @@ Model {
   ExplicitPartitioning	  off
   Object {
     $PropName		    "ModelMappings"
-    $ObjectID		    29
+    $ObjectID		    36
     $ClassName		    "Simulink.CoderDictionary.ModelMapping"
     DummyName		    ""
     FcnCallInports	    []
@@ -1205,52 +1400,52 @@ Model {
       Type		      "Simulink.CoderDictionary.EntryPointMapping"
       Dimension		      2
       Object {
-	$ObjectID		30
+	$ObjectID		37
 	Prototype		""
 	SimulinkFunctionName	"Initialize"
 	Object {
 	  $PropName		  "ParentMapping"
-	  $ObjectID		  29
+	  $ObjectID		  36
 	}
 	Object {
 	  $PropName		  "FunctionReference"
-	  $ObjectID		  31
+	  $ObjectID		  38
 	  $ClassName		  "Simulink.FunctionReferenceClass"
 	  Object {
 	    $PropName		    "FunctionClass"
-	    $ObjectID		    32
+	    $ObjectID		    39
 	    $ClassName		    "Simulink.MapDataRef"
 	    UUID		    ""
 	  }
 	  Object {
 	    $PropName		    "MemorySection"
-	    $ObjectID		    33
+	    $ObjectID		    40
 	    $ClassName		    "Simulink.MapDataRef"
 	    UUID		    ""
 	  }
 	}
       }
       Object {
-	$ObjectID		34
+	$ObjectID		41
 	Prototype		""
 	SimulinkFunctionName	"Terminate"
 	Object {
 	  $PropName		  "ParentMapping"
-	  $ObjectID		  29
+	  $ObjectID		  36
 	}
 	Object {
 	  $PropName		  "FunctionReference"
-	  $ObjectID		  35
+	  $ObjectID		  42
 	  $ClassName		  "Simulink.FunctionReferenceClass"
 	  Object {
 	    $PropName		    "FunctionClass"
-	    $ObjectID		    36
+	    $ObjectID		    43
 	    $ClassName		    "Simulink.MapDataRef"
 	    UUID		    ""
 	  }
 	  Object {
 	    $PropName		    "MemorySection"
-	    $ObjectID		    37
+	    $ObjectID		    44
 	    $ClassName		    "Simulink.MapDataRef"
 	    UUID		    ""
 	  }
@@ -1267,84 +1462,14 @@ Model {
     SubsystemFunctions	    []
     Object {
       $PropName		      "DefaultsMapping"
-      $ObjectID		      38
+      $ObjectID		      45
       $ClassName	      "Simulink.CoderDictionary.DefaultsMapping"
       Object {
 	$PropName		"ParentMapping"
-	$ObjectID		29
+	$ObjectID		36
       }
       Object {
 	$PropName		"Inports"
-	$ObjectID		39
-	$ClassName		"Simulink.DataReferenceClass"
-	MappedTo		"StorageClass"
-	StorageClass		[]
-	CSCAttributes		""
-	MemorySection		[]
-	Identifier		""
-      }
-      Object {
-	$PropName		"Outports"
-	$ObjectID		40
-	$ClassName		"Simulink.DataReferenceClass"
-	MappedTo		"StorageClass"
-	StorageClass		[]
-	CSCAttributes		""
-	MemorySection		[]
-	Identifier		""
-      }
-      Object {
-	$PropName		"GlobalParameters"
-	$ObjectID		41
-	$ClassName		"Simulink.DataReferenceClass"
-	MappedTo		"StorageClass"
-	StorageClass		[]
-	CSCAttributes		""
-	MemorySection		[]
-	Identifier		""
-      }
-      Object {
-	$PropName		"SharedParameters"
-	$ObjectID		42
-	$ClassName		"Simulink.DataReferenceClass"
-	MappedTo		"StorageClass"
-	StorageClass		[]
-	CSCAttributes		""
-	MemorySection		[]
-	Identifier		""
-      }
-      Object {
-	$PropName		"PerInstanceParameters"
-	$ObjectID		43
-	$ClassName		"Simulink.DataReferenceClass"
-	MappedTo		"StorageClass"
-	StorageClass		[]
-	CSCAttributes		""
-	MemorySection		[]
-	Identifier		""
-      }
-      Object {
-	$PropName		"SharedLocalDataStores"
-	$ObjectID		44
-	$ClassName		"Simulink.DataReferenceClass"
-	MappedTo		"StorageClass"
-	StorageClass		[]
-	CSCAttributes		""
-	MemorySection		[]
-	Identifier		""
-      }
-      Object {
-	$PropName		"GlobalDataStores"
-	$ObjectID		45
-	$ClassName		"Simulink.DataReferenceClass"
-	MappedTo		"StorageClass"
-	StorageClass		[]
-	CSCAttributes		""
-	MemorySection		[]
-	Identifier		""
-      }
-      Object {
-	$PropName		"InternalData"
 	$ObjectID		46
 	$ClassName		"Simulink.DataReferenceClass"
 	MappedTo		"StorageClass"
@@ -1354,7 +1479,7 @@ Model {
 	Identifier		""
       }
       Object {
-	$PropName		"Constants"
+	$PropName		"Outports"
 	$ObjectID		47
 	$ClassName		"Simulink.DataReferenceClass"
 	MappedTo		"StorageClass"
@@ -1364,22 +1489,92 @@ Model {
 	Identifier		""
       }
       Object {
-	$PropName		"InitTermFunctions"
+	$PropName		"GlobalParameters"
 	$ObjectID		48
+	$ClassName		"Simulink.DataReferenceClass"
+	MappedTo		"StorageClass"
+	StorageClass		[]
+	CSCAttributes		""
+	MemorySection		[]
+	Identifier		""
+      }
+      Object {
+	$PropName		"SharedParameters"
+	$ObjectID		49
+	$ClassName		"Simulink.DataReferenceClass"
+	MappedTo		"StorageClass"
+	StorageClass		[]
+	CSCAttributes		""
+	MemorySection		[]
+	Identifier		""
+      }
+      Object {
+	$PropName		"PerInstanceParameters"
+	$ObjectID		50
+	$ClassName		"Simulink.DataReferenceClass"
+	MappedTo		"StorageClass"
+	StorageClass		[]
+	CSCAttributes		""
+	MemorySection		[]
+	Identifier		""
+      }
+      Object {
+	$PropName		"SharedLocalDataStores"
+	$ObjectID		51
+	$ClassName		"Simulink.DataReferenceClass"
+	MappedTo		"StorageClass"
+	StorageClass		[]
+	CSCAttributes		""
+	MemorySection		[]
+	Identifier		""
+      }
+      Object {
+	$PropName		"GlobalDataStores"
+	$ObjectID		52
+	$ClassName		"Simulink.DataReferenceClass"
+	MappedTo		"StorageClass"
+	StorageClass		[]
+	CSCAttributes		""
+	MemorySection		[]
+	Identifier		""
+      }
+      Object {
+	$PropName		"InternalData"
+	$ObjectID		53
+	$ClassName		"Simulink.DataReferenceClass"
+	MappedTo		"StorageClass"
+	StorageClass		[]
+	CSCAttributes		""
+	MemorySection		[]
+	Identifier		""
+      }
+      Object {
+	$PropName		"Constants"
+	$ObjectID		54
+	$ClassName		"Simulink.DataReferenceClass"
+	MappedTo		"StorageClass"
+	StorageClass		[]
+	CSCAttributes		""
+	MemorySection		[]
+	Identifier		""
+      }
+      Object {
+	$PropName		"InitTermFunctions"
+	$ObjectID		55
 	$ClassName		"Simulink.FunctionReferenceClass"
 	FunctionClass		[]
 	MemorySection		[]
       }
       Object {
 	$PropName		"ExecutionFunctions"
-	$ObjectID		49
+	$ObjectID		56
 	$ClassName		"Simulink.FunctionReferenceClass"
 	FunctionClass		[]
 	MemorySection		[]
       }
       Object {
 	$PropName		"SharedUtilityFunctions"
-	$ObjectID		50
+	$ObjectID		57
 	$ClassName		"Simulink.FunctionReferenceClass"
 	FunctionClass		[]
 	MemorySection		[]
@@ -1388,6 +1583,7 @@ Model {
     Name		    "MotionObjectDetector_c"
     Active		    [1]
   }
+  WSMdlFileData		  "DataTag0"
   BlockDefaults {
     ForegroundColor	    "black"
     BackgroundColor	    "white"
@@ -1822,7 +2018,7 @@ Model {
   System {
     Name		    "MotionObjectDetector"
     Location		    [1713, 0, 3447, 1447]
-    Open		    on
+    Open		    off
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
     ExecutionDomainType	    "Deduce"
@@ -1836,9 +2032,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "80"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "608"
+    SIDHighWatermark	    "667"
     SimulinkSubDomain	    "Simulink"
     Block {
       BlockType		      SubSystem
@@ -3075,7 +3271,6 @@ Model {
       Ports		      [0, 1]
       Position		      [-1100, 131, -915, 219]
       ZOrder		      2
-      Commented		      "on"
       LibraryVersion	      "1.59"
       SourceBlock	      "dspvision/From Multimedia File"
       SourceType	      "From Multimedia File"
@@ -3141,18 +3336,19 @@ Model {
       Ports		      [0, 1]
       Position		      [-1095, 31, -920, 109]
       ZOrder		      36
+      Commented		      "on"
       LibraryVersion	      "1.77"
       UserDataPersistent      on
-      UserData		      "DataTag0"
+      UserData		      "DataTag1"
       SourceBlock	      "imaqlib/From Video Device"
       SourceType	      "From Video Device"
       SourceProductName	      "Image Acquisition Toolbox"
       SourceProductBaseCode   "IA"
       MultiThreadCoSim	      "auto"
-      DeviceMenu	      "winvideo 1 (HD Pro Webcam C920)"
+      DeviceMenu	      "(none)"
       Device		      "winvideo 1 (HD Pro Webcam C920)"
       ObjConstructor	      "videoinput('winvideo', 1)"
-      VideoFormatMenu	      "MJPG_1280x720"
+      VideoFormatMenu	      "(none)"
       VideoFormat	      "MJPG_1280x720"
       VideoSource	      "input1"
       ROIPosition	      "[0 0 720 1280]"
@@ -3233,17 +3429,64 @@ Model {
       GotoTag		      "MarkerIamge"
     }
     Block {
+      BlockType		      CircularGaugeBlock
+      Name		      "Gauge"
+      SID		      "190"
+      Position		      [-1270, 354, -1145, 494]
+      ZOrder		      179
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto"
+      SID		      "127"
+      Position		      [-675, 124, -565, 156]
+      ZOrder		      125
+      GotoTag		      "RGBImage"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto1"
+      SID		      "149"
+      Position		      [-210, 119, -100, 151]
+      ZOrder		      137
+      GotoTag		      "IntensityImage"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto2"
+      SID		      "150"
+      Position		      [565, 89, 675, 121]
+      ZOrder		      138
+      GotoTag		      "ClosedBlobs"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto3"
+      SID		      "162"
+      Position		      [1370, 199, 1480, 231]
+      ZOrder		      144
+      GotoTag		      "ROIImage"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto4"
+      SID		      "254"
+      Position		      [1350, 434, 1460, 466]
+      ZOrder		      194
+      GotoTag		      "MarkerIamge"
+    }
+    Block {
       BlockType		      SubSystem
-      Name		      "Function-Call\nSubsystem"
-      SID		      "234"
+      Name		      "ImageFlow"
+      SID		      "135"
       Ports		      [1, 1, 0, 1]
-      Position		      [985, 381, 1265, 519]
-      ZOrder		      190
-      TreatAsAtomicUnit	      on
+      Position		      [245, 100, 465, 250]
+      ZOrder		      131
       RequestExecContextInheritance off
       ContentPreviewEnabled   on
       System {
-	Name			"Function-Call\nSubsystem"
+	Name			"ImageFlow"
 	Location		[1713, 0, 3447, 1447]
 	Open			off
 	PortBlocksUseCompactNotation off
@@ -3259,7 +3502,624 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"60"
+	ZoomFactor		"80"
+	SimulinkSubDomain	"Simulink"
+	Block {
+	  BlockType		  Inport
+	  Name			  "IntensityImage"
+	  SID			  "136"
+	  Position		  [20, 63, 50, 77]
+	  ZOrder		  121
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "Trigger"
+	  SID			  "176"
+	  Ports			  []
+	  Position		  [457, -145, 477, -125]
+	  ZOrder		  131
+	  TriggerType		  "falling"
+	  VariantControl	  "Variant"
+	  StatesWhenEnabling	  "held"
+	  PortDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "2-D Mean"
+	  SID			  "10"
+	  Ports			  [1, 1]
+	  Position		  [855, 50, 910, 90]
+	  ZOrder		  12
+	  LibraryVersion	  "1.724"
+	  UserDataPersistent	  on
+	  UserData		  "DataTag2"
+	  SourceBlock		  "visionstatistics/2-D Mean"
+	  SourceType		  "2-D Mean"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  run			  off
+	  reset_popup		  "None"
+	  InputProcessing	  "Elements as channels (sample based)"
+	  directionMode		  "Entire input"
+	  dimension		  "1"
+	  treatSBRowAsCol	  on
+	  additionalParams	  off
+	  allowOverrides	  on
+	  outputMode		  "Same as accumulator"
+	  outputWordLength	  "32"
+	  outputFracLength	  "30"
+	  outputLastDataTypeStr	  "Inherit: Same as accumulator"
+	  accumMode		  "Binary point scaling"
+	  accumWordLength	  "32"
+	  accumFracLength	  "0"
+	  accumLastDataTypeStr	  "fixdt([],32,0)"
+	  roiEnable		  off
+	  roiType		  "Rectangles"
+	  roiPortion		  "Entire ROI"
+	  roiOutput		  "Individual statistics for each ROI"
+	  roiFlag		  off
+	  roundingMode		  "Floor"
+	  overflowMode		  off
+	  accumDataTypeStr	  "fixdt([],32,0)"
+	  outputDataTypeStr	  "Inherit: Same as accumulator"
+	  outputMin		  "[]"
+	  outputMax		  "[]"
+	  LockScale		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "2-D Mean1"
+	  SID			  "11"
+	  Ports			  [1, 1]
+	  Position		  [935, 50, 990, 90]
+	  ZOrder		  13
+	  LibraryVersion	  "1.724"
+	  UserDataPersistent	  on
+	  UserData		  "DataTag3"
+	  SourceBlock		  "visionstatistics/2-D Mean"
+	  SourceType		  "2-D Mean"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  run			  on
+	  reset_popup		  "None"
+	  InputProcessing	  "Elements as channels (sample based)"
+	  directionMode		  "Entire input"
+	  dimension		  "1"
+	  treatSBRowAsCol	  on
+	  additionalParams	  off
+	  allowOverrides	  on
+	  outputMode		  "Same as accumulator"
+	  outputWordLength	  "32"
+	  outputFracLength	  "30"
+	  outputLastDataTypeStr	  "Inherit: Same as accumulator"
+	  accumMode		  "Binary point scaling"
+	  accumWordLength	  "32"
+	  accumFracLength	  "0"
+	  accumLastDataTypeStr	  "fixdt([],32,0)"
+	  roiEnable		  off
+	  roiType		  "Rectangles"
+	  roiPortion		  "Entire ROI"
+	  roiOutput		  "Individual statistics for each ROI"
+	  roiFlag		  off
+	  roundingMode		  "Floor"
+	  overflowMode		  off
+	  accumDataTypeStr	  "fixdt([],32,0)"
+	  outputDataTypeStr	  "Inherit: Same as accumulator"
+	  outputMin		  "[]"
+	  outputMax		  "[]"
+	  LockScale		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Closing"
+	  SID			  "16"
+	  Ports			  [1, 1]
+	  Position		  [1260, 30, 1340, 80]
+	  ZOrder		  18
+	  LibraryVersion	  "1.322"
+	  SourceBlock		  "visionmorphops/Closing"
+	  SourceType		  "Closing"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  nhoodsrc		  "Specify via dialog"
+	  strel			  "strel('rectangle',[60,60])"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Closing3"
+	  SID			  "87"
+	  Ports			  [1, 1]
+	  Position		  [1365, 30, 1445, 80]
+	  ZOrder		  86
+	  LibraryVersion	  "1.322"
+	  SourceBlock		  "visionmorphops/Closing"
+	  SourceType		  "Closing"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  nhoodsrc		  "Specify via dialog"
+	  strel			  "strel('disk',4,4)"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Closing4"
+	  SID			  "61"
+	  Ports			  [1, 1]
+	  Position		  [1440, 110, 1520, 160]
+	  ZOrder		  63
+	  Commented		  "on"
+	  LibraryVersion	  "1.322"
+	  SourceBlock		  "visionmorphops/Closing"
+	  SourceType		  "Closing"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  nhoodsrc		  "Specify via dialog"
+	  strel			  "strel('disk',8,8)"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Closing5"
+	  SID			  "60"
+	  Ports			  [1, 1]
+	  Position		  [1285, 110, 1365, 160]
+	  ZOrder		  62
+	  Commented		  "on"
+	  LibraryVersion	  "1.322"
+	  SourceBlock		  "visionmorphops/Closing"
+	  SourceType		  "Closing"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  nhoodsrc		  "Specify via dialog"
+	  strel			  "strel('rectangle',[5,5])"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Dilation"
+	  SID			  "40"
+	  Ports			  [1, 1]
+	  Position		  [1470, 30, 1550, 80]
+	  ZOrder		  42
+	  LibraryVersion	  "1.322"
+	  SourceBlock		  "visionmorphops/Dilation"
+	  SourceType		  "Dilation"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  nhoodsrc		  "Specify via dialog"
+	  strel			  "[1 1; 1 1]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Median Filter"
+	  SID			  "14"
+	  Ports			  [1, 1]
+	  Position		  [1120, 28, 1195, 82]
+	  ZOrder		  16
+	  LibraryVersion	  "1.575"
+	  SourceBlock		  "visionanalysis/Median Filter"
+	  SourceType		  "Median Filter"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  nghbood		  "[3 3]"
+	  outSize		  "Same as input port I"
+	  padType		  "Circular"
+	  padSrc		  "Specify via dialog"
+	  padVal		  "0"
+	  roundingMode		  "Floor"
+	  overflowMode		  off
+	  prodOutputMode	  "Same as input"
+	  prodOutputWordLength	  "32"
+	  prodOutputFracLength	  "30"
+	  prodOutputSlope	  "2^-30"
+	  accumMode		  "Same as input"
+	  accumWordLength	  "32"
+	  accumFracLength	  "30"
+	  accumSlope		  "2^-30"
+	  outputMode		  "Same as input"
+	  outputWordLength	  "16"
+	  outputFracLength	  "15"
+	  outputSlope		  "2^-15"
+	  LockScale		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Optical Flow1"
+	  SID			  "172"
+	  Ports			  [1, 1]
+	  Position		  [655, 40, 780, 100]
+	  ZOrder		  130
+	  LibraryVersion	  "1.575"
+	  SourceBlock		  "visionanalysis/Optical Flow"
+	  SourceType		  "Optical Flow"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  ContentPreviewEnabled	  on
+	  method		  "Lucas-Kanade"
+	  gradMethod		  "Derivative of Gaussian"
+	  which2img		  "Current frame and N-th frame back"
+	  N			  "34"
+	  lambda		  "1"
+	  numInports		  "7"
+	  sigmaS		  "1"
+	  sigmaW		  "1"
+	  discardNormalFlow	  off
+	  outputCurrentImage	  off
+	  stop_criteria		  "When maximum number of iterations is reached"
+	  maxIter		  "10"
+	  maxAllowAbsDiff	  "eps"
+	  outVelForm		  "Magnitude-squared"
+	  eigTh			  "0.009"
+	  roundingMode		  "Nearest"
+	  overflowMode		  on
+	  prodOutputMode	  "Binary point scaling"
+	  prodOutputWordLength	  "32"
+	  prodOutputFracLength	  "20"
+	  prodOutputSlope	  "2^-20"
+	  accumMode		  "Same as product output"
+	  accumWordLength	  "32"
+	  accumFracLength	  "20"
+	  accumSlope		  "2^-20"
+	  memoryMode		  "Same as accumulator"
+	  memoryWordLength	  "32"
+	  memoryFracLength	  "20"
+	  memorySlope		  "2^-20"
+	  firstCoeffMode	  "Same word length as first input"
+	  firstCoeffWordLength	  "16"
+	  firstCoeffFracLength	  "12"
+	  firstCoeffSlope	  "2^-20"
+	  outputMode		  "Binary point scaling"
+	  outputWordLength	  "32"
+	  outputFracLength	  "20"
+	  outputSlope		  "2^-20"
+	  LockScale		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Optical Flow2"
+	  SID			  "180"
+	  Ports			  [1, 1]
+	  Position		  [670, -220, 795, -160]
+	  ZOrder		  132
+	  Commented		  "on"
+	  LibraryVersion	  "1.575"
+	  SourceBlock		  "visionanalysis/Optical Flow"
+	  SourceType		  "Optical Flow"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  ContentPreviewEnabled	  on
+	  method		  "Horn-Schunck"
+	  gradMethod		  "Derivative of Gaussian"
+	  which2img		  "Current frame and N-th frame back"
+	  N			  "15"
+	  lambda		  "1"
+	  numInports		  "7"
+	  sigmaS		  "1"
+	  sigmaW		  "1"
+	  discardNormalFlow	  off
+	  outputCurrentImage	  on
+	  stop_criteria		  "When maximum number of iterations is reached"
+	  maxIter		  "10"
+	  maxAllowAbsDiff	  "eps"
+	  outVelForm		  "Magnitude-squared"
+	  eigTh			  "0.009"
+	  roundingMode		  "Nearest"
+	  overflowMode		  on
+	  prodOutputMode	  "Binary point scaling"
+	  prodOutputWordLength	  "32"
+	  prodOutputFracLength	  "20"
+	  prodOutputSlope	  "2^-20"
+	  accumMode		  "Same as product output"
+	  accumWordLength	  "32"
+	  accumFracLength	  "20"
+	  accumSlope		  "2^-20"
+	  memoryMode		  "Same as accumulator"
+	  memoryWordLength	  "32"
+	  memoryFracLength	  "20"
+	  memorySlope		  "2^-20"
+	  firstCoeffMode	  "Same word length as first input"
+	  firstCoeffWordLength	  "16"
+	  firstCoeffFracLength	  "12"
+	  firstCoeffSlope	  "2^-20"
+	  outputMode		  "Binary point scaling"
+	  outputWordLength	  "32"
+	  outputFracLength	  "20"
+	  outputSlope		  "2^-20"
+	  LockScale		  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator"
+	  SID			  "13"
+	  Ports			  [2, 1]
+	  Position		  [1045, 23, 1065, 87]
+	  ZOrder		  15
+	  ShowName		  off
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "To Video Display7"
+	  SID			  "65"
+	  Ports			  [1]
+	  Position		  [1175, 176, 1290, 244]
+	  ZOrder		  67
+	  LibraryVersion	  "1.301"
+	  SourceBlock		  "visionsinks/To Video Display"
+	  SourceType		  "To Video Display"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  windowSizeMode	  "Normal"
+	  openAtMdlStart	  on
+	  fullScreen		  off
+	  videoWindowX		  "1229"
+	  videoWindowY		  "1171"
+	  saveWindowSize	  off
+	  videoWindowWidth	  "434"
+	  videoWindowHeight	  "249"
+	  inputColorFormat	  "RGB"
+	  inputType		  "Obsolete"
+	  imagePorts		  "One multidimensional signal"
+	  OutputDevice		  "On-screen video monitor"
+	  dataOrg		  "Column-major"
+	  isWindowOpen		  "off"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "ClosedBlobs"
+	  SID			  "139"
+	  Position		  [1610, 48, 1640, 62]
+	  ZOrder		  124
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  188
+	  SrcBlock		  "Closing"
+	  SrcPort		  1
+	  DstBlock		  "Closing3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  402
+	  SrcBlock		  "Relational\nOperator"
+	  SrcPort		  1
+	  Points		  [23, 0]
+	  Branch {
+	    ZOrder		    409
+	    Points		    [0, 155]
+	    DstBlock		    "To Video Display7"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    408
+	    DstBlock		    "Median Filter"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  18
+	  SrcBlock		  "2-D Mean"
+	  SrcPort		  1
+	  DstBlock		  "2-D Mean1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  133
+	  SrcBlock		  "2-D Mean1"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  442
+	  SrcBlock		  "Optical Flow1"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    ZOrder		    426
+	    Points		    [0, -30]
+	    DstBlock		    "Relational\nOperator"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    425
+	    DstBlock		    "2-D Mean"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  441
+	  SrcBlock		  "IntensityImage"
+	  SrcPort		  1
+	  DstBlock		  "Optical Flow1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  307
+	  SrcBlock		  "Closing3"
+	  SrcPort		  1
+	  DstBlock		  "Dilation"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  406
+	  SrcBlock		  "Median Filter"
+	  SrcPort		  1
+	  DstBlock		  "Closing"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  436
+	  SrcBlock		  "Dilation"
+	  SrcPort		  1
+	  DstBlock		  "ClosedBlobs"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      ManualSwitch
+      Name		      "Manual Switch"
+      SID		      "186"
+      Position		      [-840, 82, -745, 198]
+      ZOrder		      155
+      CurrentSetting	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "PreProcessor"
+      SID		      "124"
+      Ports		      [1, 1]
+      Position		      [-515, 110, -325, 240]
+      ZOrder		      124
+      RequestExecContextInheritance off
+      ContentPreviewEnabled   on
+      System {
+	Name			"PreProcessor"
+	Location		[1713, 0, 3447, 1447]
+	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SimulinkSubDomain	"Simulink"
+	Block {
+	  BlockType		  Inport
+	  Name			  "RGBImage"
+	  SID			  "125"
+	  Position		  [20, 43, 50, 57]
+	  ZOrder		  5
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Color Space\n Conversion"
+	  SID			  "2"
+	  Ports			  [1, 1]
+	  Position		  [275, 21, 375, 79]
+	  ZOrder		  4
+	  LibraryVersion	  "1.366"
+	  SourceBlock		  "visionconversions/Color Space\n Conversion"
+	  SourceType		  "Color Space Conversion"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  conversion		  "Obsolete"
+	  conversionActive	  "R'G'B' to intensity"
+	  wp_str		  "D65"
+	  rec			  "Rec. 601 (SDTV)"
+	  sys			  "1125/60/2:1"
+	  imagePorts		  "One multidimensional signal"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Contrast Adjustment"
+	  SID			  "194"
+	  Ports			  [1, 1]
+	  Position		  [565, 20, 690, 80]
+	  ZOrder		  184
+	  LibraryVersion	  "1.575"
+	  SourceBlock		  "visionanalysis/Contrast Adjustment"
+	  SourceType		  "Contrast Adjustment"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  methodInputRange	  "Full input data range [min max]"
+	  rangeIn		  "[0 255]"
+	  fracSaturate		  "[1 1]"
+	  isBinNum		  on
+	  binNum		  "256"
+	  methodOutputRange	  "Full data type range"
+	  rangeOut		  "[0 255]"
+	  roundingMode		  "Floor"
+	  overflowMode		  off
+	  prod1Mode		  "Binary point scaling"
+	  prod1WordLength	  "32"
+	  prod1FracLength	  "16"
+	  prod1Slope		  "2^-16"
+	  prod2Mode		  "Binary point scaling"
+	  prod2WordLength	  "32"
+	  prod2FracLength	  "16"
+	  prod2Slope		  "2^-16"
+	  LockScale		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Intensity"
+	  SID			  "126"
+	  Position		  [1190, 43, 1220, 57]
+	  ZOrder		  6
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  415
+	  SrcBlock		  "RGBImage"
+	  SrcPort		  1
+	  DstBlock		  "Color Space\n Conversion"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  422
+	  SrcBlock		  "Contrast Adjustment"
+	  SrcPort		  1
+	  DstBlock		  "Intensity"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  427
+	  SrcBlock		  "Color Space\n Conversion"
+	  SrcPort		  1
+	  DstBlock		  "Contrast Adjustment"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "ROIDetection"
+      SID		      "234"
+      Ports		      [1, 1, 0, 1]
+      Position		      [980, 381, 1260, 519]
+      ZOrder		      190
+      TreatAsAtomicUnit	      on
+      RequestExecContextInheritance off
+      ContentPreviewEnabled   on
+      System {
+	Name			"ROIDetection"
+	Location		[1713, 0, 3447, 1447]
+	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"125"
 	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  Inport
@@ -3286,7 +4146,6 @@ Model {
 	  Ports			  [1, 1]
 	  Position		  [-180, 51, -80, 109]
 	  ZOrder		  197
-	  Commented		  "on"
 	  LibraryVersion	  "1.366"
 	  SourceBlock		  "visionconversions/Color Space\n Conversion"
 	  SourceType		  "Color Space Conversion"
@@ -3328,7 +4187,6 @@ Model {
 	  Position		  [-330, -378, -300, -342]
 	  ZOrder		  246
 	  BackgroundColor	  "yellow"
-	  Commented		  "on"
 	}
 	Block {
 	  BlockType		  VideoViewer
@@ -3337,7 +4195,6 @@ Model {
 	  Ports			  [1]
 	  Position		  [-60, -577, 50, -533]
 	  ZOrder		  245
-	  Commented		  "on"
 	  ScopeSpecificationString "vipscopes.VideoViewerScopeCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr.Conf"
 	  "iguration('Core','General UI',true,'MessageLogAutoOpenMode','for warn/fail messages','ShowSaveConfigSet',true,'Figu"
 	  "reProperties',struct('ColorMap',[0.0104166666666667 0 0;0.0208333333333333 0 0;0.03125 0 0;0.0416666666666667 0 0;0"
@@ -3453,7 +4310,6 @@ Model {
 	  Ports			  [1]
 	  Position		  [-55, -301, 0, -269]
 	  ZOrder		  244
-	  Commented		  "on"
 	  LibraryVersion	  "1.301"
 	  SourceBlock		  "visionsinks/Frame Rate\nDisplay"
 	  SourceType		  "Frame Rate Display"
@@ -3468,41 +4324,7 @@ Model {
 	  Position		  [-390, -378, -370, -362]
 	  ZOrder		  243
 	  NamePlacement		  "alternate"
-	  Commented		  "on"
 	  VectorParams1D	  off
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "From Multimedia File"
-	  SID			  "470"
-	  Ports			  [0, 1]
-	  Position		  [-410, -576, -305, -534]
-	  ZOrder		  242
-	  Commented		  "on"
-	  LibraryVersion	  "1.59"
-	  SourceBlock		  "dspvision/From Multimedia File"
-	  SourceType		  "From Multimedia File"
-	  SourceProductName	  "DSP System Toolbox"
-	  SourceProductBaseCode	  "DS"
-	  MultiThreadCoSim	  "auto"
-	  inputFilename		  "vipboard.mp4"
-	  readRange		  "[1 Inf]"
-	  loop			  on
-	  numPlays		  "inf"
-	  outputStreams		  "Video only"
-	  videoDataType		  "single"
-	  audioDataType		  "int16"
-	  inheritSampleTime	  on
-	  userDefinedSampleTime	  "1/30"
-	  noAudioOutput		  off
-	  isIntensityVideo	  off
-	  fourcc		  "Intensity"
-	  colorVideoFormat	  "Separate color signals"
-	  outputEOF		  off
-	  dataOrg		  "Column-major"
-	  audioFrameSize	  "1024"
-	  computeAudioFrameSize	  off
-	  outSamplingMode	  "Frame based"
 	}
 	Block {
 	  BlockType		  SubSystem
@@ -3511,7 +4333,6 @@ Model {
 	  Ports			  [2]
 	  Position		  [-55, -458, 0, -327]
 	  ZOrder		  241
-	  Commented		  "on"
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "Highlight the target"
@@ -3733,12 +4554,31 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
+	  Name			  "Image Data Type\nConversion"
+	  SID			  "667"
+	  Ports			  [1, 1]
+	  Position		  [-510, -4, -410, 54]
+	  ZOrder		  253
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.366"
+	  SourceBlock		  "visionconversions/Image Data Type\nConversion"
+	  SourceType		  "Image Data Type Conversion"
+	  SourceProductName	  "Computer Vision Toolbox"
+	  SourceProductBaseCode	  "VP"
+	  MultiThreadCoSim	  "auto"
+	  outDT			  "single"
+	  isSigned		  on
+	  wordLen		  "16"
+	  numFracBits		  "0"
+	}
+	Block {
+	  BlockType		  Reference
 	  Name			  "Image Data Type\nConversion1"
 	  SID			  "258"
 	  Ports			  [1, 1]
 	  Position		  [-370, 61, -270, 119]
 	  ZOrder		  202
-	  Commented		  "on"
 	  LibraryVersion	  "1.366"
 	  SourceBlock		  "visionconversions/Image Data Type\nConversion"
 	  SourceType		  "Image Data Type Conversion"
@@ -3812,7 +4652,6 @@ Model {
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
 	  ShowName		  off
-	  Commented		  "on"
 	  Operator		  "NOT"
 	  AllPortsSameDT	  off
 	  OutDataTypeStr	  "boolean"
@@ -4046,7 +4885,6 @@ Model {
 	  Ports			  [1]
 	  Position		  [-55, -497, -5, -483]
 	  ZOrder		  238
-	  Commented		  "on"
 	  ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr."
 	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
 	  "','WiredSimulink',true,'DataLoggingSaveFormat','StructureWithTime','DataLoggingLimitDataPoints',true,'DataLoggingDe"
@@ -4080,14 +4918,13 @@ Model {
 	  BackgroundColor	  "yellow"
 	  NamePlacement		  "alternate"
 	  ShowName		  off
-	  Commented		  "on"
 	  FontName		  "Arial"
 	  FontSize		  14
 	  FontWeight		  "bold"
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    51
+	    $ObjectID		    58
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Pyramiding factor"
 	    Description		    "The pyramiding factor is used to scale the input video so that the cross-correlation is perform"
@@ -4100,7 +4937,7 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      4
 	      Object {
-		$ObjectID		52
+		$ObjectID		59
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -4119,7 +4956,7 @@ Model {
 		Tunable			"off"
 	      }
 	      Object {
-		$ObjectID		53
+		$ObjectID		60
 		Type			"edit"
 		Name			"num_targets"
 		Prompt			"Number of similar targets to detect:"
@@ -4127,131 +4964,175 @@ Model {
 		Tunable			"off"
 	      }
 	      Object {
-		$ObjectID		54
+		$ObjectID		61
 		Type			"edit"
 		Name			"target"
 		Prompt			"Target:"
-		Value			"[90 99 80 66 86 90 80 69 56 57 57 59 63 63 63 63 62 62 62 62 62 62 61 61 59 59 59 58 57 57 56 56 56 55 56 5"
-		"6 57 57 58 58 58 59 59 59 59 58 58 58 57 57 57 57 58 61 65 67 67 67 67 66 66 66 67 67 67 67 97;102 98 112 114 98 77 "
-		"79 70 66 72 72 74 79 80 80 80 79 79 79 79 78 76 72 70 70 70 71 72 73 73 74 74 76 76 77 77 78 78 79 79 79 80 80 80 80"
-		" 80 81 81 81 81 81 81 83 85 86 88 88 86 80 78 78 78 78 79 79 79 97;86 100 101 107 99 81 83 73 72 79 72 74 78 79 79 7"
-		"9 74 72 72 72 71 71 71 70 69 69 66 66 65 67 71 73 72 70 67 66 66 67 67 66 66 66 66 66 66 66 65 65 64 63 62 61 61 63 "
-		"64 66 67 67 49 54 61 65 71 76 83 87 98;81 107 101 107 99 83 77 78 72 64 48 45 42 41 40 38 36 33 31 30 30 30 31 31 34"
-		" 35 37 38 38 38 37 37 37 37 36 35 30 29 30 30 30 31 31 31 30 30 29 29 28 28 28 28 28 28 27 27 27 27 28 36 51 58 72 7"
-		"6 83 87 98;92 105 101 107 98 83 79 76 59 48 31 29 26 24 24 24 24 26 24 23 22 21 20 20 19 19 17 17 19 19 20 20 20 20 "
-		"21 22 27 30 31 31 31 33 33 33 34 34 35 35 35 36 36 36 36 36 20 20 20 20 17 24 40 48 72 76 83 87 99;100 101 105 107 9"
-		"8 84 86 67 48 49 40 41 44 45 47 48 52 55 55 55 55 56 56 56 56 57 56 56 57 57 58 58 61 63 66 67 65 64 64 63 63 63 63 "
-		"63 63 63 77 77 76 74 73 72 71 70 70 69 69 69 43 47 55 58 72 76 83 87 99;114 118 111 106 97 85 74 62 54 55 77 84 88 8"
-		"4 90 90 90 90 90 90 88 87 83 81 86 87 87 87 86 86 85 85 85 86 88 90 90 91 90 90 88 88 87 87 86 86 90 90 90 90 90 90 "
-		"91 91 92 92 93 93 92 65 45 54 70 73 80 85 100;119 120 114 106 95 85 74 62 54 57 77 84 88 84 90 90 90 90 90 90 88 87 "
-		"83 81 86 87 87 87 87 87 86 86 87 88 88 90 90 91 90 90 88 88 87 87 86 86 90 90 90 90 90 90 91 91 92 92 93 93 92 65 45"
-		" 54 70 73 80 85 100;116 116 114 106 97 87 74 63 55 57 77 84 88 84 88 88 88 88 88 88 87 86 83 81 86 87 87 87 87 87 88"
-		" 88 90 88 90 90 90 90 90 90 88 88 87 87 86 86 88 88 88 88 90 90 90 90 91 91 92 92 91 66 47 52 69 72 80 86 99;115 115"
-		" 113 106 97 88 74 64 56 57 77 84 88 84 86 86 87 87 87 88 87 86 83 81 86 87 87 86 86 87 88 90 90 90 90 90 90 90 90 90"
-		" 88 88 87 87 86 86 88 88 88 88 90 90 90 90 91 91 92 92 88 69 49 50 69 72 81 86 99;115 115 114 107 98 92 74 65 57 57 "
-		"77 84 88 84 85 85 85 86 86 86 86 85 83 81 86 86 86 86 86 86 88 88 88 90 88 88 90 90 90 90 88 88 88 87 87 87 88 88 88"
-		" 88 88 88 90 90 90 90 90 90 87 71 51 49 67 72 81 87 99;115 115 115 108 98 92 74 66 58 57 77 84 88 84 83 83 84 85 85 "
-		"86 86 85 83 81 86 86 86 85 85 85 87 87 87 88 88 88 88 88 90 90 88 88 88 87 87 87 87 87 87 87 88 88 88 88 90 90 90 90"
-		" 85 73 54 47 67 71 81 87 98;115 115 120 111 98 87 76 67 59 57 76 83 87 83 83 83 84 85 85 86 86 85 84 81 85 85 85 85 "
-		"85 85 86 86 86 87 87 87 87 87 88 88 87 87 87 86 86 86 86 86 86 86 87 87 87 87 88 88 88 88 84 73 54 45 66 71 81 87 98"
-		";115 115 120 112 98 86 77 70 59 57 74 81 86 81 83 83 84 84 85 85 85 85 84 83 84 84 85 85 85 85 86 86 86 87 87 87 87 "
-		"87 88 87 87 87 87 86 86 86 86 86 86 86 87 87 87 87 87 87 87 87 83 73 54 44 66 71 83 88 98;115 115 118 113 98 85 79 7"
-		"0 61 56 73 80 85 80 84 84 84 85 85 86 86 85 85 83 83 83 84 85 85 85 86 86 86 86 86 86 86 86 86 86 85 85 85 85 85 85 "
-		"86 86 86 86 86 86 86 86 86 86 86 86 83 73 54 44 66 71 83 88 98;115 115 116 113 99 86 80 71 61 56 72 79 84 79 84 84 8"
-		"4 85 85 86 86 85 85 83 81 81 84 85 85 85 85 86 86 86 86 86 86 86 86 85 85 85 85 85 85 85 85 85 85 85 86 86 86 86 86 "
-		"86 86 86 81 72 52 43 66 71 83 88 98;114 114 115 113 100 87 80 71 61 56 71 78 83 78 84 84 84 85 85 85 85 85 85 83 81 "
-		"81 84 84 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 81 72 52 43 65 70"
-		" 81 87 98;114 115 114 113 101 88 81 72 61 56 71 78 83 78 85 85 85 85 85 85 85 85 83 80 81 83 84 84 85 85 85 85 85 85"
-		" 85 85 85 85 85 84 84 84 84 84 84 84 85 85 85 85 85 85 85 85 85 85 85 85 81 72 52 43 65 70 81 87 98;114 113 113 112 "
-		"101 88 81 72 61 56 71 78 83 78 85 85 85 85 85 85 84 83 78 79 83 83 84 84 84 84 84 85 85 85 85 85 84 84 85 85 85 85 8"
-		"5 85 85 85 85 85 85 85 85 85 85 85 85 85 85 85 81 72 52 43 65 70 81 87 98;112 111 111 111 101 88 81 72 61 56 71 78 8"
-		"3 78 85 85 85 85 84 84 84 83 76 77 83 84 84 84 84 84 84 84 84 84 84 84 84 84 85 85 85 85 85 85 85 85 85 86 86 86 86 "
-		"86 85 85 85 85 85 85 81 72 52 43 64 69 80 86 98;108 108 107 106 98 85 81 72 61 56 71 78 83 78 85 85 85 85 84 84 83 8"
-		"1 74 76 84 85 85 84 84 84 84 84 84 84 84 84 84 84 85 85 85 85 85 85 85 85 86 86 86 86 86 86 86 86 85 85 85 85 81 72 "
-		"52 43 64 69 80 86 98;108 106 106 105 95 84 81 72 61 56 71 78 83 78 85 85 85 85 84 84 83 81 74 76 84 85 85 84 84 84 8"
-		"4 84 84 84 84 84 84 84 85 85 85 85 85 85 85 85 86 87 87 87 87 87 86 86 85 85 85 85 81 72 52 43 64 69 80 86 98;112 11"
-		"2 108 104 97 93 84 72 62 63 71 74 78 79 80 81 81 81 80 80 80 80 77 81 88 90 86 85 84 84 84 84 85 85 86 86 86 87 87 8"
-		"7 87 87 87 87 88 88 87 88 88 88 88 88 87 87 86 86 85 85 81 72 52 43 64 69 80 86 97;112 112 108 104 97 93 84 72 62 63"
-		" 71 74 78 79 80 81 81 81 80 80 80 80 77 81 88 90 86 85 84 84 84 84 85 85 86 86 86 87 87 87 87 87 87 87 88 88 87 88 8"
-		"8 88 88 88 87 87 86 86 85 85 81 72 52 43 64 69 80 86 97;112 112 107 102 95 92 84 73 62 62 70 74 79 80 80 81 81 81 80"
-		" 80 80 80 76 80 87 88 85 84 84 84 84 84 84 85 85 85 86 86 87 87 87 87 87 87 88 88 87 88 88 88 88 88 87 87 86 86 85 8"
-		"5 81 72 52 43 64 69 80 86 97;113 112 107 102 95 92 84 74 62 59 69 74 80 80 81 81 81 81 80 80 80 80 76 80 87 88 85 84"
-		" 84 84 84 84 84 85 85 85 86 86 87 87 87 87 87 87 88 88 88 90 90 90 90 90 88 88 86 86 85 85 81 72 52 43 64 69 80 86 9"
-		"7;113 112 107 102 95 92 85 74 63 58 67 76 80 80 80 80 80 80 81 81 81 81 73 78 85 86 85 84 83 83 83 83 84 84 85 85 85"
-		" 86 86 86 86 86 87 87 87 87 88 88 88 88 88 88 87 87 86 86 85 85 81 72 52 43 64 69 80 86 97;112 112 106 101 94 91 85 "
-		"76 63 56 66 76 81 81 80 80 80 80 81 81 81 81 73 78 85 86 84 83 83 83 83 83 83 84 84 84 85 85 86 86 86 86 87 87 87 87"
-		" 88 88 88 88 88 88 87 87 86 86 85 85 81 72 52 43 64 69 80 86 97;111 111 105 100 94 92 85 76 63 55 65 76 81 81 80 80 "
-		"80 80 81 81 81 81 72 77 84 85 84 83 83 83 83 83 83 84 84 84 85 85 86 86 86 86 87 87 87 87 88 88 88 88 88 88 87 87 86"
-		" 86 85 85 81 72 52 43 64 69 80 86 97;108 108 105 100 95 92 85 77 63 55 65 76 83 81 81 80 80 80 81 81 81 81 72 77 84 "
-		"85 84 83 83 83 83 83 83 84 84 85 85 86 86 86 86 86 87 87 87 87 88 88 88 88 88 88 87 87 86 86 85 85 81 72 52 43 64 69"
-		" 80 86 97;106 107 105 100 95 93 85 77 63 55 65 76 83 81 81 80 80 80 81 81 81 81 72 77 84 85 84 83 83 83 83 83 84 85 "
-		"85 85 86 86 87 87 87 87 87 87 87 87 88 88 88 88 88 88 87 87 86 86 85 85 81 72 52 43 65 70 81 87 95;104 105 104 99 95"
-		" 93 85 77 63 55 65 76 83 81 81 80 80 80 81 81 81 81 72 77 84 85 84 83 83 83 83 83 84 85 85 85 86 86 87 87 87 87 87 8"
-		"7 87 87 88 88 88 88 88 88 87 87 86 86 85 85 81 72 52 43 65 70 81 87 95;104 105 105 100 98 95 84 76 62 54 66 77 84 83"
-		" 81 81 81 81 81 81 81 83 72 78 84 85 84 83 83 83 84 84 84 85 85 86 86 86 87 87 87 87 87 87 88 88 88 88 88 88 88 88 8"
-		"7 87 86 86 85 85 81 72 52 43 65 70 81 87 95;105 105 105 102 100 98 84 76 62 54 66 77 84 83 83 83 83 81 81 81 83 83 7"
-		"2 80 84 85 84 83 83 83 84 84 85 86 86 86 86 87 87 87 87 87 88 88 88 88 88 88 88 88 88 88 87 87 86 86 85 85 81 72 52 "
-		"43 65 70 81 87 95;106 106 106 104 104 104 84 76 62 54 67 78 85 85 83 83 83 83 83 83 83 84 88 85 85 84 84 84 85 85 85"
-		" 85 85 86 86 87 87 87 87 87 88 88 88 88 90 90 90 90 90 90 90 90 88 88 86 86 85 85 81 72 52 43 65 70 81 87 95;106 105"
-		" 105 105 105 105 84 76 61 52 67 78 85 85 84 83 83 83 83 83 84 84 88 87 85 84 84 85 85 85 86 86 86 87 87 88 88 87 87 "
-		"87 88 88 90 90 90 90 90 90 90 90 90 90 88 88 86 86 85 85 81 72 52 43 65 70 81 87 95;106 105 105 105 105 105 84 76 61"
-		" 51 69 79 86 85 84 84 84 84 83 83 84 85 88 87 85 85 85 85 85 86 86 87 87 87 88 88 88 87 87 87 90 90 90 90 91 91 90 9"
-		"0 90 90 90 90 88 88 86 86 85 85 83 73 54 44 65 70 81 87 95;106 105 105 105 102 101 84 76 59 51 69 78 85 85 84 84 84 "
-		"84 83 83 84 85 87 87 85 85 85 85 85 86 86 87 87 88 88 90 90 88 88 88 90 90 91 90 91 91 90 90 90 90 90 90 88 88 86 86"
-		" 85 85 83 73 54 44 64 69 80 86 95;105 105 105 105 99 97 85 76 59 50 69 74 81 83 84 84 84 84 84 84 85 85 87 87 86 85 "
-		"85 86 86 86 87 87 88 88 90 91 91 92 92 92 91 91 91 91 91 91 90 90 90 90 90 90 88 88 86 86 85 85 84 74 55 45 64 69 80"
-		" 86 95;105 105 105 105 97 93 85 77 59 50 69 73 80 85 84 84 84 84 84 84 85 85 87 87 86 86 86 86 86 86 87 87 88 90 90 "
-		"91 91 93 93 93 91 91 92 91 91 91 90 90 90 90 90 90 88 88 86 86 85 85 84 74 55 45 64 69 80 86 95;104 105 105 104 95 9"
-		"2 85 76 59 50 69 73 80 85 84 84 84 85 85 85 85 85 87 87 86 86 86 86 86 86 87 87 88 88 90 91 91 92 93 93 91 91 92 91 "
-		"91 91 90 90 88 88 88 88 87 87 86 86 85 85 84 74 55 45 63 67 79 85 95;104 105 105 104 95 92 84 76 59 52 69 73 80 85 8"
-		"5 85 85 86 85 85 86 86 86 86 86 87 87 87 87 87 87 87 88 88 90 91 91 92 93 93 92 92 92 91 91 91 90 90 88 88 88 88 87 "
-		"87 86 86 85 85 85 76 56 47 63 67 79 85 95;104 105 105 104 95 92 81 74 61 54 69 73 80 85 87 87 86 86 86 86 86 86 87 8"
-		"7 87 87 87 87 87 87 86 86 87 88 90 90 91 92 92 92 92 92 92 91 90 90 88 88 88 88 88 88 87 87 86 85 85 85 85 76 56 47 "
-		"63 67 79 85 101;102 104 104 102 94 91 80 74 61 56 69 73 80 85 88 88 87 87 86 86 86 86 87 87 87 87 87 87 87 87 87 87 "
-		"87 87 88 90 90 91 92 92 92 92 92 91 90 90 88 88 87 87 87 87 86 86 86 85 85 85 85 76 56 47 63 67 79 85 119;102 104 10"
-		"4 101 93 90 79 73 61 56 67 72 79 84 90 88 87 87 86 86 86 87 87 87 87 88 88 88 88 87 87 87 87 87 88 88 90 91 92 92 92"
-		" 92 92 91 90 90 88 88 87 87 87 87 86 86 86 85 85 85 85 76 56 47 63 66 78 85 119;102 104 104 101 93 90 79 73 62 57 67"
-		" 72 79 84 90 87 88 87 87 87 87 87 87 87 87 88 88 88 88 87 87 87 87 87 88 88 90 91 92 92 92 92 92 91 90 90 88 88 87 8"
-		"7 87 87 86 86 86 85 85 85 85 76 56 47 62 65 77 85 101;101 102 102 101 93 90 79 73 62 57 67 72 79 84 72 84 88 87 86 8"
-		"5 86 87 91 91 86 85 84 85 85 85 85 85 86 86 87 87 87 88 88 88 87 87 87 86 86 86 86 86 86 86 86 86 86 86 86 86 86 86 "
-		"78 73 63 57 63 63 76 87 109;101 102 102 100 92 88 79 73 62 57 66 71 78 83 70 79 87 85 83 83 83 83 83 80 79 79 78 79 "
-		"79 79 79 79 80 80 81 81 81 83 83 83 81 81 81 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 73 67 56 51 65 64 74 81 10"
-		"9;102 104 102 100 92 88 79 74 62 57 66 71 78 83 66 76 83 80 80 79 80 80 81 84 85 87 86 86 86 86 86 86 87 87 88 88 88"
-		" 90 90 90 88 88 88 87 87 87 87 87 87 87 87 87 87 87 87 87 87 87 90 80 59 50 70 72 72 67 90;104 105 102 100 92 88 79 "
-		"76 62 57 66 71 78 83 64 73 81 79 78 78 77 76 74 74 79 80 81 80 80 80 80 80 81 81 83 83 83 84 84 84 83 83 83 81 81 81"
-		" 81 81 81 81 81 81 81 81 81 81 80 79 72 67 61 58 73 77 72 62 88;106 106 105 100 93 86 79 77 79 79 63 59 59 66 65 73 "
-		"78 74 63 58 57 58 59 57 54 51 67 67 67 65 62 59 59 59 59 59 59 59 59 59 59 59 59 59 59 59 59 59 59 59 58 59 59 58 58"
-		" 58 58 59 63 40 33 56 122 175 200 147 90;109 108 109 104 99 93 79 78 79 79 73 67 63 59 67 59 54 57 43 54 58 52 50 52"
-		" 56 56 50 49 48 50 55 57 57 57 57 57 57 57 57 57 57 57 57 57 57 57 57 57 57 57 56 57 58 59 59 61 62 62 66 71 91 114 "
-		"199 239 255 184 90;111 109 115 111 104 100 79 79 78 77 76 74 73 67 80 70 59 61 72 62 57 63 78 79 84 85 71 71 71 73 7"
-		"8 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 81 83 86 85 76 72 84 79 71 66 74 86 151 207 242 251 246 175 86;"
-		"112 109 114 115 109 104 79 79 78 77 76 74 73 77 81 85 80 72 88 93 94 91 87 84 79 80 84 85 86 84 80 78 78 78 78 78 78"
-		" 78 78 78 78 78 78 78 78 78 78 78 77 76 74 74 81 83 76 78 84 87 62 90 175 230 255 255 243 177 100;113 109 113 115 11"
-		"4 109 80 79 90 101 90 92 86 79 86 91 94 94 94 94 94 94 105 109 112 107 105 104 102 102 102 102 102 102 101 101 101 1"
-		"01 101 101 100 100 98 98 97 100 105 108 112 112 104 102 102 101 102 102 102 102 84 100 130 145 169 163 151 145 97;11"
-		"4 111 113 112 115 114 104 99 113 162 172 142 119 118 115 115 115 115 115 115 114 114 114 114 114 109 106 104 102 102"
-		" 102 102 102 102 101 101 102 102 104 104 104 104 101 101 100 104 108 112 115 115 101 101 102 104 104 105 106 106 119"
-		" 111 95 86 86 92 104 109 94;111 115 113 111 112 115 133 112 94 131 142 118 106 99 116 119 121 122 122 122 121 119 11"
-		"5 113 109 108 105 102 102 102 102 102 102 102 102 102 104 104 108 111 111 111 109 109 109 109 109 112 111 109 105 10"
-		"4 104 104 111 113 113 112 104 102 108 111 99 105 116 122 104]"
+		Value			"[255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 254 252 252 251 253 251 253 253 25"
+		"1 251 254 252 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 254 254 251 249 228 194 165 155 177 208 24"
+		"0 252 252 251 251 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255;255 255 25"
+		"5 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 253 252 252 252 254 251 253 255 253 253 253 253 255 25"
+		"5 255 255 255 255 255 255 255 255 255 255 255 255 255 253 252 246 199 156 155 158 159 154 151 163 197 243 255 251 25"
+		"5 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255;255 255 255 255 255 255 255 25"
+		"5 255 255 255 255 255 255 255 255 255 254 252 252 251 251 224 206 202 216 238 253 252 253 255 255 255 255 255 255 25"
+		"5 255 255 255 255 255 255 255 255 252 246 184 156 158 161 160 156 157 160 157 155 174 233 254 255 255 255 255 255 25"
+		"5 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255;255 255 255 255 255 255 255 255 255 255 255 255 25"
+		"5 255 255 255 255 255 252 255 229 179 153 155 154 157 162 195 241 255 255 255 255 255 255 255 255 255 255 255 255 25"
+		"5 255 255 255 250 188 149 156 153 153 152 156 158 156 159 158 154 163 223 255 255 255 255 255 255 255 255 255 255 25"
+		"5 255 255 255 255 255 255 255 255 255 255 255;255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 252 251 25"
+		"2 251 209 158 152 156 159 160 161 157 154 166 227 254 252 252 255 255 255 255 255 255 255 255 255 255 255 255 208 14"
+		"9 162 187 222 231 224 194 160 152 159 156 158 155 161 224 254 253 255 255 255 255 255 255 255 255 255 255 255 255 25"
+		"5 255 255 255 255 255 255;255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 251 253 250 199 152 157 158 16"
+		"0 158 150 158 159 153 150 160 223 254 251 255 255 255 255 255 255 255 255 255 255 255 248 162 174 232 251 254 254 25"
+		"3 253 225 168 159 159 159 158 155 165 239 254 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 25"
+		"5 255;255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 254 253 202 154 157 157 159 160 161 194 222 223 21"
+		"5 189 154 169 245 252 255 255 255 255 255 255 255 255 255 255 255 248 206 242 255 251 252 251 252 252 255 232 166 15"
+		"9 158 158 158 157 188 252 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255;255 255 255 25"
+		"5 255 255 255 255 255 255 255 255 255 255 255 255 213 156 159 156 160 156 170 231 254 254 254 254 254 229 200 244 25"
+		"2 255 255 255 255 255 255 255 255 255 255 255 254 251 250 250 250 254 254 253 251 250 255 212 154 158 158 158 158 16"
+		"0 228 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255;255 255 255 255 255 255 255 255 25"
+		"5 255 255 255 252 253 255 231 162 156 159 154 155 170 237 253 252 254 253 253 254 255 253 254 253 255 255 255 255 25"
+		"5 255 255 255 255 255 255 254 253 254 253 254 255 254 254 254 253 255 252 185 154 159 159 158 157 187 243 252 254 25"
+		"2 254 254 255 255 255 255 255 255 255 255 255 255 255 255 255;255 255 255 255 255 255 255 255 255 255 255 255 250 25"
+		"2 252 185 156 158 160 159 159 221 255 251 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 25"
+		"5 255 255 255 255 255 255 255 255 255 255 255 252 254 226 160 159 159 157 161 162 163 180 219 252 252 252 255 255 25"
+		"5 255 255 255 255 255 255 255 255 255 255;255 255 255 255 255 255 255 255 255 255 255 255 251 254 224 154 160 159 15"
+		"8 158 187 252 251 252 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 25"
+		"5 255 255 255 255 255 254 251 253 252 179 154 160 158 160 161 158 157 160 220 254 254 255 255 255 255 255 255 255 25"
+		"5 255 255 255 255 255;255 255 255 255 255 255 255 255 255 255 255 255 254 254 186 154 161 158 156 162 226 254 251 25"
+		"3 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 25"
+		"5 255 253 253 255 214 153 160 160 159 158 157 157 159 160 227 254 255 255 255 255 255 255 255 255 255 255 255 255 25"
+		"5;255 255 255 255 255 255 255 255 255 254 253 254 254 243 163 159 159 158 158 174 247 253 252 254 255 255 255 255 25"
+		"5 255 254 254 255 255 255 254 255 255 255 255 255 255 255 255 254 254 253 253 255 255 255 255 255 254 253 253 255 24"
+		"3 162 155 160 159 158 159 156 160 154 170 236 255 254 253 255 255 255 255 255 255 255 255 255 255;255 255 255 255 25"
+		"5 255 255 255 255 253 253 253 237 201 155 160 160 159 155 202 254 255 255 255 255 255 255 255 255 255 251 253 248 25"
+		"0 255 254 255 255 255 255 255 255 254 228 207 255 251 250 255 255 255 255 255 255 255 255 255 253 182 154 160 160 16"
+		"0 160 160 160 159 155 182 247 254 253 255 255 255 255 255 255 255 255 255 255;255 255 255 255 255 255 255 255 255 25"
+		"0 251 207 163 154 161 160 160 159 156 226 254 255 255 255 255 255 255 255 255 255 251 246 187 237 255 254 255 255 25"
+		"5 255 255 255 251 225 154 213 251 251 254 254 254 255 255 255 255 255 254 255 211 157 160 160 160 160 160 160 160 15"
+		"9 155 199 254 252 255 255 255 255 255 255 255 255 255 255;255 255 255 255 255 255 255 255 255 253 212 151 158 158 15"
+		"8 159 160 158 169 246 253 255 255 255 255 255 255 255 255 255 253 200 157 241 255 254 255 255 255 255 255 255 250 24"
+		"4 169 154 208 251 255 253 253 255 255 255 255 255 255 253 233 159 159 160 160 160 160 159 161 159 157 156 220 255 25"
+		"5 255 255 255 255 255 255 255 255 255;255 255 255 255 255 255 254 254 255 235 164 156 159 157 161 160 160 157 187 25"
+		"2 250 255 255 255 255 255 254 254 255 255 221 154 177 252 255 254 255 255 255 255 255 255 250 254 204 152 153 201 25"
+		"0 255 253 255 255 255 255 255 254 253 235 162 159 160 160 160 160 159 158 160 158 154 170 237 255 254 254 255 255 25"
+		"5 255 255 255 255;255 255 255 255 255 255 252 253 250 186 156 158 160 160 160 158 158 154 202 255 252 255 255 255 25"
+		"4 254 252 251 254 229 163 151 204 255 255 255 255 255 255 255 255 255 254 253 246 172 153 154 179 234 254 251 252 25"
+		"3 253 253 251 254 212 155 160 160 160 160 160 160 160 160 160 161 156 183 248 250 252 255 255 255 255 255 255 255;25"
+		"5 255 255 255 255 255 253 254 221 157 160 159 161 160 160 158 158 154 215 255 254 255 255 255 250 253 252 252 237 17"
+		"1 155 164 239 255 255 255 255 255 255 255 255 255 255 254 255 220 157 159 154 164 207 245 255 255 254 254 254 243 17"
+		"3 157 160 160 160 160 160 160 160 160 160 158 158 153 214 254 254 255 255 255 255 255 255 255;255 255 255 255 255 25"
+		"5 253 245 173 157 160 160 160 160 160 158 158 156 223 255 253 255 255 255 253 252 253 235 167 155 153 197 252 255 25"
+		"5 255 255 255 255 255 255 255 255 254 254 254 207 157 158 155 154 169 208 234 249 253 238 188 154 157 160 160 160 16"
+		"0 160 160 160 160 159 159 157 159 165 239 255 255 255 255 255 255 255 255;255 255 255 255 255 255 254 207 155 159 16"
+		"0 157 160 160 160 158 158 154 204 255 253 255 255 255 252 254 227 170 154 156 169 240 252 255 255 255 255 255 255 25"
+		"5 255 255 255 255 254 253 253 204 157 159 158 158 156 160 168 174 163 155 156 157 159 160 160 160 160 160 160 160 16"
+		"0 160 159 160 154 193 250 255 255 255 255 255 255 255;255 255 254 252 252 255 238 167 158 160 160 158 160 160 160 16"
+		"0 160 157 171 242 252 253 253 255 248 207 164 155 155 155 218 253 252 255 255 255 255 255 255 255 255 255 255 255 25"
+		"5 254 255 253 209 161 156 161 159 158 157 158 159 161 160 159 160 160 160 160 160 160 160 160 160 159 159 161 162 15"
+		"5 221 254 252 254 255 255 255 255;255 255 255 253 251 251 202 153 160 160 160 160 160 160 160 160 160 160 157 185 23"
+		"9 250 244 218 180 153 156 157 152 202 254 253 254 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 254 22"
+		"2 160 156 155 158 160 160 160 160 160 160 160 160 160 160 160 160 160 160 160 160 160 160 158 156 178 248 251 252 25"
+		"5 255 255 255;255 255 255 251 254 236 165 158 157 159 160 160 160 160 160 160 160 160 160 156 166 173 171 158 155 15"
+		"9 156 154 191 250 250 253 253 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 251 254 221 159 155 158 16"
+		"0 160 160 160 160 160 160 160 160 160 160 160 160 160 160 160 160 160 155 160 153 217 253 253 255 255 255 255;255 25"
+		"5 255 251 251 199 156 154 160 160 160 160 160 160 160 160 160 160 160 159 154 153 159 159 159 157 157 181 246 253 25"
+		"3 254 253 255 255 255 255 255 255 255 255 255 255 255 255 255 255 254 249 251 251 202 154 162 160 160 160 160 160 16"
+		"0 160 160 160 160 160 160 160 160 160 160 160 160 157 161 156 179 249 255 255 255 255 255;255 255 255 253 236 161 16"
+		"0 159 160 160 160 160 160 160 160 160 160 160 158 158 160 159 159 159 158 156 162 235 254 253 253 254 254 255 255 25"
+		"5 255 255 255 255 255 255 255 255 255 253 254 253 254 254 252 248 186 155 158 161 158 160 159 158 159 160 160 160 16"
+		"0 160 160 160 160 160 160 160 160 160 159 156 227 254 255 255 255 255;255 255 255 255 201 153 159 160 160 160 160 16"
+		"0 160 160 160 160 160 160 160 160 160 160 160 158 159 155 197 255 254 254 255 255 255 255 255 255 255 255 255 255 25"
+		"5 255 255 255 254 251 254 253 255 255 254 252 244 179 152 153 158 157 160 158 159 160 160 160 160 160 160 160 160 16"
+		"0 160 160 160 160 160 155 197 255 255 255 255 255;255 255 255 245 165 156 159 160 160 160 160 160 160 160 160 160 16"
+		"0 160 160 160 160 160 160 160 156 167 243 255 254 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 254 25"
+		"0 250 253 255 255 255 252 253 243 206 178 154 159 160 161 160 160 160 160 160 160 160 160 160 160 160 160 160 160 16"
+		"0 155 175 251 255 255 255 255;255 255 255 212 155 159 160 160 160 160 160 160 160 160 160 160 160 160 160 160 160 16"
+		"0 160 160 156 211 255 254 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 253 248 250 255 255 25"
+		"4 250 252 253 255 249 206 157 157 159 160 160 160 160 160 160 160 160 160 160 160 160 160 160 160 157 166 245 255 25"
+		"5 255 255;253 254 251 177 155 158 160 160 160 160 160 160 160 160 160 160 160 160 158 160 160 159 155 154 188 249 25"
+		"1 254 255 254 253 254 254 253 253 253 254 253 253 254 254 253 255 254 253 248 197 239 254 254 253 251 253 253 253 25"
+		"4 255 213 157 159 160 157 160 160 160 160 160 160 160 161 161 159 161 160 156 159 184 245 255 255 255 255;251 255 23"
+		"2 160 160 160 160 160 160 160 160 160 160 160 160 160 160 159 157 161 155 157 168 211 247 254 253 255 254 253 252 24"
+		"9 249 252 251 252 249 252 249 228 246 247 237 229 255 220 160 245 254 252 252 255 255 255 255 255 255 255 208 153 15"
+		"7 159 159 160 160 160 160 160 160 158 159 156 156 155 171 202 189 214 255 255 255 255;253 255 203 156 160 160 160 16"
+		"0 160 160 160 160 160 160 160 160 160 160 161 160 157 168 235 255 253 253 254 255 254 249 218 249 247 246 248 227 24"
+		"4 212 246 178 207 200 204 175 248 184 178 249 250 254 250 255 255 255 255 255 255 250 252 194 154 159 160 159 160 16"
+		"0 160 160 159 157 159 158 156 189 203 166 151 193 255 255 255 255;253 250 173 158 160 160 160 160 160 160 160 160 16"
+		"0 160 160 160 160 160 158 158 160 230 254 253 252 253 254 255 255 252 173 209 243 192 231 167 200 159 190 156 161 15"
+		"9 161 154 189 156 211 217 209 255 255 255 255 255 255 255 255 253 253 245 177 155 158 160 160 160 160 160 159 162 15"
+		"5 163 207 195 155 156 155 180 255 255 255 255;252 236 162 159 160 159 160 160 160 160 160 160 160 160 160 160 160 16"
+		"0 157 153 204 253 250 253 252 252 253 255 251 255 200 163 223 158 169 156 157 158 154 159 156 157 158 160 156 159 17"
+		"6 167 167 244 233 253 255 255 254 255 254 252 252 254 223 153 158 159 160 160 159 160 159 157 168 207 180 154 159 16"
+		"2 155 170 251 254 255 255;254 228 155 161 160 159 160 160 160 160 160 160 160 160 160 158 158 157 156 173 246 255 25"
+		"5 255 252 252 253 255 212 198 231 162 166 159 156 158 160 160 160 160 160 160 160 160 160 160 158 159 155 179 177 24"
+		"7 253 250 253 252 252 255 255 255 251 194 152 158 157 158 158 158 159 160 192 167 155 158 158 159 157 164 240 253 25"
+		"3 255]"
 		Tunable			"off"
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		55
+		$ObjectID		62
 		Type			"edit"
 		Name			"targetBBox"
 		Prompt			"Target bounding box:"
-		Value			"[35 171 66.0000000000001 56]"
+		Value			"[9.5 0.5 81 34]"
 		Tunable			"off"
 		Visible			"off"
 	      }
 	      PropName		      "Parameters"
 	    }
+	    Array {
+	      Type		      "Simulink.dialog.Group"
+	      Dimension		      2
+	      Object {
+		$ObjectID		63
+		Prompt			"%<MaskType>"
+		Object {
+		  $PropName		  "DialogControls"
+		  $ObjectID		  64
+		  $ClassName		  "Simulink.dialog.Text"
+		  Prompt		  "%<MaskDescription>"
+		  Name			  "DescTextVar"
+		}
+		Name			"DescGroupVar"
+	      }
+	      Object {
+		$ObjectID		65
+		Prompt			"Simulink:studio:ToolBarParametersMenu"
+		Array {
+		  Type			  "Simulink.dialog.parameter.Control"
+		  Dimension		  4
+		  Object {
+		    $ObjectID		    66
+		    $ClassName		    "Simulink.dialog.parameter.Popup"
+		    Name		    "pfactor"
+		  }
+		  Object {
+		    $ObjectID		    67
+		    $ClassName		    "Simulink.dialog.parameter.Edit"
+		    Name		    "num_targets"
+		  }
+		  Object {
+		    $ObjectID		    68
+		    $ClassName		    "Simulink.dialog.parameter.Edit"
+		    Name		    "target"
+		  }
+		  Object {
+		    $ObjectID		    69
+		    $ClassName		    "Simulink.dialog.parameter.Edit"
+		    Name		    "targetBBox"
+		  }
+		  PropName		  "DialogControls"
+		}
+		Name			"ParameterGroupVar"
+	      }
+	      PropName		      "DialogControls"
+	    }
 	  }
 	  System {
 	    Name		    "Parameters"
-	    Location		    [12, 507, 598, 915]
+	    Location		    [1713, 0, 3447, 1447]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
@@ -4276,7 +5157,6 @@ Model {
 	  SID			  "484"
 	  Position		  [-390, -357, -370, -343]
 	  ZOrder		  236
-	  Commented		  "on"
 	  Value			  "0"
 	  VectorParams1D	  off
 	}
@@ -4287,32 +5167,30 @@ Model {
 	  Position		  [-510, -626, -470, -594]
 	  ZOrder		  235
 	  ShowName		  off
-	  Commented		  "on"
 	  Time			  "eps"
 	}
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "Target\n(Double-click \nto select new target)"
-	  SID			  "486"
+	  SID			  "649"
 	  Ports			  [0, 1, 1]
 	  Position		  [-465, -509, -405, -471]
-	  ZOrder		  234
-	  Commented		  "on"
+	  ZOrder		  252
 	  OpenFcn		  "vippattern_gettemplate"
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    56
+	    $ObjectID		    70
 	    $ClassName		    "Simulink.Mask"
-	    Initialization	    "model_path = [get(bdroot(gcbh),'Path'), '/Parameters'];\ntarget_img = uint8(eval(get_param(mo"
-	    "del_path,'target')));"
+	    Initialization	    "model_path = 'MotionObjectDetector/ROIDetection/Parameters';\ntarget_img = uint8(eval(get_par"
+	    "am(model_path,'target')));"
 	    Display		    "image(repmat(target_img,[1,1,3]))"
 	    RunInitForIconRedraw    "on"
 	  }
 	  System {
 	    Name		    "Target\n(Double-click \nto select new target)"
 	    Location		    [1713, 0, 3447, 1447]
-	    Open		    off
+	    Open		    on
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
 	    ExecutionDomainType	    "Deduce"
@@ -4326,12 +5204,12 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
+	    ZoomFactor		    "150"
 	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      EnablePort
 	      Name		      "Enable"
-	      SID		      "487"
+	      SID		      "650"
 	      Ports		      []
 	      Position		      [35, 15, 55, 35]
 	      ZOrder		      -1
@@ -4340,7 +5218,7 @@ Model {
 	    Block {
 	      BlockType		      BusCreator
 	      Name		      "Bus\nCreator"
-	      SID		      "488"
+	      SID		      "651"
 	      Ports		      [3, 1]
 	      Position		      [775, 43, 780, 107]
 	      ZOrder		      -2
@@ -4352,7 +5230,7 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Constant"
-	      SID		      "489"
+	      SID		      "652"
 	      Position		      [40, 118, 100, 152]
 	      ZOrder		      -3
 	      ShowName		      off
@@ -4363,7 +5241,7 @@ Model {
 	    Block {
 	      BlockType		      FrameConversion
 	      Name		      "Frame Conversion"
-	      SID		      "490"
+	      SID		      "653"
 	      Ports		      [1, 1]
 	      Position		      [500, 55, 550, 95]
 	      ZOrder		      -4
@@ -4373,7 +5251,7 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "Gaussian\nPyramid"
-	      SID		      "491"
+	      SID		      "654"
 	      Ports		      [1, 1]
 	      Position		      [160, 117, 220, 153]
 	      ZOrder		      -5
@@ -4385,7 +5263,7 @@ Model {
 	      SourceProductBaseCode   "VP"
 	      MultiThreadCoSim	      "auto"
 	      operation		      "Reduce"
-	      level		      "pfactor"
+	      level		      "2"
 	      source		      "Default separable filter [1/4-a/2  1/4  a  1/4  1/4-a/2]"
 	      a			      "0.375"
 	      coef		      "[0.0625 0.25 0.375 0.25 0.0625]"
@@ -4417,7 +5295,7 @@ Model {
 	    Block {
 	      BlockType		      Math
 	      Name		      "Math\nFunction"
-	      SID		      "492"
+	      SID		      "655"
 	      Ports		      [1, 1]
 	      Position		      [700, 60, 730, 90]
 	      ZOrder		      -6
@@ -4431,7 +5309,7 @@ Model {
 	    Block {
 	      BlockType		      Math
 	      Name		      "Math\nFunction1"
-	      SID		      "493"
+	      SID		      "656"
 	      Ports		      [1, 1]
 	      Position		      [425, 60, 455, 90]
 	      ZOrder		      -7
@@ -4441,7 +5319,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Preprocesseed target for \nfrequency domain\ncomputation"
-	      SID		      "494"
+	      SID		      "657"
 	      Ports		      [1, 1]
 	      Position		      [305, 37, 350, 73]
 	      ZOrder		      -8
@@ -4468,7 +5346,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
-		  SID			  "495"
+		  SID			  "658"
 		  Position		  [30, 37, 65, 53]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -4476,7 +5354,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "2-D FFT"
-		  SID			  "496"
+		  SID			  "659"
 		  Ports			  [1, 1]
 		  Position		  [250, 28, 300, 62]
 		  ZOrder		  -2
@@ -4525,7 +5403,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "2-D Pad"
-		  SID			  "497"
+		  SID			  "660"
 		  Ports			  [1, 1]
 		  Position		  [175, 25, 230, 65]
 		  ZOrder		  -3
@@ -4553,7 +5431,7 @@ Model {
 		Block {
 		  BlockType		  Reference
 		  Name			  "Rotate"
-		  SID			  "498"
+		  SID			  "661"
 		  Ports			  [1, 1]
 		  Position		  [90, 25, 155, 65]
 		  ZOrder		  -4
@@ -4595,7 +5473,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Out"
-		  SID			  "499"
+		  SID			  "662"
 		  Position		  [350, 38, 380, 52]
 		  ZOrder		  -5
 		  IconDisplay		  "Port number"
@@ -4635,7 +5513,7 @@ Model {
 	    Block {
 	      BlockType		      Reshape
 	      Name		      "Reshape"
-	      SID		      "500"
+	      SID		      "663"
 	      Ports		      [1, 1]
 	      Position		      [580, 56, 610, 94]
 	      ZOrder		      -9
@@ -4644,7 +5522,7 @@ Model {
 	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum of\nElements"
-	      SID		      "501"
+	      SID		      "664"
 	      Ports		      [1, 1]
 	      Position		      [645, 60, 675, 90]
 	      ZOrder		      -10
@@ -4657,7 +5535,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "Target"
-	      SID		      "502"
+	      SID		      "665"
 	      Position		      [810, 68, 840, 82]
 	      ZOrder		      -11
 	      IconDisplay	      "Port number"
@@ -4751,7 +5629,7 @@ Model {
 	      DstPort		      1
 	    }
 	    Annotation {
-	      SID		      "503"
+	      SID		      "666"
 	      Name		      "Precompute sum of target elements\nsquared"
 	      Position		      [552, 100, 712, 126]
 	      InternalMargins	      [0, 0, 0, 0]
@@ -4768,7 +5646,6 @@ Model {
 	  Ports			  [4, 4, 1]
 	  Position		  [-280, -592, -130, -323]
 	  ZOrder		  233
-	  Commented		  "on"
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "Target detection and tracking"
@@ -5723,7 +6600,7 @@ Model {
 	      System {
 		Name			"Locate target1"
 		Location		[1713, 0, 3447, 1447]
-		Open			off
+		Open			on
 		PortBlocksUseCompactNotation off
 		SetExecutionDomain	off
 		ExecutionDomainType	"Deduce"
@@ -5737,7 +6614,7 @@ Model {
 		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"100"
+		ZoomFactor		"175"
 		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
@@ -6873,7 +7750,7 @@ Model {
 	      RequestExecContextInheritance off
 	      System {
 		Name			"Spatial"
-		Location		[576, 614, 1104, 1028]
+		Location		[1713, 0, 3447, 1447]
 		Open			off
 		PortBlocksUseCompactNotation off
 		SetExecutionDomain	off
@@ -6888,7 +7765,7 @@ Model {
 		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"100"
+		ZoomFactor		"125"
 		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
@@ -6975,7 +7852,6 @@ Model {
 		  ZOrder		  3
 		  SrcBlock		  "Normalized X-corr in\nspatial domain"
 		  SrcPort		  1
-		  Points		  [0, 0]
 		  DstBlock		  "Out1"
 		  DstPort		  1
 		}
@@ -7209,7 +8085,6 @@ Model {
 	  Position		  [-370, -436, -300, -414]
 	  ZOrder		  232
 	  BackgroundColor	  "yellow"
-	  Commented		  "on"
 	  Value			  "single(0.99)"
 	  VectorParams1D	  off
 	}
@@ -7237,14 +8112,6 @@ Model {
 	    DstBlock		    "Draw Markers"
 	    DstPort		    2
 	  }
-	}
-	Line {
-	  ZOrder		  17
-	  SrcBlock		  "Color Space\n Conversion"
-	  SrcPort		  1
-	  Points		  [42, 0; 0, -145]
-	  DstBlock		  "Template Matching"
-	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  18
@@ -7306,14 +8173,6 @@ Model {
 	  }
 	}
 	Line {
-	  ZOrder		  33
-	  SrcBlock		  "ROI"
-	  SrcPort		  1
-	  Points		  [255, 0; 0, 20]
-	  DstBlock		  "Image Data Type\nConversion1"
-	  DstPort		  1
-	}
-	Line {
 	  ZOrder		  76
 	  SrcBlock		  "Spatial"
 	  SrcPort		  1
@@ -7321,7 +8180,7 @@ Model {
 	  DstPort		  2
 	}
 	Line {
-	  ZOrder		  77
+	  ZOrder		  135
 	  Labels		  [0, 0]
 	  SrcBlock		  "Target\n(Double-click \nto select new target)"
 	  SrcPort		  1
@@ -7350,10 +8209,11 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  81
-	  SrcBlock		  "From Multimedia File"
+	  ZOrder		  33
+	  SrcBlock		  "ROI"
 	  SrcPort		  1
-	  DstBlock		  "Target detection and tracking"
+	  Points		  [255, 0; 0, 20]
+	  DstBlock		  "Image Data Type\nConversion1"
 	  DstPort		  1
 	}
 	Line {
@@ -7381,7 +8241,7 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  86
+	  ZOrder		  134
 	  SrcBlock		  "Logical\nOperator"
 	  SrcPort		  1
 	  DstBlock		  "Target\n(Double-click \nto select new target)"
@@ -7418,6 +8278,32 @@ Model {
 	    DstPort		    1
 	  }
 	}
+	Line {
+	  ZOrder		  17
+	  SrcBlock		  "Color Space\n Conversion"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    ZOrder		    137
+	    Points		    [0, -55]
+	    DstBlock		    "Image Data Type\nConversion"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    96
+	    Points		    [37, 0; 0, -145]
+	    DstBlock		    "Template Matching"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  138
+	  SrcBlock		  "Image Data Type\nConversion"
+	  SrcPort		  1
+	  Points		  [-90, 0; 0, -438; 223, 0; 0, -142]
+	  DstBlock		  "Target detection and tracking"
+	  DstPort		  1
+	}
 	Annotation {
 	  SID			  "607"
 	  Name			  "Pattern Matching"
@@ -7439,669 +8325,6 @@ Model {
 	  HorizontalAlignment	  "center"
 	  VerticalAlignment	  "middle"
 	  ZOrder		  -5
-	}
-      }
-    }
-    Block {
-      BlockType		      CircularGaugeBlock
-      Name		      "Gauge"
-      SID		      "190"
-      Position		      [-1270, 354, -1145, 494]
-      ZOrder		      179
-      ShowName		      off
-    }
-    Block {
-      BlockType		      Goto
-      Name		      "Goto"
-      SID		      "127"
-      Position		      [-675, 124, -565, 156]
-      ZOrder		      125
-      GotoTag		      "RGBImage"
-    }
-    Block {
-      BlockType		      Goto
-      Name		      "Goto1"
-      SID		      "149"
-      Position		      [-210, 119, -100, 151]
-      ZOrder		      137
-      GotoTag		      "IntensityImage"
-    }
-    Block {
-      BlockType		      Goto
-      Name		      "Goto2"
-      SID		      "150"
-      Position		      [565, 89, 675, 121]
-      ZOrder		      138
-      GotoTag		      "ClosedBlobs"
-    }
-    Block {
-      BlockType		      Goto
-      Name		      "Goto3"
-      SID		      "162"
-      Position		      [1370, 199, 1480, 231]
-      ZOrder		      144
-      GotoTag		      "ROIImage"
-    }
-    Block {
-      BlockType		      Goto
-      Name		      "Goto4"
-      SID		      "254"
-      Position		      [1350, 434, 1460, 466]
-      ZOrder		      194
-      GotoTag		      "MarkerIamge"
-    }
-    Block {
-      BlockType		      SubSystem
-      Name		      "ImageFlow"
-      SID		      "135"
-      Ports		      [1, 1, 0, 1]
-      Position		      [245, 100, 465, 250]
-      ZOrder		      131
-      RequestExecContextInheritance off
-      ContentPreviewEnabled   on
-      System {
-	Name			"ImageFlow"
-	Location		[1713, 0, 3447, 1447]
-	Open			off
-	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
-	ModelBrowserVisibility	on
-	ModelBrowserWidth	200
-	ScreenColor		"white"
-	PaperOrientation	"landscape"
-	PaperPositionMode	"auto"
-	PaperType		"usletter"
-	PaperUnits		"inches"
-	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
-	TiledPageScale		1
-	ShowPageBoundaries	off
-	ZoomFactor		"80"
-	SimulinkSubDomain	"Simulink"
-	Block {
-	  BlockType		  Inport
-	  Name			  "IntensityImage"
-	  SID			  "136"
-	  Position		  [20, 63, 50, 77]
-	  ZOrder		  121
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  TriggerPort
-	  Name			  "Trigger"
-	  SID			  "176"
-	  Ports			  []
-	  Position		  [457, -145, 477, -125]
-	  ZOrder		  131
-	  TriggerType		  "falling"
-	  VariantControl	  "Variant"
-	  StatesWhenEnabling	  "held"
-	  PortDimensions	  "1"
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "2-D Mean"
-	  SID			  "10"
-	  Ports			  [1, 1]
-	  Position		  [855, 50, 910, 90]
-	  ZOrder		  12
-	  LibraryVersion	  "1.724"
-	  UserDataPersistent	  on
-	  UserData		  "DataTag1"
-	  SourceBlock		  "visionstatistics/2-D Mean"
-	  SourceType		  "2-D Mean"
-	  SourceProductName	  "Computer Vision Toolbox"
-	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  "auto"
-	  run			  off
-	  reset_popup		  "None"
-	  InputProcessing	  "Elements as channels (sample based)"
-	  directionMode		  "Entire input"
-	  dimension		  "1"
-	  treatSBRowAsCol	  on
-	  additionalParams	  off
-	  allowOverrides	  on
-	  outputMode		  "Same as accumulator"
-	  outputWordLength	  "32"
-	  outputFracLength	  "30"
-	  outputLastDataTypeStr	  "Inherit: Same as accumulator"
-	  accumMode		  "Binary point scaling"
-	  accumWordLength	  "32"
-	  accumFracLength	  "0"
-	  accumLastDataTypeStr	  "fixdt([],32,0)"
-	  roiEnable		  off
-	  roiType		  "Rectangles"
-	  roiPortion		  "Entire ROI"
-	  roiOutput		  "Individual statistics for each ROI"
-	  roiFlag		  off
-	  roundingMode		  "Floor"
-	  overflowMode		  off
-	  accumDataTypeStr	  "fixdt([],32,0)"
-	  outputDataTypeStr	  "Inherit: Same as accumulator"
-	  outputMin		  "[]"
-	  outputMax		  "[]"
-	  LockScale		  off
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "2-D Mean1"
-	  SID			  "11"
-	  Ports			  [1, 1]
-	  Position		  [935, 50, 990, 90]
-	  ZOrder		  13
-	  LibraryVersion	  "1.724"
-	  UserDataPersistent	  on
-	  UserData		  "DataTag2"
-	  SourceBlock		  "visionstatistics/2-D Mean"
-	  SourceType		  "2-D Mean"
-	  SourceProductName	  "Computer Vision Toolbox"
-	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  "auto"
-	  run			  on
-	  reset_popup		  "None"
-	  InputProcessing	  "Elements as channels (sample based)"
-	  directionMode		  "Entire input"
-	  dimension		  "1"
-	  treatSBRowAsCol	  on
-	  additionalParams	  off
-	  allowOverrides	  on
-	  outputMode		  "Same as accumulator"
-	  outputWordLength	  "32"
-	  outputFracLength	  "30"
-	  outputLastDataTypeStr	  "Inherit: Same as accumulator"
-	  accumMode		  "Binary point scaling"
-	  accumWordLength	  "32"
-	  accumFracLength	  "0"
-	  accumLastDataTypeStr	  "fixdt([],32,0)"
-	  roiEnable		  off
-	  roiType		  "Rectangles"
-	  roiPortion		  "Entire ROI"
-	  roiOutput		  "Individual statistics for each ROI"
-	  roiFlag		  off
-	  roundingMode		  "Floor"
-	  overflowMode		  off
-	  accumDataTypeStr	  "fixdt([],32,0)"
-	  outputDataTypeStr	  "Inherit: Same as accumulator"
-	  outputMin		  "[]"
-	  outputMax		  "[]"
-	  LockScale		  off
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "Closing"
-	  SID			  "16"
-	  Ports			  [1, 1]
-	  Position		  [1260, 30, 1340, 80]
-	  ZOrder		  18
-	  LibraryVersion	  "1.322"
-	  SourceBlock		  "visionmorphops/Closing"
-	  SourceType		  "Closing"
-	  SourceProductName	  "Computer Vision Toolbox"
-	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  "auto"
-	  nhoodsrc		  "Specify via dialog"
-	  strel			  "strel('rectangle',[60,60])"
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "Closing3"
-	  SID			  "87"
-	  Ports			  [1, 1]
-	  Position		  [1365, 30, 1445, 80]
-	  ZOrder		  86
-	  LibraryVersion	  "1.322"
-	  SourceBlock		  "visionmorphops/Closing"
-	  SourceType		  "Closing"
-	  SourceProductName	  "Computer Vision Toolbox"
-	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  "auto"
-	  nhoodsrc		  "Specify via dialog"
-	  strel			  "strel('disk',4,4)"
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "Closing4"
-	  SID			  "61"
-	  Ports			  [1, 1]
-	  Position		  [1440, 110, 1520, 160]
-	  ZOrder		  63
-	  Commented		  "on"
-	  LibraryVersion	  "1.322"
-	  SourceBlock		  "visionmorphops/Closing"
-	  SourceType		  "Closing"
-	  SourceProductName	  "Computer Vision Toolbox"
-	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  "auto"
-	  nhoodsrc		  "Specify via dialog"
-	  strel			  "strel('disk',8,8)"
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "Closing5"
-	  SID			  "60"
-	  Ports			  [1, 1]
-	  Position		  [1285, 110, 1365, 160]
-	  ZOrder		  62
-	  Commented		  "on"
-	  LibraryVersion	  "1.322"
-	  SourceBlock		  "visionmorphops/Closing"
-	  SourceType		  "Closing"
-	  SourceProductName	  "Computer Vision Toolbox"
-	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  "auto"
-	  nhoodsrc		  "Specify via dialog"
-	  strel			  "strel('rectangle',[5,5])"
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "Dilation"
-	  SID			  "40"
-	  Ports			  [1, 1]
-	  Position		  [1470, 30, 1550, 80]
-	  ZOrder		  42
-	  LibraryVersion	  "1.322"
-	  SourceBlock		  "visionmorphops/Dilation"
-	  SourceType		  "Dilation"
-	  SourceProductName	  "Computer Vision Toolbox"
-	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  "auto"
-	  nhoodsrc		  "Specify via dialog"
-	  strel			  "[1 1; 1 1]"
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "Median Filter"
-	  SID			  "14"
-	  Ports			  [1, 1]
-	  Position		  [1120, 28, 1195, 82]
-	  ZOrder		  16
-	  LibraryVersion	  "1.575"
-	  SourceBlock		  "visionanalysis/Median Filter"
-	  SourceType		  "Median Filter"
-	  SourceProductName	  "Computer Vision Toolbox"
-	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  "auto"
-	  nghbood		  "[3 3]"
-	  outSize		  "Same as input port I"
-	  padType		  "Circular"
-	  padSrc		  "Specify via dialog"
-	  padVal		  "0"
-	  roundingMode		  "Floor"
-	  overflowMode		  off
-	  prodOutputMode	  "Same as input"
-	  prodOutputWordLength	  "32"
-	  prodOutputFracLength	  "30"
-	  prodOutputSlope	  "2^-30"
-	  accumMode		  "Same as input"
-	  accumWordLength	  "32"
-	  accumFracLength	  "30"
-	  accumSlope		  "2^-30"
-	  outputMode		  "Same as input"
-	  outputWordLength	  "16"
-	  outputFracLength	  "15"
-	  outputSlope		  "2^-15"
-	  LockScale		  off
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "Optical Flow1"
-	  SID			  "172"
-	  Ports			  [1, 1]
-	  Position		  [655, 40, 780, 100]
-	  ZOrder		  130
-	  LibraryVersion	  "1.575"
-	  SourceBlock		  "visionanalysis/Optical Flow"
-	  SourceType		  "Optical Flow"
-	  SourceProductName	  "Computer Vision Toolbox"
-	  SourceProductBaseCode	  "VP"
-	  ContentPreviewEnabled	  on
-	  method		  "Lucas-Kanade"
-	  gradMethod		  "Derivative of Gaussian"
-	  which2img		  "Current frame and N-th frame back"
-	  N			  "34"
-	  lambda		  "1"
-	  numInports		  "7"
-	  sigmaS		  "1"
-	  sigmaW		  "1"
-	  discardNormalFlow	  off
-	  outputCurrentImage	  off
-	  stop_criteria		  "When maximum number of iterations is reached"
-	  maxIter		  "10"
-	  maxAllowAbsDiff	  "eps"
-	  outVelForm		  "Magnitude-squared"
-	  eigTh			  "0.009"
-	  roundingMode		  "Nearest"
-	  overflowMode		  on
-	  prodOutputMode	  "Binary point scaling"
-	  prodOutputWordLength	  "32"
-	  prodOutputFracLength	  "20"
-	  prodOutputSlope	  "2^-20"
-	  accumMode		  "Same as product output"
-	  accumWordLength	  "32"
-	  accumFracLength	  "20"
-	  accumSlope		  "2^-20"
-	  memoryMode		  "Same as accumulator"
-	  memoryWordLength	  "32"
-	  memoryFracLength	  "20"
-	  memorySlope		  "2^-20"
-	  firstCoeffMode	  "Same word length as first input"
-	  firstCoeffWordLength	  "16"
-	  firstCoeffFracLength	  "12"
-	  firstCoeffSlope	  "2^-20"
-	  outputMode		  "Binary point scaling"
-	  outputWordLength	  "32"
-	  outputFracLength	  "20"
-	  outputSlope		  "2^-20"
-	  LockScale		  off
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "Optical Flow2"
-	  SID			  "180"
-	  Ports			  [1, 1]
-	  Position		  [670, -220, 795, -160]
-	  ZOrder		  132
-	  Commented		  "on"
-	  LibraryVersion	  "1.575"
-	  SourceBlock		  "visionanalysis/Optical Flow"
-	  SourceType		  "Optical Flow"
-	  SourceProductName	  "Computer Vision Toolbox"
-	  SourceProductBaseCode	  "VP"
-	  ContentPreviewEnabled	  on
-	  method		  "Horn-Schunck"
-	  gradMethod		  "Derivative of Gaussian"
-	  which2img		  "Current frame and N-th frame back"
-	  N			  "15"
-	  lambda		  "1"
-	  numInports		  "7"
-	  sigmaS		  "1"
-	  sigmaW		  "1"
-	  discardNormalFlow	  off
-	  outputCurrentImage	  on
-	  stop_criteria		  "When maximum number of iterations is reached"
-	  maxIter		  "10"
-	  maxAllowAbsDiff	  "eps"
-	  outVelForm		  "Magnitude-squared"
-	  eigTh			  "0.009"
-	  roundingMode		  "Nearest"
-	  overflowMode		  on
-	  prodOutputMode	  "Binary point scaling"
-	  prodOutputWordLength	  "32"
-	  prodOutputFracLength	  "20"
-	  prodOutputSlope	  "2^-20"
-	  accumMode		  "Same as product output"
-	  accumWordLength	  "32"
-	  accumFracLength	  "20"
-	  accumSlope		  "2^-20"
-	  memoryMode		  "Same as accumulator"
-	  memoryWordLength	  "32"
-	  memoryFracLength	  "20"
-	  memorySlope		  "2^-20"
-	  firstCoeffMode	  "Same word length as first input"
-	  firstCoeffWordLength	  "16"
-	  firstCoeffFracLength	  "12"
-	  firstCoeffSlope	  "2^-20"
-	  outputMode		  "Binary point scaling"
-	  outputWordLength	  "32"
-	  outputFracLength	  "20"
-	  outputSlope		  "2^-20"
-	  LockScale		  off
-	}
-	Block {
-	  BlockType		  RelationalOperator
-	  Name			  "Relational\nOperator"
-	  SID			  "13"
-	  Ports			  [2, 1]
-	  Position		  [1045, 23, 1065, 87]
-	  ZOrder		  15
-	  ShowName		  off
-	  InputSameDT		  off
-	  OutDataTypeStr	  "boolean"
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "To Video Display7"
-	  SID			  "65"
-	  Ports			  [1]
-	  Position		  [1175, 176, 1290, 244]
-	  ZOrder		  67
-	  LibraryVersion	  "1.301"
-	  SourceBlock		  "visionsinks/To Video Display"
-	  SourceType		  "To Video Display"
-	  SourceProductName	  "Computer Vision Toolbox"
-	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  "auto"
-	  windowSizeMode	  "Normal"
-	  openAtMdlStart	  on
-	  fullScreen		  off
-	  videoWindowX		  "1229"
-	  videoWindowY		  "1171"
-	  saveWindowSize	  off
-	  videoWindowWidth	  "434"
-	  videoWindowHeight	  "249"
-	  inputColorFormat	  "RGB"
-	  inputType		  "Obsolete"
-	  imagePorts		  "One multidimensional signal"
-	  OutputDevice		  "On-screen video monitor"
-	  dataOrg		  "Column-major"
-	  isWindowOpen		  "off"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "ClosedBlobs"
-	  SID			  "139"
-	  Position		  [1610, 48, 1640, 62]
-	  ZOrder		  124
-	  IconDisplay		  "Port number"
-	}
-	Line {
-	  ZOrder		  188
-	  SrcBlock		  "Closing"
-	  SrcPort		  1
-	  DstBlock		  "Closing3"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  402
-	  SrcBlock		  "Relational\nOperator"
-	  SrcPort		  1
-	  Points		  [23, 0]
-	  Branch {
-	    ZOrder		    409
-	    Points		    [0, 155]
-	    DstBlock		    "To Video Display7"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    408
-	    DstBlock		    "Median Filter"
-	    DstPort		    1
-	  }
-	}
-	Line {
-	  ZOrder		  18
-	  SrcBlock		  "2-D Mean"
-	  SrcPort		  1
-	  DstBlock		  "2-D Mean1"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  133
-	  SrcBlock		  "2-D Mean1"
-	  SrcPort		  1
-	  DstBlock		  "Relational\nOperator"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  442
-	  SrcBlock		  "Optical Flow1"
-	  SrcPort		  1
-	  Points		  [25, 0]
-	  Branch {
-	    ZOrder		    426
-	    Points		    [0, -30]
-	    DstBlock		    "Relational\nOperator"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    425
-	    DstBlock		    "2-D Mean"
-	    DstPort		    1
-	  }
-	}
-	Line {
-	  ZOrder		  441
-	  SrcBlock		  "IntensityImage"
-	  SrcPort		  1
-	  DstBlock		  "Optical Flow1"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  307
-	  SrcBlock		  "Closing3"
-	  SrcPort		  1
-	  DstBlock		  "Dilation"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  406
-	  SrcBlock		  "Median Filter"
-	  SrcPort		  1
-	  DstBlock		  "Closing"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  436
-	  SrcBlock		  "Dilation"
-	  SrcPort		  1
-	  DstBlock		  "ClosedBlobs"
-	  DstPort		  1
-	}
-      }
-    }
-    Block {
-      BlockType		      ManualSwitch
-      Name		      "Manual Switch"
-      SID		      "186"
-      Position		      [-840, 82, -745, 198]
-      ZOrder		      155
-    }
-    Block {
-      BlockType		      SubSystem
-      Name		      "PreProcessor"
-      SID		      "124"
-      Ports		      [1, 1]
-      Position		      [-515, 110, -325, 240]
-      ZOrder		      124
-      RequestExecContextInheritance off
-      ContentPreviewEnabled   on
-      System {
-	Name			"PreProcessor"
-	Location		[1713, 0, 3447, 1447]
-	Open			off
-	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
-	ModelBrowserVisibility	on
-	ModelBrowserWidth	200
-	ScreenColor		"white"
-	PaperOrientation	"landscape"
-	PaperPositionMode	"auto"
-	PaperType		"usletter"
-	PaperUnits		"inches"
-	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
-	TiledPageScale		1
-	ShowPageBoundaries	off
-	ZoomFactor		"100"
-	SimulinkSubDomain	"Simulink"
-	Block {
-	  BlockType		  Inport
-	  Name			  "RGBImage"
-	  SID			  "125"
-	  Position		  [20, 43, 50, 57]
-	  ZOrder		  5
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "Color Space\n Conversion"
-	  SID			  "2"
-	  Ports			  [1, 1]
-	  Position		  [275, 21, 375, 79]
-	  ZOrder		  4
-	  LibraryVersion	  "1.366"
-	  SourceBlock		  "visionconversions/Color Space\n Conversion"
-	  SourceType		  "Color Space Conversion"
-	  SourceProductName	  "Computer Vision Toolbox"
-	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  "auto"
-	  conversion		  "Obsolete"
-	  conversionActive	  "R'G'B' to intensity"
-	  wp_str		  "D65"
-	  rec			  "Rec. 601 (SDTV)"
-	  sys			  "1125/60/2:1"
-	  imagePorts		  "One multidimensional signal"
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "Contrast Adjustment"
-	  SID			  "194"
-	  Ports			  [1, 1]
-	  Position		  [565, 20, 690, 80]
-	  ZOrder		  184
-	  LibraryVersion	  "1.575"
-	  SourceBlock		  "visionanalysis/Contrast Adjustment"
-	  SourceType		  "Contrast Adjustment"
-	  SourceProductName	  "Computer Vision Toolbox"
-	  SourceProductBaseCode	  "VP"
-	  MultiThreadCoSim	  "auto"
-	  methodInputRange	  "Full input data range [min max]"
-	  rangeIn		  "[0 255]"
-	  fracSaturate		  "[1 1]"
-	  isBinNum		  on
-	  binNum		  "256"
-	  methodOutputRange	  "Full data type range"
-	  rangeOut		  "[0 255]"
-	  roundingMode		  "Floor"
-	  overflowMode		  off
-	  prod1Mode		  "Binary point scaling"
-	  prod1WordLength	  "32"
-	  prod1FracLength	  "16"
-	  prod1Slope		  "2^-16"
-	  prod2Mode		  "Binary point scaling"
-	  prod2WordLength	  "32"
-	  prod2FracLength	  "16"
-	  prod2Slope		  "2^-16"
-	  LockScale		  off
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "Intensity"
-	  SID			  "126"
-	  Position		  [1190, 43, 1220, 57]
-	  ZOrder		  6
-	  IconDisplay		  "Port number"
-	}
-	Line {
-	  ZOrder		  415
-	  SrcBlock		  "RGBImage"
-	  SrcPort		  1
-	  DstBlock		  "Color Space\n Conversion"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  422
-	  SrcBlock		  "Contrast Adjustment"
-	  SrcPort		  1
-	  DstBlock		  "Intensity"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  427
-	  SrcBlock		  "Color Space\n Conversion"
-	  SrcPort		  1
-	  DstBlock		  "Contrast Adjustment"
-	  DstPort		  1
 	}
       }
     }
@@ -8286,20 +8509,20 @@ Model {
       ZOrder		      613
       SrcBlock		      "DetectionRate4"
       SrcPort		      1
-      Points		      [50, 0]
-      DstBlock		      "Function-Call\nSubsystem"
+      Points		      [45, 0]
+      DstBlock		      "ROIDetection"
       DstPort		      trigger
     }
     Line {
       ZOrder		      614
       SrcBlock		      "From6"
       SrcPort		      1
-      DstBlock		      "Function-Call\nSubsystem"
+      DstBlock		      "ROIDetection"
       DstPort		      1
     }
     Line {
       ZOrder		      616
-      SrcBlock		      "Function-Call\nSubsystem"
+      SrcBlock		      "ROIDetection"
       SrcPort		      1
       DstBlock		      "Goto4"
       DstPort		      1
@@ -8331,9 +8554,61 @@ Model {
   }
 }
 MatData {
-  NumRecords		  3
+  NumRecords		  4
   DataRecord {
     Tag			    DataTag0
+    Data		    "  %)30     .    . \\   8    (     @         %    \"     $    !     0         %  0 !@    $    ,    3F%M9"
+    "0  5F%L=64       X    X    !@    @    $          4    (     0    <    !         !     '    <F5D8W)A8@ .    J X   8"
+    "    (    \"0         %    \"    #(   !*     0         \"    = X  /__________________________________________\\Z^__"
+    "/_____________________________________________________________%M/G]_______________________________________________"
+    "______________['3__[_____________________________________________________________L+_______________________________"
+    "______________________]_/CZ______^WJ_O^______[___[^______________________________________WQJ[/V_____\\R>[_[_____[M"
+    "KF^/___________________________O[^__[______^/5J\\;^_O__YIG=_____OJQF9NGS/3___________________________GO[-[8U]SE]/_"
+    "DG^;___[ZLLG]___^T9?*Y-/'V_S___________________[___O7KZ&VH)N;G)^LT?RZMO[__OZ[M?W^__\"EF^?____]_?_________________]"
+    "_/WDL9R>GJVHGJ\"@GYZ;Q>B?Y__^^*:X_OW_SY>R^O_________________________YRYZ;H*\">I[6>GZ\"@H)Z<X[O\"___KF\\3__NJ]I=W__"
+    "_____________________[_\\;B;GZ\"@H*\"@O)^@H*\"@GYK(Y:GJ_]N7T?_ZM9K1_O_______________________^>JFIZ@H*\"@H)ZQK9V@H*"
+    "\"@F[CQGL+_R9GA_]\"7L?3^_____________________O_@I9V@H*\"@H*\"@GZ\"TIYR>G9R?O_NQHO*[GNWKH*;P__[____________________"
+    "_WZ&>H*\"@H*\"@H*\"@GJ\"YJ*.WQL2VX<Z8U[:GT;VAY/_____________________]_OFLG*\"?H*\"@H*\"@H*\"?G:'EXLFLGY; ZZ/#K9NOI"
+    "\\W_______________________W_X)Z>H*\"@H*\"@H*\"@H*\"=NOFNFIZ@GJ[PI+*NGK&9P_____________________[_^,.@GY^?H*\"@H*\"@"
+    "H)^@GZ#G^*:>H*\">H>ZTKJZ@MYN__O___________________?:UFI^@GYZ?H*\"@H*\"@GIZ:S/_XJ9V@H)^<X\\6LKZ&_FK?^______________"
+    "_____\\O9J?GYV;G9R?H*\"@H*\"<F\\;[_OFNG:\"@GYK3SZJRH,::M/S________________]_]>:GIR>M-/FRZ\">H)^@G*/9___]^[6<H*\"?G"
+    "<+5I[*?R9JO^_________________WUJ9N;M>+[___^OIN@H)RFYO____W=GYZ@H)^>HJFFLI_/G:WY_________________]>:G,#Y___^___2FJ\""
+    ">I.C__OS^S:F>H*\"@H*\"@GI^@G]*@J/7________________^O)FO]_W^_____\\N<H)O1_____]NIFJ\"@H*\"@H*\"@GYZ<SZBE]O_________"
+    "_______RUF-3__O___OW\\LIR<I_+^_OS8L9N@H*\"@H*\"@H*\"@GYS%L*#5Q=GY_O?R\\OS^_OW__[N=Z?_______^2>FZ3@__W\\^[>9H*\"@H*"
+    "\"@H*\"@H*\"@GK6ZGIV9F</\"IJ*?QNCS_O__SISJ______[\\NY>LZO_^__Z^HI^@H*\"@H*\"@H*\"@H*\"?HJZ<J*N>KIR>GYVEK*7F___LGM_"
+    "______]F9I>W____^WJB=H*\"@H*\"@H*\"@H*\"@H*\"?GYZ=I:JCG:\"@GZ6UF*[W_?[ O?_____NI)S?____^/:YFZ\"@H*\"@H*\"@H*\"@H*\""
+    "@GYZ?GIVMTZ\"<GI^=I+Z=FMG___/2_?_]]*Z<U_[^___MML\"?H*\"@H*\"@H*\"@H*\"@H*\"@H*\"@GJS\\Z\\*GGYJSLYZ<M?___?W^__NZK>3"
+    "^_?[__OK;GYV@H*\"@H*\"@H*\"@H*\"@H*\"@H*\">K_O__O;ISZN?H*\"A_________.S\\________^;V=GJ\"@H*\"@H*\"@H*\"@H*\"@H*\""
+    "@GY_9_?[^___THIZ@GZ#____________________UN)N>H*\"@H*\"@H*\"@H*\"@H*\"@H*\">GN;^_O_____%FZ\">KO____________________"
+    "*MG9^@H*\"@H*\"@H*\"@H*\"@H*\"@H)Z=Y?_^_____O*GG)K/____________________[*:?H*\"@H*\"@H*\"@H*\"@H*\"@H*\"@GYWD__[__"
+    "__]_]R9J/7____________________BIY^@H*\"@H*\"@H*\"@H*\"@H*\"@H*\"?G>7_______[]_MOD_____________________]>=H*\"@H*\""
+    "@H*\"@H*\"@H*\"@H*\"@H)^>Z?________________________[^________X:\"?H*\"@H*\"@H*\"@H*\"@H*\"@H*\"@GZ#N______________"
+    "_________Y]O[________-G:\"@H*\"@H*\"@H*\"@H*\"@H*\"@H*\">H?#_________________^OK__^6OY/_^___^__\"JGZ\"@H*\"@H*\"@H"
+    "*\"@H*\"@H*\"@H)VD]/________[______O2SY/___L&;W____OSQO*6@H*\"@H*\"@H*\"@H*\"@H*\"@H*\"@G:GY_______]_/WQ_/_\\N;3[_"
+    "O_]\\J:D\\?_^_N?7QIV@H*\"@H*\"@H*\"@H*\"@H*\"@H*\"=L?W_______[]RY_C_^*;V/[^____TY>]_?S^__[!G9Z@H*\"@H*\"@H*\"@H*\""
+    "@H*\"@H)O(______[^_].<G+S]O9SK_______UJ)W?_____?6FG)^@H*\"@H*\"@H*\"@H*\"@H*\"@F\\;^_____?_BGYR>I_:FG^S^_O_____&F:"
+    "CL_OS^^=&CGZ\"@H*\"@H*\"@H*\"@H*\"@H*\">I??_____^*J<GYV?[YV;W?_^_____^.>F;#U_?__ZZB?H*\"@H*\"@H*\"@H*\"@H*\"@H)VN_"
+    "/;BU,O%K9^?G:'QJYFV_/[]____\\Z2>F\\?___[[RIJ@H*\"@H*\"@H*\"@H*&@GI^?G+?3J9Z;FIJWK9V<KOK%FIW0__W^___YJI^=K?S___[AHY"
+    "N@H*\"@H*\"@H*\"@H)VBHY^?JZ6<GZ\"@GK.SFIK0_^.<G9[*^O____&EGY^=XO_^_/_)K*\"?H*\"@H*\"@H*\"?GL6EGJVDIZB=H*\">LZJ9L??"
+    "^^K.;G9RNW/CXP9R@H)RN]OW____HH)Z?H*\"@H*\"?GIVJR9JFFIBIOIJ;G)RQFZKM___^XIV=GYV:KJ^<GJ\"?H)N^_/___/G.G)^@H*\"@GY^>F"
+    "\\&XF=G:SNSXW<&QN.+;\\O[]____RIN=GZ\">GJ\"@H*\"@GYO#^?W]_\\*;H*\"?GI^QI;2:S:>?[_____[___[_______[____\\S*.?GZ\"@H*"
+    "\"@H*\"?GYG%_?[ZK9R?H)^;O,JKM*+.G*OY________________________QYN?H*\"@H*\"@H*\"@GY[C_^VBGZ\"@GYO6OK&JJ\\29N?[______"
+    "__________________:FY^@H*\"@H*\"@H*\"@F[3^X9Z@H*\"?HNBLMZ*TN)?.__________________________2MG*\"?H*\"@H*\"@H*\">H.S"
+    "5FIZ@H)NVYI^ZG;BLF][__________________________^:BGJ\"@H*\"@H*\"@H)^;U^JJG)Z@F]C&GKN<MJ2B[OW_______________________"
+    "_^_]N>GI^@H*\"@H)^?G[\"[O=?!HINF[JZLMYRQG:OY_?___________________________]*=GI^@H*\"AGJ\"TKIR;G;7&M,K?G,BPG*RAO___"
+    "___________________________^_LR<H*\"@H)^<M:F<GIZ>G)S!^K&;XK.FQ[:__?_______________________________LZ>G9^@GZ2ZG)Z@H"
+    "*\"@F\\'FE\\'[K*KZS)?9_O_____________________________]_].?GJ\">M:>=GJ\"@H*\";W,NF\\ORLJ/KRHJ?R____________________"
+    "_____________^&LF:\"TGI^?GY^@F;+EI.'__+.F]__'D\\7__?[____________________________^_O72Q[\":FYJ:FIRS[+\"Z_OS_MZ7W_^"
+    "ZAL_'^_______________________________^____]./2Q\\/.XOS*HO'__?Z[H_?__MBCQ/_________________________________________"
+    "__O+_WYS<___]_\\FL^O__YIRI]?_______________________________________O[]V;NAS?_^__[TK,K^___WK)SD_____O______________"
+    "______________________WRNLW^_____\\V;Z?_____-E]CY]_?X_?___________________________________?W]_O[____ZJ+/[_?_^_O*AH"
+    "*2FM>'^_____________________________________________^>:U________]_+S][Q_?_________________________________________"
+    "_____U*'T_________O____W]_O_____________________________________________,O?_______________________________________"
+    "________________________]NI]/______________________________________________________________^[W!_/[________________"
+    "_______\\     "
+  }
+  DataRecord {
+    Tag			    DataTag1
     Data		    "  %)30     .    R 4   8    (     @         %    \"     $    !     0         %  0 %@    $   !V 0  0F%C:V"
     "QI9VAT0V]M<&5N<V%T:6]N $)R:6=H=&YE<W,               !#;VYT<F%S=                   17AP;W-U<F4                  $5X"
     "<&]S=7)E36]D90            !&;V-U<P                      1F]C=7--;V1E                 $9R86UE4F%T90                "
@@ -8354,12 +8629,12 @@ MatData {
     "75T;PX    X    !@    @    &          4    (     0    $    !          D    (            64 "
   }
   DataRecord {
-    Tag			    DataTag1
+    Tag			    DataTag2
     Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
     "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
   }
   DataRecord {
-    Tag			    DataTag2
+    Tag			    DataTag3
     Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
     "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
   }
@@ -8657,15 +8932,12 @@ Stateflow {
   chart {
     id			    17
     machine		    1
-    name		    "Function-Call\nSubsystem/MATLAB Function"
+    name		    "ROIDetection/MATLAB Function"
     windowPosition	    [422 539.941 189 413]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 18 0 0]
     viewObj		    17
-    visible		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    6
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -8794,20 +9066,18 @@ Stateflow {
   instance {
     id			    23
     machine		    1
-    name		    "Function-Call\nSubsystem/MATLAB Function"
+    name		    "ROIDetection/MATLAB Function"
     chart		    17
   }
   chart {
     id			    24
     machine		    1
-    name		    "Function-Call\nSubsystem/MATLAB Function1"
+    name		    "ROIDetection/MATLAB Function1"
     windowPosition	    [422 539.941 189 413]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 25 0 0]
     viewObj		    24
-    subviewS {
-    }
     ssIdHighWaterMark	    6
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -8926,21 +9196,18 @@ Stateflow {
   instance {
     id			    30
     machine		    1
-    name		    "Function-Call\nSubsystem/MATLAB Function1"
+    name		    "ROIDetection/MATLAB Function1"
     chart		    24
   }
   chart {
     id			    31
     machine		    1
-    name		    "Function-Call\nSubsystem/Target detection and tracking/Locate target1/Convert to linear index/Extract r"
-    "ows1"
+    name		    "ROIDetection/Target detection and tracking/Locate target1/Convert to linear index/Extract rows1"
     windowPosition	    [501 440.968 206 430]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1920 1200 1.291666666666667]
     treeNode		    [0 32 0 0]
     viewObj		    31
-    subviewS {
-    }
     ssIdHighWaterMark	    5
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -9052,21 +9319,18 @@ Stateflow {
   instance {
     id			    37
     machine		    1
-    name		    "Function-Call\nSubsystem/Target detection and tracking/Locate target1/Convert to linear index/Extract r"
-    "ows1"
+    name		    "ROIDetection/Target detection and tracking/Locate target1/Convert to linear index/Extract rows1"
     chart		    31
   }
   chart {
     id			    38
     machine		    1
-    name		    "Function-Call\nSubsystem/Target detection and tracking/Locate target1/Create target ROIs/Select Rows"
+    name		    "ROIDetection/Target detection and tracking/Locate target1/Create target ROIs/Select Rows"
     windowPosition	    [520 440.968 206 430]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1920 1200 1.291666666666667]
     treeNode		    [0 39 0 0]
     viewObj		    38
-    subviewS {
-    }
     ssIdHighWaterMark	    6
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -9203,20 +9467,18 @@ Stateflow {
   instance {
     id			    45
     machine		    1
-    name		    "Function-Call\nSubsystem/Target detection and tracking/Locate target1/Create target ROIs/Select Rows"
+    name		    "ROIDetection/Target detection and tracking/Locate target1/Create target ROIs/Select Rows"
     chart		    38
   }
   chart {
     id			    46
     machine		    1
-    name		    "Function-Call\nSubsystem/Target detection and tracking/Locate target1/Create target ROIs/Select Rows1"
+    name		    "ROIDetection/Target detection and tracking/Locate target1/Create target ROIs/Select Rows1"
     windowPosition	    [539 440.968 206 430]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1920 1200 1.291666666666667]
     treeNode		    [0 47 0 0]
     viewObj		    46
-    subviewS {
-    }
     ssIdHighWaterMark	    6
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -9353,7 +9615,7 @@ Stateflow {
   instance {
     id			    53
     machine		    1
-    name		    "Function-Call\nSubsystem/Target detection and tracking/Locate target1/Create target ROIs/Select Rows1"
+    name		    "ROIDetection/Target detection and tracking/Locate target1/Create target ROIs/Select Rows1"
     chart		    46
   }
   target {
