@@ -1,22 +1,22 @@
 # E-ProjectDocs
-Main project repository for E.A.R.T.H documentation
-![LOGO](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/E.A.R.T.H%20-%20Logo.png)
+Main project repository for E.A.R.T.H documentation  
+![LOGO](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/E.A.R.T.H%20-%20Logo.png)  
 
 # Current Status of Current Key Parts
-- TriTrack         - Controler over WiFi using ROS
-- Dani             - 
-- Rubbish Sorting  - 
-- Crab Detection   - Draws box and identifies colour (Ok Reliability) - Mo path tracking implemented
-- Mapping          - Global Mapping - Collection of non-working code (Overhead Camera)
-                   - TriTrack Local Mapping - Map Generated using RGBD and Xbox Kinect
-- Pathing          - Not Implemented - Need a MAP - Will use ROS and possibly A* with a weighted decision tree
-- Seagul Detection - 
-- Water Line       - Not Implemented
+- TriTrack         - Controler over WiFi using ROS  
+- Dani             -   
+- Rubbish Sorting  -   
+- Crab Detection   - Draws box and identifies colour (Ok Reliability) - Mo path tracking implemented  
+- Mapping          - Global Mapping - Collection of non-working code (Overhead Camera)  
+                   - TriTrack Local Mapping - Map Generated using RGBD and Xbox Kinect  
+- Pathing          - Not Implemented - Need a MAP - Will use ROS and possibly A* with a weighted decision tree  
+- Seagul Detection -   
+- Water Line       - Not Implemented  
 
 # Other REPO's
 
-Basic Control  - https://github.com/lboroWMEME-19WSD001/Basic-Control
-Crab Detection -
+Basic Control  - https://github.com/lboroWMEME-19WSD001/Basic-Control  
+Crab Detection -  
 Mapping        - 
 
 # Budget Summary
@@ -28,11 +28,11 @@ Mapping        -
 
 # Systems Map
 
-![System Level Diagram](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/Project%20Videos%20%26%20Pictures/SysDiagram.png)
+![System Level Diagram](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/Project%20Videos%20%26%20Pictures/SysDiagram.png)  
 
 # Tri Track Summary
 
-Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/Basic-Control
+Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/Basic-Control  
 
 - Using Bot Boarduino for motor control
 - SPI Comms to a Pi 4.
