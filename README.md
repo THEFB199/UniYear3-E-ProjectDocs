@@ -16,7 +16,7 @@ Main project repository for E.A.R.T.H documentation
 # Other REPO's
 
 Basic Control  - https://github.com/lboroWMEME-19WSD001/Basic-Control  
-Crab Detection -  
+Crab Detection - https://github.com/lboroWMEME-19WSD001/CrabDetection/
 Mapping        - 
 
 # Budget Summary
@@ -41,7 +41,7 @@ Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/Basic-Cont
 - Pi 4 used to map the input to the correct timing
 - Raspberry Pi Sense Hat for IMU data
 
-Demo of Current Capabilities:
+Demo of Current Capabilities:  
 [![TriTrackDemo](http://img.youtube.com/vi/_1ab4rzcC8o/0.jpg)](http://www.youtube.com/watch?v=_1ab4rzcC8o "TriTrack Demo")
 
 Current Goal: Automate Travel to a specified location on a map
@@ -50,12 +50,12 @@ Current Goal: Automate Travel to a specified location on a map
 
 # Crab Detection
 
-Code can be found : 
+Code can be found : https://github.com/lboroWMEME-19WSD001/CrabDetection/
 
 - Modified Traffic Sign Recognition algorithm.
 - Uses 2 stage Template Matching on luminance of image captured
 - Keeps a bounding box and Id for each match
-- Correct match is not 100% accurate 
+- Correct match is not 100% accurate  
 ![Crab_Incorrect_Match](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/Project%20Videos%20%26%20Pictures/CrabIncorrectMatch.JPEG)
 
 - Currently Parked and working on Mapping - FH
