@@ -50,9 +50,9 @@ Current Goal: Automate Travel to a specified location on a map
 
 # Rubbish Sorting
 
--Python and Opencv used to create computer vision method of detecting and recognising LED sequence.
--Bins effectively detected from up to a metre
--Code can be found in the RGB-Bin-Detection Repository
+- Python and Opencv used to create computer vision method of detecting and recognising LED sequence.
+- Bins effectively detected from up to a metre
+- Code can be found in the RGB-Bin-Detection Repository
 
 # Crab Detection
 
