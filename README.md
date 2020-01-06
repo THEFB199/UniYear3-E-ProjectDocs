@@ -5,7 +5,7 @@ Main project repository for E.A.R.T.H documentation
 # Current Status of Current Key Parts
 - TriTrack         - Controler over WiFi using ROS  
 - Dani             -   
-- Rubbish Sorting  -   
+- Rubbish Sorting  - RGB Bin Detection Completed  
 - Crab Detection   - Draws box and identifies colour (Ok Reliability) - Mo path tracking implemented  
 - Mapping          - Global Mapping - Collection of non-working code (Overhead Camera)  
                    - TriTrack Local Mapping - Map Generated using RGBD and Xbox Kinect  
@@ -47,6 +47,12 @@ Demo of Current Capabilities:
 Current Goal: Automate Travel to a specified location on a map
 
 - Next Step : SLAM the TriTrack - FH
+
+# Rubbish Sorting
+
+-Python and Opencv used to create computer vision method of detecting and recognising LED sequence.
+-Bins effectively detected from up to a metre
+-Code can be found in the RGB-Bin-Detection Repository
 
 # Crab Detection
 
