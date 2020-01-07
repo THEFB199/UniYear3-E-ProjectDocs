@@ -6,7 +6,7 @@ Main project repository for E.A.R.T.H documentation
 - TriTrack         - Controler over WiFi using ROS  
 - Dani             -   
 - Rubbish Sorting  - RGB Bin Detection Completed  
-- Crab Detection   - Draws box and identifies colour (Ok Reliability) - Mo path tracking implemented  
+- Crab Detection   - Draws box and identifies colour (Ok Reliability) - No path tracking implemented  
 - Mapping          - Global Mapping - Collection of non-working code (Overhead Camera)  
                    - TriTrack Local Mapping - Map Generated using RGBD and Xbox Kinect  
 - Pathing          - Not Implemented - Need a MAP - Will use ROS and possibly A* with a weighted decision tree  
@@ -16,7 +16,7 @@ Main project repository for E.A.R.T.H documentation
 # Other REPO's
 
 Basic Control  - https://github.com/lboroWMEME-19WSD001/Basic-Control  
-Crab Detection - https://github.com/lboroWMEME-19WSD001/CrabDetection/
+Crab Detection - https://github.com/lboroWMEME-19WSD001/CrabDetection/  
 Mapping        - 
 
 # Budget Summary
@@ -25,6 +25,10 @@ Mapping        -
 
 #### Remaining: £120
 #### Spent: £80.45
+
+# ePortfolio
+
+https://teamearth1.wordpress.com/
 
 # Systems Map
 
