@@ -15,9 +15,9 @@ Main project repository for E.A.R.T.H documentation
 
 # Other REPO's
 
-Basic Control  - https://github.com/lboroWMEME-19WSD001/Basic-Control   
+Basic Control  - https://github.com/lboroWMEME-19WSD001/Basic-Control/   
 Crab Detection - https://github.com/lboroWMEME-19WSD001/CrabDetection/  
-DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/DaNI_ROS_myRIO  
+DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/DaNI-Robot/
 Mapping        -   
 
 # Budget Summary
