@@ -15,17 +15,19 @@ Main project repository for E.A.R.T.H documentation
 
 # Other REPO's
 
-Basic Control  - https://github.com/lboroWMEME-19WSD001/Basic-Control  
-Crab Detection - https://github.com/lboroWMEME-19WSD001/CrabDetection/ 
-DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/DaNI_ROS_myRIO
-Mapping        - 
+Basic Control  - https://github.com/lboroWMEME-19WSD001/Basic-Control   
+Crab Detection - https://github.com/lboroWMEME-19WSD001/CrabDetection/  
+DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/DaNI_ROS_myRIO  
+Mapping        -   
 
 # Budget Summary
 
 ### Total Budget: £200
 
-#### Remaining: £120
-#### Spent: £80.45
+#### Remaining: £154.55
+#### Spent: £45.45
+
+https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/raw/master/Earth%20-%20Budget%20Spreadsheet.xlsx
 
 # ePortfolio
 
