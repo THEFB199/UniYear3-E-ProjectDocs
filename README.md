@@ -3,6 +3,9 @@ Main project repository for E.A.R.T.H documentation
 ![LOGO](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/E.A.R.T.H%20-%20Logo.png)  
 
 # Current Status of Current Key Parts
+
+Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
+
 - TriTrack         - Controler over WiFi using ROS  
 - Dani             -   
 - Rubbish Sorting  - RGB Bin Detection Completed  
