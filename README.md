@@ -13,7 +13,8 @@ Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 - Mapping          - Global Mapping - Collection of non-working code (Overhead Camera)  
                    - TriTrack Local Mapping - Map Generated using RGBD and Xbox Kinect  
 - Pathing          - Not Implemented - Need a MAP - Will use ROS and possibly A* with a weighted decision tree  
-- Seagul Detection -   
+- Seagull Detection- Rudimentary audio detection by searching for features extracted for sample sound data
+                   - Plan to alert the operators using telemetry User interface on ROS machine
 - Water Line       - Not Implemented  
 
 # Other REPO's
@@ -21,14 +22,15 @@ Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 Basic Control  - https://github.com/lboroWMEME-19WSD001/Basic-Control/   
 Crab Detection - https://github.com/lboroWMEME-19WSD001/CrabDetection/  
 DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/DaNI-Robot/
+Seagull Detection - https://github.com/lboroWMEME-19WSD001/Seagull-Detection
 Mapping        -   
 
 # Budget Summary
 
 ### Total Budget: £200
 
-#### Remaining: £154.55
-#### Spent: £45.45
+#### Remaining: £131.92
+#### Spent: £68.08
 
 ![Budget Link](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/raw/master/Earth%20-%20Budget%20Spreadsheet.xlsx)  
 
@@ -95,6 +97,16 @@ Code can be found:
 - Pi will send WebCam data back to ROS Computer to be processed
 - Looks for the Crabs and adds to the map - not integrated
 - Looks for the Tri Track and sends location and pathing data 
+
+# Seagull Detection
+
+Code can be found: https://github.com/lboroWMEME-19WSD001/Seagull-Detection
+
+- Tried cross correlation techniques but could not get reliable results (many false positives)
+- Using the labour-intensive approach of manually extracting features unique to seagull sounds from their FFTs
+- The features are relative and not absolute so as to cope in diverse environments
+- Currently, detector checks for those features with better success, but has issues with human noise and some seagull sounds
+- Will continue AI research in hopes of getting more robust system, possibly using ml5.js
 
 # Waterline
 
