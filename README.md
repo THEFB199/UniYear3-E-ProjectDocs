@@ -22,7 +22,7 @@ Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 Basic Control  - https://github.com/lboroWMEME-19WSD001/Basic-Control/   
 Crab Detection - https://github.com/lboroWMEME-19WSD001/CrabDetection/  
 DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/DaNI-Robot/  
-Seagull Detection - https://github.com/lboroWMEME-19WSD001/Seagull-Detection
+Seagull Detection - https://github.com/lboroWMEME-19WSD001/Seagull-Detection  
 Mapping        -   to come
 
 # Budget Summary
