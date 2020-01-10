@@ -19,9 +19,9 @@ Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 
 # Other REPO's
 
-Basic Control  - https://github.com/lboroWMEME-19WSD001/Basic-Control/   
-Crab Detection - https://github.com/lboroWMEME-19WSD001/CrabDetection/  
-DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/DaNI-Robot/  
+Basic Control  - https://github.com/lboroWMEME-19WSD001/E-Basic-Control  
+Crab Detection - https://github.com/lboroWMEME-19WSD001/E-CrabDetection 
+DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot  
 Seagull Detection - https://github.com/lboroWMEME-19WSD001/Seagull-Detection  
 Mapping        -   to come
 
@@ -45,7 +45,7 @@ https://teamearth1.wordpress.com/
 
 # Tri Track Summary
 
-Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/Basic-Control  
+Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/E-Basic-Control  
 
 - Using Bot Boarduino for motor control
 - SPI Comms to a Pi 4.
@@ -69,7 +69,7 @@ Current Goal: Automate Travel to a specified location on a map
 
 # Crab Detection
 
-Code can be found : https://github.com/lboroWMEME-19WSD001/CrabDetection/
+Code can be found : https://github.com/lboroWMEME-19WSD001/E-CrabDetection/
 
 - Modified Traffic Sign Recognition algorithm.
 - Uses 2 stage Template Matching on luminance of image captured
