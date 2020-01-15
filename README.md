@@ -25,6 +25,33 @@ DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot
 Seagull Detection - https://github.com/lboroWMEME-19WSD001/Seagull-Detection  
 Mapping        -   to come
 
+# Jobs List
+
+## To Do - Please Add or Move as Necessary
+
+- Trash Sorter Rig  
+- Mapping  
+- Tri Track Chassis  
+- Seagul Detection  
+- Trash Detection  
+- Dani  
+- Water Line  
+- Crab Detection Robustness   
+- User Interface working demo  
+- Integration   
+- Power Board  
+- 
+
+## In Progress
+
+-  
+
+## Done
+
+- Crab Detection Demo   
+- RGB Bin Detection   
+- 
+
 # Budget Summary
 
 ### Total Budget: £200
