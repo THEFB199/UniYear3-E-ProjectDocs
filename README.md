@@ -70,6 +70,25 @@ https://teamearth1.wordpress.com/
 
 ![System Level Diagram](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/Project%20Videos%20%26%20Pictures/SysDiagram.png)  
 
+# Raspberry Pi 4 on Eduroam + ROS
+
+- Testing multiple different operating systems on the raspberry pi 4 has resulted in some findings, these are listed below.
+
+This is for the September 2019 release of Raspbien Buster
+- Raspbien Buster in its current state does not support enterprise networking. Therefore no eduroam.
+- ROS will not install correctly on the Pi 4 running buster.
+
+Official version of ubuntu for the Pi 4 is version 19. ROS will not install on version 19. Eduroam however will work on this version of the Pi 4. 
+
+Installed unoffical version of ubuntu 18.04 from here: https://jamesachambers.com/raspberry-pi-4-ubuntu-server-desktop-18-04-3-image-unofficial/
+
+Desktop works correctly with all packages, raspi-config functions corectly, eduroam functions correctly.
+
+When installing ROS the guides for Ubuntu 18 will work correctly
+
+Eduroam, follow guide provided by PST
+
+
 # Tri Track Summary
 
 Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/E-Basic-Control  
