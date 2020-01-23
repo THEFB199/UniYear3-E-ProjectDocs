@@ -74,7 +74,7 @@ https://teamearth1.wordpress.com/
 
 - Testing multiple different operating systems on the raspberry pi 4 has resulted in some findings, these are listed below.
 
-This is for the September 2019 release of Raspbien Buster
+This is for the September 2019 release of Raspbian Buster
 - Raspbien Buster in its current state does not support enterprise networking. Therefore no eduroam.
 - ROS will not install correctly on the Pi 4 running buster.
 
