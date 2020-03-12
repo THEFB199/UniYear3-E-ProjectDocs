@@ -18,7 +18,7 @@ Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 # Other REPO's
 
 Basic Control      - https://github.com/lboroWMEME-19WSD001/E-Basic-Control  
-Crab Detection     - https://github.com/lboroWMEME-19WSD001/E-CrabDetection  
+Crab Detection     - https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
 DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot  
 Seagull Detection  - https://github.com/lboroWMEME-19WSD001/Seagull-Detection  
 Mapping/Navigation - https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation  
@@ -111,7 +111,7 @@ Demo of Current Capabilities:
 
 # Crab Detection
 
-Code can be found : https://github.com/lboroWMEME-19WSD001/E-CrabDetection/
+Code can be found : https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
 
 - Modified Traffic Sign Recognition algorithm.
 - Uses 1 stage Template Matching on luminance of image captured
