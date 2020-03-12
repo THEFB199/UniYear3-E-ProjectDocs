@@ -23,7 +23,7 @@ Basic Control      - https://github.com/lboroWMEME-19WSD001/E-Basic-Control
 Crab Detection     - https://github.com/lboroWMEME-19WSD001/E-CrabDetection  
 DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot  
 Seagull Detection  - https://github.com/lboroWMEME-19WSD001/Seagull-Detection  
-Mapping            - https://github.com/lboroWMEME-19WSD001/E-Mapping  
+Mapping/Navigation - https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation  
 
 #### CAD (Viewable in WebBrowser)
 TriTrack Design (Fusion 360) - https://a360.co/3aZK0rs  
