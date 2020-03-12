@@ -4,18 +4,16 @@ Main project repository for E.A.R.T.H documentation
 
 # Current Status of Current Key Parts
 
+Gateway 3 Progress Video:
 Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 
-- TriTrack         - Controler over WiFi using ROS  
-- Dani             -   
-- Rubbish Sorting  - RGB Bin Detection Completed  
-- Crab Detection   - Draws box and identifies colour (Ok Reliability) - No path tracking implemented  
-- Mapping          - RGBD Using Kinect on TriTrack -> see mapping repo
-                   - Overhead map for crap and waterline detection to come
-- Pathing          - Not Implemented - Need a MAP - Will use ROS and possibly A* with a weighted decision tree  
-- Seagull Detection- Rudimentary audio detection by searching for features extracted for sample sound data
-                   - Plan to alert the operators using telemetry User interface on ROS machine
-- Water Line       - Not Implemented  
+- TriTrack           - RPS Navigation Stack used to send goal within a map
+- Rubbish Sorting    - RGB Bin Detection Completed  
+- Crab Detection     - Draws box and identifies colour path of crab shown (integrated into overhead camera)
+- Mapping/Navigation - ROS Naviagation Stack used in conjunction with an Xbox Kinect and RtabMap
+- Seagull Detection  - Rudimentary audio detection by searching for features extracted for sample sound data
+                     - Plan to alert the operators using telemetry User interface on ROS machine
+- Water Line         - input a line via simulink to the grad map  
 
 # Other REPO's
 
@@ -31,28 +29,26 @@ TriTrack Design (Fusion 360) - https://a360.co/3aZK0rs
 # Jobs List
 
 ## To Do - Please Add or Move as Necessary
-
-- Trash Sorter Rig  
-- Tri Track Chassis  
-- Seagul Detection  
-- Trash Detection  
-- Dani  
-- Water Line  
-- Crab Detection Robustness   
-- User Interface working demo  
-- Integration   
-- Power Board  
+  
 
 ## In Progress
 
 - Mapping 
 - Navigation 
+- Integration
+- Crab Detection Robustness  
+- Water Line 
+- Trash Sorter Rig  
+- Seagul Detection  
+- Trash Detection 
+- Power Board
 
 ## Done
 
 - Crab Detection Demo   
 - RGB Bin Detection   
-- 
+- Tri Track Chassis  
+- User Interface working demo  
 
 # Budget Summary
 
@@ -95,6 +91,8 @@ Eduroam, follow guide provided by PST
 
 Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/E-Basic-Control  
 
+- PI4 takes in data from Kinect which is used to then build a map for navigaiton
+- Commands recived and sent over from controlling computer
 - Using Bot Boarduino for motor control
 - SPI Comms to a Pi 4.
 - Pi 4 on WiFi to Controlling Computer
@@ -104,10 +102,6 @@ Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/E-Basic-Co
 
 Demo of Current Capabilities:  
 [![TriTrackDemo](http://img.youtube.com/vi/_1ab4rzcC8o/0.jpg)](http://www.youtube.com/watch?v=_1ab4rzcC8o "TriTrack Demo")
-
-Current Goal: Automate Travel to a specified location on a map
-
-- Next Step : SLAM the TriTrack - FH
 
 # Rubbish Sorting
 
@@ -120,32 +114,30 @@ Current Goal: Automate Travel to a specified location on a map
 Code can be found : https://github.com/lboroWMEME-19WSD001/E-CrabDetection/
 
 - Modified Traffic Sign Recognition algorithm.
-- Uses 2 stage Template Matching on luminance of image captured
+- Uses 1 stage Template Matching on luminance of image captured
+- Second stage re-written to better detect the crabs, using RGB and assiging a confiance for the ROI's
 - Keeps a bounding box and Id for each match
-- Correct match is not 100% accurate  
+- From GW2 matches of colours are much more reliable
+- Integration with top camera for  use in cloudy day lighting conditions.
 ![Crab_Incorrect_Match](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/Project%20Videos%20%26%20Pictures/CrabIncorrectMatch.JPEG)
 
-- Currently Parked and working on Mapping - FH
 
+# Mapping and Navigation
 
-# Mapping
-
-Code can be found: https://github.com/lboroWMEME-19WSD001/E-Mapping
+Code can be found: https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation
 
 ### Local Mapping
 
 - RGBD using Xbox kinect on the TriTrack
 - Point cloud and 2D occupancy grid is produced
 - Localisation of the TriTrack within this 
+- This is now used for navigation with teh navigation stack
 
 [![](http://img.youtube.com/vi/Hy-FY70L_dA/0.jpg)](http://www.youtube.com/watch?v=Hy-FY70L_dA "TriTrack Mapping Demo")
 
 ### Global Mapping (Overhead Camera)
 
-- looking at MonoSlam and map merging to have one master map
-- Pi will send WebCam data back to ROS Computer to be processed
-- Looks for the Crabs and adds to the map - not integrated
-- Looks for the Tri Track and sends location and pathing data 
+- Pi 3B+ conbimned witha wide angle camera which looks for and tracks the crabs. The top camera also gets the positions of the rubbish. This still needs to be integrated into the tir track map.
 
 # Seagull Detection
 
@@ -159,6 +151,4 @@ Code can be found: https://github.com/lboroWMEME-19WSD001/Seagull-Detection
 
 # Waterline
 
-- Camera will look for line of water - most likely to be done with a simple mask 
-- This will be added to the weightings of the pathing map.
-- Idea! use a moisture sensor to detect the moisture in the sand and as it goes higher drive away from the water
+- using simulink to input a water line. This is inputted into the map the tri track creates. The navigation stack will not cross this line therefore avoiding the water. 
