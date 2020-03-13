@@ -52,10 +52,10 @@ TriTrack Design (Fusion 360) - https://a360.co/3aZK0rs
 
 # Budget Summary
 
-### Total Budget: £200
+### Total Budget: £500
 
-#### Remaining: £131.92
-#### Spent: £68.08
+#### Remaining: £165.34
+#### Spent: £334.66
 
 ![Budget Link](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/raw/master/Earth%20-%20Budget%20Spreadsheet.xlsx)  
 
