@@ -155,7 +155,8 @@ Code can be found: https://github.com/lboroWMEME-19WSD001/Seagull-Detection
 
 # Rubbish Sorting Rig
 
-[![Rubbish Sorting Rig Demo](http://img.youtube.com/vi/qZ9JkHIGdAA/0.jpg)](http://www.youtube.com/watch?v=qZ9JkHIGdAA "Rubbish Sorting Rig - Progress")
+
+[![Rubbish Sorting Rig Demo](http://img.youtube.com/vi/qZ9JkHIGdAA/0.jpg)](https://youtu.be/qZ9JkHlGdAA "Rubbish Sorting Rig - Progress")
 
 - Currently capable of movement in the X, Y and Z planes by the use of stepper motor and lead screw shaft
 - Can pick up, hold and release a variety of rubbish
