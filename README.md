@@ -10,8 +10,8 @@ Main project repository for E.A.R.T.H documentation
 
 # Current Status of Current Key Parts
 
-Gateway 3 Progress Video: https://youtu.be/VzLUijcFLLI
-Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
+Gateway 3 Progress Video: https://youtu.be/VzLUijcFLLI  
+Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM  
 
 - TriTrack           - RPS Navigation Stack used to send goal within a map
 - Rubbish Sorting    - RGB Bin Detection Completed  
