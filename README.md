@@ -6,7 +6,7 @@ Main project repository for E.A.R.T.H documentation
 
 #### Progress Video: https://youtu.be/VzLUijcFLLI
 #### Plan On A Page: ![Plan on A Page Link](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/PlanOnAPage%20GW3%20-%20Team%20EARTH.pptx)  
-#### Presentation: ![Presentation Link]( https://1drv.ms/p/s!Ahn7vW5IvoqFhspq26cUGy3EL4rCyQ?e=Wnw39I)  
+#### Presentation: https://1drv.ms/p/s!Ahn7vW5IvoqFhspq26cUGy3EL4rCyQ?e=Wnw39I
 
 # Current Status of Current Key Parts
 
