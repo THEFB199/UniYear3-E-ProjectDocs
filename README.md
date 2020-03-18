@@ -17,13 +17,13 @@ Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 
 # Other REPO's
 
-Basic Control      - https://github.com/lboroWMEME-19WSD001/E-Basic-Control  
-Crab Detection     - https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
-DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot  
-Seagull Detection  - https://github.com/lboroWMEME-19WSD001/Seagull-Detection  
-Mapping/Navigation - https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation
-Rubbish Sorting Rig - https://github.com/lboroWMEME-19WSD001/E-Sorting-Rig
-RGB Bin Detection - https://github.com/lboroWMEME-19WSD001/E-RGB-Bin-Detection
+- Basic Control      - https://github.com/lboroWMEME-19WSD001/E-Basic-Control  
+- Crab Detection     - https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
+- DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot  
+- Seagull Detection  - https://github.com/lboroWMEME-19WSD001/Seagull-Detection  
+- Mapping/Navigation - https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation
+- Rubbish Sorting Rig - https://github.com/lboroWMEME-19WSD001/E-Sorting-Rig
+- RGB Bin Detection - https://github.com/lboroWMEME-19WSD001/E-RGB-Bin-Detection
 
 #### CAD (Viewable in WebBrowser)
 TriTrack Design (Fusion 360) - https://a360.co/3aZK0rs  
