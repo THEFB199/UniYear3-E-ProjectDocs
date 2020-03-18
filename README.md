@@ -13,7 +13,8 @@ Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 - Mapping/Navigation - ROS Naviagation Stack used in conjunction with an Xbox Kinect and RtabMap
 - Seagull Detection  - Rudimentary audio detection by searching for features extracted for sample sound data
                      - Plan to alert the operators using telemetry User interface on ROS machine
-- Water Line         - input a line via simulink to the grad map  
+- Water Line         - input a line via simulink to the grad map
+- User Interface     - Providing Integration of all the sub-systems and different output to the user
 
 # Other REPO's
 
@@ -24,6 +25,7 @@ Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 - Mapping/Navigation - https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation
 - Rubbish Sorting Rig - https://github.com/lboroWMEME-19WSD001/E-Sorting-Rig
 - RGB Bin Detection - https://github.com/lboroWMEME-19WSD001/E-RGB-Bin-Detection
+- User Interface    - https://github.com/lboroWMEME-19WSD001/E-UserInterface
 
 #### CAD (Viewable in WebBrowser)
 TriTrack Design (Fusion 360) - https://a360.co/3aZK0rs  
@@ -162,3 +164,8 @@ Code can be found: https://github.com/lboroWMEME-19WSD001/Seagull-Detection
 # Waterline
 
 - using simulink to input a water line. This is inputted into the map the tri track creates. The navigation stack will not cross this line therefore avoiding the water. 
+
+# User Interface
+- Currently capable to acquire data from ROS and illustrate it every 0.5s
+- Can send data to ROS if the User wants to control the Earth-E manual
+- Can stream live video from the Earth-E, Eye-in-the-Sky and Sorting Rig
