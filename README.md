@@ -2,10 +2,18 @@
 Main project repository for E.A.R.T.H documentation  
 ![LOGO](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/E.A.R.T.H%20-%20Logo.png)  
 
+# Gateway 3 Information
+
+#### Progress Video: 
+[![Gateway 3 Progress Video](http://img.youtube.com/vi/VzLUijcFLLI/0.jpg)](http://www.youtube.com/watch?v=VzLUijcFLLI "Gateway 3 Progress Video")
+#### Plan On A Page: ![Plan on A Page Link](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/PlanOnAPage%20GW3%20-%20Team%20EARTH.pptx)  
+#### Presentation: https://1drv.ms/p/s!Ahn7vW5IvoqFhspq26cUGy3EL4rCyQ?e=Wnw39I
+#### ePortfolio: https://teamearth1.wordpress.com/
+
 # Current Status of Current Key Parts
 
-Gateway 3 Progress Video:
-Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
+Gateway 3 Progress Video: https://youtu.be/VzLUijcFLLI  
+Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM  
 
 - TriTrack           - RPS Navigation Stack used to send goal within a map
 - Rubbish Sorting    - RGB Bin Detection Completed  
@@ -13,15 +21,19 @@ Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 - Mapping/Navigation - ROS Naviagation Stack used in conjunction with an Xbox Kinect and RtabMap
 - Seagull Detection  - Rudimentary audio detection by searching for features extracted for sample sound data
                      - Plan to alert the operators using telemetry User interface on ROS machine
-- Water Line         - input a line via simulink to the grad map  
+- Water Line         - input a line via simulink to the grad map
+- User Interface     - Providing Integration of all the sub-systems and different output to the user
 
 # Other REPO's
 
-Basic Control      - https://github.com/lboroWMEME-19WSD001/E-Basic-Control  
-Crab Detection     - https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
-DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot  
-Seagull Detection  - https://github.com/lboroWMEME-19WSD001/Seagull-Detection  
-Mapping/Navigation - https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation  
+- Basic Control      - https://github.com/lboroWMEME-19WSD001/E-Basic-Control  
+- Crab Detection     - https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
+- DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot  
+- Seagull Detection  - https://github.com/lboroWMEME-19WSD001/Seagull-Detection  
+- Mapping/Navigation - https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation
+- Rubbish Sorting Rig - https://github.com/lboroWMEME-19WSD001/E-Sorting-Rig
+- RGB Bin Detection - https://github.com/lboroWMEME-19WSD001/E-RGB-Bin-Detection
+- User Interface    - https://github.com/lboroWMEME-19WSD001/E-UserInterface
 
 #### CAD (Viewable in WebBrowser)
 TriTrack Design (Fusion 360) - https://a360.co/3aZK0rs  
@@ -149,6 +161,22 @@ Code can be found: https://github.com/lboroWMEME-19WSD001/Seagull-Detection
 - Currently, detector checks for those features with better success, but has issues with human noise and some seagull sounds
 - Will continue AI research in hopes of getting more robust system, possibly using ml5.js
 
+# Rubbish Sorting Rig
+
+
+[![Rubbish Sorting Rig Demo](http://img.youtube.com/vi/qZ9JkHlGdAA/0.jpg)](https://youtu.be/qZ9JkHlGdAA "Rubbish Sorting Rig - Progress")
+
+- Currently capable of movement in the X, Y and Z planes by the use of stepper motor and lead screw shaft
+- Can pick up, hold and release a variety of rubbish
+- Grabber hand automatically stops on the way down via ultrasonic sensor and on the way up via limit switch
+- Movement code are ran and completed by Arduino MEGA
+- RGB Bin detection completed using webcam mounted on the gantry arm
+- Currently controlled via wireless xbox controller
 # Waterline
 
 - using simulink to input a water line. This is inputted into the map the tri track creates. The navigation stack will not cross this line therefore avoiding the water. 
+
+# User Interface
+- Currently capable to acquire data from ROS and illustrate it every 0.5s
+- Can send data to ROS if the User wants to control the Earth-E manual
+- Can stream live video from the Earth-E, Eye-in-the-Sky and Sorting Rig
