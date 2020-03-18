@@ -23,6 +23,7 @@ DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot
 Seagull Detection  - https://github.com/lboroWMEME-19WSD001/Seagull-Detection  
 Mapping/Navigation - https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation
 Rubbish Sorting Rig - https://github.com/lboroWMEME-19WSD001/E-Sorting-Rig
+RGB Bin Detection - https://github.com/lboroWMEME-19WSD001/E-RGB-Bin-Detection
 
 #### CAD (Viewable in WebBrowser)
 TriTrack Design (Fusion 360) - https://a360.co/3aZK0rs  
@@ -150,6 +151,14 @@ Code can be found: https://github.com/lboroWMEME-19WSD001/Seagull-Detection
 - Currently, detector checks for those features with better success, but has issues with human noise and some seagull sounds
 - Will continue AI research in hopes of getting more robust system, possibly using ml5.js
 
+# Rubbish Sorting Rig
+
+- Currently capable of movement in the X, Y and Z planes by the use of stepper motor and lead screw shaft
+- Can pick up, hold and release a variety of rubbish
+- Grabber hand automatically stops on the way down via ultrasonic sensor and on the way up via limit switch
+- Movement code are ran and completed by Arduino MEGA
+- RGB Bin detection completed using webcam mounted on the gantry arm
+- Currently controlled via wireless xbox controller
 # Waterline
 
 - using simulink to input a water line. This is inputted into the map the tri track creates. The navigation stack will not cross this line therefore avoiding the water. 
