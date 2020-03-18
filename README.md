@@ -2,9 +2,15 @@
 Main project repository for E.A.R.T.H documentation  
 ![LOGO](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/E.A.R.T.H%20-%20Logo.png)  
 
+# Gateway 3 Information
+
+#### Progress Video: https://youtu.be/VzLUijcFLLI
+#### Plan On A Page: https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/PlanOnAPage%20GW3%20-%20Team%20EARTH.pptx
+#### Presentation:   https://1drv.ms/p/s!Ahn7vW5IvoqFhspq26cUGy3EL4rCyQ?e=Wnw39I
+
 # Current Status of Current Key Parts
 
-Gateway 3 Progress Video:
+Gateway 3 Progress Video: https://youtu.be/VzLUijcFLLI
 Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 
 - TriTrack           - RPS Navigation Stack used to send goal within a map
