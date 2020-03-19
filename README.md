@@ -15,25 +15,25 @@ Main project repository for E.A.R.T.H documentation
 Gateway 3 Progress Video: https://youtu.be/VzLUijcFLLI  
 Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM  
 
-- TriTrack           - RPS Navigation Stack used to send goal within a map
+- TriTrack           - ROS Navigation Stack used to send goal within a map
 - Rubbish Sorting    - RGB Bin Detection Completed  
 - Crab Detection     - Draws box and identifies colour path of crab shown (integrated into overhead camera)
 - Mapping/Navigation - ROS Naviagation Stack used in conjunction with an Xbox Kinect and RtabMap
 - Seagull Detection  - Rudimentary audio detection by searching for features extracted for sample sound data
                      - Plan to alert the operators using telemetry User interface on ROS machine
-- Water Line         - input a line via simulink to the grad map
+- Water Line         - input a line via simulink to the grid map and top camera
 - User Interface     - Providing Integration of all the sub-systems and different output to the user
 
 # Other REPO's
 
-- Basic Control      - https://github.com/lboroWMEME-19WSD001/E-Basic-Control  
-- Crab Detection     - https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
-- DaNI Basic Control - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot  
-- Seagull Detection  - https://github.com/lboroWMEME-19WSD001/Seagull-Detection  
-- Mapping/Navigation - https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation
-- Rubbish Sorting Rig - https://github.com/lboroWMEME-19WSD001/E-Sorting-Rig
-- RGB Bin Detection - https://github.com/lboroWMEME-19WSD001/E-RGB-Bin-Detection
-- User Interface    - https://github.com/lboroWMEME-19WSD001/E-UserInterface
+- Basic Control             - https://github.com/lboroWMEME-19WSD001/E-Basic-Control  
+- Crab Detection/Water Line - https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
+- DaNI Basic Control        - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot  
+- Seagull Detection         - https://github.com/lboroWMEME-19WSD001/Seagull-Detection  
+- Mapping/Navigation        - https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation
+- Rubbish Sorting Rig       - https://github.com/lboroWMEME-19WSD001/E-Sorting-Rig
+- RGB Bin Detection         - https://github.com/lboroWMEME-19WSD001/E-RGB-Bin-Detection
+- User Interface            - https://github.com/lboroWMEME-19WSD001/E-UserInterface
 
 #### CAD (Viewable in WebBrowser)
 TriTrack Design (Fusion 360) - https://a360.co/3aZK0rs  
@@ -101,7 +101,7 @@ Eduroam, follow guide provided by PST
 
 # Tri Track Summary
 
-Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/E-Basic-Control  
+Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation  
 
 - PI4 takes in data from Kinect which is used to then build a map for navigaiton
 - Commands recived and sent over from controlling computer
@@ -113,7 +113,7 @@ Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/E-Basic-Co
 - Raspberry Pi Sense Hat for IMU data
 
 Demo of Current Capabilities:  
-[![TriTrackDemo](http://img.youtube.com/vi/_1ab4rzcC8o/0.jpg)](http://www.youtube.com/watch?v=_1ab4rzcC8o "TriTrack Demo")
+[![TriTrackDemo](http://img.youtube.com/vi/rMWxJc7n-KE/0.jpg)](http://www.youtube.com/watch?v=rMWxJc7n-KE "")
 
 # Rubbish Sorting
 
@@ -125,13 +125,15 @@ Demo of Current Capabilities:
 
 Code can be found : https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
 
-- Modified Traffic Sign Recognition algorithm.
-- Uses 1 stage Template Matching on luminance of image captured
-- Second stage re-written to better detect the crabs, using RGB and assiging a confiance for the ROI's
-- Keeps a bounding box and Id for each match
-- From GW2 matches of colours are much more reliable
-- Integration with top camera for  use in cloudy day lighting conditions.
-![Crab_Incorrect_Match](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/Project%20Videos%20%26%20Pictures/CrabIncorrectMatch.JPEG)
+- Modified Traffic Sign Recognition algorithm.  
+- Uses 1 stage Template Matching on luminance of image captured  
+- Second stage re-written to better detect the crabs, using RGB and assiging a confiance for the ROI's  
+- Keeps a bounding box and Id for each match  
+- From GW2 matches of colours are much more reliable  
+- Centre Points of the crabs are tracked to show the routes taken.  
+- Integration with top camera for use in cloudy day lighting conditions.  
+
+[![Crab Detection Demo](http://img.youtube.com/vi/JBJTy5rMkCE/0.jpg)](http://www.youtube.com/watch?v=JBJTy5rMkCE "Crab Detection")
 
 
 # Mapping and Navigation
@@ -150,6 +152,8 @@ Code can be found: https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigati
 ### Global Mapping (Overhead Camera)
 
 - Pi 3B+ conbimned witha wide angle camera which looks for and tracks the crabs. The top camera also gets the positions of the rubbish. This still needs to be integrated into the tir track map.
+
+[![Over Head Camera Demo](http://img.youtube.com/vi/JBJTy5rMkCE/0.jpg)](http://www.youtube.com/watch?v=JBJTy5rMkCE "Crab Detection")
 
 # Seagull Detection
 
@@ -175,7 +179,11 @@ Narrated Demo Video : https://youtu.be/4wFlJHVcBKs
 - Currently controlled via wireless xbox controller
 # Waterline
 
+https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
+
 - using simulink to input a water line. This is inputted into the map the tri track creates. The navigation stack will not cross this line therefore avoiding the water. 
+
+[![Waterline Demo](http://img.youtube.com/vi/PecBnYAqeN8/0.jpg)](http://www.youtube.com/watch?v=PecBnYAqeN8 "Crab Detection")
 
 # User Interface
 - Currently capable to acquire data from ROS and illustrate it every 0.5s
