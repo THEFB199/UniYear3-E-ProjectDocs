@@ -115,7 +115,7 @@ Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/E-Mapping-
 Demo of Current Capabilities:  
 [![TriTrackDemo](http://img.youtube.com/vi/rMWxJc7n-KE/0.jpg)](http://www.youtube.com/watch?v=rMWxJc7n-KE "")
 
-# Rubbish Sorting
+# RGB Bin Detecttion
 
 - Python and Opencv used to create computer vision method of detecting and recognising LED sequence.
 - Bins effectively detected from up to a metre
