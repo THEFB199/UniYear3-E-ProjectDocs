@@ -56,7 +56,7 @@ TriTrack Design (Fusion 360) - https://a360.co/3aZK0rs
 # COVID-19 Developments
 [Contents](#Contents)
 
-- Complete Rubbish Sorting Rig - See [here](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/COVID19%20Development%20Plans/COVID-19%20-%20Development%20Plan%20-%20Sorting%20Rig.docx)
+- Complete Rubbish Sorting Rig - See [here](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/raw/master/COVID19%20Development%20Plans/COVID-19%20-%20Development%20Plan%20-%20Sorting%20Rig.docx)
 - Integrate Bucket with Tri Track to complete pick up mechanism
 - 3D Print Back panel of Tri Track Chassis
 - Connect User interface too all components to ensure robustness
