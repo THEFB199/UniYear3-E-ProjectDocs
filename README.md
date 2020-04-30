@@ -10,7 +10,7 @@ Main project repository for E.A.R.T.H documentation
 # Contents
 
 - [Current Status of Key Parts](#Current-Status-of-Key-Parts)
-- [Other REPO's](#Other-REPO's)
+- [Other REPO's](#Other-REPOs)
 - [COVID-19 Developments](#COVID-19-Developments)
 - [Budget Summary](#Budget-Summary)
 - [ePortfolio](#ePortfolio)
@@ -23,9 +23,10 @@ Main project repository for E.A.R.T.H documentation
 - [Seagull Detection](#Seagull-Detection)
 - [Rubbish Sorting Rig](#Rubbish-Sorting-Rig)
 - [Waterline](#Waterline)
-- [User Interface](#User Interface)
+- [User Interface](#User-Interface)
 
 # Current Status of Key Parts
+[Contents](#Contents)
 
 Gateway 3 Progress Video: https://youtu.be/VzLUijcFLLI  
 Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM  
@@ -38,7 +39,8 @@ Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 - Water Line         - Input a line via simulink to the grid map and top camera
 - User Interface     - Providing Integration of all the sub-systems and different output to the user
 
-# Other REPO's
+# Other REPOs
+[Contents](#Contents)
 
 - Crab Detection/Water Line - https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
 - DaNI Basic Control        - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot  
@@ -52,6 +54,7 @@ Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 TriTrack Design (Fusion 360) - https://a360.co/3aZK0rs  
 
 # COVID-19 Developments
+[Contents](#Contents)
 
 - Complete Rubbish Sorting Rig - See [here](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/COVID19%20Development%20Plans/COVID-19%20-%20Development%20Plan%20-%20Sorting%20Rig.docx)
 - Integrate Bucket with Tri Track to complete pick up mechanism
@@ -60,6 +63,7 @@ TriTrack Design (Fusion 360) - https://a360.co/3aZK0rs
 - Complete a full demonstration of all parts together
 
 # Budget Summary
+[Contents](#Contents)
 
 ### Total Budget: £500
 
@@ -70,14 +74,17 @@ TriTrack Design (Fusion 360) - https://a360.co/3aZK0rs
 
 
 # ePortfolio
+[Contents](#Contents)
 
 https://teamearth1.wordpress.com/
 
 # Systems Map
+[Contents](#Contents)
 
 ![System Level Diagram](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/Project%20Videos%20%26%20Pictures/SysDiagram.png)  
 
 # Raspberry Pi 4 on Eduroam + ROS
+[Contents](#Contents)
 
 - Testing multiple different operating systems on the raspberry pi 4 has resulted in some findings, these are listed below.
 
@@ -97,6 +104,7 @@ Eduroam, follow guide provided by PST
 
 
 # Tri Track Summary
+[Contents](#Contents)
 
 Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation  
 
@@ -109,16 +117,21 @@ Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/E-Mapping-
 - Pi 4 used to map the input to the correct timing
 - Raspberry Pi Sense Hat for IMU data
 
+Systems Map: 
+![Systems Map](https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation/blob/master/ePortfolio/Phase1Architecture.png)
+
 Demo of Current Capabilities:  
-[![TriTrackDemo](http://img.youtube.com/vi/rMWxJc7n-KE/0.jpg)](http://www.youtube.com/watch?v=rMWxJc7n-KE "")
+[![TriTrackDemo](http://img.youtube.com/vi/bQdLZ6A9Zmw/0.jpg)](https://www.youtube.com/watch?v=bQdLZ6A9Zmw "")
 
 # RGB Bin Detecttion
+[Contents](#Contents)
 
 - Python and Opencv used to create computer vision method of detecting and recognising LED sequence.
 - Bins effectively detected from up to a metre
 - Code can be found in the RGB-Bin-Detection Repository
 
 # Crab Detection
+[Contents](#Contents)
 
 Code can be found : https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
 
@@ -129,11 +142,13 @@ Code can be found : https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
 - From GW2 matches of colours are much more reliable  
 - Centre Points of the crabs are tracked to show the routes taken.  
 - Integration with top camera for use in cloudy day lighting conditions.  
+- Can Track N number of Crabs
 
-[![Crab Detection Demo](http://img.youtube.com/vi/JBJTy5rMkCE/0.jpg)](http://www.youtube.com/watch?v=JBJTy5rMkCE "Crab Detection")
+[![Crab Detection Demo](http://img.youtube.com/vi/S2dczyJmMPU/0.jpg)](https://www.youtube.com/watch?v=S2dczyJmMPU "Crab Detection")
 
 
 # Mapping and Navigation
+[Contents](#Contents)
 
 Code can be found: https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation
 
@@ -142,17 +157,19 @@ Code can be found: https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigati
 - RGBD using Xbox kinect on the TriTrack
 - Point cloud and 2D occupancy grid is produced
 - Localisation of the TriTrack within this 
-- This is now used for navigation with teh navigation stack
+- This is now used for navigation with the navigation stack
 
 [![](http://img.youtube.com/vi/Hy-FY70L_dA/0.jpg)](http://www.youtube.com/watch?v=Hy-FY70L_dA "TriTrack Mapping Demo")
 
 ### Global Mapping (Overhead Camera)
 
-- Pi 3B+ conbimned witha wide angle camera which looks for and tracks the crabs. The top camera also gets the positions of the rubbish. This still needs to be integrated into the tir track map.
+- Pi 3B+ conbimned witha wide angle camera which looks for and tracks the crabs
+- Rubbish planner to pusbilsh navigaion goals to and from the rubbish bin completed
 
 [![Over Head Camera Demo](http://img.youtube.com/vi/JBJTy5rMkCE/0.jpg)](http://www.youtube.com/watch?v=JBJTy5rMkCE "Crab Detection")
 
 # Seagull Detection
+[Contents](#Contents)
 
 Code can be found: https://github.com/lboroWMEME-19WSD001/Seagull-Detection
 
@@ -163,6 +180,7 @@ Code can be found: https://github.com/lboroWMEME-19WSD001/Seagull-Detection
 - Will continue AI research in hopes of getting more robust system, possibly using ml5.js
 
 # Rubbish Sorting Rig
+[Contents](#Contents)
 
 [![Rubbish Sorting Rig Demo](http://img.youtube.com/vi/qZ9JkHlGdAA/0.jpg)](https://youtu.be/qZ9JkHlGdAA "Rubbish Sorting Rig - Progress")
 
@@ -174,7 +192,9 @@ Narrated Demo Video : https://youtu.be/4wFlJHVcBKs
 - Movement code are ran and completed by Arduino MEGA
 - RGB Bin detection completed using webcam mounted on the gantry arm
 - Currently controlled via wireless xbox controller
+
 # Waterline
+[Contents](#Contents)
 
 https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
 
@@ -183,6 +203,8 @@ https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
 [![Waterline Demo](http://img.youtube.com/vi/PecBnYAqeN8/0.jpg)](http://www.youtube.com/watch?v=PecBnYAqeN8 "Crab Detection")
 
 # User Interface
+[Contents](#Contents)
+
 - Currently capable to acquire data from ROS and illustrate it every 0.5s
 - Can send data to ROS if the User wants to control the Earth-E manual
 - Can stream live video from the Earth-E, Eye-in-the-Sky and Sorting Rig
