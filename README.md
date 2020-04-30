@@ -200,7 +200,7 @@ https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
 
 - using simulink to input a water line. This is inputted into the map the tri track creates. The navigation stack will not cross this line therefore avoiding the water. 
 
-[![Waterline Demo](http://img.youtube.com/vi/PecBnYAqeN8/0.jpg)](http://www.youtube.com/watch?v=PecBnYAqeN8 "Crab Detection")
+[![Waterline Demo](http://img.youtube.com/vi/yh52xoL3yik/0.jpg)](https://youtu.be/yh52xoL3yik "Crab Detection")
 
 # User Interface
 [Contents](#Contents)
