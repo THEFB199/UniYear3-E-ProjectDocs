@@ -15,7 +15,7 @@ Main project repository for E.A.R.T.H documentation
 - [Budget Summary](#Budget-Summary)
 - [ePortfolio](#ePortfolio)
 - [Systems Map](#Systems-Map)
-- [Raspberry Pi 4 on Eduroam + ROS](#Raspberry-Pi-4-on-Eduroam-+-ROS)
+- [Raspberry Pi 4 on Eduroam and ROS](#Raspberry-Pi-4-on-Eduroam-and-ROS)
 - [Tri Track Summary](#Tri-Track-Summary)
 - [RGB Bin Detecttion](#RGB-Bin-Detecttion)
 - [Crab Detection](#Crab-Detection)
@@ -83,7 +83,7 @@ https://teamearth1.wordpress.com/
 
 ![System Level Diagram](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/Project%20Videos%20%26%20Pictures/SysDiagram.png)  
 
-# Raspberry Pi 4 on Eduroam + ROS
+# Raspberry Pi 4 on Eduroam and ROS
 [Contents](#Contents)
 
 - Testing multiple different operating systems on the raspberry pi 4 has resulted in some findings, these are listed below.
@@ -117,10 +117,10 @@ Controlling Code can be found: https://github.com/lboroWMEME-19WSD001/E-Mapping-
 - Pi 4 used to map the input to the correct timing
 - Raspberry Pi Sense Hat for IMU data
 
-Systems Map: 
+Systems Map:  
 ![Systems Map](https://github.com/lboroWMEME-19WSD001/E-Mapping-and-Navigation/blob/master/ePortfolio/Phase1Architecture.png)
 
-Demo of Current Capabilities:  
+Demo of Current Capabilities:   
 [![TriTrackDemo](http://img.youtube.com/vi/bQdLZ6A9Zmw/0.jpg)](https://www.youtube.com/watch?v=bQdLZ6A9Zmw "")
 
 # RGB Bin Detecttion
