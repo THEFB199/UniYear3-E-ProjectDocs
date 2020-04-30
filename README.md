@@ -7,7 +7,25 @@ Main project repository for E.A.R.T.H documentation
 #### Presentation: https://1drv.ms/p/s!Ahn7vW5IvoqFhvEgONhQKyJhQF68kg
 #### ePortfolio: https://teamearth1.wordpress.com/
 
-# Current Status of Current Key Parts
+# Contents
+
+- [Current Status of Key Parts](#Current-Status-of-Key-Parts)
+- [Other REPO's](#Other-REPO's)
+- [COVID-19 Developments](#COVID-19-Developments)
+- [Budget Summary](#Budget-Summary)
+- [ePortfolio](#ePortfolio)
+- [Systems Map](#Systems-Map)
+- [Raspberry Pi 4 on Eduroam + ROS](#Raspberry-Pi-4-on-Eduroam-+-ROS)
+- [Tri Track Summary](#Tri-Track-Summary)
+- [RGB Bin Detecttion](#RGB-Bin-Detecttion)
+- [Crab Detection](#Crab-Detection)
+- [Mapping and Navigation](#Mapping-and-Navigation)
+- [Seagull Detection](#Seagull-Detection)
+- [Rubbish Sorting Rig](#Rubbish-Sorting-Rig)
+- [Waterline](#Waterline)
+- [User Interface](#User Interface)
+
+# Current Status of Key Parts
 
 Gateway 3 Progress Video: https://youtu.be/VzLUijcFLLI  
 Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM  
@@ -16,14 +34,12 @@ Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 - Rubbish Sorting    - RGB Bin Detection Completed  
 - Crab Detection     - Draws box and identifies colour path of crab shown (integrated into overhead camera)
 - Mapping/Navigation - ROS Naviagation Stack used in conjunction with an Xbox Kinect and RtabMap
-- Seagull Detection  - Rudimentary audio detection by searching for features extracted for sample sound data
-                     - Plan to alert the operators using telemetry User interface on ROS machine
-- Water Line         - input a line via simulink to the grid map and top camera
+- Seagull Detection  - Alerts the operators using telemetry User interface on ROS machine
+- Water Line         - Input a line via simulink to the grid map and top camera
 - User Interface     - Providing Integration of all the sub-systems and different output to the user
 
 # Other REPO's
 
-- Basic Control             - https://github.com/lboroWMEME-19WSD001/E-Basic-Control  
 - Crab Detection/Water Line - https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
 - DaNI Basic Control        - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot  
 - Seagull Detection         - https://github.com/lboroWMEME-19WSD001/Seagull-Detection  
@@ -35,29 +51,13 @@ Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 #### CAD (Viewable in WebBrowser)
 TriTrack Design (Fusion 360) - https://a360.co/3aZK0rs  
 
-# Jobs List
+# COVID-19 Developments
 
-## To Do - Please Add or Move as Necessary
-  
-
-## In Progress
-
-- Mapping 
-- Navigation 
-- Integration
-- Crab Detection Robustness  
-- Water Line 
-- Trash Sorter Rig  
-- Seagul Detection  
-- Trash Detection 
-- Power Board
-
-## Done
-
-- Crab Detection Demo   
-- RGB Bin Detection   
-- Tri Track Chassis  
-- User Interface working demo  
+- Complete Rubbish Sorting Rig - See [here](https://github.com/lboroWMEME-19WSD001/E-ProjectDocs/blob/master/COVID19%20Development%20Plans/COVID-19%20-%20Development%20Plan%20-%20Sorting%20Rig.docx)
+- Integrate Bucket with Tri Track to complete pick up mechanism
+- 3D Print Back panel of Tri Track Chassis
+- Connect User interface too all components to ensure robustness
+- Complete a full demonstration of all parts together
 
 # Budget Summary
 
