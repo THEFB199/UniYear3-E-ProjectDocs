@@ -32,7 +32,7 @@ Gateway 3 Progress Video: https://youtu.be/VzLUijcFLLI
 Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM  
 
 - TriTrack           - ROS Navigation Stack used to send goal within a map
-- Rubbish Sorting    - RGB Bin Detection Completed  
+- Rubbish Sorting    - RGB Bin Detection Completed + Full System Movement Via Xbox Controller 
 - Crab Detection     - Draws box and identifies colour path of crab shown (integrated into overhead camera)
 - Mapping/Navigation - ROS Naviagation Stack used in conjunction with an Xbox Kinect and RtabMap
 - Seagull Detection  - Alerts the operators using telemetry User interface on ROS machine
