@@ -205,6 +205,11 @@ https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
 # User Interface
 [Contents](#Contents)
 
+https://youtu.be/Veu4dWLZzMg
+
 - Currently capable to acquire data from ROS and illustrate it every 0.5s
-- Can send data to ROS if the User wants to control the Earth-E manual
+- Send data to ROS if the User wants to control the Earth-E manual
 - Can stream live video from the Earth-E, Eye-in-the-Sky and Sorting Rig
+- Control Sorting Rig and the user is able to see what type of rubbish is the one that the Sorting Rig picks
+- Amount of Rubbish inside each Bins
+- Perforfmance Indices for each sub-System
