@@ -24,6 +24,7 @@ Main project repository for E.A.R.T.H documentation
 - [Rubbish Sorting Rig](#Rubbish-Sorting-Rig)
 - [Waterline](#Waterline)
 - [User Interface](#User-Interface)
+- [Trash Sorting](#Trash-Sorting)
 
 # Current Status of Key Parts
 [Contents](#Contents)
@@ -48,7 +49,8 @@ Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
 - Rubbish Sorting Rig       - https://github.com/lboroWMEME-19WSD001/E-Sorting-Rig
 - RGB Bin Detection         - https://github.com/lboroWMEME-19WSD001/E-RGB-Bin-Detection
 - User Interface            - https://github.com/lboroWMEME-19WSD001/E-UserInterface
-- DaNI Basic Control        - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot  
+- DaNI Basic Control        - https://github.com/lboroWMEME-19WSD001/E-DaNI-Robot
+- Trash Sorting             - https://github.com/lboroWMEME-19WSD001/E-Trash-Sorting
 
 #### CAD (Viewable in WebBrowser)
 TriTrack Design (Fusion 360) - https://a360.co/3aZK0rs  
@@ -213,3 +215,13 @@ https://github.com/lboroWMEME-19WSD001/E-OverHeadCam
 - Control Sorting Rig and the user is able to see what type of rubbish is the one that the Sorting Rig picks
 - Amount of Rubbish inside each Bins
 - Perforfmance Indices for each sub-System
+
+# Trash Sorting
+[Contents](#Contents)
+
+[![Trash Sorting Demo](http://img.youtube.com/vi/XuQC7-CtRzw/0.jpg)](https://youtu.be/XuQC7-CtRzw "Trash Sorting")
+
+- Trash Classification using convolution neural network
+- Sorts into five categories: glass, paper, metal, plastic, cardboard
+- Trash Detection via image processing and blob analysis in MatLab
+- Outputs bounding boxes and centroids for each detected object
