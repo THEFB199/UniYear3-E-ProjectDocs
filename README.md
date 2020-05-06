@@ -29,9 +29,10 @@ Main project repository for E.A.R.T.H documentation
 # Current Status of Key Parts
 [Contents](#Contents)
 
+Demo Video: https://youtu.be/ibwLFqlvUHs  
 Gateway 3 Progress Video: https://youtu.be/VzLUijcFLLI  
 Gateway 2 Progress Video: https://youtu.be/yT4LsTBTJXM
-Demo Video: https://youtu.be/ibwLFqlvUHs
+
 
 - TriTrack           - ROS Navigation Stack used to send goal within a map
 - Rubbish Sorting    - RGB Bin Detection Completed + Full System Movement Via Xbox Controller 
